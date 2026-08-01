@@ -210,9 +210,58 @@ export async function ensureCustomDomain(client, config) {
   return result
 }
 
+export async function ensureDnsRecord(client, config) {
+  const account = encodeURIComponent(client.accountId)
+  const projectName = encodeURIComponent(config.project)
+  const zone = encodeURIComponent(client.zoneId)
+  const project = await client.request(
+    'GET',
+    `/accounts/${account}/pages/projects/${projectName}`,
+  )
+  if (!project.subdomain) throw new Error(`Pages project ${config.project} has no pages.dev subdomain`)
+
+  const recordsPath = `/zones/${zone}/dns_records`
+  const records = await client.request(
+    'GET',
+    `${recordsPath}?name=${encodeURIComponent(config.domain)}&per_page=100`,
+  )
+  if (records.some((record) => record.type !== 'CNAME')) {
+    throw new Error(`A non-CNAME DNS record already exists for ${config.domain}`)
+  }
+  if (records.length > 1) {
+    throw new Error(`Multiple DNS records already exist for ${config.domain}`)
+  }
+
+  const payload = {
+    comment: `Managed by ${config.project} deployment workflow`,
+    content: project.subdomain,
+    name: config.domain,
+    proxied: true,
+    ttl: 1,
+    type: 'CNAME',
+  }
+  const existing = records[0]
+  if (!existing) {
+    const created = await client.request('POST', recordsPath, payload)
+    console.log(`DNS: created ${config.domain} -> ${project.subdomain}`)
+    return created
+  }
+  if (existing.content !== project.subdomain || existing.proxied !== true) {
+    const updated = await client.request(
+      'PUT',
+      `${recordsPath}/${encodeURIComponent(existing.id)}`,
+      payload,
+    )
+    console.log(`DNS: updated ${config.domain} -> ${project.subdomain}`)
+    return updated
+  }
+  console.log(`DNS: existing ${config.domain} -> ${project.subdomain}`)
+  return existing
+}
+
 const sleep = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds))
 
-export async function waitForCustomDomain(client, config, attempts = 30, delayMs = 10_000) {
+export async function waitForCustomDomain(client, config, attempts = 60, delayMs = 10_000) {
   const account = encodeURIComponent(client.accountId)
   const project = encodeURIComponent(config.project)
   const domain = encodeURIComponent(config.domain)
@@ -247,6 +296,13 @@ export async function verifyDns(client, config) {
   return records
 }
 
+export async function finalizeDeployment(client, config) {
+  await ensureDnsRecord(client, config)
+  await ensureCustomDomain(client, config)
+  await waitForCustomDomain(client, config)
+  await verifyDns(client, config)
+}
+
 function requiredEnvironment(name) {
   const value = process.env[name]
   if (!value) throw new Error(`Missing required environment variable: ${name}`)
@@ -272,9 +328,7 @@ export async function main(argv = process.argv.slice(2)) {
     return
   }
 
-  await ensureCustomDomain(client, config)
-  await waitForCustomDomain(client, config)
-  await verifyDns(client, config)
+  await finalizeDeployment(client, config)
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

@@ -7,7 +7,9 @@ import {
   configFor,
   ensureAccessProtection,
   ensureCustomDomain,
+  ensureDnsRecord,
   ensurePagesProject,
+  finalizeDeployment,
 } from './configure_cloudflare.mjs'
 
 class FakeClient {
@@ -148,4 +150,149 @@ test('creates a missing Pages custom domain', async () => {
       { name: 'game-dev.kingdom-innovator.com' },
     ],
   ])
+})
+
+test('creates a proxied CNAME for the Pages custom domain', async () => {
+  const client = new FakeClient({
+    requestResults: [
+      { subdomain: 'oni-planet-resources-dev.pages.dev' },
+      [],
+      { id: 'dns-id', proxied: true },
+    ],
+  })
+
+  await ensureDnsRecord(client, configFor('dev'))
+
+  assert.deepEqual(client.calls, [
+    [
+      'GET',
+      '/accounts/account-id/pages/projects/oni-planet-resources-dev',
+      undefined,
+    ],
+    [
+      'GET',
+      '/zones/zone-id/dns_records?name=game-dev.kingdom-innovator.com&per_page=100',
+      undefined,
+    ],
+    [
+      'POST',
+      '/zones/zone-id/dns_records',
+      {
+        comment: 'Managed by oni-planet-resources-dev deployment workflow',
+        content: 'oni-planet-resources-dev.pages.dev',
+        name: 'game-dev.kingdom-innovator.com',
+        proxied: true,
+        ttl: 1,
+        type: 'CNAME',
+      },
+    ],
+  ])
+})
+
+test('keeps an already-correct Pages CNAME unchanged', async () => {
+  const record = {
+    content: 'oni-planet-resources-dev.pages.dev',
+    id: 'dns-id',
+    proxied: true,
+    type: 'CNAME',
+  }
+  const client = new FakeClient({
+    requestResults: [{ subdomain: record.content }, [record]],
+  })
+
+  const result = await ensureDnsRecord(client, configFor('dev'))
+
+  assert.equal(result, record)
+  assert.equal(client.calls.length, 2)
+})
+
+test('updates stale and unproxied Pages CNAMEs independently', async () => {
+  const target = 'oni-planet-resources-dev.pages.dev'
+  const cases = [
+    { content: 'old.pages.dev', id: 'stale-id', proxied: true, type: 'CNAME' },
+    { content: target, id: 'unproxied-id', proxied: false, type: 'CNAME' },
+  ]
+
+  for (const record of cases) {
+    const client = new FakeClient({
+      requestResults: [
+        { subdomain: target },
+        [record],
+        { id: record.id, proxied: true },
+      ],
+    })
+
+    await ensureDnsRecord(client, configFor('dev'))
+
+    assert.deepEqual(client.calls[2], [
+      'PUT',
+      `/zones/zone-id/dns_records/${record.id}`,
+      {
+        comment: 'Managed by oni-planet-resources-dev deployment workflow',
+        content: target,
+        name: 'game-dev.kingdom-innovator.com',
+        proxied: true,
+        ttl: 1,
+        type: 'CNAME',
+      },
+    ])
+  }
+})
+
+test('refuses non-CNAME and ambiguous DNS collisions', async () => {
+  const nonCname = new FakeClient({
+    requestResults: [
+      { subdomain: 'oni-planet-resources-dev.pages.dev' },
+      [{ id: 'dns-id', type: 'A' }],
+    ],
+  })
+  await assert.rejects(() => ensureDnsRecord(nonCname, configFor('dev')), /non-CNAME/)
+
+  const multiple = new FakeClient({
+    requestResults: [
+      { subdomain: 'oni-planet-resources-dev.pages.dev' },
+      [
+        { id: 'one', type: 'CNAME' },
+        { id: 'two', type: 'CNAME' },
+      ],
+    ],
+  })
+  await assert.rejects(() => ensureDnsRecord(multiple, configFor('dev')), /Multiple DNS records/)
+})
+
+test('finalization reconciles DNS before domain activation and verification', async () => {
+  const record = {
+    content: 'oni-planet-resources-dev.pages.dev',
+    id: 'dns-id',
+    proxied: true,
+    type: 'CNAME',
+  }
+  const client = new FakeClient({
+    optionalResults: [{ name: 'game-dev.kingdom-innovator.com', status: 'active' }],
+    requestResults: [
+      { subdomain: record.content },
+      [record],
+      { name: 'game-dev.kingdom-innovator.com', status: 'active' },
+      [record],
+    ],
+  })
+
+  await finalizeDeployment(client, configFor('dev'))
+
+  assert.deepEqual(
+    client.calls.map(([method, path]) => [method, path]),
+    [
+      ['GET', '/accounts/account-id/pages/projects/oni-planet-resources-dev'],
+      ['GET', '/zones/zone-id/dns_records?name=game-dev.kingdom-innovator.com&per_page=100'],
+      [
+        'OPTIONAL',
+        '/accounts/account-id/pages/projects/oni-planet-resources-dev/domains/game-dev.kingdom-innovator.com',
+      ],
+      [
+        'GET',
+        '/accounts/account-id/pages/projects/oni-planet-resources-dev/domains/game-dev.kingdom-innovator.com',
+      ],
+      ['GET', '/zones/zone-id/dns_records?name=game-dev.kingdom-innovator.com&per_page=100'],
+    ],
+  )
 })
