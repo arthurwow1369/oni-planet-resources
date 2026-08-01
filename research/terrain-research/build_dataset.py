@@ -11,6 +11,7 @@ HERE = Path(__file__).resolve().parent
 GAME_PATH = HERE / "game-data.json"
 STRATEGY_PATH = HERE / "strategies.json"
 SOURCES_PATH = HERE / "sources.json"
+ENTITY_PROFILES_PATH = HERE / "entity-profiles.json"
 OUT_JSON = HERE / "terrain-research.json"
 OUT_MD = HERE / "terrain-research.md"
 VALIDATION_PATH = HERE / "validation-report.json"
@@ -36,10 +37,15 @@ def main() -> None:
     game = load(GAME_PATH)
     strategies = load(STRATEGY_PATH)
     sources_doc = load(SOURCES_PATH)
+    entity_profiles_doc = load(ENTITY_PROFILES_PATH)
 
     game_by_zone = {zone["zone_type"]: zone for zone in game["zones"]}
     strategy_by_zone = {zone["zone_type"]: zone for zone in strategies["zones"]}
     sources = {source["id"]: source for source in sources_doc["sources"]}
+    entity_profiles = {
+        profile["prefab_id"]: profile
+        for profile in entity_profiles_doc["profiles"]
+    }
 
     errors: list[str] = []
     warnings: list[str] = []
@@ -70,6 +76,13 @@ def main() -> None:
                 if not entity.get("name"):
                     errors.append(
                         f"{zone_type}: {category} entity {entity['prefab_id']} has no name"
+                    )
+                if (
+                    category in {"flora", "fauna"}
+                    and entity["prefab_id"] not in entity_profiles
+                ):
+                    errors.append(
+                        f"{zone_type}: {category} entity {entity['prefab_id']} has no profile"
                     )
 
         for warning in game_zone.get("warnings", []):
@@ -165,6 +178,7 @@ def main() -> None:
         ),
         "interpretation_rules": strategies["interpretation_rules"],
         "cleaning_policy": sources_doc["cleaning_policy"],
+        "entity_profiles": list(entity_profiles.values()),
         "zones": merged_zones,
         "sources": sources_doc["sources"],
         "known_gaps": [
@@ -199,6 +213,9 @@ def main() -> None:
             ),
             "all_entities_named": not any(
                 "has no name" in error for error in errors
+            ),
+            "all_flora_and_fauna_profiled": not any(
+                "has no profile" in error for error in errors
             ),
             "reviewed_native_dependencies_are_qualified": not any(
                 any(

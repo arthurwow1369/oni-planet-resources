@@ -1,7 +1,10 @@
 {
   "worlds": 94,
   "subworlds": 186,
-  "resources": 126,
-  "categorizedResources": 45,
-  "translations": 20564
+  "resources": 204,
+  "categorizedResources": 202,
+  "describedResources": 204,
+  "translations": 20564,
+  "uncataloguedCandidates": [],
+  "unresolvedFeatures": []
 }

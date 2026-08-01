@@ -21,6 +21,20 @@ import yaml
 ASSETS: Path
 PO_PATH: Path
 OUT = Path(__file__).resolve().parents[1] / "public/data"
+CATALOG_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/resource-catalog/resource-catalog.json"
+)
+ENTITY_PROFILES_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/terrain-research/entity-profiles.json"
+)
+RESOURCE_CATALOG: dict[str, dict[str, Any]] = {}
+FEATURE_ENTITY_ALIASES = {"AnyLiquidPacu": "Pacu", "BeeHive": "Bee"}
+RESOURCE_ID_ALIASES = {"dirt": "Dirt"}
+NON_RESOURCE_FEATURE_ENTITIES = {"Vacuum"}
+UNCATALOGUED_CANDIDATES: set[str] = set()
+UNRESOLVED_FEATURES: set[str] = set()
 
 LINK_RE = re.compile(r"</?link(?:=\"[^\"]*\")?>", re.I)
 TAG_RE = re.compile(r"<[^>]+>")
@@ -200,6 +214,33 @@ def build_index(kind: str) -> dict[tuple[str, str], Path]:
     return index
 
 
+def apply_mob_overlay(result: dict[str, str], paths: list[Path]) -> None:
+    for path in sorted(paths, key=lambda item: item.relative_to(ASSETS).as_posix()):
+        table = load_yaml(path).get("MobLookupTable", {}) or {}
+        for tag in table.get("remove", []) or []:
+            result.pop(str(tag), None)
+        for tag, details in (table.get("add", {}) or {}).items():
+            details = details or {}
+            result[str(tag)] = str(details.get("prefabName", tag))
+
+
+def build_mob_lookups() -> dict[str, dict[str, str]]:
+    by_namespace: dict[str, list[Path]] = defaultdict(list)
+    for path in ASSETS.glob("**/worldgen/mobs.yaml"):
+        by_namespace[namespace_for(path)].append(path)
+
+    base: dict[str, str] = {}
+    apply_mob_overlay(base, by_namespace.get("base", []))
+    result = {"base": base}
+    for namespace, paths in by_namespace.items():
+        if namespace == "base":
+            continue
+        overlay = dict(base)
+        apply_mob_overlay(overlay, paths)
+        result[namespace] = overlay
+    return result
+
+
 def split_ref(ref: str, prefix: str) -> tuple[str, str]:
     if "::" in ref:
         ns, rest = ref.split("::", 1)
@@ -242,16 +283,56 @@ def resource_type(simhash: str) -> str:
     return "solid"
 
 
+def load_resource_catalog(path: Path = CATALOG_PATH) -> dict[str, dict[str, Any]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    entries = payload.get("entries")
+    if not isinstance(entries, dict):
+        raise SystemExit(f"invalid resource catalog: {path}")
+    profiles = json.loads(ENTITY_PROFILES_PATH.read_text(encoding="utf-8"))["profiles"]
+    for profile in profiles:
+        prefab_id = profile["prefab_id"]
+        if prefab_id in entries:
+            continue
+        entries[prefab_id] = {
+            "name_en": profile["name_en"],
+            "name_zh": profile["name_zh"],
+            "type": "critter" if profile["kind"] == "fauna" else "plant",
+            "categories": [
+                "decoration" if role == "decor" else role
+                for role in profile.get("roles", [])
+            ],
+            "use_en": profile["summary_en"],
+            "use_zh": profile["summary_zh"],
+        }
+    incomplete = sorted(
+        simhash
+        for simhash, entry in entries.items()
+        if not isinstance(entry, dict)
+        or not entry.get("name_en")
+        or not entry.get("name_zh")
+        or not entry.get("use_en")
+        or not entry.get("use_zh")
+    )
+    if incomplete:
+        raise SystemExit(f"incomplete resource catalog entries: {incomplete}")
+    return entries
+
+
 def add_resource(bucket: dict[str, dict[str, Any]], strings: dict[str, tuple[str, str]], simhash: str, weight: float = 0, source: str = "terrain") -> None:
     if not simhash or simhash in {"Vacuum", "Void"}: return
     simhash = str(simhash)
     if simhash.startswith("med_"):
         simhash = simhash[4:]
     en, zh = element_name(strings, simhash)
+    catalog = RESOURCE_CATALOG.get(simhash, {})
     item = bucket.setdefault(simhash, {
-        "simhash": simhash, "name_en": en, "name_zh": zh,
-        "type": resource_type(simhash), "categories": CATEGORY_MAP.get(simhash, []),
-        "use_en": USE_EN.get(simhash, ""), "use_zh": USE_ZH.get(simhash, ""),
+        "simhash": simhash,
+        "name_en": catalog.get("name_en", en),
+        "name_zh": catalog.get("name_zh", zh),
+        "type": catalog.get("type", resource_type(simhash)),
+        "categories": catalog.get("categories", CATEGORY_MAP.get(simhash, [])),
+        "use_en": catalog.get("use_en", USE_EN.get(simhash, "")),
+        "use_zh": catalog.get("use_zh", USE_ZH.get(simhash, "")),
         "weight": 0.0, "sources": [],
     })
     item["weight"] = round(item["weight"] + float(weight or 0), 4)
@@ -289,17 +370,83 @@ def biome_resources(ref: str, ns: str, biome_index: dict[tuple[str, str], Path],
     return result
 
 
-def terrain_record(path: Path, ref_id: str, strings: dict[str, tuple[str, str]], biome_index: dict[tuple[str, str], Path]) -> dict[str, Any]:
+def terrain_record(
+    path: Path,
+    ref_id: str,
+    strings: dict[str, tuple[str, str]],
+    biome_index: dict[tuple[str, str], Path],
+    feature_index: dict[tuple[str, str], Path],
+    mob_lookups: dict[str, dict[str, str]],
+) -> dict[str, Any]:
     data = load_yaml(path)
     ns = namespace_for(path)
+    mob_lookup = mob_lookups.get(ns, mob_lookups["base"])
     resources: dict[str, dict[str, Any]] = {}
+
+    def add_spawn_tag(tag: object, weight: float = 0, source: str = "spawn-tag") -> None:
+        raw_tag = str(tag)
+        prefab_id = mob_lookup.get(raw_tag)
+        if prefab_id in RESOURCE_CATALOG:
+            add_resource(resources, strings, prefab_id, weight, source)
+        elif prefab_id:
+            UNCATALOGUED_CANDIDATES.add(prefab_id)
+        elif raw_tag.startswith("med_") and raw_tag[4:] in RESOURCE_CATALOG:
+            add_resource(resources, strings, raw_tag[4:], weight, source)
+        elif raw_tag.startswith("med_"):
+            UNCATALOGUED_CANDIDATES.add(raw_tag[4:])
+
     for biome in data.get("biomes", []) or []:
         if not isinstance(biome, dict) or not biome.get("name"): continue
         for simhash, item in biome_resources(str(biome["name"]), ns, biome_index, strings).items():
             add_resource(resources, strings, simhash, item.get("weight", 0), "biome")
         for tag in biome.get("tags", []) or []:
-            if isinstance(tag, str) and tag.startswith("med_"):
-                add_resource(resources, strings, tag, biome.get("weight", 0), "spawn")
+            add_spawn_tag(tag, float(biome.get("weight", 0) or 0))
+    for tag in data.get("tags", []) or []:
+        add_spawn_tag(tag)
+
+    feature_references = [
+        str(item["type"])
+        for item in data.get("features", []) or []
+        if isinstance(item, dict) and item.get("type")
+    ]
+    for reference in feature_references:
+        feature_path = resolve_ref(feature_index, reference, "features", ns)
+        if feature_path is None:
+            UNRESOLVED_FEATURES.add(f"{ns}:{reference}")
+            continue
+        feature_source = feature_path.relative_to(ASSETS).as_posix()
+        feature = load_yaml(feature_path)
+        for tag in feature.get("biomeTags", []) or []:
+            add_spawn_tag(tag, source=feature_source)
+        for group in (feature.get("ElementChoiceGroups", {}) or {}).values():
+            for choice in (group or {}).get("choices", []) or []:
+                if not isinstance(choice, dict) or not choice.get("element"):
+                    continue
+                raw_resource_id = str(choice["element"])
+                if raw_resource_id in NON_RESOURCE_FEATURE_ENTITIES:
+                    continue
+                resource_id = RESOURCE_ID_ALIASES.get(raw_resource_id, raw_resource_id)
+                if resource_id in RESOURCE_CATALOG:
+                    add_resource(
+                        resources,
+                        strings,
+                        resource_id,
+                        float(choice.get("weight", 1) or 1),
+                        feature_source,
+                    )
+                else:
+                    UNCATALOGUED_CANDIDATES.add(resource_id)
+        for mob in feature.get("internalMobs", []) or []:
+            if not isinstance(mob, dict) or not mob.get("type"):
+                continue
+            prefab_id = FEATURE_ENTITY_ALIASES.get(str(mob["type"]), str(mob["type"]))
+            if prefab_id not in RESOURCE_CATALOG:
+                UNCATALOGUED_CANDIDATES.add(prefab_id)
+                continue
+            count = mob.get("count", {}) or {}
+            weight = float(count.get("max", count.get("min", 1)) or 1)
+            add_resource(resources, strings, prefab_id, weight, feature_source)
+
     zone = str(data.get("zoneType", "Unknown"))
     fallback = path.stem.replace("med_", "")
     sid = f"STRINGS.SUBWORLDS.{zone.upper()}.NAME"
@@ -311,12 +458,14 @@ def terrain_record(path: Path, ref_id: str, strings: dict[str, tuple[str, str]],
         "variant_en": fallback, "variant_zh": fallback,
         "zoneType": zone, "dlcTag": ns,
         "resources": sorted(resources.values(), key=lambda x: x["name_en"]),
-        "features": [str(x.get("type", "")) for x in (data.get("features", []) or []) if isinstance(x, dict)],
+        "features": sorted(feature_references),
     }
 
 
 def main() -> None:
-    global ASSETS, PO_PATH
+    global ASSETS, PO_PATH, RESOURCE_CATALOG
+    UNCATALOGUED_CANDIDATES.clear()
+    UNRESOLVED_FEATURES.clear()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--assets",
@@ -339,11 +488,14 @@ def main() -> None:
     PO_PATH = args.translations.expanduser()
     if not ASSETS.exists(): raise SystemExit(f"StreamingAssets not found: {ASSETS}")
     if not PO_PATH.exists(): raise SystemExit(f"Dolphinwing strings.po not found: {PO_PATH}")
+    RESOURCE_CATALOG = load_resource_catalog()
     OUT.mkdir(parents=True, exist_ok=True)
     strings = parse_po(PO_PATH)
     world_index = build_index("worlds")
     subworld_index = build_index("subworlds")
     biome_index = build_index("biomes")
+    feature_index = build_index("features")
+    mob_lookups = build_mob_lookups()
 
     # Cluster-level additions and guaranteed templates, keyed by world reference.
     cluster_extra: dict[str, set[str]] = defaultdict(set)
@@ -384,7 +536,14 @@ def main() -> None:
             sw_rel = sw_path.relative_to(next(p for p in sw_path.parents if p.name == "subworlds")).with_suffix("").as_posix()
             sw_id = f"{sw_ns}::subworlds/{sw_rel}" if sw_ns != "base" else f"subworlds/{sw_rel}"
             if sw_id not in terrains:
-                terrains[sw_id] = terrain_record(sw_path, sw_id, strings, biome_index)
+                terrains[sw_id] = terrain_record(
+                    sw_path,
+                    sw_id,
+                    strings,
+                    biome_index,
+                    feature_index,
+                    mob_lookups,
+                )
             if sw_id not in normalized_ids: normalized_ids.append(sw_id)
             for item in terrains[sw_id]["resources"]:
                 if item["simhash"] not in global_resources:
@@ -405,6 +564,28 @@ def main() -> None:
     worlds.sort(key=lambda x: (x["dlcTag"], x["name_en"]))
     terrain_list = sorted(terrains.values(), key=lambda x: (x["dlcTag"], x["name_en"], x["variant_en"]))
     resource_list = sorted(global_resources.values(), key=lambda x: x["name_en"])
+    if UNRESOLVED_FEATURES:
+        raise SystemExit("unresolved worldgen features: " + ", ".join(sorted(UNRESOLVED_FEATURES)))
+    if UNCATALOGUED_CANDIDATES:
+        raise SystemExit(
+            "feature/spawn resources require catalog entries: "
+            + ", ".join(sorted(UNCATALOGUED_CANDIDATES))
+        )
+    missing_catalog = sorted(
+        item["simhash"] for item in resource_list
+        if item["simhash"] not in RESOURCE_CATALOG
+    )
+    if missing_catalog:
+        raise SystemExit(
+            "new worldgen resources require catalog entries: "
+            + ", ".join(missing_catalog)
+        )
+    missing_uses = sorted(
+        item["simhash"] for item in resource_list
+        if not item.get("use_en") or not item.get("use_zh")
+    )
+    if missing_uses:
+        raise SystemExit("resources missing curated uses: " + ", ".join(missing_uses))
     for name, payload in (("worlds.json", worlds), ("subworlds.json", terrain_list), ("resources.json", resource_list)):
         (OUT / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -412,7 +593,11 @@ def main() -> None:
     translated_count = sum(1 for en, zh in strings.values() if clean(zh) and clean(zh) != clean(en))
     stats = {
         "worlds": len(worlds), "subworlds": len(terrain_list), "resources": len(resource_list),
-        "categorizedResources": mapped, "translations": translated_count,
+        "categorizedResources": mapped,
+        "describedResources": len(resource_list) - len(missing_uses),
+        "translations": translated_count,
+        "uncataloguedCandidates": sorted(UNCATALOGUED_CANDIDATES),
+        "unresolvedFeatures": sorted(UNRESOLVED_FEATURES),
     }
     (OUT / "stats.json").write_text(json.dumps(stats, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(stats, ensure_ascii=False, indent=2))

@@ -51,9 +51,13 @@ function App() {
     setSelectedTerrainIds(new Set(world?.subworldIds ?? []))
   }
 
-  const toggleTerrain = (id: string) => setSelectedTerrainIds((current) => {
+  const toggleTerrainGroup = (ids: string[]) => setSelectedTerrainIds((current) => {
     const next = new Set(current)
-    if (next.has(id)) next.delete(id); else next.add(id)
+    const shouldSelect = ids.some((id) => !next.has(id))
+    ids.forEach((id) => {
+      if (shouldSelect) next.add(id)
+      else next.delete(id)
+    })
     return next
   })
 
@@ -78,7 +82,7 @@ function App() {
             terrains={activeTerrains}
             selected={selectedTerrainIds}
             locale={locale}
-            onToggle={toggleTerrain}
+            onToggle={toggleTerrainGroup}
             onSelectAll={() => setSelectedTerrainIds(new Set(activeTerrains.map((terrain) => terrain.id)))}
             onClear={() => setSelectedTerrainIds(new Set())}
           />

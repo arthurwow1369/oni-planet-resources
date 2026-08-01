@@ -7,6 +7,8 @@ import type {
   TerrainResearchConfidence,
   TerrainResearchData,
   TerrainResearchDependency,
+  TerrainResearchEntityProfile,
+  TerrainResearchEntityRole,
   TerrainResearchMethod,
   TerrainResearchSpawnable,
   TerrainResearchStage,
@@ -79,6 +81,16 @@ const recommendationGroups = [
   ['radiation', '☢️', 'researchRadiation'],
 ] as const
 
+const entityRoleLabels: Record<TerrainResearchEntityRole, { en: string; zh: string }> = {
+  food: { en: 'Food', zh: '食物' },
+  oxygen: { en: 'Oxygen', zh: '氧氣' },
+  power: { en: 'Power', zh: '能源' },
+  radiation: { en: 'Radiation', zh: '輻射' },
+  industrial: { en: 'Industrial', zh: '工業' },
+  decor: { en: 'Decor', zh: '裝飾' },
+  hazard: { en: 'Hazard', zh: '風險' },
+}
+
 function localized<T extends { en: string; zh: string }>(labels: T, locale: Locale): string {
   return labels[locale]
 }
@@ -90,6 +102,52 @@ function spawnableName(item: TerrainResearchSpawnable, locale: Locale): string {
 function TagList({ items, empty }: { items: { id: string; label: string }[]; empty: string }) {
   if (items.length === 0) return <p className="research-empty">{empty}</p>
   return <ul className="research-tag-list">{items.map((item) => <li key={item.id} title={item.id}>{item.label}</li>)}</ul>
+}
+
+function EntityProfileList({
+  items,
+  profiles,
+  locale,
+  empty,
+}: {
+  items: TerrainResearchSpawnable[]
+  profiles: Map<string, TerrainResearchEntityProfile>
+  locale: Locale
+  empty: string
+}) {
+  const t = ui[locale]
+  if (items.length === 0) return <p className="research-empty">{empty}</p>
+  return (
+    <ul className="research-entity-list">
+      {items.map((item) => {
+        const profile = profiles.get(item.prefab_id)
+        if (!profile) return null
+        return (
+          <li key={item.prefab_id}>
+            <details className="research-entity-card">
+              <summary>
+                <strong>{spawnableName(item, locale)}</strong>
+                <span className="research-entity-roles">
+                  {profile.roles.map((role) => (
+                    <em className={`entity-role-${role}`} key={role}>
+                      {localized(entityRoleLabels[role], locale)}
+                    </em>
+                  ))}
+                </span>
+              </summary>
+              <div>
+                <h6>{t.entityDetails}</h6>
+                <p>{locale === 'zh' ? profile.summary_zh : profile.summary_en}</p>
+                <a href={profile.mechanics_url} target="_blank" rel="noreferrer">
+                  {t.mechanicsSource} ↗
+                </a>
+              </div>
+            </details>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }
 
 function RecommendationList({ methods, locale }: { methods: TerrainResearchMethod[]; locale: Locale }) {
@@ -113,6 +171,10 @@ function RecommendationList({ methods, locale }: { methods: TerrainResearchMetho
 function ResearchZoneCard({ zone, research, locale }: { zone: TerrainResearchZone; research: TerrainResearchData; locale: Locale }) {
   const t = ui[locale]
   const sourcesById = useMemo(() => new Map(research.sources.map((source) => [source.id, source])), [research.sources])
+  const profilesByPrefab = useMemo(
+    () => new Map(research.entity_profiles.map((profile) => [profile.prefab_id, profile])),
+    [research.entity_profiles],
+  )
   const sources = zone.source_ids.map((id) => sourcesById.get(id)).filter((source) => source !== undefined)
   const title = locale === 'zh' ? zone.friendly_name_zh || zone.friendly_name : zone.friendly_name
   const summary = locale === 'zh' ? zone.summary_zh || zone.summary : zone.summary
@@ -142,11 +204,11 @@ function ResearchZoneCard({ zone, research, locale }: { zone: TerrainResearchZon
           </section>
           <section>
             <h5>{t.possibleFlora}</h5>
-            <TagList items={zone.worldgen.flora.map((item) => ({ id: item.prefab_id, label: spawnableName(item, locale) }))} empty={t.noEntries} />
+            <EntityProfileList items={zone.worldgen.flora} profiles={profilesByPrefab} locale={locale} empty={t.noEntries} />
           </section>
           <section>
             <h5>{t.possibleFauna}</h5>
-            <TagList items={zone.worldgen.fauna.map((item) => ({ id: item.prefab_id, label: spawnableName(item, locale) }))} empty={t.noEntries} />
+            <EntityProfileList items={zone.worldgen.fauna} profiles={profilesByPrefab} locale={locale} empty={t.noEntries} />
           </section>
           {zone.worldgen.other_spawnables.length > 0 && (
             <section>

@@ -10,6 +10,7 @@ export type Category =
   | 'lateGame'
   | 'industrial'
   | 'decoration'
+  | 'hazard'
   | 'liquid'
   | 'gas'
   | 'uncategorized'
@@ -55,6 +56,7 @@ export interface Stats {
   subworlds: number
   resources: number
   categorizedResources: number
+  describedResources?: number
   translations: number
 }
 
@@ -131,6 +133,31 @@ export interface TerrainResearchSpawnable {
   name_zh: string
 }
 
+export type TerrainResearchEntityRole =
+  | 'food'
+  | 'oxygen'
+  | 'power'
+  | 'radiation'
+  | 'industrial'
+  | 'decor'
+  | 'hazard'
+
+export interface TerrainResearchEntityProfile {
+  prefab_id: string
+  name_en: string
+  name_zh: string
+  kind: 'flora' | 'fauna'
+  roles: TerrainResearchEntityRole[]
+  summary_en: string
+  summary_zh: string
+  mechanics_url: string
+  zones: string[]
+  sources: {
+    mechanics: string
+    description_localization: string
+  }
+}
+
 export interface TerrainResearchFeature {
   id: string
   name_en: string
@@ -205,6 +232,7 @@ export interface TerrainResearchData {
   scope_note_zh: string
   interpretation_rules: string[]
   interpretation_rules_zh: string[]
+  entity_profiles: TerrainResearchEntityProfile[]
   zones: TerrainResearchZone[]
   sources: TerrainResearchSource[]
   known_gaps: string[]

@@ -1,5 +1,6 @@
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
+import { groupTerrainsByBiome } from '../plannerModel'
 import type { Locale, Subworld, World } from '../types'
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
   terrains: Subworld[]
   selected: Set<string>
   locale: Locale
-  onToggle: (id: string) => void
+  onToggle: (ids: string[]) => void
   onSelectAll: () => void
   onClear: () => void
 }
@@ -17,6 +18,9 @@ const prettyRule = (rule: string) => rule.split('/').pop()?.replace(/^poi_/, '')
 export function TerrainPicker({ world, terrains, selected, locale, onToggle, onSelectAll, onClear }: Props) {
   const t = ui[locale]
   if (!world) return <section className="panel"><p className="empty">{t.noPlanet}</p></section>
+
+  const biomeGroups = groupTerrainsByBiome(terrains)
+  const selectedBiomeCount = biomeGroups.filter((group) => group.terrains.every((terrain) => selected.has(terrain.id))).length
 
   return (
     <section className="panel terrain-panel">
@@ -32,7 +36,7 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
 
       <div className="section-heading terrain-title">
         <div>
-          <span className="eyebrow">TERRAINS</span>
+          <span className="eyebrow">BIOMES</span>
           <h2>{t.terrain}</h2>
         </div>
         <div className="button-row">
@@ -40,19 +44,28 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
           <button className="text-button" onClick={onClear}>{t.clearAll}</button>
         </div>
       </div>
-      <p className="selection-summary">{t.selected} {selected.size} / {terrains.length} {t.terrainCount}</p>
+      <p className="selection-summary">
+        {t.selected} {selectedBiomeCount} / {biomeGroups.length} {t.biomeCount}
+        <span> · {selected.size} / {terrains.length} {t.configurationCount}</span>
+      </p>
+      <p className="biome-selection-note">{t.biomeSelectionNote}</p>
       {terrains.length === 0 ? <p className="empty">{t.noTerrain}</p> : (
         <div className="terrain-grid">
-          {terrains.map((terrain) => {
-            const isExtra = world.clusterExtensionSubworldIds.includes(terrain.id)
+          {biomeGroups.map((group) => {
+            const ids = group.terrains.map((terrain) => terrain.id)
+            const isSelected = ids.every((id) => selected.has(id))
+            const isExtra = group.terrains.some((terrain) => world.clusterExtensionSubworldIds.includes(terrain.id))
+            const representative = group.terrains[0]
+            const variants = group.terrains.map((terrain) => locale === 'zh' ? terrain.variant_zh || terrain.variant_en : terrain.variant_en)
             return (
-              <label className={`terrain-card ${selected.has(terrain.id) ? 'checked' : ''}`} key={terrain.id}>
-                <input type="checkbox" checked={selected.has(terrain.id)} onChange={() => onToggle(terrain.id)} />
+              <label className={`terrain-card ${isSelected ? 'checked' : ''}`} key={group.zoneType} title={variants.join('\n')}>
+                <input type="checkbox" checked={isSelected} onChange={() => onToggle(ids)} />
                 <span className="checkbox-ui">✓</span>
                 <span className="terrain-copy">
-                  <strong>{localName(terrain, locale)}</strong>
-                  {locale === 'en' && <small>{terrain.variant_en}</small>}
-                  <span>{terrain.resources.length} {t.resourceCount}</span>
+                  <strong>{localName(representative, locale)}</strong>
+                  <small>{secondaryName(representative, locale)}</small>
+                  <span>{group.resourceCount} {t.resourceCount} · {group.terrains.length} {t.configurationCount}</span>
+                  {group.terrains.length > 1 && <small className="variant-list">{variants.join(' · ')}</small>}
                 </span>
                 {isExtra && <span className="extra-badge">{t.dlcExtra}</span>}
               </label>

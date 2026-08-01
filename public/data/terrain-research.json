@@ -25,6 +25,2571 @@
     "輻射生產只適用於啟用《Spaced Out!》輻射機制的遊戲；只玩主遊戲時，輻射與輻射粒子不適用。",
     "除非已驗證目前 U59 的數值，建議刻意不列出每週期精確比例；測試版時期的社群數據不會當成正式版事實。"
   ],
+  "entity_profiles": [
+    {
+      "prefab_id": "BlueGrass",
+      "name_en": "Alveo Vera",
+      "name_zh": "多孔蘆薈",
+      "kind": "flora",
+      "roles": [
+        "oxygen"
+      ],
+      "summary_en": "The Alveo Vera's fleshy stems are dotted with small apertures featuring bidirectional valves through which Carbon Dioxide is absorbed and sticky oxygenated waste is secreted.\n\nThe buildup from this respiration cycle crystallizes into Oxylite ore.\n\nHorticulturists have long been curious about the protective epithelium that prevents the Oxylite ore from sublimating while on the plant. Unfortunately, it is too fragile to survive handling, and has thus far proven impossible to study.",
+      "summary_zh": "多孔蘆薈的肉質莖上分佈著小孔，這些孔具有雙向閥膜，可以吸收二氧化碳並分泌黏性含氧廢物。\n\n這種呼吸迴圈產生的分泌物最終會結晶成氧石。\n\n園藝家長期以來都對其保護性的上皮細胞感到好奇，因為這種上皮細胞能防止植物上的氧石昇華。不幸的是，上皮細胞過於脆弱而無法承受任何方式的處理，因此到目前為止，研究也無法進行。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Alveo_Vera",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLUE_GRASS.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BlueGrassSeed",
+      "name_en": "Alveo Vera Seed",
+      "name_zh": "多孔蘆薈種子",
+      "kind": "flora",
+      "roles": [
+        "oxygen"
+      ],
+      "summary_en": "The Alveo Vera's fleshy stems are dotted with small apertures featuring bidirectional valves through which Carbon Dioxide is absorbed and sticky oxygenated waste is secreted.\n\nThe buildup from this respiration cycle crystallizes into Oxylite ore.\n\nHorticulturists have long been curious about the protective epithelium that prevents the Oxylite ore from sublimating while on the plant. Unfortunately, it is too fragile to survive handling, and has thus far proven impossible to study.",
+      "summary_zh": "多孔蘆薈的肉質莖上分佈著小孔，這些孔具有雙向閥膜，可以吸收二氧化碳並分泌黏性含氧廢物。\n\n這種呼吸迴圈產生的分泌物最終會結晶成氧石。\n\n園藝家長期以來都對其保護性的上皮細胞感到好奇，因為這種上皮細胞能防止植物上的氧石昇華。不幸的是，上皮細胞過於脆弱而無法承受任何方式的處理，因此到目前為止，研究也無法進行。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Alveo_Vera",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLUE_GRASS.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ForestTreeSeed",
+      "name_en": "Arbor Acorn",
+      "name_zh": "喬木橡實",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Arbor Trees have been cultivated to spread horizontally when they grow so as to produce a high yield of lumber in vertically cramped spaces.\n\nArbor Trees are related to the oak tree, specifically the Japanese Evergreen, though they have been genetically hybridized significantly.\n\nDespite having many hardy, evenly spaced branches, the short stature of the Arbor Tree makes climbing it rather irrelevant.",
+      "summary_zh": "喬木樹生長時呈水平方向發展，以便在垂直狹窄的空間獲得大量的木材。\n\n喬木樹與橡木樹有關，特別是日本長青樹，雖然他們明顯經過基因雜交。\n\n雖然有許多堅固、均勻分佈的樹支，但喬木樹身體矮小使其容易攀爬。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Arbor_Tree",
+      "zones": [
+        "Forest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.ARBORTREE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ForestTree",
+      "name_en": "Arbor Tree",
+      "name_zh": "喬木樹",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Arbor Trees have been cultivated to spread horizontally when they grow so as to produce a high yield of lumber in vertically cramped spaces.\n\nArbor Trees are related to the oak tree, specifically the Japanese Evergreen, though they have been genetically hybridized significantly.\n\nDespite having many hardy, evenly spaced branches, the short stature of the Arbor Tree makes climbing it rather irrelevant.",
+      "summary_zh": "喬木樹生長時呈水平方向發展，以便在垂直狹窄的空間獲得大量的木材。\n\n喬木樹與橡木樹有關，特別是日本長青樹，雖然他們明顯經過基因雜交。\n\n雖然有許多堅固、均勻分佈的樹支，但喬木樹身體矮小使其容易攀爬。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Arbor_Tree",
+      "zones": [
+        "Forest",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.ARBORTREE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SwampLily",
+      "name_en": "Balm Lily",
+      "name_zh": "香水百合",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "The Balm Lily naturally contains high vitamin concentrations and produces acids similar in molecular makeup to acetylsalicylic acid (commonly known as aspirin).\n\nAs a result, the plant is ideal both for boosting immune systems and treating a variety of common maladies such as pain and fever.",
+      "summary_zh": "香水百合天然含有高濃度的維他命，與生產在分子結構上與水楊酸相近的酸性物質（俗稱阿斯匹靈）。\n\n因此，這株植物是增強免疫系統與治療常見疾病（像是疼痛與發燒）的首選。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Balm_Lily",
+      "zones": [
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BALMLILY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SwampLilySeed",
+      "name_en": "Balm Lily Seed",
+      "name_zh": "香水百合種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "The Balm Lily naturally contains high vitamin concentrations and produces acids similar in molecular makeup to acetylsalicylic acid (commonly known as aspirin).\n\nAs a result, the plant is ideal both for boosting immune systems and treating a variety of common maladies such as pain and fever.",
+      "summary_zh": "香水百合天然含有高濃度的維他命，與生產在分子結構上與水楊酸相近的酸性物質（俗稱阿斯匹靈）。\n\n因此，這株植物是增強免疫系統與治療常見疾病（像是疼痛與發燒）的首選。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Balm_Lily",
+      "zones": [
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BALMLILY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "IceBelly",
+      "name_en": "Bammoth",
+      "name_zh": "猛瑪絨兔",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "The Bammoth is one of the oldest species on record, with ancient skeletal remains dating back approximately 10,000 years.\n\nThis placid herbivore is known for its unique body language: an angry young Bammoth expresses displeasure by flopping down dramatically in front of its opponent, while older creatures with limited mobility will sit facing away from the source of their annoyance.\n\nLicking the ground in front of a caregiver can be a sign of either deep affection or mineral deficiency.",
+      "summary_zh": "猛瑪絨兔是有紀錄以來最古老的物種，其古老的遺骸可追溯到大約 10,000 年前。\n\n這種平靜的食草動物因其獨特的肢體語言而出名：一隻憤怒的青年猛瑪絨兔會透過在對手面前戲劇性地摔倒表達不滿，而行動不便的年長猛瑪絨兔會背對著引起它煩惱的來源坐著。\n\n在看護者面前舔舐地面可能是其深厚感情的表現，也可能是缺乏礦物質的表現。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bammoth",
+      "zones": [
+        "CarrotQuarry"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.ICEBELLY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ParrotFish",
+      "name_en": "Beakon",
+      "name_zh": "燈喙魚",
+      "kind": "fauna",
+      "roles": [
+        "oxygen",
+        "industrial"
+      ],
+      "summary_en": "Beakons are highly sought-after by ichthyophiles due to their radiant bioluminescence and unusual habit of surfacing for Oxygen.\n\nThese brilliant critters enjoy the tickle of air in their gills, and are happiest cohabiting with bubbly Flue Coral that provide abundant air pockets for their entertainment.\n\nSome Beakons have even been known to nap atop their preferred coral formation. Such sightings are extremely rare.",
+      "summary_zh": "燈喙魚因其耀眼的生物發光，以及會浮出水面吸取氧的奇特習性，深受魚類愛好者追捧。\n\n這些光彩奪目的小動物喜歡空氣在鰓中發癢的感覺，且最喜歡與能提供豐富氣泡供其玩耍的煙囪珊瑚同居。\n\n據說有些燈喙魚甚至會在牠們鍾愛的珊瑚礁頂端小憩。這種景象極為罕見",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Beakon",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PARROTFISH.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Bee",
+      "name_en": "Beeta (via Beeta Hive)",
+      "name_zh": "輻射蜂（由輻射蜂巢生成）",
+      "kind": "fauna",
+      "roles": [
+        "radiation",
+        "hazard"
+      ],
+      "summary_en": "Beetas are insectoid creatures that enjoy a symbiotic relationship with the radioactive environment they thrive in.\n\nMuch like the honey bee gathers nectar and processes it to honey, the Beeta turns Uranium Ore into Enriched Uranium through a complex process of isotope separation inside the Beeta Hive.\n\nWhen first observing the Beeta's enrichment process, many scientists note with surprise just how much more efficient the cooperative combination of insect and hive is when compared to even the most advanced industrial processes.",
+      "summary_zh": "輻射蜂是一種類昆蟲生物，與牠們賴以生存的放射性環境有著共生關係。\n\n就像蜜蜂採集花蜜並將其加工成蜂蜜一樣，輻射蜂通過輻射蜂巢內複雜的同位素分離過程，將鈾礦轉化成濃縮鈾。\n\n當第一次觀察輻射蜂的濃縮過程時，許多科學家驚訝地注意到，即使與最先進的工業流程相比，昆蟲與蜂巢的結合工作效率也要高的多。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Beeta",
+      "zones": [
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BEETA.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Cylindrica",
+      "name_en": "Bliss Burst",
+      "name_zh": "天堂草",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Bliss Burst is a succulent in the genus Haworthia and is a hardy plant well-suited for beginner gardeners.\n\nThey require little in the way of upkeep, to the point that the most common cause of death for Bliss Bursts is overwatering from over-eager carers.",
+      "summary_zh": "天堂草一種十二卷屬的多肉植物，它很強壯，適合初學者種植。\n\n它們幾乎不需要照顧，常見的死因是過度的灌溉。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bliss_Burst",
+      "zones": [
+        "Wasteland"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLISSBURST.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CylindricaSeed",
+      "name_en": "Bliss Burst Seed",
+      "name_zh": "天堂草種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Bliss Burst is a succulent in the genus Haworthia and is a hardy plant well-suited for beginner gardeners.\n\nThey require little in the way of upkeep, to the point that the most common cause of death for Bliss Bursts is overwatering from over-eager carers.",
+      "summary_zh": "天堂草一種十二卷屬的多肉植物，它很強壯，適合初學者種植。\n\n它們幾乎不需要照顧，常見的死因是過度的灌溉。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bliss_Burst",
+      "zones": [
+        "Wasteland"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLISSBURST.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PufferFish",
+      "name_en": "Blowter",
+      "name_zh": "鼓氣魚",
+      "kind": "fauna",
+      "roles": [
+        "oxygen"
+      ],
+      "summary_en": "Blowters are docile fish with a poorly developed gastrointestinal tract.\n\nThis species eats only Waterweed but lacks the digestive enzymes required to process the plant efficiently. Large amounts of excess Oxygen build up in the critter's gut during digestion, resulting in chronic and extreme bloating.\n\nMarine explorers have learned to siphon Oxygen from Blowters in an emergency. It's not clear who was the first to attempt this.",
+      "summary_zh": "鼓氣魚是一種溫順的魚類，但其胃腸道發育不良。\n\n該物種僅以水草為食，卻缺乏能有效處理該植物的消化酶。在其消化過程中，腸道內會堆積大量多餘的氧氣，導致其長期處於極度膨脹的狀態。\n\n海洋探險家們已學會了在緊急情況下從鼓氣魚體內抽取氧氣的方法。至於最初是誰嘗試了這種做法，目前尚不可知。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Blowter",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PUFFERFISH.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PrickleGrass",
+      "name_en": "Bluff Briar",
+      "name_zh": "魅惑棘",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "decor"
+      ],
+      "summary_en": "Bluff Briars have formed a symbiotic relationship with a closely related plant strain, the Bristle Blossom.\n\nThey tend to thrive in areas where the Bristle Blossom is present, as the berry it produces emits a rare chemical while decaying that the Briar is capable of absorbing to supplement its own pheromone production.",
+      "summary_zh": "魅惑棘與其相關品種鬃花形成共生關係。\n\n它們常出現在鬃果繁植的區域，因為鬃花會散發一種化學物質，同時魅惑棘能吸收以補充它們的費洛蒙。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bluff_Briar",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLUFFBRIAR.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PrickleGrassSeed",
+      "name_en": "Bluff Briar Seed",
+      "name_zh": "荊棘花種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "decor"
+      ],
+      "summary_en": "Bluff Briars have formed a symbiotic relationship with a closely related plant strain, the Bristle Blossom.\n\nThey tend to thrive in areas where the Bristle Blossom is present, as the berry it produces emits a rare chemical while decaying that the Briar is capable of absorbing to supplement its own pheromone production.",
+      "summary_zh": "魅惑棘與其相關品種鬃花形成共生關係。\n\n它們常出現在鬃果繁植的區域，因為鬃花會散發一種化學物質，同時魅惑棘能吸收以補充它們的費洛蒙。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bluff_Briar",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BLUFFBRIAR.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SwampHarvestPlant",
+      "name_en": "Bog Bucket",
+      "name_zh": "沼澤豬籠草",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Bog Buckets get their name from their bucket-like flowers and their propensity to grow in swampy, bog-like environments.\n\nThe flower secretes a thick, sweet liquid which collects at the bottom of the bucket and can be gathered for consumption.\n\nThough not inherently dangerous, the interior of the Bog Bucket flower is so warm and inviting that it has tempted individuals to climb inside for a nap, only to awake trapped in its sticky sap.",
+      "summary_zh": "沼澤豬籠草的名字來自於其呈桶狀的花朵以及喜好生長在沼澤環境而得名。\n\n花朵分泌濃稠香甜的汁液，匯集在底部，可供採集食用。\n\n雖然本身並不危險，花朵內部卻溫暖舒適且極具吸引力，常有人受其吸引爬進去小憩，醒來卻發現自己困在黏稠的汁液中。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bog_Bucket",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BOGBUCKET.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SwampHarvestPlantSeed",
+      "name_en": "Bog Bucket Seed",
+      "name_zh": "沼澤豬籠草種子",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Bog Buckets get their name from their bucket-like flowers and their propensity to grow in swampy, bog-like environments.\n\nThe flower secretes a thick, sweet liquid which collects at the bottom of the bucket and can be gathered for consumption.\n\nThough not inherently dangerous, the interior of the Bog Bucket flower is so warm and inviting that it has tempted individuals to climb inside for a nap, only to awake trapped in its sticky sap.",
+      "summary_zh": "沼澤豬籠草的名字來自於其呈桶狀的花朵以及喜好生長在沼澤環境而得名。\n\n花朵分泌濃稠香甜的汁液，匯集在底部，可供採集食用。\n\n雖然本身並不危險，花朵內部卻溫暖舒適且極具吸引力，常有人受其吸引爬進去小憩，醒來卻發現自己困在黏稠的汁液中。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bog_Bucket",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BOGBUCKET.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SpaceTree",
+      "name_en": "Bonbon Tree",
+      "name_zh": "糖心樹",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Bonbon Tree is a towering plant developed to thrive in below-freezing temperatures. It features multiple independently functioning branches that synthesize bright light to funnel nutrients into a hollow central core.\n\nOnce the tree is fully grown, the core secretes digestive enzymes that break down surplus nutrients and store them as thick, sweet fluid. This can be refined into Sucrose for the production of higher-tier foods, or used as-is to sustain Spigot Seal ranches.\n\nBonbon Trees are generally considered an eyesore, and would likely be eradicated if not for their delicious output.",
+      "summary_zh": "糖心樹是一種高聳的植物，可以在零下溫度中茁壯成長。它具有多個獨立運作的分枝，透過合成光線將營養物質彙集到中空的中心核中。\n\n這種植物完全成熟後，核心部位就會分泌消化酵素，能將多餘的營養物質分解並以黏稠、甜蜜的液體形態儲存。這種液體可以提煉成蔗糖，用於生產更高階的食物，或直接用於維持栓角海豹養殖。\n\n糖心樹通常被認為是有礙觀瞻，如果沒有美味的產出物，很有可能會被根除。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bonbon_Tree",
+      "zones": [
+        "SugarWoods"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SPACETREE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PrickleFlower",
+      "name_en": "Bristle Blossom",
+      "name_zh": "鬃花",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "The Bristle Blossom is frequently cultivated for its calorie dense and relatively fast growing Bristle Berries.\n\nConsumption of the berry requires special preparation due to the thick barbs surrounding the edible fruit.\n\nThe term \"Bristle Berry\" is, in fact, a misnomer, as it is not a \"berry\" by botanical definition but an aggregate fruit made up of many smaller fruitlets.",
+      "summary_zh": "鬃花被經常種植，因為它的果實熱量高且生長速度快。\n\n食用鬃果需特殊的工具，因為它的表面有刺。\n\n「鬃果」一詞實際上是一種不正確叫法，因為它不是植物學定義的「漿果」，而是由許多小小果實組成的集合體果實。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bristle_Blossom",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BRISTLEBLOSSOM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PrickleFlowerSeed",
+      "name_en": "Bristle Blossom Seed",
+      "name_zh": "鬃花種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "The Bristle Blossom is frequently cultivated for its calorie dense and relatively fast growing Bristle Berries.\n\nConsumption of the berry requires special preparation due to the thick barbs surrounding the edible fruit.\n\nThe term \"Bristle Berry\" is, in fact, a misnomer, as it is not a \"berry\" by botanical definition but an aggregate fruit made up of many smaller fruitlets.",
+      "summary_zh": "鬃花被經常種植，因為它的果實熱量高且生長速度快。\n\n食用鬃果需特殊的工具，因為它的表面有刺。\n\n「鬃果」一詞實際上是一種不正確叫法，因為它不是植物學定義的「漿果」，而是由許多小小果實組成的集合體果實。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bristle_Blossom",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BRISTLEBLOSSOM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BulbPlant",
+      "name_en": "Buddy Bud",
+      "name_zh": "同心芽",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "decor"
+      ],
+      "summary_en": "As a byproduct of photosynthesis, the Buddy Bud naturally secretes a compound that is chemically similar to the neuropeptide created in the human brain after receiving a hug.",
+      "summary_zh": "作為光合作用的副產品，同心芽會自然分泌一種化學結構近似於人類在擁抱後大腦所產生之神經肽的化合物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Buddy_Bud",
+      "zones": [
+        "BoggyMarsh",
+        "KelpForest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BUDDYBUD.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BulbPlantSeed",
+      "name_en": "Buddy Bud Seed",
+      "name_zh": "同心芽種子",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "decor"
+      ],
+      "summary_en": "As a byproduct of photosynthesis, the Buddy Bud naturally secretes a compound that is chemically similar to the neuropeptide created in the human brain after receiving a hug.",
+      "summary_zh": "作為光合作用的副產品，同心芽會自然分泌一種化學結構近似於人類在擁抱後大腦所產生之神經肽的化合物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Buddy_Bud",
+      "zones": [
+        "BoggyMarsh"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BUDDYBUD.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Bulbloom",
+      "name_en": "Bulbloom",
+      "name_zh": "燈泡花",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "On a molecular level, it is nearly impossible to distinguish between the Bulbloom's translucent bulbar envelope and high-quality arachnid silk.\n\nThis combination of strength and extensibility keep its bright bloom intact in even the strongest currents, making this plant a beacon of hope in dark marine environments.",
+      "summary_zh": "在分子層面上，幾乎無法區分燈泡花那半透明的球莖外膜與高品質的蛛絲。\n\n其強度與延展性結合的特性，使其即便在強勁的水流中也能保持花朵完好，成為了黑暗海洋環境中的希望之光。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Bulbloom",
+      "zones": [
+        "Abyss"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BULBLOOM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BasicForagePlantPlanted",
+      "name_en": "Buried Muckroot",
+      "name_zh": "埋住的塊根",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "The Muckroot is an aggressively invasive yet exceedingly delicate root plant known for its earthy flavor and unusual texture.\n\nIt is easy to store and keeps for unusually long periods of time, characteristics that once made it a staple food for explorers on long expeditions.",
+      "summary_zh": "塊根是一種根莖膨脹但非常脆弱的植物，以其樸實的味道和特別口感而聞名。\n\n它易於儲存，並且可以保存異常長的時間，這使得它曾經成為探險家在長途旅行中的主要食物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Muckroot",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MUCKROOT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Clam",
+      "name_en": "Clampum",
+      "name_zh": "巨鉗貝",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "hazard"
+      ],
+      "summary_en": "Clampum, also known as Arcticidae hafrunus, are the largest species of bivalve mollusk in the known universe. Their powerful adductor muscles and serrated shell edges are well-documented; in early scientific literature, field notes often included the words \"accidental amputation.\"\n\nAlthough development of proper handling techniques has long since eliminated the danger, these anecdotes still serve as cautionary tales for newbie marine biologists.",
+      "summary_zh": "巨鉗貝，也稱為哈夫魯努斯北極貝 (Arcticidae hafrunus)，是已知宇宙中體型最大的雙殼類軟體動物。其強壯的內收肌和鋸齒狀的殼緣都有詳細的記載；在早期的文獻中，野外筆記經常會出現「意外截肢」一詞。\n\n儘管正確的操作技術早已消除了這些風險，但這些軼事對新手海洋生物學家而言，仍是具有警示意義的恐怖故事。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Clampum",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.CLAM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Chameleon",
+      "name_en": "Dartle",
+      "name_zh": "逸蜥",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Dartles are docile reptilian critters whose existence centers around maximum energy conservation.\n\nThis species was once known as the fastest land-based critter in existence. However, its deep aversion to physical exertion has grown stronger than its desire to escape predation. Researchers are uncertain what, if anything, the Dartle is saving its energy for.",
+      "summary_zh": "逸蜥是一種溫順的爬行類生物，其生存哲學以能量消耗最小化為核心。\n\n這種物種曾被譽為現存速度最快的陸地小動物。但如今，它們對體力消耗的極度厭惡已超越了逃避天敵的本能。研究人員至今無法確定逸蜥儲存能量，如果真有的話，究竟意欲何為。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dartle",
+      "zones": [
+        "PrehistoricRaptor"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.CHAMELEON.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SaltPlant",
+      "name_en": "Dasha Saltvine",
+      "name_zh": "沙鹽藤",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Dasha Saltvine is a unique plant that needs large amounts of salt to balance the levels of water in its body.\n\nIn order to keep a supply of salt on hand, the end of the vine is coated in microscopic formations which bind with sodium atoms, forming large crystals over time.",
+      "summary_zh": "沙鹽藤是一種獨特的植物，需要大量的鹽來平衡身體中的水份。\n\n為了維持鹽份補給，藤蔓的末端有著能與鈉原子結合的微型構造，隨著時間經過會形成大型結晶物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dasha_Saltvine",
+      "zones": [
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DASHASALTVINE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SaltPlantSeed",
+      "name_en": "Dasha Saltvine Seed",
+      "name_zh": "沙鹽藤種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Dasha Saltvine is a unique plant that needs large amounts of salt to balance the levels of water in its body.\n\nIn order to keep a supply of salt on hand, the end of the vine is coated in microscopic formations which bind with sodium atoms, forming large crystals over time.",
+      "summary_zh": "沙鹽藤是一種獨特的植物，需要大量的鹽來平衡身體中的水份。\n\n為了維持鹽份補給，藤蔓的末端有著能與鈉原子結合的微型構造，隨著時間經過會形成大型結晶物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dasha_Saltvine",
+      "zones": [
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DASHASALTVINE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "DewDripperPlant",
+      "name_en": "Dew Dripper",
+      "name_zh": "凝露藤",
+      "kind": "flora",
+      "roles": [
+        "industrial"
+      ],
+      "summary_en": "The Dew Dripper is sometimes referred to as the \"purple starling\" of the plant world for the magnificent feather-like leaves that encircle its base.\n\nThis sculptural plant slow-drips excess sap that coagulates upon contact with air. The resulting globule is so dense that its weight would snap the Dew Dripper's hollow stem if planted in the ground.\n\nNo one has ever been seriously injured by a falling Dewdrip, but it's best not to linger beneath them.",
+      "summary_zh": "凝露藤根部環繞著華麗的羽毛狀葉子，有時被稱為植物界的「紫椋鳥」。\n\n這種雕塑般的植物會緩慢滴下多餘的樹液，樹液接觸空氣後便會凝固。形成的凝結物極其緻密，若種植在地面上，其重量會折斷凝露草的空心莖。\n\n從未有人被掉落的凝露珠嚴重傷害，但最好不要在其下方逗留。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dew_Dripper",
+      "zones": [
+        "PrehistoricRaptor"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DEWDRIPPERPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Drecko",
+      "name_en": "Drecko",
+      "name_zh": "龍鱗蜥",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Dreckos are a reptilian species boasting billions of microscopic hairs on their feet, allowing them to stick to and climb most surfaces.",
+      "summary_zh": "龍鱗蜥是種爬行動物，腳上有數億個微小的絨毛，讓牠們可以附著並攀爬在大多數的表面上。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Drecko",
+      "zones": [
+        "Rust",
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DRECKO.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "MushroomPlant",
+      "name_en": "Dusk Cap",
+      "name_zh": "黃昏蘑菇",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Like many species of mushroom, Dusk Caps thrive in dark areas otherwise ill-suited to the cultivation of plants.\n\nIn place of typical chlorophyll, the underside of a Dusk Cap is fitted with thousands of specialized gills, which it uses to draw in carbon dioxide and aid in its growth.",
+      "summary_zh": "像許多其它種類的蘑菇一樣，黃昏蘑菇生長在黑暗區域，其它地方不適合種植。\n\n取代葉綠素，黃昏蘑菇的傘帽下有成千上萬個毛細孔，用來吸收二氧化碳幫助其生長。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dusk_Cap",
+      "zones": [
+        "BoggyMarsh"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "MushroomSeed",
+      "name_en": "Dusk Cap Spore",
+      "name_zh": "夜幕菇孢子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Like many species of mushroom, Dusk Caps thrive in dark areas otherwise ill-suited to the cultivation of plants.\n\nIn place of typical chlorophyll, the underside of a Dusk Cap is fitted with thousands of specialized gills, which it uses to draw in carbon dioxide and aid in its growth.",
+      "summary_zh": "像許多其它種類的蘑菇一樣，黃昏蘑菇生長在黑暗區域，其它地方不適合種植。\n\n取代葉綠素，黃昏蘑菇的傘帽下有成千上萬個毛細孔，用來吸收二氧化碳幫助其生長。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Dusk_Cap",
+      "zones": [
+        "BoggyMarsh"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DUSKCAP.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WoodDeer",
+      "name_en": "Flox",
+      "name_zh": "狐鹿克斯",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "decor"
+      ],
+      "summary_en": "Evenly distributed throughout the Flox's dense overcoat are countless vibrissae-like hairs that transmit detailed sensory information about its environment, allowing it to detect changes as subtle as the shift in another creature's mood.\n\nFloxes avoid overstimulation by whipping their tails to release the pent-up energy. Because these tactile hairs are so sensitive, they cannot be safely shorn.\n\nFlox antlers, however, are nerveless and cumbersome. Handlers who unburden them of this cranial load are often rewarded with the critter's long, slow blinks of contentment.",
+      "summary_zh": "狐鹿克斯的濃密外層毛均勻分佈著無數觸鬚般的毛髮，能夠傳遞關於環境的感官資訊，\n\n狐鹿克斯透過甩尾巴來釋放積壓的能量以避免過度刺激。由於這些觸覺毛髮非常敏感，所以不能安全地剪掉。\n\n然而，狐鹿克斯角沒有神經連線並且很笨重。幫忙卸下頭角負擔的飼養員常常能獲得這種小動物因滿足而長久而緩慢的眨眼作為獎勵。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Flox",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DEERSPECIES.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "OxyCoral",
+      "name_en": "Flue Coral",
+      "name_zh": "煙囪珊瑚",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "decor"
+      ],
+      "summary_en": "Flue Corals are nurse plants that provide homes for countless microscopic organisms, as well as a rare species of seagrass that grows exclusively inside the narrow openings at the top of the coral.\n\nAgriculturalists who attempt to trim these unsightly \"nose hairs\" soon find that their instruments are blunted by the coarse grass fibers.",
+      "summary_zh": "煙囪珊瑚是一種護育植物，為無數微小生物提供了棲息地，同時也供養著一種極為罕見的海草，這種海草僅會生長在珊瑚頂部的狹窄開口處。\n\n試圖修剪這些難看「鼻毛」的農學家們很快便會發現，他們的工具會被那些粗糙的海草纖維弄鈍。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Flue_Coral",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.OXYCORAL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "OxyCoralSeed",
+      "name_en": "Flue Coral Seed",
+      "name_zh": "煙囪珊瑚種子",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "decor"
+      ],
+      "summary_en": "Flue Corals are nurse plants that provide homes for countless microscopic organisms, as well as a rare species of seagrass that grows exclusively inside the narrow openings at the top of the coral.\n\nAgriculturalists who attempt to trim these unsightly \"nose hairs\" soon find that their instruments are blunted by the coarse grass fibers.",
+      "summary_zh": "煙囪珊瑚是一種護育植物，為無數微小生物提供了棲息地，同時也供養著一種極為罕見的海草，這種海草僅會生長在珊瑚頂部的狹窄開口處。\n\n試圖修剪這些難看「鼻毛」的農學家們很快便會發現，他們的工具會被那些粗糙的海草纖維弄鈍。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Flue_Coral",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.OXYCORAL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GasGrass",
+      "name_en": "Gas Grass",
+      "name_zh": "瓦斯草",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "power",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "Much remains a mystery about the biology of Gas Grass, a plant-like lifeform only recently recovered from missions into outer space.\n\nHowever, it appears to use ambient radiation from space as an energy source, growing rapidly when given a suitable Liquid Chlorine-laden environment.",
+      "summary_zh": "關於瓦斯草在生物學方面還有許多未解的謎團，這是一種最近才從外太空探索任務發現的一種類植物生命體。。\n\n無論如何，它似乎是利用來自太空的環境輻射作為能量來源，當給予適當液氯環境時會快速生長。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Gas_Grass",
+      "zones": [
+        "Moo"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GASGRASS.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Moo",
+      "name_en": "Gassy Moo",
+      "name_zh": "瓦斯牛",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "Little is currently known of the Moo due to its alien nature and origin.\n\nIt is capable of surviving in zero gravity conditions and no atmosphere, and its method of reproduction has yet to be discovered.",
+      "summary_zh": "由於其外星本質和起源，目前對瓦斯牛知之甚少。\n\n牠能夠在零重力和無大氣的條件下生存，而其繁殖方式目前尚未被發現。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Gassy_Moo",
+      "zones": [
+        "Moo"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GASSYMOO.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Squid",
+      "name_en": "Glo Squid",
+      "name_zh": "彩斑魷",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Glo Squids are immediately recognizable by the bioluminescent photophores that strobe vertically along their soft bodies.\n\nThese tropical critters are distant relatives of the Euprymna scolopes, though rather than navigating via jet propulsion, Glo Squids have evolved a pair of elongated tentacles that enable them to swim upright.",
+      "summary_zh": "彩斑魷柔軟的軀體上，垂直分佈著閃爍的生物發光器，因此極易辨識。\n\n這些熱帶小動物是夏威夷短尾魷魚 (Euprymna scolopes) 的遠親，不過與後者不同，牠們並非依靠噴射推進，而是演化出了一對細長的觸手，使其能夠直立游動。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Glo_Squid",
+      "zones": [
+        "Abyss"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SQUID.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Mosquito",
+      "name_en": "Gnit",
+      "name_zh": "匿蚊",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "hazard"
+      ],
+      "summary_en": "The Gnit is an insectoid critter that relies on supplementary nutrients and minerals from Duplicants and other critters to mitigate the outsized energy requirements of its reproductive system.\n\nGnits' antennae double as maxillary palps equipped with finely tuned olfactory receptor neurons that enable them to pinpoint nutrient sources from a great distance.\n\nThese same receptors activate the insectoid's flight response upon detecting certain changes in an organism's respiration, such as the sharp intake of breath that precedes a fatal counter-attack.",
+      "summary_zh": "匿蚊是一種昆蟲類生物，牠們依賴複製人及其他生物的額外養分和礦物質，以彌補其繁殖系統過高的能量需求。\n\n匿蚊的觸角兼具上顎鬚的功能，配備有精密調諧的嗅覺受體神經元，使其能夠從遠處精準定位養分來源。\n\n這些相同的受體在偵測到生物呼吸的特定變化時，例如致命反擊前急促的吸氣聲，便會啟動此昆蟲的飛行反應。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Gnit",
+      "zones": [
+        "PrehistoricWetlands"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MOSQUITO.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "DewPalm",
+      "name_en": "Gum Palm",
+      "name_zh": "黏膠棕櫚",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Gum Palms have developed an eye-catching defense mechanism similar to that of poisonous amphibians.\n\nBright reddish coloring displayed in their leaves and sharp ornamental bark scales deter most predators, who recognize the warning signs of toxicity. Pacus, however, consider the tree's highly toxic seed a spicy treat.",
+      "summary_zh": "黏膠棕櫚已經演化出了一種類似有毒兩棲動物的醒目防禦機制。\n\n葉片上鮮豔的紅色與樹皮上鋒利的觀賞性鱗片，能讓大多數捕食者望而卻步，因為牠們能辨識出這些有毒的警告訊號。然而，帕庫卻將這種樹的劇毒種子視為辛辣的美味。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Gum_Palm",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DEWPALM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Hatch",
+      "name_en": "Hatch",
+      "name_zh": "哈奇",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "The Hatch has no eyes and is completely blind, although a photosensitive patch atop its head is capable of detecting even minor changes in overhead light, making it prefer dark caves and tunnels.",
+      "summary_zh": "哈奇沒有眼睛，是完全失明的。雖說頭上感光部位可以偵測微量的光線變化，但使其更喜歡待在黑暗的洞穴與通道。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Hatch",
+      "zones": [
+        "Sandstone"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.HATCH.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ForestForagePlantPlanted",
+      "name_en": "Hexalent",
+      "name_zh": "蜂巢仙人掌",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "While most plants grow new sections and leaves according to the Fibonacci Sequence, the Hexalent forms new sections similar to how atoms form into crystal structures.\n\nThe result is a geometric pattern that resembles a honeycomb.",
+      "summary_zh": "雖然植物大體上按照費波那契數列生長新的部分與葉子，但六方體的新部分較近於以原子形成晶體結構。\n\n結果就是類似於蜂巢的幾何圖案。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Hexalent",
+      "zones": [
+        "Forest",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.HEXALENT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WaterCups",
+      "name_en": "Husha Cups",
+      "name_zh": "靜杯花",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "Husha Cups belong to the Liliaceae family. While they are a welcome addition to any colony space, their noise-dampening properties make them particularly soothing in industrial areas.\n\nEach cup-shaped bloom is essentially an individual anechoic chamber made up of a thick spathe that captures ambient soundwaves, and a short woolly spadix that absorbs them.\n\nSome farmers believe that whispering compliments into Husha Cups makes them grow faster.",
+      "summary_zh": "靜杯花屬於百合科。雖然它們是任何殖民地空間都受歡迎的點綴，但其降噪特性使它們在工業區域顯得尤為療癒。\n\n每一朵杯狀花實質上都是一座獨立的消音室，由負責捕獲環境聲波的厚實佛焰苞，以及負責吸收聲波的短絨狀肉穗花序所組成。\n\n一些農民相信，對著靜杯花輕聲說些讚美話能讓它們長得更快。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Husha_Cups",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.WATERCUPS.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "IceFlower",
+      "name_en": "Idylla Flower",
+      "name_zh": "恬靜花",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "Idylla Flowers are a rare species of everblooms that thrive with very little care, making them a perennial favorite among newbie gardeners.\n\nTheir springy blossoms can be 'bopped' gently for sensory entertainment, but hands should be washed immediately as the petal residue can permanently stain most textiles.",
+      "summary_zh": "恬靜花是一種常開花的稀有物種，只需要非常少的照顧就能健康成長，使其常年成為新手園丁的最愛。\n\n其富有活力的花可以輕輕地跳「博普舞」以帶來感官的娛樂，但之後應該立即洗手，因為花瓣殘留物能永久弄髒大多數紡織品。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Idylla_Flower",
+      "zones": [
+        "IceCaves",
+        "SugarWoods"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.ICEFLOWER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "IceFlowerSeed",
+      "name_en": "Idylla Seed",
+      "name_zh": "恬靜花種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "Idylla Flowers are a rare species of everblooms that thrive with very little care, making them a perennial favorite among newbie gardeners.\n\nTheir springy blossoms can be 'bopped' gently for sensory entertainment, but hands should be washed immediately as the petal residue can permanently stain most textiles.",
+      "summary_zh": "恬靜花是一種常開花的稀有物種，只需要非常少的照顧就能健康成長，使其常年成為新手園丁的最愛。\n\n其富有活力的花可以輕輕地跳「博普舞」以帶來感官的娛樂，但之後應該立即洗手，因為花瓣殘留物能永久弄髒大多數紡織品。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Idylla_Flower",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.ICEFLOWER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "LightBugRadioactive",
+      "name_en": "Ionizing Bug",
+      "name_zh": "電離發光蟲",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The bioluminescence of the Shine Bug's body serves the social purpose of finding and communicating with others of its kind.",
+      "summary_zh": "發光蟲生物冷光的身體，是用來尋找同伴並進行溝通的。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Shine_Bug",
+      "zones": [
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PrehistoricPacu",
+      "name_en": "Jawbo",
+      "name_zh": "顎魚",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "industrial"
+      ],
+      "summary_en": "While the Jawbo may be terrifying to behold, in truth it is quite harmless for trained handlers.\n\nA disproportionately sized mandible makes it impossible for this critter to properly chew its food, necessitating a preference for prey that are small enough to be swallowed whole.\n\nThough much of its DNA suggests that the Jawbo evolved in isolation, it does share a small number of genetic markers with serrasalmids such as the Pacu. Familial connection, however, does not preclude consideration as a food source.",
+      "summary_zh": "顎魚或許看起來令人生畏，但對於受過訓練的馴養師而言，牠其實相當無害。\n\n其不成比例大的下顎使其無法正確咀嚼食物，因此偏好能夠被完整吞嚥的小型獵物。\n\n儘管基因分析顯示牠是在隔離狀態下演化而來，但仍與帕庫魚等鋸脂鯉科魚類存在部分相似基因。然而，血緣關係並不妨礙將其視為食物來源。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Jawbo",
+      "zones": [
+        "PrehistoricWetlands"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PREHISTORICPACU.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CactusPlant",
+      "name_en": "Jumping Joya",
+      "name_zh": "雀躍掌",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Jumping Joya is a decorative plant that brings a feeling of calmness and wellbeing to individuals in its vicinity.\n\nTheir rounded appendages and eccentrically shaped polyps are a favorite of interior designers looking to offset the rigid straight walls of an institutional setting.\n\nThe Jumping Joya's capacity to thrive in many environments and the ease in which they propagate make them the go-to house plant for the lazy gardener.",
+      "summary_zh": "雀躍掌是一種裝飾植物，能為身處其附近的人帶來平靜與幸福的感覺。\n\n它們圓潤的附肢和奇形怪狀的叢生體是室內設計師的最愛，旨在緩和機構環境中僵硬筆直的牆壁。\n\n雀躍掌適應多種環境的能力，加上其易於繁殖的特性，使其成為懶人園丁的首選盆栽植物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Jumping_Joya",
+      "zones": [
+        "OilField"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.JUMPINGJOYA.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CactusPlantSeed",
+      "name_en": "Jumping Joya Seed",
+      "name_zh": "雀躍掌種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Jumping Joya is a decorative plant that brings a feeling of calmness and wellbeing to individuals in its vicinity.\n\nTheir rounded appendages and eccentrically shaped polyps are a favorite of interior designers looking to offset the rigid straight walls of an institutional setting.\n\nThe Jumping Joya's capacity to thrive in many environments and the ease in which they propagate make them the go-to house plant for the lazy gardener.",
+      "summary_zh": "雀躍掌是一種裝飾植物，能為身處其附近的人帶來平靜與幸福的感覺。\n\n它們圓潤的附肢和奇形怪狀的叢生體是室內設計師的最愛，旨在緩和機構環境中僵硬筆直的牆壁。\n\n雀躍掌適應多種環境的能力，加上其易於繁殖的特性，使其成為懶人園丁的首選盆栽植物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Jumping_Joya",
+      "zones": [
+        "OilField"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.JUMPINGJOYA.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SeaFairy",
+      "name_en": "Kelpole",
+      "name_zh": "藻蝌蚪",
+      "kind": "fauna",
+      "roles": [],
+      "summary_en": "\"Kelpole\" is the colloquial name given to Osculateus venerandum, a small free-moving organism spawned from microscopic eggs that attach themselves to Tower Kelp.\n\nThese unusual critters possess only a few hundred neurons and rely primarily on leaf mimicry to camouflage them from predators during their brief lives.\n\nFormerly considered flora, Kelpoles were eventually reclassified as fauna due to their frequent inclusion on marine biologists' lists of top ten most adorable creatures. The term \"flona\" was rejected out of hand.",
+      "summary_zh": "「藻蝌蚪」是維內蘭杜姆吻蟲 (Osculateus venerandum) 的俗稱，這是一種自由活動的小型生物，由附著在塔藻上的微小卵孵化而來。\n\n這些奇特的小動物僅擁有數百個神經元，在其短暫的一生中，主要依賴模仿葉片進行偽裝，以躲避捕食者。\n\n藻蝌蚪曾被視為植物，但因其屢次登上海洋生物學家的「十大最可愛生物」榜單，最終被重新歸類為動物。「植動體 (flona)」一詞在提出後便遭直接駁回。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Kelpole",
+      "zones": [
+        "KelpForest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SEAFAIRY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Stego",
+      "name_en": "Lumb",
+      "name_zh": "豐足劍龍",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "While other creatures with the Lumb's low forebrain neuron count rapidly become extinct, these docile creatures are uniquely positioned for survival.\n\nTheir large size and spiny protrusions make them unappealing to most predators. Anecdotal evidence also suggests that smaller species will sometimes adopt orphaned Lumbs.\n\nSome experts theorize that this may be motivated by a desire to benefit from the Lumb's genetic muscular condition (akin to restless leg syndrome), which causes them to regularly pound the earth in such a way as to cause nearby plants to drop desirable foods.",
+      "summary_zh": "儘管其他前腦神經元數量稀少的生物會迅速滅絕，但豐足劍龍這種溫馴的生物卻具有獨特的生存優勢。\n\n牠們龐大的體型和帶刺的突起，使其對大多數掠食者而言毫無吸引力。軼事證據也表明，較小的物種有時會收養孤兒豐足劍龍。\n\n一些專家推測，這可能是為了從豐足劍龍的遺傳性肌肉病症（類似不寧腿症候群）中獲益，這種病症導致牠們規律地敲擊地面，從而使附近的植物掉落可口的食物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Lumb",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.STEGO.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "FlyTrapPlant",
+      "name_en": "Lura Plant",
+      "name_zh": "誘捕花",
+      "kind": "flora",
+      "roles": [
+        "industrial"
+      ],
+      "summary_en": "Lura Plants are carnivorous flowers with ribbon-like anthers that detect the presence of airborne critters within trapping range.\n\nThe Lura's petals are covered in fine, hollow hairs that immobilize prey and ensure even distribution of digestive enzymes. The only part of a critter that the plant cannot fully digest is the exoskeleton, which irritate its mucous membrane.\n\nLiquefied exoskeletal remains are flushed from the plant as needed.",
+      "summary_zh": "誘捕花是一種肉食性花卉，其絲帶狀的蕊絲能感知捕獵範圍內飛行小動物的存在。\n\n誘捕花的花瓣覆蓋著細小中空的毛髮，能固定獵物並確保消化酶的均勻分佈。這種植物唯一無法完全消化的部分是生物的外骨骼，這會刺激牠的黏膜。\n\n液化的外骨骼殘骸會視需要從植物中排出。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Lura_Plant",
+      "zones": [
+        "PrehistoricWetlands"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.FLYTRAPPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BasicSingleHarvestPlant",
+      "name_en": "Mealwood",
+      "name_zh": "米虱木",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Mealwood is an bramble-like plant that has a parasitic symbiotic relationship with the nutrient-rich Meal Lice that inhabit it.\n\nMealwood experience a rapid growth rate in its first stages, but once the Meal Lice become active they consume all the new fruiting spurs on the plant before they can fully mature.\n\nTheoretically the flowers of this plant are a beautiful color of fuchsia, however no Mealwood has ever reached the point of flowering without being overrun by the parasitic Meal Lice.",
+      "summary_zh": "米虱木是一種類似荊棘的植物，與其寄生在樹上營養豐富的米虱形成共生關係。\n\n米虱木在第一階段會經歷快速生長，不過一旦米虱變得活躍，它們會在完全成熟前吃掉樹上所有的果實。\n\n理論上來說，此種植物的花朵是美麗的紫紅色，然後沒有米虱木曾在沒有米虱寄生的情況下達到開花的程度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mealwood",
+      "zones": [
+        "Forest",
+        "Sandstone",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MEALWOOD.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BasicSingleHarvestPlantSeed",
+      "name_en": "Mealwood Seed",
+      "name_zh": "米虱木種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Mealwood is an bramble-like plant that has a parasitic symbiotic relationship with the nutrient-rich Meal Lice that inhabit it.\n\nMealwood experience a rapid growth rate in its first stages, but once the Meal Lice become active they consume all the new fruiting spurs on the plant before they can fully mature.\n\nTheoretically the flowers of this plant are a beautiful color of fuchsia, however no Mealwood has ever reached the point of flowering without being overrun by the parasitic Meal Lice.",
+      "summary_zh": "米虱木是一種類似荊棘的植物，與其寄生在樹上營養豐富的米虱形成共生關係。\n\n米虱木在第一階段會經歷快速生長，不過一旦米虱變得活躍，它們會在完全成熟前吃掉樹上所有的果實。\n\n理論上來說，此種植物的花朵是美麗的紫紅色，然後沒有米虱木曾在沒有米虱寄生的情況下達到開花的程度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mealwood",
+      "zones": [
+        "Forest",
+        "Sandstone",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MEALWOOD.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Dinofern",
+      "name_en": "Megafrond",
+      "name_zh": "巨蕨",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "hazard"
+      ],
+      "summary_en": "Megafrondia Byronalis, commonly known as \"Megafrond,\" is a gigantic plant that dwarfs its surroundings.\n\nIts size is not the only daunting factor in its cultivation: the Megafrond's gigantism is possible thanks to its singular adaptation to cold temperatures and a caustic gas environment that few other living things (including farmers) enjoy.\n\nThese challenges are considered a fair price for bragging rights and a useful grain harvest.",
+      "summary_zh": "拜倫利斯巨型葉狀體 (Megafrondia Byronalis)，俗稱「巨蕨」，是一種使周圍環境相形見絀的巨型植物。\n\n其栽培的困難之處不僅在於體型：巨蕨的巨型化得益於其對低溫和腐蝕性氣體環境的獨特適應，這兩種環境是鮮少其他生物（包括農民）所能忍受的。\n\n這些挑戰被認為是值得付出的代價，既能獲得炫耀的資本，也能帶來有用的穀物收成。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Megafrond",
+      "zones": [
+        "PrehistoricRaptor"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.DINOFERN.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WineCups",
+      "name_en": "Mellow Mallow",
+      "name_zh": "錦醇菇",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Mellow Mallow is a type of fungus that is known for its ease of propagation when cut.\n\nIt is deadly when consumed, however creatures that mistakenly eat it are said to experience a state of extreme calm before death.",
+      "summary_zh": "錦醇菇是一種真菌，因切開後易於繁殖而聞名。\n\n食用會致死，據說誤食它的動物在死亡前會經歷一種極為平靜的狀態。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mellow_Mallow",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MELLOWMALLOW.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WineCupsSeed",
+      "name_en": "Mellow Mallow Seed",
+      "name_zh": "柔葵種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Mellow Mallow is a type of fungus that is known for its ease of propagation when cut.\n\nIt is deadly when consumed, however creatures that mistakenly eat it are said to experience a state of extreme calm before death.",
+      "summary_zh": "錦醇菇是一種真菌，因切開後易於繁殖而聞名。\n\n食用會致死，據說誤食它的動物在死亡前會經歷一種極為平靜的狀態。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mellow_Mallow",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MELLOWMALLOW.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Butterfly",
+      "name_en": "Mimika",
+      "name_zh": "擬葉蛾",
+      "kind": "fauna",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Mimikas are difficult to categorize. Biologists theorize that the Mimika Bud engages in this rare variation of reproductive mimicry to improve seed-dispersal and survive the extinction of key species native to its original habitat.\n\nThese charming moth-like organisms feature a microscopic cluster of phytoprotein \"brain\" cells and are driven by a singular instinct to tend to their host plants.\n\nDue to a monogenic malfunction, however, this plant-tending behavior benefits all of the flora in its area except its own.",
+      "summary_zh": "擬葉蛾難以分類。生物學家推測，擬葉蛾芽透過這種罕見的生殖擬態變異，來提升種子傳播效率，從而在其原生地一些關鍵物種滅絕後也能得以存活。\n\n這些迷人的類蛾生物體內具有微小的植物蛋白「腦」細胞叢集，受一種奇異本能的驅動，會照料它們的宿主植物。\n\n然而，由於單基因的缺陷，這種照料行為會使區域內自身以外的所有植物受益。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mimika",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BUTTERFLY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ButterflyPlant",
+      "name_en": "Mimika Bud",
+      "name_zh": "擬葉蛾芽",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Mimika Buds are excellent companion plants that provide a farm with the advantages of beneficial insect presence without the challenges of managing an additional critter population.\n\nInside each tightly wrapped bud is a highly concentrated pool of enzymes and imaginal discs similar to those found in the Lepidoptera insect family.\n\nUnder the right conditions, this unique concoction produces a Mimika, an ephemeral pseudo-insect organism that accelerates growth in neighboring plants before settling into its final seed form.\n\nThe sight of a Mimika never fails to fill a gardener with awe.",
+      "summary_zh": "擬葉蛾芽是絕佳的伴生植物，能為農場帶來有益昆蟲的優勢，同時免去管理額外生物群體的挑戰。\n\n每個緊密包裹的芽中都含有高濃度的酶和類似鱗翅目昆蟲的胚盤。\n\n在適宜條件下，這種獨特的混合物將孕育出一隻擬葉蛾，這是一種短暫的類昆蟲生物，在最終化為種子形態之前，能顯著加速周邊植物的生長。\n\n每當擬葉蛾現身，總能令園丁驚嘆不已。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mimika_Bud",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.BUTTERFLYPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "LeafyPlant",
+      "name_en": "Mirth Leaf",
+      "name_zh": "合歡葉",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Mirth Leaf is a broad-leafed house plant used for decorating living spaces.\n\nThe joyous bobbing of the wide green leaves provides hours of amusement for those desperate for entertainment.\n\nAlthough the Mirth Leaf can inspire laughter and joy, it is not cut out for a career in stand-up comedy.",
+      "summary_zh": "合歡葉是一種用來裝飾室內生活空間的闊葉植物。\n\n寬闊的綠葉快樂地擺動著，為渴望快樂的人們提供了數小時的娛樂。\n\n雖然合歡葉可以激發歡笑與快樂，但它不適合單口相聲的喜劇職業。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mirth_Leaf",
+      "zones": [
+        "Forest",
+        "Space",
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MIRTHLEAF.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "LeafyPlantSeed",
+      "name_en": "Mirth Leaf Seed",
+      "name_zh": "合歡葉種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The Mirth Leaf is a broad-leafed house plant used for decorating living spaces.\n\nThe joyous bobbing of the wide green leaves provides hours of amusement for those desperate for entertainment.\n\nAlthough the Mirth Leaf can inspire laughter and joy, it is not cut out for a career in stand-up comedy.",
+      "summary_zh": "合歡葉是一種用來裝飾室內生活空間的闊葉植物。\n\n寬闊的綠葉快樂地擺動著，為渴望快樂的人們提供了數小時的娛樂。\n\n雖然合歡葉可以激發歡笑與快樂，但它不適合單口相聲的喜劇職業。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mirth_Leaf",
+      "zones": [
+        "Forest",
+        "Space",
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MIRTHLEAF.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Glom",
+      "name_en": "Morb",
+      "name_zh": "莫布",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "The Morb is a versatile scavenger, capable of breaking down and consuming dead matter from most plant and animal species.",
+      "summary_zh": "莫布是一個多功能的清道夫，能分解大多數動物與植物死亡的屍體。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Morb",
+      "zones": [
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MORB.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "MusselSprout",
+      "name_en": "Mussel Sprout",
+      "name_zh": "貽貝芽",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Mussel Sprouts are hardy plants that thrive in wild marine environments. A dense shell protects the edible sprout (colloquially referred to as its \"tongue\") during growth.\n\nWhile not sentient per se, Mussel Sprouts do possess a survival instinct: during harvesting, they may attempt to escape by dragging themselves away using their prehensile tongue. This action occurs at such a glacial pace, however, that it is effectively invisible to the naked eye.",
+      "summary_zh": "貽貝芽是一種在惡劣海洋環境中也能生長的頑強植物。一層堅硬的殼保護著生長期的可食芽體（俗稱「舌」）。\n\n雖然本身並無感知能力，但貽貝芽確實具備生存本能：在收穫過程中，它們可能會嘗試利用其具有抓握能力的「舌」將自己拖離現場以逃生。然而，這個動作進行得過於緩慢，肉眼幾乎無法察覺。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Mussel_Sprout",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MUSSELSPROUT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BeanPlantSeed",
+      "name_en": "Nosh Bean",
+      "name_zh": "小吃豆",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Nosh Sprouts thrive in colder climates and produce edible Nosh Beans.",
+      "summary_zh": "小吃芽生長在氣候較寒冷的地區，並生產可食用的小吃豆。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Nosh_Sprout",
+      "zones": [
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CREATURES.SPECIES.BEAN_PLANT.DESC"
+      }
+    },
+    {
+      "prefab_id": "BeanPlant",
+      "name_en": "Nosh Sprout",
+      "name_zh": "小吃芽",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Nosh Sprouts thrive in colder climates and produce edible Nosh Beans.",
+      "summary_zh": "小吃芽生長在氣候較寒冷的地區，並生產可食用的小吃豆。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Nosh_Sprout",
+      "zones": [
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CREATURES.SPECIES.BEAN_PLANT.DESC"
+      }
+    },
+    {
+      "prefab_id": "SeaTurtle",
+      "name_en": "Orehull",
+      "name_zh": "礦甲龜",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "Orehulls are oversized anamniotes prized for the iron ore deposits that adorn their carapace.\n\nSpecialized glands between the carapace scutes continuously release microscopic amounts of the heavy metals present in the critter's environment, an immune system reaction that causes no discomfort to the Orehull.",
+      "summary_zh": "礦甲龜是一種體型巨大的無羊膜動物，因其甲殼上附著的鐵礦沉積物而備受珍視。\n\n位於甲殼鱗片之間的特化腺體，會持續釋放環境中殘留的微量重金屬；這是一種免疫系統反應，對礦甲龜本身並不會造成任何不適。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Orehull",
+      "zones": [
+        "KelpForest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SEATURTLE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "VineMother",
+      "name_en": "Ovagro",
+      "name_zh": "蔓殖藤",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Ovagros are resilient plants with highly efficient nutrient storage and redistribution systems. A healthy node produces many times the amount of energy that it requires. This is used to fuel the growth of exploratory vines that expand onto the surrounding territory.\n\nVines are entirely reliant on the node for nutrients. Each vine features hooked thorns that protect unripe fruit and act as crampons enabling the vine to use any empty surface as a trellis. They also make vine removal a tedious task.",
+      "summary_zh": "蔓殖藤是具有高效養分儲存和重新分配系統的彈性植物。一個健康的母藤產生的能量是其所需能量的許多倍。這些能量被用來驅動探索性藤蔓的生長，使其向周圍區域擴張。\n\n藤蔓完全依賴母藤獲取養分。每根藤蔓都具有鉤狀的刺，可保護未成熟的果實，並作為攀岩釘，使藤蔓能夠利用任何空白表面作為支架。它們也使得移除藤蔓成為一項繁瑣的任務。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Ovagro_Node",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.VINEMOTHER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "VineMotherSeed",
+      "name_en": "Ovagro Seed",
+      "name_zh": "蔓殖藤種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Ovagros are resilient plants with highly efficient nutrient storage and redistribution systems. A healthy node produces many times the amount of energy that it requires. This is used to fuel the growth of exploratory vines that expand onto the surrounding territory.\n\nVines are entirely reliant on the node for nutrients. Each vine features hooked thorns that protect unripe fruit and act as crampons enabling the vine to use any empty surface as a trellis. They also make vine removal a tedious task.",
+      "summary_zh": "蔓殖藤是具有高效養分儲存和重新分配系統的彈性植物。一個健康的母藤產生的能量是其所需能量的許多倍。這些能量被用來驅動探索性藤蔓的生長，使其向周圍區域擴張。\n\n藤蔓完全依賴母藤獲取養分。每根藤蔓都具有鉤狀的刺，可保護未成熟的果實，並作為攀岩釘，使藤蔓能夠利用任何空白表面作為支架。它們也使得移除藤蔓成為一項繁瑣的任務。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Ovagro_Node",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.VINEMOTHER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Oxyfern",
+      "name_en": "Oxyfern",
+      "name_zh": "氧氣蕨",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "power"
+      ],
+      "summary_en": "Oxyferns have perhaps the highest metabolism in the plant kingdom, absorbing relatively large amounts of carbon dioxide and converting it into oxygen in quantities disproportionate to their small size.\n\nThey subsequently thrive in areas with abundant animal wildlife or ambiently high carbon dioxide concentrations.",
+      "summary_zh": "氧氣蕨可能在植物界中具有最高的新陳代謝，吸收相對大量的二氧化碳並將其轉化成氧氣，其數量與它們的體積不成比例。\n\n它們在野生動物豐富或二氧化碳濃度高的地方成長茁壯。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Oxyfern",
+      "zones": [
+        "Forest",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.OXYFERN.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "OxyfernSeed",
+      "name_en": "Oxyfern Seed",
+      "name_zh": "氧氣蕨種子",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "power"
+      ],
+      "summary_en": "Oxyferns have perhaps the highest metabolism in the plant kingdom, absorbing relatively large amounts of carbon dioxide and converting it into oxygen in quantities disproportionate to their small size.\n\nThey subsequently thrive in areas with abundant animal wildlife or ambiently high carbon dioxide concentrations.",
+      "summary_zh": "氧氣蕨可能在植物界中具有最高的新陳代謝，吸收相對大量的二氧化碳並將其轉化成氧氣，其數量與它們的體積不成比例。\n\n它們在野生動物豐富或二氧化碳濃度高的地方成長茁壯。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Oxyfern",
+      "zones": [
+        "Forest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.OXYFERN.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Pacu",
+      "name_en": "Pacu",
+      "name_zh": "帕庫",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Pacu fish is often interpreted as possessing a vacant stare due to its large and unblinking eyes, yet they are remarkably bright and friendly creatures.",
+      "summary_zh": "由於大大的眼睛，帕庫魚常被認為是目光空洞的，但牠們是非常明亮和友善的動物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pacu",
+      "zones": [
+        "BoggyMarsh",
+        "Ocean",
+        "PrehistoricWetlands",
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PACU.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "FilamentPlant",
+      "name_en": "Petta Pouf",
+      "name_zh": "蓬茸柳",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "The catkins that bloom at the end of each Petta Pouf branch are made up of thousands of silky soft hairs akin to a luxurious fur coat. Many growers find themselves regarding this diminutive member of the willow family as a beloved companion.",
+      "summary_zh": "蓬茸柳每一根枝條末端盛開的絨絮，由數千根絲滑柔軟的細毛組成，觸感宛如一件奢華的皮草大衣。許多種植者都將這種小巧的楊柳科植物視為心愛的陪伴。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Petta_Pouf",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.FILAMENTPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "HardSkinBerryPlant",
+      "name_en": "Pikeapple Bush",
+      "name_zh": "刺殼果灌木",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "The Pikeapple Bush produces a nutritious fruit distantly related to those in the Durio genus.\n\nThose who find the Pikeapple pulp's fragrance overwhelming should consume their portion whilst standing near the plant itself; the shrubbery's gentle swaying produces a wafting effect that promotes air circulation.\n\nClosed-toe footwear is recommended, as barefoot contact with the plant's sharp seeds inevitably leads to infection.",
+      "summary_zh": "刺殼果灌木能產生一種營養豐富的果實，與榴槤屬的關係較遠。\n\n那些發現刺殼果果肉的撲鼻香氣的人應當站在植株附近將其吃完；灌木輕微搖曳能產生一種吹拂效果，促進空氣流動。\n\n建議穿不露腳趾的鞋，因為赤腳接觸這種植物的尖銳種子會不可避免地導致感染。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pikeapple_Bush",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.HARDSKINBERRYPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "HardSkinBerryPlantSeed",
+      "name_en": "Pikeapple Bush Seed",
+      "name_zh": "刺殼果灌木種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "The Pikeapple Bush produces a nutritious fruit distantly related to those in the Durio genus.\n\nThose who find the Pikeapple pulp's fragrance overwhelming should consume their portion whilst standing near the plant itself; the shrubbery's gentle swaying produces a wafting effect that promotes air circulation.\n\nClosed-toe footwear is recommended, as barefoot contact with the plant's sharp seeds inevitably leads to infection.",
+      "summary_zh": "刺殼果灌木能產生一種營養豐富的果實，與榴槤屬的關係較遠。\n\n那些發現刺殼果果肉的撲鼻香氣的人應當站在植株附近將其吃完；灌木輕微搖曳能產生一種吹拂效果，促進空氣流動。\n\n建議穿不露腳趾的鞋，因為赤腳接觸這種植物的尖銳種子會不可避免地導致感染。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pikeapple_Bush",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.HARDSKINBERRYPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SpiceVineSeed",
+      "name_en": "Pincha Peppernut",
+      "name_zh": "胡椒",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Pincha Pepperplant is a tropical vine with a reduced lignin structural system that renders it incapable of growing upward from the ground.\n\nThe plant therefore prefers to embed its roots into tall trees and rocky outcrops, the result of which is an inverse of the plant's natural gravitropism, causing its stem to prefer growing downwards while the roots tend to grow up.",
+      "summary_zh": "胡椒藤是一種熱帶藤蔓，簡化的木質節構使其不能由地面向上生長。\n\n因此該植物喜歡將其根部植入高大的樹木和岩石縫中，結果是其根部與植物的自然向地性相反，導致它喜歡向下生長。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pincha_Pepperplant",
+      "zones": [
+        "Ocean",
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PINCHAPEPPERPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SpiceVine",
+      "name_en": "Pincha Pepperplant",
+      "name_zh": "胡椒藤",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Pincha Pepperplant is a tropical vine with a reduced lignin structural system that renders it incapable of growing upward from the ground.\n\nThe plant therefore prefers to embed its roots into tall trees and rocky outcrops, the result of which is an inverse of the plant's natural gravitropism, causing its stem to prefer growing downwards while the roots tend to grow up.",
+      "summary_zh": "胡椒藤是一種熱帶藤蔓，簡化的木質節構使其不能由地面向上生長。\n\n因此該植物喜歡將其根部植入高大的樹木和岩石縫中，結果是其根部與植物的自然向地性相反，導致它喜歡向下生長。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pincha_Pepperplant",
+      "zones": [
+        "Ocean",
+        "ToxicJungle"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PINCHAPEPPERPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "UrchinPlant",
+      "name_en": "Pinpoket",
+      "name_zh": "針膽團",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "radiation"
+      ],
+      "summary_en": "The individual Pinpoki that grow inside Pinpoket clusters are prized by marine cuisine gourmands for their delicate buttery flesh, with an aftertaste that some describe as \"transcendant.\"\n\nThe flavor is so legendary that even just gazing upon a displayed Pinpoki is enough to inspire a high level of emotional satisfaction.",
+      "summary_zh": "生長在針膽團內部的針膽個體，因其細緻如奶油般的肉質，以及被部分食客形容為「超越凡俗」的餘韻，而備受海洋美食家們的推崇。\n\n其風味堪稱傳奇，甚至僅僅是凝視著一顆展示中的針膽，便足以為人帶來高度的情緒滿足感。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pinpoket",
+      "zones": [
+        "Abyss"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.URCHINPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Squirrel",
+      "name_en": "Pip",
+      "name_zh": "樹鼠",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "power",
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Pips are a member of the Rodentia order with a strong caching instinct that causes them to find and bury small objects, most often seeds.",
+      "summary_zh": "樹鼠是囓齒類，並有強烈的儲物本能，所以牠們會尋找並掩埋物品，通常是一些種子。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pip",
+      "zones": [
+        "Forest",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PIP.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Staterpillar",
+      "name_en": "Plug Slug",
+      "name_zh": "電氣蛞蝓",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "Plug Slugs are fuzzy gastropoda that are able to cling to walls and ceilings thanks to an extreme triboelectric effect caused by friction between their fur and various surfaces.\n\nThis same phenomenon allows the Plug Slug to generate a significant amount of static electricity that can be converted into power.\n\nThe increased amount of static electricity a Plug Slug can generate when domesticated is due to the internal vibration, or contented 'humming', they demonstrate when all their needs are met.",
+      "summary_zh": "電氣蛞蝓是毛茸茸的腹足綱動物，由於毛髮與各種表面摩擦產生的極端摩擦起電效應，使牠們能吸附在牆壁與天花板上。\n\n同樣的現象讓電氣蛞蝓能產生大量的靜電並轉化為電力。\n\n被馴化的電氣蛞蝓能產生更多靜電，是因為牠們在需求得到滿足時，會發出內部的震動或滿足的「嗡嗡聲」。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Plug_Slug",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PLUGSLUG.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CarrotPlant",
+      "name_en": "Plume Squash Plant",
+      "name_zh": "羽葉南瓜藤",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Plume Squashes contain over a dozen types of remarkably stable anthocyanins; twice the number found in any other plant. This high concentration of flavonoids contributes to the tuber's vivid pigmentation and tolerance to low temperatures.\n\nThe entire root is safe to eat, including the peel. The upper \"plume\" can be used to brush wayward bits off one's chin after the meal.",
+      "summary_zh": "羽葉果薯含有十幾種極其穩定的花青素；其含量是其他任何植物的兩倍。這種高濃度的類黃酮有助於該塊莖呈現鮮豔的色素沉著，並提升其耐低溫能力。\n\n整個根部連同外皮都可安全食用。其上部的「羽狀物」則可用於飯後拂去下巴上的頑固碎屑。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Plume_Squash",
+      "zones": [
+        "CarrotQuarry"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.CARROTPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CarrotPlantSeed",
+      "name_en": "Plume Squash Seed",
+      "name_zh": "羽葉南瓜種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Plume Squashes contain over a dozen types of remarkably stable anthocyanins; twice the number found in any other plant. This high concentration of flavonoids contributes to the tuber's vivid pigmentation and tolerance to low temperatures.\n\nThe entire root is safe to eat, including the peel. The upper \"plume\" can be used to brush wayward bits off one's chin after the meal.",
+      "summary_zh": "羽葉果薯含有十幾種極其穩定的花青素；其含量是其他任何植物的兩倍。這種高濃度的類黃酮有助於該塊莖呈現鮮豔的色素沉著，並提升其耐低溫能力。\n\n整個根部連同外皮都可安全食用。其上部的「羽狀物」則可用於飯後拂去下巴上的頑固碎屑。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Plume_Squash",
+      "zones": [
+        "CarrotQuarry"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.CARROTPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Crab",
+      "name_en": "Pokeshell",
+      "name_zh": "拋殼蟹",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Pokeshells are bottom-feeding invertebrates that consume the waste and discarded food left behind by other creatures.",
+      "summary_zh": "拋殼蟹是底棲的無脊椎動物，會吃其它生物的廢棄物與報廢的食物。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pokeshell",
+      "zones": [
+        "Beach",
+        "Ocean"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.POKESHELL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Puft",
+      "name_en": "Puft",
+      "name_zh": "帕夫",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "The Puft is a mellow creature whose limited brainpower is largely dedicated to sustaining its basic life processes.",
+      "summary_zh": "帕夫是一種溫和的動物，牠有限的腦容量致力於維持基礎的生命機能。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Puft",
+      "zones": [
+        "BoggyMarsh"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PUFT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Raptor",
+      "name_en": "Rhexes",
+      "name_zh": "霸王鸚類",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "For all their bluster, Rhexes are emotionally sensitive creatures that thrive on positive reinforcement, especially words of affirmation.\n\nThese sightless apex predators have exceptionally acidic gastric juices that kill most known bacteria and toxins, enabling them to safely digest their prey. This protective mechanism renders them susceptible to chronic ulcers if food is not readily available.\n\nThe Rhex's tailfeather can be shorn to harvest fibers for textile production. Rhexes don't mind this - some even enjoy it.",
+      "summary_zh": "霸王鸚雖然看似虛張聲勢，實則情感豐富。透過正向鼓勵，尤其是肯定的話語，牠們便能茁壯成長。\n\n這些無眼的頂級掠食者擁有極度酸性的胃液，可殺死大多數已知細菌和毒素，使其能安全消化獵物。然而，若食物不充足，這種保護機制會使牠們容易患上慢性潰瘍。\n\n霸王鸚的尾羽可以剪下，用於紡織品生產。霸王鸚對此並不介意——有些甚至樂在其中。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Rhex",
+      "zones": [
+        "PrehistoricRaptor"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.RAPTOR.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GardenDecorPlantSeed",
+      "name_en": "Ring Rose Seed",
+      "name_zh": "環玫瑰種子",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "Ring Rosebushes are decorative plants with circular blooms and bottom leaves reminiscent of cheery polka dots. A single prominent stamen protrudes from each flower, like a pin stuck into a map to mark a favorite destination.",
+      "summary_zh": "環玫叢是一種裝飾植物，其環形花朵與底部葉片上的明快波點相映成趣。每朵花中央都探出一根醒目的花蕊，宛如釘在地圖上的圖釘，標記著心儀的目的地。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Ring_Rosebush",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GARDENDECORPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GardenDecorPlant",
+      "name_en": "Ring Rosebush",
+      "name_zh": "環玫叢",
+      "kind": "flora",
+      "roles": [
+        "decor"
+      ],
+      "summary_en": "Ring Rosebushes are decorative plants with circular blooms and bottom leaves reminiscent of cheery polka dots. A single prominent stamen protrudes from each flower, like a pin stuck into a map to mark a favorite destination.",
+      "summary_zh": "環玫叢是一種裝飾植物，其環形花朵與底部葉片上的明快波點相映成趣。每朵花中央都探出一根醒目的花蕊，宛如釘在地圖上的圖釘，標記著心儀的目的地。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Ring_Rosebush",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GARDENDECORPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CrabFreshWater",
+      "name_en": "Sanishell",
+      "name_zh": "淨水蟹",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Pictured: \"Sanishell\" variant",
+      "summary_zh": "圖為：「淨水蟹」變種",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pokeshell",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.VARIANT_FRESH_WATER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CritterTrapPlant",
+      "name_en": "Saturn Critter Trap",
+      "name_zh": "捕獸草",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "radiation"
+      ],
+      "summary_en": "The Saturn Critter Trap plant is a carnivorous plant that lays in wait for unsuspecting critters to happen by, then traps them in its mouth for consumption.\n\nThe Saturn Trap Plant's predatory mechanism is reflective of the harsh radioactive habitat it resides in.\n\nOnce trapped in the deadly maw of the plant, creatures are gently asphyxiated then digested through powerful acidic enzymes which coat the inner sides of the Saturn Trap Plant's leaves.",
+      "summary_zh": "捕獸草是一種食肉植物，它們會等待毫無防備的小動物經過，然後將它們困在嘴裡吃掉。\n\n捕獸草的捕食機制反映出了它所處的輻射棲息地。\n\n一旦被困在植物致命的喉嚨裡、小動物會慢慢窒息然後被捕獸草葉子內側的強酸所消化。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Saturn_Critter_Trap",
+      "zones": [
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SATURNCRITTERTRAP.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "CritterTrapPlantSeed",
+      "name_en": "Saturn Critter Trap Seed",
+      "name_zh": "捕獸草種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "radiation"
+      ],
+      "summary_en": "The Saturn Critter Trap plant is a carnivorous plant that lays in wait for unsuspecting critters to happen by, then traps them in its mouth for consumption.\n\nThe Saturn Trap Plant's predatory mechanism is reflective of the harsh radioactive habitat it resides in.\n\nOnce trapped in the deadly maw of the plant, creatures are gently asphyxiated then digested through powerful acidic enzymes which coat the inner sides of the Saturn Trap Plant's leaves.",
+      "summary_zh": "捕獸草是一種食肉植物，它們會等待毫無防備的小動物經過，然後將它們困在嘴裡吃掉。\n\n捕獸草的捕食機制反映出了它所處的輻射棲息地。\n\n一旦被困在植物致命的喉嚨裡、小動物會慢慢窒息然後被捕獸草葉子內側的強酸所消化。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Saturn_Critter_Trap",
+      "zones": [
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SATURNCRITTERTRAP.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "KelpPlant",
+      "name_en": "Seakomb",
+      "name_zh": "海梳蕨",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Seakombs are hyperefficient photosynthesizers. While most plants grow towards the light, this aquatic fern's needs are so low that it can prioritize other survival needs.\n\nIt sprouts on the ceiling of liquid-filled caves, its tendrils reaching down to brush passing critters. This contact encourages critters to consume the plant and excrete the fertilizer that supports its continued growth.",
+      "summary_zh": "海梳蕨是一種超高效率的光合作用植物。雖然大多數植物都向光生長，但這種水生蕨類的能量需求極低，讓它可以把精力優先放在其他的生存需求上。\n\n它會從充滿液體的洞穴頂部發芽生長，捲鬚向下伸展，輕觸經過的小動物。透過這種接觸，能鼓勵這些小動物食用海梳蕨，並排出支持其持續生長的肥料。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Seakomb",
+      "zones": [
+        "PrehistoricWetlands"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.KELPPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "KelpPlantSeed",
+      "name_en": "Seakomb Seed",
+      "name_zh": "海梳蕨種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Seakombs are hyperefficient photosynthesizers. While most plants grow towards the light, this aquatic fern's needs are so low that it can prioritize other survival needs.\n\nIt sprouts on the ceiling of liquid-filled caves, its tendrils reaching down to brush passing critters. This contact encourages critters to consume the plant and excrete the fertilizer that supports its continued growth.",
+      "summary_zh": "海梳蕨是一種超高效率的光合作用植物。雖然大多數植物都向光生長，但這種水生蕨類的能量需求極低，讓它可以把精力優先放在其他的生存需求上。\n\n它會從充滿液體的洞穴頂部發芽生長，捲鬚向下伸展，輕觸經過的小動物。透過這種接觸，能鼓勵這些小動物食用海梳蕨，並排出支持其持續生長的肥料。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Seakomb",
+      "zones": [
+        "PrehistoricWetlands"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.KELPPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SeaHorse",
+      "name_en": "Seaquine",
+      "name_zh": "海馬",
+      "kind": "fauna",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Adult Seaquines flood their brood pouches with Ovolene to nourish their eggs and support osmoregulation.\n\nAs this is an energy-intensive process, it is abandoned in later life stages so that geriatric Seaquine can focus their efforts on laying one final egg before they perish.",
+      "summary_zh": "成年海馬會向育兒囊中注入卵漿，以滋養受精卵並輔助滲透壓調節。\n\n由於此過程極耗能量，海馬在生命晚期會停止分泌，以便將剩餘精力集中於產下臨終前的最後一枚卵。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Seaquine",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SEAHORSE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "IceCavesForagePlantPlanted",
+      "name_en": "Sherberry Plant",
+      "name_zh": "雪漿果藤",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power"
+      ],
+      "summary_en": "Sherberries are incapable of propagating, but can be harvested for a single Food serving.",
+      "summary_zh": "雪漿果無法繁育，生長在原生冰錐內，只能作為一次性食物被收成。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sherberry",
+      "zones": [
+        "IceCaves"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CREATURES.SPECIES.ICECAVESFORAGEPLANTPLANTED.DESC"
+      }
+    },
+    {
+      "prefab_id": "LightBug",
+      "name_en": "Shine Bug",
+      "name_zh": "發光蟲",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The bioluminescence of the Shine Bug's body serves the social purpose of finding and communicating with others of its kind.",
+      "summary_zh": "發光蟲生物冷光的身體，是用來尋找同伴並進行溝通的。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Shine_Bug",
+      "zones": [
+        "Forest",
+        "Radioactive",
+        "Sandstone",
+        "SugarWoods"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SHINEBUG.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Mole",
+      "name_en": "Shove Vole",
+      "name_zh": "鑽地田鼠",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "The Shove Vole is a unique creature that possesses two fully developed sets of lungs, allowing it to hold its breath during the long periods it spends underground.",
+      "summary_zh": "鑽地田鼠是一種獨特的生物，牠們有兩個完全發育好的肺，讓牠們可以長時間閉氣待在地底下。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Shove_Vole",
+      "zones": [
+        "Barren",
+        "FrozenWastes",
+        "Space"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.MOLE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ColdWheat",
+      "name_en": "Sleet Wheat",
+      "name_zh": "雪地小麥",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Sleet Wheat plant has become so well-adapted to cold environments, it is no longer able to survive at room temperatures.",
+      "summary_zh": "雪地小麥適應在寒冷的環境下生長，它不能在室溫下存活。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sleet_Wheat",
+      "zones": [
+        "FrozenWastes"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SLEETWHEAT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ColdWheatSeed",
+      "name_en": "Sleet Wheat Grain",
+      "name_zh": "雪麥穀粒",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Sleet Wheat plant has become so well-adapted to cold environments, it is no longer able to survive at room temperatures.",
+      "summary_zh": "雪地小麥適應在寒冷的環境下生長，它不能在室溫下存活。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sleet_Wheat",
+      "zones": [
+        "FrozenWastes"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SLEETWHEAT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "OilFloater",
+      "name_en": "Slickster",
+      "name_zh": "小油怪",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Slicksters are a unique creature most renowned for their ability to exude hydrocarbon waste that is nearly identical in makeup to crude oil.\n\nThe two tufts atop a Slickster's head are called rhinophores, and help guide the Slickster toward breathable carbon dioxide.",
+      "summary_zh": "小油怪是一種獨特的動物，以排放與石油幾乎相同的廢棄物而聞名。\n\n小油怪頭部突出的兩個觸角是化學接收器，幫助找到可呼吸的二氧化碳。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Slickster",
+      "zones": [
+        "OilField"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SLICKSTER.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Snail",
+      "name_en": "Slogo",
+      "name_zh": "緩螺",
+      "kind": "fauna",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Slogos' unusually thick skin prevents them from succumbing to the fatal osmosis that other members of the Gastropoda class experience after exposure to Salt.",
+      "summary_zh": "緩螺異常厚實的皮膚，使其免於遭受致命的滲透壓作用，而這通常是其他腹足綱生物在接觸鹽後會面臨的命運。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Slogo",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SNAIL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GardenForagePlantPlanted",
+      "name_en": "Snactus",
+      "name_zh": "食仙掌",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Snacti are fruit-bearing succulents whose DNA shows signs of having been crossed with an unnaturally formed fungi long ago.\n\nThe infestation is neither fatal nor contagious. It does, however, produce visible discoloration spots and fruit whose flavor is best described as \"musty\".",
+      "summary_zh": "食仙掌是會結果的多肉植物，其 DNA 顯示很久以前曾與非自然形成的真菌雜交過。\n\n這種感染既不致命也不具傳染性。然而，它會產生可見的變色斑點，且果實的味道最好形容為「霉味」。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Snactus",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GARDENFORAGEPLANTPLANTED.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SaltySticksPlant",
+      "name_en": "Sodicane",
+      "name_zh": "鹹蔗",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "The Sodicane plant is a hardy member of the Poaceae family of grasses, well-suited to amateur farmers in warm climates.\n\nWhile the crystallized mineral deposits on its stalks are quite palatable, they can only be eaten by gnawing on the unfortunately fibrous stalk.",
+      "summary_zh": "鹹蔗是一種頑強的禾本科植物，非常適合溫暖氣候下的業餘農民種植。\n\n雖然植株莖上附著的結晶礦物相當可口，但必須透過啃咬那不幸且充滿纖維的莖部才能食用。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sodicane",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SALTYSTICKSPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SaltySticksPlantSeed",
+      "name_en": "Sodicane Seed",
+      "name_zh": "鹹蔗種子",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "The Sodicane plant is a hardy member of the Poaceae family of grasses, well-suited to amateur farmers in warm climates.\n\nWhile the crystallized mineral deposits on its stalks are quite palatable, they can only be eaten by gnawing on the unfortunately fibrous stalk.",
+      "summary_zh": "鹹蔗是一種頑強的禾本科植物，非常適合溫暖氣候下的業餘農民種植。\n\n雖然植株莖上附著的結晶礦物相當可口，但必須透過啃咬那不幸且充滿纖維的莖部才能食用。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sodicane",
+      "zones": [
+        "Beach"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SALTYSTICKSPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "Seal",
+      "name_en": "Spigot Seal",
+      "name_zh": "栓角海豹",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "summary_en": "Spigot Seals are named for the hollow, cone-shaped glabellar protrusion that allows them to siphon nourishment directly from plants into the digestive sac located at the cone's base.\n\nIn order to draw nutritious fluids through this \"straw,\" the Spigot Seal compresses its nasal cavity and pumps its tongue up into its soft palate repeatedly, creating a vacuum.\n\nMealtimes are concluded by lapping at the air to reopen the airways and prevent accidental asphyxiation.\n\nMany handlers enjoy teaching this critter to clap its flippers, only to discover that there is no reliable method of limiting how often or how loudly the behavior is repeated.",
+      "summary_zh": "栓角海豹因其中空的錐形眉間突起物而得名，這種結構能讓牠們直接從植物中吸取營養，流入位於錐形底部的消化囊中。\n\n為了透過這根「吸管」吸取營養液，栓角海豹會壓緊鼻腔，並將舌頭反覆抽入其軟顎，形成真空。\n\n進食結束時，透過快速舔食空氣重新開啟氣道，從而防止發生意外窒息。\n\n許多飼養員喜歡教這種小動物拍打腳蹼，卻發現沒有可靠辦法限制這種行為的重複頻率和聲音大小。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Spigot_Seal",
+      "zones": [
+        "SugarWoods"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SEAL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WormPlant",
+      "name_en": "Spindly Grubfruit Plant",
+      "name_zh": "蕪弱蟲蜜草",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "Spindly Grubfruit Plants have leggy stems that limit the distribution of nutrients and enzymes to the fruit-bearing branch. This results in a reliable but relatively tasteless harvest.\n\nIntroducing the Divergent critter species to these plants enable them to develop into Grubfruit Plants with stronger vascular systems and improved fruit.",
+      "summary_zh": "蕪弱蟲蜜草細長的莖限制了營養物質和酶向結果枝條的分佈。這導致了可靠但相對無味的果實。\n\n將變異蟲引入這些植物附近，可以使其發育成蟲蜜草，具有更強的維管系統與更高品質的果實。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Grubfruit_Plant",
+      "zones": [
+        "Wasteland"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SPINDLYGRUBFRUITPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "WormPlantSeed",
+      "name_en": "Spindly Grubfruit Seed",
+      "name_zh": "細長蟲果種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "Spindly Grubfruit Plants have leggy stems that limit the distribution of nutrients and enzymes to the fruit-bearing branch. This results in a reliable but relatively tasteless harvest.\n\nIntroducing the Divergent critter species to these plants enable them to develop into Grubfruit Plants with stronger vascular systems and improved fruit.",
+      "summary_zh": "蕪弱蟲蜜草細長的莖限制了營養物質和酶向結果枝條的分佈。這導致了可靠但相對無味的果實。\n\n將變異蟲引入這些植物附近，可以使其發育成蟲蜜草，具有更強的維管系統與更高品質的果實。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Grubfruit_Plant",
+      "zones": [
+        "Wasteland"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SPINDLYGRUBFRUITPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "EvilFlower",
+      "name_en": "Sporechid",
+      "name_zh": "惡魔花",
+      "kind": "flora",
+      "roles": [
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Sporechids take advantage of their flower's attractiveness to lure unsuspecting victims into clouds of parasitic Zombie Spores.\n\nThey are a rare form of holoparasitic plant which finds mammalian hosts to infect rather than the usual plant species.\n\nThe Zombie Spore was originally designed for medicinal purposes but its sedative properties were never refined to the point of usefulness.",
+      "summary_zh": "惡魔花利用它們的花朵引誘沒有戒心的受害者到殭屍孢子雲中。\n\n它們是一種罕見的全寄生植物，它找到哺乳動物宿主感染而不是普通的植物物種。\n\n殭屍孢子最初設計用於藥用目的，但其鎮靜特性從未被提煉到有用的程度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sporechid",
+      "zones": [
+        "OilField"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SPORECHID.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "EvilFlowerSeed",
+      "name_en": "Sporechid Seed",
+      "name_zh": "惡魔花種子",
+      "kind": "flora",
+      "roles": [
+        "decor",
+        "hazard"
+      ],
+      "summary_en": "Sporechids take advantage of their flower's attractiveness to lure unsuspecting victims into clouds of parasitic Zombie Spores.\n\nThey are a rare form of holoparasitic plant which finds mammalian hosts to infect rather than the usual plant species.\n\nThe Zombie Spore was originally designed for medicinal purposes but its sedative properties were never refined to the point of usefulness.",
+      "summary_zh": "惡魔花利用它們的花朵引誘沒有戒心的受害者到殭屍孢子雲中。\n\n它們是一種罕見的全寄生植物，它找到哺乳動物宿主感染而不是普通的植物物種。\n\n殭屍孢子最初設計用於藥用目的，但其鎮靜特性從未被提煉到有用的程度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sporechid",
+      "zones": [
+        "OilField"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SPORECHID.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PuftBleachstone",
+      "name_en": "Squeaky Puft",
+      "name_zh": "氯氣帕夫",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Pictured: \"Squeaky\" Puft variant",
+      "summary_zh": "圖為：「氯氣」帕夫變種",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Puft",
+      "zones": [
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SQUEAKY.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PlanktonCoral",
+      "name_en": "Starnacle",
+      "name_zh": "藤壺星",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Starnacles share DNA with both arthropods and echinoderms, though they retain elements of the latter's fascinating digestive mechanism.\n\nDuring feeding, a Starnacle's stomach is pushed out through its small mouthpiece to envelop the nutrient source. Digestion is completed outside the body, and the stomach then retracts.\n\nThe process can be disturbing to witness. Fortunately, the organism's mouthpiece is located on its underside.",
+      "summary_zh": "藤壺星與節肢動物及棘皮動物擁有共同的 DNA，並保留了後者那令人著迷的消化機制特徵。\n\n在進食時，藤壺星會將胃部透過細小的口部向外推展，以包裹住營養來源。消化作用在體外完成後，胃部便會縮回體內。\n\n這個過程目擊起來可能會讓人感到不安。幸運的是，這種生物的口器位於身體底部。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Starnacle",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.PLANKTONCORAL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SwampForagePlantPlanted",
+      "name_en": "Swamp Chard Plant",
+      "name_zh": "沼澤甜菜",
+      "kind": "flora",
+      "roles": [
+        "food"
+      ],
+      "summary_en": "Swamp Chard is a unique member of the Amaranthaceae family that has adapted to grow in humid environments, in or near pools of standing water.\n\nWhile the leaves are technically edible, the most nutritious and palatable part of the plant is the heart, which is rich in a number of essential vitamins.",
+      "summary_zh": "沼澤甜菜是一種獨特的莧科成員，適應在潮溼的環境中生長，在水池中或是附近。\n\n雖然葉子在技術上來說是可食用的，但植物中最營養美味的部分是菜心，富含多種必要維生素。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Swamp_Chard",
+      "zones": [
+        "Swamp"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SWAMPCHARD.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GardenFoodPlantSeed",
+      "name_en": "Sweatcorn Seed",
+      "name_zh": "津甜玉米種子",
+      "kind": "flora",
+      "roles": [
+        "power"
+      ],
+      "summary_en": "The Sweatcorn Stalk is one of the oldest living members of the Zea genus.\n\nThis robust monopodial plant features eye-catching vegetable cobs prized for their color and intense sweetness.\n\nFarmers gift the best of their harvest to their most valued neighbors. Some etymologists theorize that the term \"corny\" was coined to describe the heartfelt sentiments expressed in the accompanying card.",
+      "summary_zh": "津甜玉米稈是玉米屬現存最古老的成員之一。\n\n這種堅韌的單軸植物，其引人注目的蔬菜玉米穗因其色彩和強烈甜味而備受珍視。\n\n農民會將收成中最好的部分贈送給他們最珍視的鄰居。一些詞源學家推測，「老套」這個詞，正是為描述隨附卡片中所表達的真摯情感而創造的。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sweatcorn",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GARDENFOODPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "GardenFoodPlant",
+      "name_en": "Sweatcorn Stalk",
+      "name_zh": "津甜玉米稈",
+      "kind": "flora",
+      "roles": [
+        "power"
+      ],
+      "summary_en": "The Sweatcorn Stalk is one of the oldest living members of the Zea genus.\n\nThis robust monopodial plant features eye-catching vegetable cobs prized for their color and intense sweetness.\n\nFarmers gift the best of their harvest to their most valued neighbors. Some etymologists theorize that the term \"corny\" was coined to describe the heartfelt sentiments expressed in the accompanying card.",
+      "summary_zh": "津甜玉米稈是玉米屬現存最古老的成員之一。\n\n這種堅韌的單軸植物，其引人注目的蔬菜玉米穗因其色彩和強烈甜味而備受珍視。\n\n農民會將收成中最好的部分贈送給他們最珍視的鄰居。一些詞源學家推測，「老套」這個詞，正是為描述隨附卡片中所表達的真摯情感而創造的。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Sweatcorn",
+      "zones": [
+        "PrehistoricGarden"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.GARDENFOODPLANT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "DivergentBeetle",
+      "name_en": "Sweetle",
+      "name_zh": "甜素甲蟲",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "industrial",
+        "hazard"
+      ],
+      "summary_en": "Divergent is the term for the two different variants of a single Critter species, those being Sweetles and Grubgrubs. While visually very different, one can lay the egg of the other. Both varieties can be found in the Wasteland Biome, along with Spindly Grubfruit Plants.",
+      "summary_zh": "甜素甲蟲會食用硫並照料蟲果植物，可產生蔗糖與蛋；適合把可再生硫轉成食物及蔗糖火箭燃料。牧場效率取決於植物、溫度與種群管理。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Divergent",
+      "zones": [
+        "Wasteland"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "manual Dolphinwing-aligned override"
+      }
+    },
+    {
+      "prefab_id": "BasicFabricPlant",
+      "name_en": "Thimble Reed",
+      "name_zh": "頂針蘆葦",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "industrial"
+      ],
+      "summary_en": "The Thimble Reed is a wetlands plant used in the production of high quality fabrics prized for their softness and breathability.\n\nCloth made from the Thimble Reed owes its exceptional softness to the fineness of its fibers and the unusual length to which they grow.",
+      "summary_zh": "頂針蘆葦是一種沼澤植物，用於生產高品質的布料，其柔軟性和透氣性而受到關注。\n\n頂針蘆葦製作的衣服，其特殊的柔軟性來自於它細小纖維的以及它們不尋長的長度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Thimble_Reed",
+      "zones": [
+        "BoggyMarsh",
+        "KelpForest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "BasicFabricMaterialPlantSeed",
+      "name_en": "Thimble Reed Seed",
+      "name_zh": "頂針蘆葦種子",
+      "kind": "flora",
+      "roles": [
+        "oxygen",
+        "industrial"
+      ],
+      "summary_en": "The Thimble Reed is a wetlands plant used in the production of high quality fabrics prized for their softness and breathability.\n\nCloth made from the Thimble Reed owes its exceptional softness to the fineness of its fibers and the unusual length to which they grow.",
+      "summary_zh": "頂針蘆葦是一種沼澤植物，用於生產高品質的布料，其柔軟性和透氣性而受到關注。\n\n頂針蘆葦製作的衣服，其特殊的柔軟性來自於它細小纖維的以及它們不尋長的長度。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Thimble_Reed",
+      "zones": [
+        "BoggyMarsh"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.THIMBLEREED.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SeaTree",
+      "name_en": "Tower Kelp",
+      "name_zh": "塔藻",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "This species of the Laminariales order is composed of vertical stems supported by structural vines. What appear to be leaves are actually Kelpoles, aquatic critters that consume aeronutrients present in the Tower Kelp's hollow stalk.\n\nTower Kelp stalks that fail to attract these natural pressure regulators will collapse before reaching maturation.",
+      "summary_zh": "此種海帶目物種，由豎直的主莖與起支撐作用的構造藤蔓所組成。那些看似葉片的部位，實際上是藻蝌蚪——一種以塔藻中空莖稈內的氣態養分為食的水生生物。\n\n若塔藻的莖稈未能吸引這些天然的壓力調節者，便會在成熟前坍塌。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Tower_Kelp",
+      "zones": [
+        "KelpForest"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.SEATREE.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ToePlant",
+      "name_en": "Tranquil Toes",
+      "name_zh": "安寧芷",
+      "kind": "flora",
+      "roles": [
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "Tranquil Toes are a decorative succulent that flourish in a radioactive environment.\n\nThough most of the flora and fauna that thrive a harsh radioactive biome tends to be aggressive, Tranquil Toes provide a rare exception to this rule.\n\nIt is a generally believed that the morale boosting abilities of this plant come from its resemblence to a funny hat one might wear at a party.",
+      "summary_zh": "安寧芷是一種裝飾性多肉植物，可在放射性環境中生長。\n\n雖然在輻射生態系生存的動植物往往具有攻擊性，安寧芷為此規則提供了一個特殊的例外。\n\n人們普遍認為這株植物提振士氣的作用，來自於它與派對上可能會穿戴的一種有趣帽子有相似之處。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Tranquil_Toes",
+      "zones": [
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.TRANQUILTOES.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ToePlantSeed",
+      "name_en": "Tranquil Toes Seed",
+      "name_zh": "寧靜趾種子",
+      "kind": "flora",
+      "roles": [
+        "radiation",
+        "decor"
+      ],
+      "summary_en": "Tranquil Toes are a decorative succulent that flourish in a radioactive environment.\n\nThough most of the flora and fauna that thrive a harsh radioactive biome tends to be aggressive, Tranquil Toes provide a rare exception to this rule.\n\nIt is a generally believed that the morale boosting abilities of this plant come from its resemblence to a funny hat one might wear at a party.",
+      "summary_zh": "安寧芷是一種裝飾性多肉植物，可在放射性環境中生長。\n\n雖然在輻射生態系生存的動植物往往具有攻擊性，安寧芷為此規則提供了一個特殊的例外。\n\n人們普遍認為這株植物提振士氣的作用，來自於它與派對上可能會穿戴的一種有趣帽子有相似之處。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Tranquil_Toes",
+      "zones": [
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.TRANQUILTOES.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "PacuTropical",
+      "name_en": "Tropical Pacu",
+      "name_zh": "熱帶帕庫",
+      "kind": "fauna",
+      "roles": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "Pictured: \"Tropical\" Pacu variant",
+      "summary_zh": "圖為：「熱帶」帕庫變種",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Pacu",
+      "zones": [
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.TROPICAL.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "TubeWorm",
+      "name_en": "Tublia",
+      "name_zh": "暖管蟲",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "industrial"
+      ],
+      "summary_en": "Little is known about the internal workings of Tublias, as their potent \"rotten egg\" stench makes them an unpopular specimen for closer study.\n\nWhile this odor dissipates during processing, it can linger on skin and clothing for an unpleasantly long time.",
+      "summary_zh": "關於暖管蟲的內部運作機制所知甚少，因為其強烈的「臭雞蛋」氣味，使它們成為不受歡迎的近距離研究對象。\n\n雖然這種氣味在處理過程中會消散，但它卻會令人不快地殘留在皮膚與衣物上，久久不散。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Tublia",
+      "zones": [
+        "Abyss"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.TUBEWORM.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SeaLettuce",
+      "name_en": "Waterweed",
+      "name_zh": "水草",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "decor"
+      ],
+      "summary_en": "An inexperienced farmer may assume at first glance that the transluscent, fluid-containing bulb atop the Waterweed is the edible portion of the plant.\n\nIn fact, the bulb is extremely poisonous and should never be consumed under any circumstances.",
+      "summary_zh": "沒有經驗的農民乍看之下可能會認為水草頂部的半透明、含有液體的球莖是植物的可食用部分。\n\n實際上，球莖是有劇毒的，在任何情況下都不能食用。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Waterweed",
+      "zones": [
+        "Ocean",
+        "Reef"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.WATERWEED.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "SeaLettuceSeed",
+      "name_en": "Waterweed Seed",
+      "name_zh": "水草種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "decor"
+      ],
+      "summary_en": "An inexperienced farmer may assume at first glance that the transluscent, fluid-containing bulb atop the Waterweed is the edible portion of the plant.\n\nIn fact, the bulb is extremely poisonous and should never be consumed under any circumstances.",
+      "summary_zh": "沒有經驗的農民乍看之下可能會認為水草頂部的半透明、含有液體的球莖是植物的可食用部分。\n\n實際上，球莖是有劇毒的，在任何情況下都不能食用。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Waterweed",
+      "zones": [
+        "Ocean"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.WATERWEED.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ColdBreather",
+      "name_en": "Wheezewort",
+      "name_zh": "冰樹",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Wheezewort is best known for its ability to alter the temperature of its surrounding environment, directly absorbing heat energy to maintain its bodily processes.\n\nThis environmental management also serves to enact a type of self-induced hibernation, slowing the Wheezewort's metabolism to require less nutrients over long periods of time.",
+      "summary_zh": "冰樹以調節環境溫度的能力出名，直接地吸收熱量以維持生命。\n\n這種環境管理也有助於實施一種自我誘導的冬眠，減緩自身的新陳代謝，從而在較長時間內需要更少的營養。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Wheezewort",
+      "zones": [
+        "FrozenWastes",
+        "PrehistoricRaptor",
+        "Radioactive",
+        "Rust"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1"
+      }
+    },
+    {
+      "prefab_id": "ColdBreatherSeed",
+      "name_en": "Wheezewort Seed",
+      "name_zh": "冰樹種子",
+      "kind": "flora",
+      "roles": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decor"
+      ],
+      "summary_en": "The Wheezewort is best known for its ability to alter the temperature of its surrounding environment, directly absorbing heat energy to maintain its bodily processes.\n\nThis environmental management also serves to enact a type of self-induced hibernation, slowing the Wheezewort's metabolism to require less nutrients over long periods of time.",
+      "summary_zh": "冰樹以調節環境溫度的能力出名，直接地吸收熱量以維持生命。\n\n這種環境管理也有助於實施一種自我誘導的冬眠，減緩自身的新陳代謝，從而在較長時間內需要更少的營養。",
+      "mechanics_url": "https://oxygennotincluded.wiki.gg/wiki/Wheezewort",
+      "zones": [
+        "FrozenWastes",
+        "Radioactive"
+      ],
+      "sources": {
+        "mechanics": "wiki.gg current plaintext extract",
+        "description_localization": "STRINGS.CODEX.WHEEZEWORT.BODY.CONTAINER1"
+      }
+    }
+  ],
   "zones": [
     {
       "zone_type": "Abyss",
