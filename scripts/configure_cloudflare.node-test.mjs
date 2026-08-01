@@ -2,6 +2,7 @@ import assert from 'node:assert/strict'
 import test from 'node:test'
 
 import {
+  CloudflareClient,
   accessApplicationPayload,
   accessPolicyPayload,
   configFor,
@@ -26,6 +27,14 @@ class FakeClient {
     return this.optionalResults.shift() ?? null
   }
 
+  async requestAll(path) {
+    this.calls.push(['ALL', path])
+    if (this.requestResults.length === 0) {
+      throw new Error(`No fake result available for GET ALL ${path}`)
+    }
+    return this.requestResults.shift()
+  }
+
   async request(method, path, body) {
     this.calls.push([method, path, body])
     if (this.requestResults.length === 0) {
@@ -34,6 +43,35 @@ class FakeClient {
     return this.requestResults.shift()
   }
 }
+
+test('CloudflareClient consumes every API page', async () => {
+  const pages = [[{ id: 'one' }, { id: 'two' }], [{ id: 'three' }]]
+  const urls = []
+  const client = new CloudflareClient({
+    accountId: 'account-id',
+    apiToken: 'test-token',
+    fetchImpl: async (url) => {
+      urls.push(url)
+      return {
+        ok: true,
+        status: 200,
+        text: async () => JSON.stringify({ result: pages.shift(), success: true }),
+      }
+    },
+    zoneId: 'zone-id',
+  })
+
+  const results = await client.requestAll('/accounts/account-id/access/apps', 2)
+
+  assert.deepEqual(
+    results.map(({ id }) => id),
+    ['one', 'two', 'three'],
+  )
+  assert.deepEqual(urls, [
+    'https://api.cloudflare.com/client/v4/accounts/account-id/access/apps?page=1&per_page=2',
+    'https://api.cloudflare.com/client/v4/accounts/account-id/access/apps?page=2&per_page=2',
+  ])
+})
 
 test('deployment stages have isolated projects and expected branches', () => {
   assert.deepEqual(configFor('dev'), {
@@ -81,6 +119,12 @@ test('creates Google-only Access application and email allow policy', async () =
       { id: 'app-id', domain: 'game-dev.kingdom-innovator.com' },
       [],
       { id: 'policy-id' },
+      { id: 'pages-app-id', domain: 'oni-planet-resources-dev.pages.dev' },
+      [],
+      { id: 'pages-policy-id' },
+      { id: 'preview-app-id', domain: '*.oni-planet-resources-dev.pages.dev' },
+      [],
+      { id: 'preview-policy-id' },
     ],
   })
 
@@ -96,15 +140,15 @@ test('creates Google-only Access application and email allow policy', async () =
     '/accounts/account-id/access/apps/app-id/policies',
     accessPolicyPayload('arthur@example.com'),
   ])
+  assert.equal(client.calls[5][2].domain, 'oni-planet-resources-dev.pages.dev')
+  assert.equal(client.calls[8][2].domain, '*.oni-planet-resources-dev.pages.dev')
 })
 
 test('production setup never creates an Access application', async () => {
   const client = new FakeClient({ requestResults: [[]] })
   const result = await ensureAccessProtection(client, configFor('prod'), undefined)
-  assert.equal(result, null)
-  assert.deepEqual(client.calls, [
-    ['GET', '/accounts/account-id/access/apps?per_page=100', undefined],
-  ])
+  assert.deepEqual(result, [])
+  assert.deepEqual(client.calls, [['ALL', '/accounts/account-id/access/apps']])
 })
 
 test('dev setup removes every unmanaged Access policy', async () => {
@@ -119,6 +163,12 @@ test('dev setup removes every unmanaged Access policy', async () => {
       ],
       {},
       { id: 'managed-id' },
+      { id: 'pages-app-id', domain: 'oni-planet-resources-dev.pages.dev' },
+      [],
+      { id: 'pages-policy-id' },
+      { id: 'preview-app-id', domain: '*.oni-planet-resources-dev.pages.dev' },
+      [],
+      { id: 'preview-policy-id' },
     ],
   })
 
@@ -130,6 +180,79 @@ test('dev setup removes every unmanaged Access policy', async () => {
     undefined,
   ])
   assert.equal(client.calls[5][0], 'PUT')
+})
+
+test('rerun updates all three dev Access applications and exclusive policies', async () => {
+  const apps = [
+    { id: 'custom-app', domain: 'game-dev.kingdom-innovator.com', type: 'self_hosted' },
+    { id: 'pages-app', domain: 'oni-planet-resources-dev.pages.dev', type: 'self_hosted' },
+    { id: 'preview-app', domain: '*.oni-planet-resources-dev.pages.dev', type: 'self_hosted' },
+  ]
+  const managedPolicy = { id: 'managed-policy', name: 'Allow authorized Google account' }
+  const client = new FakeClient({
+    requestResults: [
+      apps,
+      [{ id: 'google-idp', name: 'Google', type: 'google-apps' }],
+      apps[0],
+      [managedPolicy],
+      managedPolicy,
+      apps[1],
+      [managedPolicy],
+      managedPolicy,
+      apps[2],
+      [managedPolicy],
+      managedPolicy,
+    ],
+  })
+
+  await ensureAccessProtection(client, configFor('dev'), 'arthur@example.com')
+
+  for (const index of [2, 5, 8]) {
+    assert.equal(client.calls[index][0], 'PUT')
+    assert.deepEqual(client.calls[index][2].allowed_idps, ['google-idp'])
+  }
+  for (const index of [4, 7, 10]) {
+    assert.equal(client.calls[index][0], 'PUT')
+    assert.deepEqual(client.calls[index][2].include, [
+      { email: { email: 'arthur@example.com' } },
+    ])
+  }
+})
+
+test('production rejects Access protection on every public target', async () => {
+  const domains = [
+    'game.kingdom-innovator.com',
+    'oni-planet-resources-prod.pages.dev',
+    '*.oni-planet-resources-prod.pages.dev',
+  ]
+  for (const domain of domains) {
+    const client = new FakeClient({
+      requestResults: [[{ domain, id: 'app-id', type: 'self_hosted' }]],
+    })
+    await assert.rejects(
+      () => ensureAccessProtection(client, configFor('prod'), undefined),
+      /production must remain public/,
+    )
+    assert.deepEqual(client.calls, [['ALL', '/accounts/account-id/access/apps']])
+  }
+})
+
+test('duplicate Access applications fail preflight before any mutation', async () => {
+  const domain = 'oni-planet-resources-dev.pages.dev'
+  const client = new FakeClient({
+    requestResults: [
+      [
+        { domain, id: 'duplicate-one', type: 'self_hosted' },
+        { domain, id: 'duplicate-two', type: 'self_hosted' },
+      ],
+    ],
+  })
+
+  await assert.rejects(
+    () => ensureAccessProtection(client, configFor('dev'), 'arthur@example.com'),
+    /Multiple Access applications/,
+  )
+  assert.deepEqual(client.calls, [['ALL', '/accounts/account-id/access/apps']])
 })
 
 test('creates a missing Pages custom domain', async () => {

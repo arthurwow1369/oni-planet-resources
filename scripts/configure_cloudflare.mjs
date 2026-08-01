@@ -54,6 +54,23 @@ export class CloudflareClient {
     return payload.result
   }
 
+  async requestAll(path, perPage = 100) {
+    const results = []
+    for (let page = 1; page <= 10_000; page += 1) {
+      const separator = path.includes('?') ? '&' : '?'
+      const pageResults = await this.request(
+        'GET',
+        `${path}${separator}page=${page}&per_page=${perPage}`,
+      )
+      if (!Array.isArray(pageResults)) {
+        throw new Error(`Expected paginated array response for GET ${path}`)
+      }
+      results.push(...pageResults)
+      if (pageResults.length < perPage) return results
+    }
+    throw new Error(`Pagination limit exceeded for GET ${path}`)
+  }
+
   async optional(path) {
     try {
       return await this.request('GET', path)
@@ -70,15 +87,19 @@ export function configFor(stage) {
   return config
 }
 
-export function accessApplicationPayload(config, identityProviderId) {
+export function accessApplicationPayload(config, identityProviderId, target = null) {
+  const application = target ?? {
+    domain: config.domain,
+    name: 'ONI Planet Resources Dev',
+  }
   return {
     allowed_idps: [identityProviderId],
     app_launcher_visible: false,
     auto_redirect_to_identity: true,
-    domain: config.domain,
+    domain: application.domain,
     enable_binding_cookie: true,
     http_only_cookie_attribute: true,
-    name: 'ONI Planet Resources Dev',
+    name: application.name,
     session_duration: '24h',
     type: 'self_hosted',
   }
@@ -123,51 +144,45 @@ function isGoogleIdentityProvider(provider) {
   return `${provider.name ?? ''} ${provider.type ?? ''}`.toLowerCase().includes('google')
 }
 
-export async function ensureAccessProtection(client, config, email) {
-  const account = encodeURIComponent(client.accountId)
-  const apps = await client.request('GET', `/accounts/${account}/access/apps?per_page=100`)
-  const matchingApps = apps.filter(
-    (candidate) => candidate.type === 'self_hosted' && candidate.domain === config.domain,
-  )
+function accessTargets(config) {
+  return [
+    { domain: config.domain, name: 'ONI Planet Resources Dev' },
+    {
+      domain: `${config.project}.pages.dev`,
+      name: 'ONI Planet Resources Dev pages.dev',
+    },
+    {
+      domain: `*.${config.project}.pages.dev`,
+      name: 'ONI Planet Resources Dev previews',
+    },
+  ]
+}
 
-  if (!config.protectWithAccess) {
-    if (matchingApps.length > 0) {
-      throw new Error(
-        `Production hostname ${config.domain} is protected by an Access application; production must remain public`,
-      )
-    }
-    console.log(`Access application: absent as required (${config.domain})`)
-    return null
-  }
-
-  if (!email) throw new Error('CLOUDFLARE_ACCESS_EMAIL is required for the dev deployment')
-  if (matchingApps.length > 1) {
-    throw new Error(`Multiple Access applications protect ${config.domain}; refusing ambiguous policy changes`)
-  }
-
-  const providers = await client.request(
-    'GET',
-    `/accounts/${account}/access/identity_providers`,
-  )
-  const googleProvider = providers.find(isGoogleIdentityProvider)
-  if (!googleProvider) throw new Error('No Google identity provider is configured in Cloudflare Access')
-
-  let app = matchingApps[0]
-  const appPayload = accessApplicationPayload(config, googleProvider.id)
+async function reconcileAccessApplication(
+  client,
+  account,
+  existingApp,
+  config,
+  target,
+  identityProviderId,
+  email,
+) {
+  let app = existingApp
+  const appPayload = accessApplicationPayload(config, identityProviderId, target)
   if (app) {
     app = await client.request(
       'PUT',
       `/accounts/${account}/access/apps/${encodeURIComponent(app.id)}`,
       appPayload,
     )
-    console.log(`Access application: updated (${config.domain})`)
+    console.log(`Access application: updated (${target.domain})`)
   } else {
     app = await client.request('POST', `/accounts/${account}/access/apps`, appPayload)
-    console.log(`Access application: created (${config.domain})`)
+    console.log(`Access application: created (${target.domain})`)
   }
 
   const policiesPath = `/accounts/${account}/access/apps/${encodeURIComponent(app.id)}/policies`
-  const policies = await client.request('GET', `${policiesPath}?per_page=100`)
+  const policies = await client.requestAll(policiesPath)
   const policyPayload = accessPolicyPayload(email)
   const existingPolicy = policies.find((candidate) => candidate.name === policyPayload.name)
   for (const policy of policies) {
@@ -182,13 +197,74 @@ export async function ensureAccessProtection(client, config, email) {
       `${policiesPath}/${encodeURIComponent(existingPolicy.id)}`,
       policyPayload,
     )
-    console.log('Access policy: updated')
+    console.log(`Access policy: updated (${target.domain})`)
   } else {
     await client.request('POST', policiesPath, policyPayload)
-    console.log('Access policy: created')
+    console.log(`Access policy: created (${target.domain})`)
   }
 
   return app
+}
+
+export async function ensureAccessProtection(client, config, email) {
+  const account = encodeURIComponent(client.accountId)
+  const apps = await client.requestAll(`/accounts/${account}/access/apps`)
+  const targets = accessTargets(config)
+  const matchingAppsByDomain = new Map(
+    targets.map((target) => [
+      target.domain,
+      apps.filter(
+        (candidate) => candidate.type === 'self_hosted' && candidate.domain === target.domain,
+      ),
+    ]),
+  )
+  const ambiguousTarget = targets.find(
+    (target) => matchingAppsByDomain.get(target.domain).length > 1,
+  )
+  if (ambiguousTarget) {
+    throw new Error(
+      `Multiple Access applications protect ${ambiguousTarget.domain}; refusing ambiguous policy changes`,
+    )
+  }
+
+  if (!config.protectWithAccess) {
+    const protectedTarget = targets.find((target) =>
+      apps.some(
+        (candidate) => candidate.type === 'self_hosted' && candidate.domain === target.domain,
+      ),
+    )
+    if (protectedTarget) {
+      throw new Error(
+        `Production hostname ${protectedTarget.domain} is protected by an Access application; production must remain public`,
+      )
+    }
+    console.log(`Access applications: absent as required (${config.project})`)
+    return []
+  }
+
+  if (!email) throw new Error('CLOUDFLARE_ACCESS_EMAIL is required for the dev deployment')
+  const providers = await client.request(
+    'GET',
+    `/accounts/${account}/access/identity_providers`,
+  )
+  const googleProvider = providers.find(isGoogleIdentityProvider)
+  if (!googleProvider) throw new Error('No Google identity provider is configured in Cloudflare Access')
+
+  const protectedApps = []
+  for (const target of targets) {
+    protectedApps.push(
+      await reconcileAccessApplication(
+        client,
+        account,
+        matchingAppsByDomain.get(target.domain)[0],
+        config,
+        target,
+        googleProvider.id,
+        email,
+      ),
+    )
+  }
+  return protectedApps
 }
 
 export async function ensureCustomDomain(client, config) {

@@ -98,7 +98,7 @@ Deployments use isolated Cloudflare Pages projects while preserving the same app
 | `dev` | Development | `https://game-dev.kingdom-innovator.com/tools/oni-planet-resources/` | Google SSO allowlist |
 | `main` | Production | `https://game.kingdom-innovator.com/tools/oni-planet-resources/` | Public |
 
-`.github/workflows/deploy.yml` verifies and builds every deployment, creates or validates the matching Pages project, deploys `dist/` as the hosting root, and verifies the custom domain and proxied DNS record. The build places the application beneath `dist/tools/oni-planet-resources/`, matching the configured URL path.
+`.github/workflows/deploy.yml` verifies and builds every deployment, creates or validates the matching Pages project, deploys `dist/` as the hosting root, and verifies the custom domain and proxied DNS record. The build places the application beneath `dist/tools/oni-planet-resources/`, matching the configured URL path. Development Access policies cover the custom hostname, the project `pages.dev` hostname, and wildcard deployment-preview hostnames so the development artifact cannot bypass Google SSO.
 
 The workflow uses four GitHub Actions secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_ZONE_ID`, and `CLOUDFLARE_ACCESS_EMAIL`. Production is deployed only from `main`; opening or updating a pull request does not publish production.
 
