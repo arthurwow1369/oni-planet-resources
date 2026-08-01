@@ -91,13 +91,16 @@ Source metadata, URLs, version scope, reliability labels, and research caveats l
 
 ## Deployment
 
-The production deployment target is:
+Deployments use isolated Cloudflare Pages projects while preserving the same application path:
 
-```text
-/tools/oni-planet-resources/
-```
+| Branch | Environment | URL | Access |
+| --- | --- | --- | --- |
+| `dev` | Development | `https://game-dev.kingdom-innovator.com/tools/oni-planet-resources/` | Google SSO allowlist |
+| `main` | Production | `https://game.kingdom-innovator.com/tools/oni-planet-resources/` | Public |
 
-Run `npm run build`, then publish `dist/` as the hosting root. The build already places the application beneath `dist/tools/oni-planet-resources/`, matching the configured URL path.
+`.github/workflows/deploy.yml` verifies and builds every deployment, creates or validates the matching Pages project, deploys `dist/` as the hosting root, and verifies the custom domain and proxied DNS record. The build places the application beneath `dist/tools/oni-planet-resources/`, matching the configured URL path.
+
+The workflow uses four GitHub Actions secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_ZONE_ID`, and `CLOUDFLARE_ACCESS_EMAIL`. Production is deployed only from `main`; opening or updating a pull request does not publish production.
 
 ## Branch policy
 

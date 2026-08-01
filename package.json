@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "test": "vitest run",
+    "test": "vitest run && node --test scripts/configure_cloudflare.node-test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
