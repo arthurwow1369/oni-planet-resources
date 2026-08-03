@@ -8,6 +8,7 @@ const resource = (simhash: string, categories: Resource['categories'] = []): Res
   name_zh: `中-${simhash}`,
   type: 'solid',
   categories,
+  primaryCategory: 'Other',
   use_en: '',
   use_zh: '',
 })
@@ -87,6 +88,20 @@ describe('buildMainSourceRecommendations', () => {
     expect(oxygen?.strategyId).toBe('water-electrolysis')
     expect(oxygen?.matchedResources.map((item) => item.simhash)).toEqual(['SaltWater', 'Brine'])
     expect(oxygen?.terrainIds).toEqual(['ocean-a', 'ocean-b'])
+  })
+
+  it('requires Salt as Rust Deoxidizer input and identifies Chlorine as an output', () => {
+    const rustOnly = buildMainSourceRecommendations([
+      terrain('rust-only', [resource('Rust', ['oxygen'])]),
+    ]).find((item) => item.category === 'oxygen')
+    expect(rustOnly?.strategyId).not.toBe('rust-deoxidizer')
+
+    const withSalt = buildMainSourceRecommendations([
+      terrain('rust-and-salt', [resource('Rust', ['oxygen']), resource('Salt', ['industrial'])]),
+    ]).find((item) => item.category === 'oxygen')
+    expect(withSalt?.strategyId).toBe('rust-deoxidizer')
+    expect(withSalt?.description_en).toContain('Salt input')
+    expect(withSalt?.description_en).toContain('Chlorine output')
   })
 
   it('marks every recommendation as potential worldgen rather than a quantity guarantee', () => {

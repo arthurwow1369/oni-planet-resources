@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "as_of": "2026-08-03",
+    "installed_game_version": "U59-740622",
+    "latest_public_checked": "U59-744825",
+    "scope_en": "Curated planet-native or planet-event routes for strategic rare and late-game materials. Common mid-game materials and space-only POIs are not marked.",
+    "scope_zh": "只標示由特定星球原生資源或星球事件開啟的稀有／後期戰略材料路線；常見中期材料與純太空興趣點不列入星球標記。"
+  },
+  "routes": [
+    {
+      "id": "graphite-super-coolant",
+      "name_en": "Graphite → Fullerene → Super Coolant",
+      "name_zh": "石墨 → 富勒烯 → 超級冷卻液",
+      "stage_en": "Late game / cryogenics",
+      "stage_zh": "後期／低溫工程",
+      "availability_en": "Graphite is native and exclusive to the lower half of the Water Asteroid in Spaced Out. Fullerene is the processed product; it is not native terrain here. A Gilded Asteroid Field is a separate renewable space-POI route.",
+      "availability_zh": "《太空拓荒》中，石墨原生且只出現在水域小行星下半部；富勒烯是加工產物，不是此星球的原生地形資源。鍍金小行星帶則是另一條可再生的太空興趣點路線。",
+      "production_en": [
+        "Molecular Forge: 90 kg Graphite + 5 kg Sulfur + 5 kg Aluminum = 100 kg Fullerene.",
+        "Emulsifier: 1 kg Fullerene + 49.5 kg Gold + 49.5 kg Petroleum = 100 kg Super Coolant."
+      ],
+      "production_zh": [
+        "分子熔爐：90 公斤石墨 + 5 公斤硫 + 5 公斤鋁 = 100 公斤富勒烯。",
+        "乳化機：1 公斤富勒烯 + 49.5 公斤金 + 49.5 公斤石油 = 100 公斤超級冷卻液。"
+      ],
+      "uses_en": [
+        "Super Coolant has the game's lowest freezing point and exceptionally high specific heat capacity, making liquid oxygen and liquid hydrogen production much easier.",
+        "It is also the preferred coolant for deep cryogenic loops and sour-gas-to-methane condensation."
+      ],
+      "uses_zh": [
+        "超級冷卻液具有遊戲中最低凝固點與極高比熱容，可大幅降低製造液態氧、液態氫的難度。",
+        "也適合深低溫冷卻迴路，以及將酸性氣體冷凝成液態甲烷。"
+      ],
+      "attention_en": [
+        "Reaching the Water Asteroid does not by itself complete the chain; Sulfur, Aluminum, Gold, Petroleum and the two late-game processing buildings are still required.",
+        "Do not confuse terrain availability with guaranteed mass: the site shows possible worldgen sources, not seed probability or quantity."
+      ],
+      "attention_zh": [
+        "抵達水域小行星並不等於完成整條產線；仍需硫、鋁、金、石油，以及兩座後期加工建築。",
+        "不要把地形來源誤解成保證數量：本站只表示世界生成候選來源，不代表種子機率或實際儲量。"
+      ],
+      "source_ids": [
+        "wiki-graphite",
+        "wiki-fullerene",
+        "wiki-super-coolant",
+        "forum-super-coolant-2025"
+      ]
+    },
+    {
+      "id": "niobium-thermium",
+      "name_en": "Niobium → Thermium → Plastium",
+      "name_zh": "鈮 → 超導體 → 塑膠質",
+      "stage_en": "Late game / extreme heat",
+      "stage_zh": "後期／極端高溫",
+      "availability_en": "The Superconductive Asteroid contains low-mass Niobium patches embedded in Obsidian and Magma and a renewable Molten Niobium Volcano.",
+      "availability_zh": "超導小行星有包在黑曜石與岩漿中的低質量鈮礦塊，並有可再生的熔融鈮火山。",
+      "production_en": [
+        "Molecular Forge: 5 kg Niobium + 95 kg Tungsten = 100 kg Thermium.",
+        "Metal Refinery: 100 kg Thermium = 100 kg Niobium. After the first batch, this bootstraps Niobium while consuming Tungsten; do not use the Rock Crusher, which recovers only 50%.",
+        "Molecular Forge: 15 kg Thermium + 70 kg Plastic + 15 kg Brackwax = 100 kg Plastium."
+      ],
+      "production_zh": [
+        "分子熔爐：5 公斤鈮 + 95 公斤鎢 = 100 公斤超導體。",
+        "金屬精煉器：100 公斤超導體 = 100 公斤鈮。第一批完成後可用鎢擴增鈮；不要用碎石機，碎石機只回收 50%。",
+        "分子熔爐：15 公斤超導體 + 70 公斤塑膠 + 15 公斤鹹乳蠟 = 100 公斤塑膠質。"
+      ],
+      "uses_en": [
+        "Niobium adds +500 °C building overheat tolerance; Thermium adds +900 °C and has very high thermal conductivity.",
+        "Thermium enables extreme-temperature Aquatuners, sour-gas boilers and other builds that exceed Steel's +200 °C bonus.",
+        "Plastium gives plastic-category buildings +900 °C overheat tolerance while retaining low thermal conductivity."
+      ],
+      "uses_zh": [
+        "鈮可讓建築過熱溫度提高 500°C；超導體提高 900°C，且具有極高導熱率。",
+        "超導體可用於超高溫液溫調節器、酸性氣體鍋爐，以及其他超過鋼材 200°C 加成能力的設備。",
+        "塑膠質可讓塑膠類建築提高 900°C 過熱溫度，同時維持低導熱率。"
+      ],
+      "attention_en": [
+        "Reserve at least the first 5 kg of Niobium for a Thermium batch. Building directly from scarce Niobium is usually worse than using Thermium.",
+        "Native patches sit beside Magma and the volcano emits molten metal; use vacuum, safe access and controlled cooling.",
+        "Thermium is still limited by Tungsten. Plastium additionally requires Brackwax, so this planet is only one bottleneck in that chain."
+      ],
+      "attention_zh": [
+        "至少保留最初 5 公斤鈮來製造第一批超導體；把稀少的鈮直接拿去蓋建築通常不如使用超導體。",
+        "原生礦塊緊鄰岩漿，火山也會噴出熔融金屬；應使用真空隔熱、安全通道與受控冷卻。",
+        "超導體仍受鎢供應限制；塑膠質另需鹹乳蠟，因此此星球只解決產線的一個瓶頸。"
+      ],
+      "source_ids": [
+        "wiki-niobium",
+        "wiki-thermium",
+        "wiki-plastium",
+        "forum-thermium-use"
+      ]
+    },
+    {
+      "id": "sap-isosap",
+      "name_en": "Experiment 52B → Sap → Isosap",
+      "name_zh": "實驗體 52B → 原生膠 → 異構膠晶",
+      "stage_en": "Late game / perfect insulation and liquid locks",
+      "stage_zh": "後期／極限隔熱與液封",
+      "availability_en": "Experiment 52B is guaranteed on the Marshy Asteroid and cannot be uprooted or cultivated. If a cluster remix replaces the Marshy Asteroid, the experiment and one Tungsten Volcano move to the replacement fragment.",
+      "availability_zh": "草澤小行星保證有實驗體 52B，且不能挖起或人工種植。若星團混搭取代草澤小行星，實驗體與一座鎢火山會移到替代碎片星球。",
+      "production_en": [
+        "Experiment 52B consumes edible food and produces 1 kg Sap per 200 kcal.",
+        "Heat Sap above 125 °C away from the tree: 25% becomes Isosap and 75% becomes Steam.",
+        "Molecular Forge: 15 kg Isosap + 80 kg Abyssalite + 5 Reed Fiber or 5 Feather Fiber = 100 kg Insulite.",
+        "Emulsifier: 35 kg Isosap + 65 kg Petroleum = 100 kg Visco-Gel Fluid."
+      ],
+      "production_zh": [
+        "實驗體 52B 消耗可食用食物；每 200 千卡產生 1 公斤原生膠。",
+        "把原生膠移離實驗體後加熱至 125°C 以上：25% 轉為異構膠晶，75% 轉為蒸汽。",
+        "分子熔爐：15 公斤異構膠晶 + 80 公斤深淵晶石 + 5 單位蘆葦纖維或 5 單位羽絨纖維 = 100 公斤隔熱質。",
+        "乳化機：35 公斤異構膠晶 + 65 公斤石油 = 100 公斤凝膠。"
+      ],
+      "uses_en": [
+        "Insulite has near-zero thermal conductivity and is best used in insulated pipes and tiles for effectively locked-down heat transfer.",
+        "Visco-Gel Fluid stacks vertically without spreading horizontally, making compact liquid locks and unusual liquid structures possible.",
+        "The same Marshy route also guarantees Tungsten Volcanoes, supporting the Tungsten side of Thermium production."
+      ],
+      "uses_zh": [
+        "隔熱質的導熱率接近零，製成隔熱管線與隔熱磚時可近乎封鎖熱交換。",
+        "凝膠可垂直堆疊而不向左右流動，適合緊湊液封與特殊液體結構。",
+        "同一條草澤路線也保證有鎢火山，可支援製造超導體所需的鎢。"
+      ],
+      "attention_en": [
+        "Experiment 52B attacks nearby Duplicants and Critters. Deliver food beneath it with minimal direct access.",
+        "Keep the tree and its output above about 17 °C; frozen Sap can form natural tiles that stifle the tree. Do not heat Sap to 125 °C beside the tree.",
+        "There is only one tree. Production consumes colony food, and Insulite also needs mined Abyssalite plus Reed Fiber or Feather Fiber."
+      ],
+      "attention_zh": [
+        "實驗體 52B 會攻擊靠近的複製人與生物；應把食物送到它下方並減少直接接近。",
+        "讓實驗體與產物保持在約 17°C 以上；凍結的原生膠可能形成自然磚並阻塞實驗體。也不要在實驗體旁直接加熱到 125°C。",
+        "每個星團只有一棵實驗體；產線會消耗殖民地食物，製造隔熱質還需可挖掘深淵晶石，以及蘆葦纖維或羽絨纖維。"
+      ],
+      "source_ids": [
+        "wiki-experiment-52b",
+        "wiki-insulite",
+        "wiki-visco-gel"
+      ]
+    },
+    {
+      "id": "moo-brackene",
+      "name_en": "Gassy Moo → Brackene → Brackwax → Plastium",
+      "name_zh": "瓦斯牛 → 鹹乳 → 鹹乳蠟 → 塑膠質",
+      "stage_en": "Late game / renewable Plastium ingredient",
+      "stage_zh": "後期／可再生塑膠質材料",
+      "availability_en": "The Moo Asteroid is the natural home of Gassy Moos and Gas Grass. This is a native renewable Brackene route, not an exclusive requirement: Brackene also has food-crop recipes.",
+      "availability_zh": "牧場小行星是瓦斯牛與瓦斯草的原生地。這是可再生鹹乳的原生路線，但不是唯一解法；鹹乳也可使用農作物配方製造。",
+      "production_en": [
+        "A happy, fed Gassy Moo can be milked every 4 cycles for 200 kg Brackene.",
+        "Brackwax Gleaner: 1,000 g/s Brackene = 90 g/s Brackwax + 810 g/s Brine + 100 g/s Carbon Dioxide.",
+        "Heating 1,000 g Brackene above 83 °C instead yields 100 g Brackwax + 900 g Brine.",
+        "Molecular Forge: 15 kg Thermium + 70 kg Plastic + 15 kg Brackwax = 100 kg Plastium."
+      ],
+      "production_zh": [
+        "快樂且有進食的瓦斯牛每 4 週期可擠取 200 公斤鹹乳。",
+        "鹹乳蠟收集器：每秒 1,000 公克鹹乳 = 90 公克鹹乳蠟 + 810 公克鹵水 + 100 公克二氧化碳。",
+        "把 1,000 公克鹹乳加熱到 83°C 以上，則可得到 100 公克鹹乳蠟 + 900 公克鹵水。",
+        "分子熔爐：15 公斤超導體 + 70 公斤塑膠 + 15 公斤鹹乳蠟 = 100 公斤塑膠質。"
+      ],
+      "uses_en": [
+        "Brackwax is the special intermediate required for Plastium.",
+        "Plastium is the extreme-heat replacement for Plastic in Transit Tubes, mini pumps, Radbolt Joint Plates, Remote Worker Docks and other plastic-category buildings."
+      ],
+      "uses_zh": [
+        "鹹乳蠟是製造塑膠質所需的特殊中間材料。",
+        "塑膠質可在運輸管道、迷你泵、輻射粒子接合板、遠端作業塢等塑膠類建築中取代塑膠，用於極高溫環境。"
+      ],
+      "attention_en": [
+        "Moos do not lay eggs. Keep them fed to build Accu-Moo-Lation, then give a 100% charged Moo direct sunlight or a view into space so it can call a replacement; continuous feeding takes about 16 cycles.",
+        "Brackwax melts irreversibly into Naphtha above about 162.9 °C; remove it quickly if using a hot conversion chamber.",
+        "This route still requires Thermium from the Niobium/Tungsten chain and ordinary Plastic."
+      ],
+      "attention_zh": [
+        "牧場牛不會產蛋；持續餵食約 16 週期可累積至 100% 召牛進度，此時還要讓牧場牛看見太空或直射陽光，才能召喚替代個體。並應保留瓦斯草或其他有效飼料路線。",
+        "鹹乳蠟在約 162.9°C 以上會不可逆地熔成石腦油；若用高溫轉換室，必須迅速移出產物。",
+        "此路線仍需鈮／鎢產線製造的超導體，以及一般塑膠。"
+      ],
+      "source_ids": [
+        "wiki-moo-asteroid",
+        "wiki-gassy-moo",
+        "wiki-brackene",
+        "wiki-brackwax",
+        "wiki-plastium"
+      ]
+    },
+    {
+      "id": "iridium-demolior",
+      "name_en": "Demolior event → Iridium",
+      "name_zh": "毀滅者事件 → 銥",
+      "stage_en": "Timed event / hotter-than-Steel metal",
+      "stage_zh": "限時事件／高於鋼材的耐熱金屬",
+      "availability_en": "Relica, Relica Minor and RelicAAAAAAAGHH starts include the Demolior event. Iridium is awarded through impact material or successful defense rewards; it is not ordinary worldgen ore before that event.",
+      "availability_zh": "遺蹟星、迷你遺蹟星與遺蹟啊啊啊啊啊星開局包含毀滅者事件。銥來自撞擊材料或成功防禦後的獎勵；事件前它不是一般世界生成礦物。",
+      "production_en": [
+        "Letting Demolior impact creates a large one-time Iridium deposit in the destroyed impact zone.",
+        "Destroying Demolior triggers a one-time Iridium meteor shower and, in Spaced Out, renewable debris POIs containing Iridium or Molten Iridium."
+      ],
+      "production_zh": [
+        "讓毀滅者撞擊會在被摧毀的撞擊區形成大量一次性銥礦。",
+        "擊毀毀滅者會觸發一次性銥流星雨；在《太空拓荒》中也會產生含銥或熔融銥的可再生碎片興趣點。"
+      ],
+      "uses_en": [
+        "Iridium adds +500 °C building overheat tolerance, exceeding Steel's +200 °C bonus.",
+        "Its very high thermal conductivity makes it suitable for hot Aquatuners and oil/petroleum boiling where Steel may overheat."
+      ],
+      "uses_zh": [
+        "銥可讓建築過熱溫度提高 500°C，高於鋼材的 200°C 加成。",
+        "銥的導熱率極高，適合高溫液溫調節器、原油與石油沸騰設備等鋼材可能過熱的用途。"
+      ],
+      "attention_en": [
+        "This is a timed, destructive event. The default impact is cycle 200; RelicAAAAAAAGHH forces cycle 10, and difficulty settings can alter or disable the timer.",
+        "An impact destroys terrain, buildings, critters, Duplicants and even geysers in the marked zone. A successful defense also causes a damaging Iridium meteor shower.",
+        "Iridium has hardness 200 and requires the tier-3 Super-Duperhard Digging skill when mined as natural tiles."
+      ],
+      "attention_zh": [
+        "這是有時間限制且具有破壞性的事件；預設在第 200 週期撞擊，遺蹟啊啊啊啊啊星強制第 10 週期，難度設定可改變或停用倒數。",
+        "撞擊會摧毀標記區內的地形、建築、生物、複製人，甚至間歇泉；成功防禦後的銥流星雨同樣具有破壞性。",
+        "銥的硬度為 200；挖掘自然磚形式的銥需要第 3 級「極硬物挖掘」技能。"
+      ],
+      "source_ids": [
+        "wiki-iridium",
+        "wiki-demolior",
+        "wiki-relica"
+      ]
+    },
+    {
+      "id": "uranium-nuclear",
+      "name_en": "Uranium Ore → Enriched Uranium",
+      "name_zh": "鈾礦 → 濃縮鈾",
+      "stage_en": "Mid-late game / nuclear power and radiation",
+      "stage_zh": "中後期／核能與輻射",
+      "availability_en": "These world variants include Uranium Ore in at least one referenced terrain. Full Radioactive Biomes may also contain Beetas; worlds with only small Uranium-sprinkle terrain are not guaranteed a hive.",
+      "availability_zh": "這些星球變體至少有一個引用地形列出鈾礦；完整放射性生態區還可能有鈾蜂，但只有少量鈾礦點綴地形的星球不保證有蜂巢。",
+      "production_en": [
+        "Uranium Centrifuge: 10 kg Uranium Ore = 2 kg Enriched Uranium + 8 kg Liquid Uranium.",
+        "Beeta Hive: 1 kg Uranium Ore = 0.9 kg Enriched Uranium, making hives far more mass-efficient where Beetas exist."
+      ],
+      "production_zh": [
+        "鈾離心機：10 公斤鈾礦 = 2 公斤濃縮鈾 + 8 公斤液態鈾。",
+        "鈾蜂巢：1 公斤鈾礦 = 0.9 公斤濃縮鈾；有鈾蜂時，蜂巢的質量效率遠高於離心機。"
+      ],
+      "uses_en": [
+        "Enriched Uranium fuels Research Reactors for high-output power and large heat production.",
+        "Uranium Ore also fuels Radiation Lamps and Manual Radbolt Generators; Beetas and hives can provide strong ambient radiation for Radbolt collection."
+      ],
+      "uses_zh": [
+        "濃縮鈾可作為研究反應爐燃料，提供高輸出電力並產生大量熱。",
+        "鈾礦也可供輻射燈與手動輻射粒子產生器使用；鈾蜂與蜂巢可提供強環境輻射，供輻射粒子收集。"
+      ],
+      "attention_en": [
+        "Mining natural Uranium Ore destroys half its mass. Awake Beetas are hostile; sleeping Beetas emit about 1,440 rads/cycle, while the Beeta Hive briefly exceeds 1,800 rads/cycle when processing ore.",
+        "Carbon Dioxide can put Beetas to sleep for safer handling, but radiation exposure, reactor heat and Nuclear Waste still require containment and cooling.",
+        "Enriched Uranium debris itself does not emit radiation; do not count it as an ambient-radiation source."
+      ],
+      "attention_zh": [
+        "直接挖掘自然鈾礦會損失一半質量；鈾蜂回收率高得多。清醒的鈾蜂具有敵意；睡眠中的鈾蜂約放出每週期 1,440 拉德，鈾蜂巢處理鈾礦時則會短暫超過每週期 1,800 拉德。",
+        "二氧化碳可讓鈾蜂睡眠以便安全操作，但仍需控制輻射暴露、反應爐熱量與核廢料。",
+        "濃縮鈾碎屑本身不會放出輻射，不可把它當成環境輻射來源。"
+      ],
+      "source_ids": [
+        "wiki-uranium-ore",
+        "wiki-enriched-uranium",
+        "wiki-beeta-hive",
+        "wiki-radiation"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "latest-u59",
+      "title": "U59-744825 version notes",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Versions/U59-744825",
+      "kind": "version-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-graphite",
+      "title": "Graphite",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Graphite",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-fullerene",
+      "title": "Fullerene",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Fullerene",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-super-coolant",
+      "title": "Super Coolant",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Super_Coolant",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "forum-super-coolant-2025",
+      "title": "Molecular Forge will not let me craft Super Coolant",
+      "url": "https://forums.kleientertainment.com/klei-bug-tracker/oni/molecular-forge-will-not-let-me-craft-super-coolant-r49371/",
+      "kind": "community-discussion",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-niobium",
+      "title": "Niobium",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Niobium",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-thermium",
+      "title": "Thermium",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Thermium",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-plastium",
+      "title": "Plastium",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Plastium",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "forum-thermium-use",
+      "title": "So now I have Thermium. What to do with it?",
+      "url": "https://forums.kleientertainment.com/forums/topic/124767-so-now-i-have-thermium-what-to-do-with-it/",
+      "kind": "community-discussion",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-experiment-52b",
+      "title": "Experiment 52B",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Experiment_52B",
+      "kind": "mechanics-strategy-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-insulite",
+      "title": "Insulite",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Insulite",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-visco-gel",
+      "title": "Visco-Gel Fluid",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Visco-Gel_Fluid",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-moo-asteroid",
+      "title": "Moo Asteroid",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Moo_Asteroid",
+      "kind": "worldgen-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-gassy-moo",
+      "title": "Gassy Moo",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Gassy_Moo",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-brackene",
+      "title": "Brackene",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Brackene",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-brackwax",
+      "title": "Brackwax",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Brackwax",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-iridium",
+      "title": "Iridium",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Iridium",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-demolior",
+      "title": "Demolior",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Demolior",
+      "kind": "mechanics-strategy-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-relica",
+      "title": "Relica Asteroid",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Relica_Asteroid",
+      "kind": "worldgen-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-uranium-ore",
+      "title": "Uranium Ore",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Uranium_Ore",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-enriched-uranium",
+      "title": "Enriched Uranium",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Enriched_Uranium",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-beeta-hive",
+      "title": "Beeta Hive",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Beeta_Hive",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    },
+    {
+      "id": "wiki-radiation",
+      "title": "Radiation",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Radiation",
+      "kind": "mechanics-reference",
+      "accessed_at": "2026-08-03"
+    }
+  ]
+}

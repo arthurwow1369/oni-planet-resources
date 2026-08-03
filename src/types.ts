@@ -15,12 +15,43 @@ export type Category =
   | 'gas'
   | 'uncategorized'
 
+export type GameCategoryId = string
+
+export interface GameCategory {
+  id: GameCategoryId
+  name_en: string
+  name_zh: string
+}
+
+export interface RepresentedEntity {
+  id: string
+  type: 'plant' | 'critter'
+  name_en: string
+  name_zh: string
+  use_en: string
+  use_zh: string
+}
+
+export interface ResourceRepresentative {
+  id: string
+  kind: 'seed' | 'egg' | 'spawn'
+  isVirtual: boolean
+  name_en: string
+  name_zh: string
+  entity: RepresentedEntity
+  mechanism_en?: string
+  mechanism_zh?: string
+  sourceEvidence?: string
+}
+
 export interface Resource {
   simhash: string
   name_en: string
   name_zh: string
   type: 'solid' | 'liquid' | 'gas' | 'plant' | 'critter' | string
   categories: Category[]
+  primaryCategory: GameCategoryId
+  representative?: ResourceRepresentative
   use_en: string
   use_zh: string
   weight?: number
@@ -49,6 +80,50 @@ export interface World {
   subworldIds: string[]
   clusterExtensionSubworldIds: string[]
   guarantees: string[]
+  width: number
+  height: number
+  clusterRoles: Array<'start' | 'warp' | 'general'>
+  referencedByCluster: boolean
+  internal: boolean
+  specialResourceIds: string[]
+}
+
+export interface SpecialResourceRoute {
+  id: string
+  name_en: string
+  name_zh: string
+  stage_en: string
+  stage_zh: string
+  availability_en: string
+  availability_zh: string
+  production_en: string[]
+  production_zh: string[]
+  uses_en: string[]
+  uses_zh: string[]
+  attention_en: string[]
+  attention_zh: string[]
+  source_ids: string[]
+}
+
+export interface SpecialResourceSource {
+  id: string
+  title: string
+  url: string
+  kind: string
+  accessed_at: string
+}
+
+export interface SpecialResourceData {
+  schema_version: 1
+  baseline: {
+    as_of: string
+    installed_game_version: string
+    latest_public_checked: string
+    scope_en: string
+    scope_zh: string
+  }
+  routes: SpecialResourceRoute[]
+  sources: SpecialResourceSource[]
 }
 
 export interface Stats {
@@ -62,6 +137,7 @@ export interface Stats {
 
 export interface AggregatedResource extends Resource {
   terrainIds: string[]
+  sourceSimhashes: string[]
 }
 
 export type TerrainResearchStage = 'all' | 'early' | 'early-mid' | 'mid' | 'mid-late' | 'late'
@@ -86,12 +162,18 @@ export type TerrainResearchDependency =
   | 'native-finite-then-imported'
   | 'native-finite-unless-looped'
   | 'native-location'
+  | 'native-direct-gas'
+  | 'native-direct-offgassing'
+  | 'native-ingredient-plus-fauna'
+  | 'native-manual-only'
+  | 'native-plant-plus-critter'
   | 'native-plant-plus-imported-or-connected-dirt'
   | 'native-plant-plus-imported-or-connected-hydrogen-and-critters'
   | 'native-plus-buildings'
   | 'native-plus-connected'
   | 'native-plus-imported'
   | 'native-plus-infrastructure'
+  | 'native-plus-one-building'
   | 'native-plus-processing'
   | 'native-spaced-out'
   | 'native-variant'
@@ -105,11 +187,15 @@ export type TerrainResearchDependency =
   | 'requires-reef'
   | 'seed-dependent'
   | 'seed-dependent-native-feature'
+  | 'no-direct-native-route'
+  | 'no-guaranteed-direct-native-fuel'
+  | 'variant-or-imported'
 
 export interface TerrainResearchBaseline {
   as_of: string
   game_version: string
   installed_steam_build_id: string
+  latest_public_checked?: string
   terrain_taxonomy: string
 }
 
@@ -133,21 +219,11 @@ export interface TerrainResearchSpawnable {
   name_zh: string
 }
 
-export type TerrainResearchEntityRole =
-  | 'food'
-  | 'oxygen'
-  | 'power'
-  | 'radiation'
-  | 'industrial'
-  | 'decor'
-  | 'hazard'
-
 export interface TerrainResearchEntityProfile {
   prefab_id: string
   name_en: string
   name_zh: string
   kind: 'flora' | 'fauna'
-  roles: TerrainResearchEntityRole[]
   summary_en: string
   summary_zh: string
   mechanics_url: string
@@ -190,6 +266,22 @@ export interface TerrainResearchRecommendations {
   radiation: TerrainResearchMethod[]
 }
 
+export interface TerrainCostEfficiencyRating {
+  rating: number
+  best_method_index: number | null
+  dependency_penalty: number
+  stage_penalty: number
+  confidence_penalty: number
+  no_direct_native_route: boolean
+}
+
+export interface TerrainCostEfficiencyRatings {
+  food: TerrainCostEfficiencyRating
+  energy: TerrainCostEfficiencyRating
+  oxygen: TerrainCostEfficiencyRating
+  radiation: TerrainCostEfficiencyRating
+}
+
 export interface TerrainResearchZoneConfidence {
   worldgen: 'high-with-union-caveat'
   strategy: 'high unless a method is marked medium'
@@ -203,6 +295,7 @@ export interface TerrainResearchZone {
   variant_count: number
   worldgen: TerrainResearchWorldgen
   recommendations: TerrainResearchRecommendations
+  cost_efficiency_ratings: TerrainCostEfficiencyRatings
   attention: string[]
   source_ids: string[]
   confidence: TerrainResearchZoneConfidence
@@ -223,7 +316,7 @@ export interface TerrainResearchSource {
 }
 
 export interface TerrainResearchData {
-  schema_version: 1
+  schema_version: 3
   locale: 'zh-TW'
   terminology_source: string
   generated_at: string
@@ -232,6 +325,11 @@ export interface TerrainResearchData {
   scope_note_zh: string
   interpretation_rules: string[]
   interpretation_rules_zh: string[]
+  cost_efficiency_rubric: {
+    scale: { min: number; max: number }
+    aggregation: 'best-usable-method'
+    formula: string
+  }
   entity_profiles: TerrainResearchEntityProfile[]
   zones: TerrainResearchZone[]
   sources: TerrainResearchSource[]

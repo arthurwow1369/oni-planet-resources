@@ -1,6 +1,6 @@
 # Oxygen Not Included Terrain Research
 
-Baseline: U59-740622 as of 2026-08-01
+Baseline: U59-740622 as of 2026-08-02
 
 This research follows the existing website's 26 zoneType terrain groups. It merges all 232 installed base/DLC subworld definitions into per-zone unions. A listed resource is possible in at least one installed variant, not guaranteed on every asteroid, seed, or DLC combination.
 
@@ -32,14 +32,14 @@ Food:
 
 Energy:
 - Use finite Carbon/Coal only as a bridge (native-finite, early, high)
-- Where a Thermal Gas Fissure exists, evaluate a heat-to-steam-turbine system after measuring its output cycle (seed-dependent-native-feature, late, medium)
+- Where a Thermal Gas Fissure exists, measure its output cycle before a Steam Turbine system; turbine input Steam must reach at least 125°C, the turbine body must stay below 100°C, and dormant periods need heat buffering (seed-dependent-native-feature, late, high)
 
 Oxygen:
 - Pipe or carry oxygen from an established system and use Breathing Stations for underwater work (imported, all, high)
-- Process renewable vent liquids only after confirming the exact polluted-brine treatment chain (seed-dependent, mid, medium)
+- No dependable native one-building clean-oxygen route; polluted-brine treatment chains exceed the direct-path policy and are only advanced context (no-direct-native-route, mid, high)
 
 Radiation:
-- Import Wheezewort or Shine Bugs, or use a powered Radiation Lamp; collect with a Radbolt Generator (imported-spaced-out, mid, high)
+- Import passive Wheezewort or Shine Bugs as ambient radiation sources, then use one Radbolt Generator to collect the field; a powered Radiation Lamp plus a Radbolt Generator is a two-active-building advanced chain and is not ranked as direct (imported-spaced-out, mid, high)
 
 Attention:
 - Deep flooding and long breath paths
@@ -101,7 +101,7 @@ Food:
 - Treat wild forage as a bridge, not a permanent calorie budget (native-finite, early, high)
 
 Energy:
-- Start with Manual Generators; transition to hydrogen from the water/oxygen system or import another fuel (mixed, early-mid, high)
+- Start with Manual Generators; no Beach-native direct fuel route is guaranteed (native-manual-only, early, high)
 - Do not plan on a native Tidal Turbine in Beach; official 735589 moved Tidal Springs to Reef (requires-reef, mid, high)
 
 Oxygen:
@@ -135,10 +135,10 @@ Food:
 - Grow Dusk Caps from Slime and ranch Pacu for food plus eggshell material (native, early-mid, high)
 
 Energy:
-- Import Coal or another fuel; use local polluted-water processing to support later hydrogen power (mixed, mid, medium)
+- Use Manual Generators unless a directly usable local fuel or geyser is proven by the exact world; polluted-water-to-hydrogen chains exceed the direct-path policy (no-guaranteed-direct-native-fuel, early-mid, high)
 
 Oxygen:
-- Exploit polluted oxygen with Deodorizers while containing Slimelung; use algae or cleaned water/electrolysis for controlled output (native, early-mid, high)
+- Breathe native Polluted Oxygen as an emergency source or clean it with one Deodorizer; use one Oxygen Diffuser where local Algae exists (native, early-mid, high)
 
 Radiation:
 - Import Shine Bugs or Wheezeworts; the marsh itself has no dependable native source (imported-spaced-out, mid, high)
@@ -200,7 +200,7 @@ Food:
 - Use Hexalent forage briefly, then Mealwood; use Pips and Arbor Trees to improve long-term Dirt/wood sustainability (native, early, high)
 
 Energy:
-- Convert Arbor Tree lumber to Ethanol and burn it after the required production chain is built (native, mid, high)
+- Burn native Arbor Tree Lumber directly in a Wood Burner; the Lumber-to-Ethanol-to-generator chain is advanced context and excluded from direct ranking (native, early-mid, high)
 
 Oxygen:
 - Use Oxyferns only as a supplement; explore early for water and transition to an electrolyzer or imported algae (native-bridge-then-mixed, early-mid, high)
@@ -267,7 +267,7 @@ Food:
 - Transition finite Sherberries to Pikeapple farming; ranch Floxes only after feed supply is stable (native, early, high)
 
 Energy:
-- Use Flox wood in an ethanol chain; bootstrap with Manual Generators and local finite fuels (native-plus-buildings, early-mid, high)
+- Burn Flox Lumber directly in a Wood Burner or bootstrap with Manual Generators; the ethanol chain exceeds the direct-path policy (native-plus-one-building, early-mid, high)
 
 Oxygen:
 - Farm Alveo Vera using Carbon Dioxide and Ice to produce Oxylite; later melt ice and electrolyze water (native, early-mid, high)
@@ -297,13 +297,13 @@ Aquatic Kelp Forest with Polluted Water/Oxygen, Polluted Mud, Tower Kelp, Kelpol
 - Features: None listed
 
 Food:
-- Use Tower Kelp/Kelpole Nori production and Orehull ranching as the native food foundation (native, early-mid, high)
+- Harvest Kelpoles for ingredient-only Nori and use exact Orehull edible drops where defined; Nori has 0 raw kcal and is not a standalone food foundation (native-ingredient-plus-fauna, early-mid, high)
 
 Energy:
-- Use Manual Generators first; clean polluted water for an electrolyzer/hydrogen loop or import power (native-plus-processing, mid, medium)
+- Use Manual Generators first; no Kelp-Forest-native direct generator fuel is guaranteed, and polluted-water cleanup plus electrolysis plus generation exceeds the direct-path policy (no-guaranteed-direct-native-fuel, early-mid, high)
 
 Oxygen:
-- Deodorize existing polluted oxygen and process polluted water into a controlled oxygen system (native, early-mid, high)
+- Use native Polluted Oxygen directly or clean it with one Deodorizer; polluted-water treatment chains are advanced context, not a direct recommendation (native-direct-gas, early-mid, high)
 
 Radiation:
 - Import Wheezewort or Shine Bugs (imported-spaced-out, mid, high)
@@ -333,7 +333,7 @@ Food:
 - Do not farm here; import food and isolate any nearby ranch or farm thermally (imported, all, high)
 
 Energy:
-- Extract geothermal heat into a controlled steam chamber and Steam Turbines (native, late, high)
+- Extract geothermal heat into a controlled Steam Turbine chamber; input Steam must reach at least 125°C, the turbine body must stay below 100°C, and the system needs controlled heat transfer and cooling (native, late, high)
 
 Oxygen:
 - Use sealed Atmo Suit access and pipe oxygen from elsewhere (imported, mid-late, high)
@@ -432,10 +432,10 @@ Food:
 - Farm Waterweed for lettuce and ranch Pacu; use Pokeshell products primarily as industrial support (native, mid, high)
 
 Energy:
-- Desalinate or otherwise process water for electrolysis and capture hydrogen; treat this as power-consuming life support with a fuel byproduct, not free energy (native-plus-infrastructure, mid, high)
+- Use a Manual Generator; desalination to electrolysis to hydrogen generation is a multi-building advanced chain and is not ranked as direct power (native-manual-only, early, high)
 
 Oxygen:
-- Process Salt Water/Brine to water and run an electrolyzer (native, mid, high)
+- No dependable native one-building clean-oxygen route; desalination plus electrolysis is a two-active-building advanced chain and is not ranked as direct (no-direct-native-route, mid, high)
 
 Radiation:
 - Import Wheezewort or Shine Bugs (imported-spaced-out, mid, high)
@@ -466,7 +466,7 @@ Food:
 - Import a heat-tolerant or insulated crop system (imported, mid, high)
 
 Energy:
-- Refine or boil Crude Oil to Petroleum; exploit Natural Gas where generated (native, mid-late, high)
+- Use a Manual Generator unless the exact world has a directly usable Natural Gas source; refining or boiling Crude Oil before a Petroleum Generator is an advanced chain and is not ranked as direct (no-guaranteed-direct-native-fuel, early-mid, high)
 
 Oxygen:
 - Pipe oxygen through an Atmo Suit network; use imported or geyser water for electrolysis (imported, mid, high)
@@ -565,10 +565,10 @@ Food:
 - Ranch Pacu/Jawbo for seafood; protect supporting populations from uncontrolled predation (native, mid, high)
 
 Energy:
-- Process polluted water for an electrolyzer/hydrogen system or import Peat power from Garden (mixed, mid, medium)
+- Use Manual Generators unless the exact terrain union proves local Peat or another directly burnable fuel; polluted-water-to-hydrogen chains exceed the direct-path policy (variant-or-imported, early-mid, high)
 
 Oxygen:
-- Clean polluted water and electrolyze it; isolate polluted reservoirs and offgassing (native, mid, high)
+- Use exposed Polluted Water offgassing as emergency Polluted Oxygen or clean that gas with one Deodorizer; water cleaning plus electrolysis exceeds the direct-path policy (native-direct-offgassing, early-mid, high)
 
 Radiation:
 - Import Wheezeworts or Shine Bugs (imported-spaced-out, mid, high)
@@ -595,16 +595,16 @@ Cold Spaced Out terrain with Uranium Ore, Beeta Hives, Wheezeworts, Saturn Critt
 - Features: expansion1::features/radioactive/BeeBubble
 
 Food:
-- Use native Saturn Critter Traps only with imported or connected renewable Hydrogen and a critter-delivery plan; otherwise import food (native-plant-plus-imported-or-connected-hydrogen-and-critters, mid, medium)
+- Harvest native Saturn Critter Traps for Plant Meat only after providing a critter; treat the 30-cycle domestic growth and 4x wild slowdown as a specialty route, with Hydrogen as a separate by-product (native-plant-plus-critter, mid, high)
 
 Energy:
-- Use Beetas to enrich Uranium and feed a properly cooled Research Reactor (native-spaced-out, late, high)
+- Use a Manual Generator for direct local startup; Beeta enrichment to Research Reactor to Steam Turbine is advanced multi-building background and is not ranked as direct (native-manual-only, early, high)
 
 Oxygen:
 - Melt ice and electrolyze water, or pipe oxygen through protected access (native-plus-infrastructure, mid, high)
 
 Radiation:
-- Use Wheezeworts for manageable early radbolts; use Beetas/Hives or a reactor only with shielding, access control, and automation (native-spaced-out, mid-late, high)
+- Wheezeworts and Beeta Hives create ambient radiation; one Radbolt Generator is required to collect that field and produce radbolts. Reactor-based collection is advanced background needing shielding, cooling, access control, and automation (native-spaced-out, mid-late, high)
 
 Attention:
 - Beetas are aggressive even around suited workers
@@ -631,7 +631,7 @@ Food:
 - Ranch aquatic critters for seafood and use Seaquine Ovolene for Caviar after infrastructure is stable (native, mid, high)
 
 Energy:
-- Install Tidal Turbines over native Tidal Springs; retain backup generation because output follows geyser activity (native-feature, mid, high)
+- Install Tidal Turbines over attached native Tidal Springs for 300 W while active; output is cyclic rather than continuous, so retain backup generation (native-feature, mid, high)
 
 Oxygen:
 - Choose Flue Coral for direct farmed oxygen or Blowters for a combined oxygen-and-food ranch; measure current U59 inputs and output in game (native, mid, high)
@@ -765,7 +765,7 @@ Food:
 - Use Spigot Seal Tallow in supported food chains, but import a simpler staple crop for colony calories (native-plus-imported, mid, medium)
 
 Energy:
-- Feed Spigot Seals from Bonbon Trees for Ethanol; use Bonbon wood in a conventional ethanol chain as an alternative (native, mid, high)
+- Feed Spigot Seals from Bonbon Trees and burn their direct Ethanol output in a Petroleum Generator; burn direct Bonbon Lumber in a Wood Burner as the separate one-building alternative (native, mid, high)
 
 Oxygen:
 - Melt Ice/Snow and electrolyze Water, or import Alveo Vera from Ice Caves (native-plus-connected, mid, high)
@@ -798,10 +798,10 @@ Food:
 - Use Swamp Chard forage briefly, then Bog Bucket farming and Pacu ranching (native, early-mid, high)
 
 Energy:
-- Use Plug Slugs as early supplemental power with careful feed economics; do not assume their metal diet is free (native, early, high)
+- Use wild Plug Slugs as early supplemental power at about 400 W when fully fed; 1,600 W is the domesticated full-fed rating, starvation lowers output further, and their metal feed is not free (native, early, high)
 
 Oxygen:
-- Convert Mud with a Sludge Press, use polluted oxygen plus Deodorizers, and later electrolyze cleaned water (native, early-mid, high)
+- Use native Polluted Oxygen directly in an emergency or clean it with one Deodorizer; show Mud/Sludge-Press and cleaned-water electrolysis only as excluded advanced chains (native-direct-gas, early-mid, high)
 
 Radiation:
 - Import Wheezeworts or Shine Bugs (imported-spaced-out, mid, high)
@@ -897,7 +897,8 @@ Sources: `local-u59-assets`, `wiki-biome-overview`, `wiki-radiation`
 - `klei-aquatic-hotfix-735589` — Oxygen Not Included Update 735589 (primary, recent-version-sensitive): https://forums.kleientertainment.com/game-updates/oni-alpha/735589-r2744/
 - `klei-aquatic-release-736649` — Oxygen Not Included Update 736649 — Aquatic Planet Pack (primary, current-major-release): https://forums.kleientertainment.com/game-updates/oni-alpha/736649-r2750/
 - `klei-hotfix-737790` — Oxygen Not Included Update 737790 (primary, current-version-sensitive): https://forums.kleientertainment.com/game-updates/oni-alpha/737790-r2757/
-- `wiki-u59-740622` — Versions/U59-740622 (secondary-with-official-link, current): https://oxygennotincluded.wiki.gg/wiki/Versions/U59-740622
+- `wiki-u59-740622` — Versions/U59-740622 (secondary-with-official-link, installed-not-latest): https://oxygennotincluded.wiki.gg/wiki/Versions/U59-740622
+- `wiki-u59-744825` — Versions/U59-744825 (secondary-with-official-link, latest-public-checked): https://oxygennotincluded.wiki.gg/wiki/Versions/U59-744825
 - `wiki-biome-overview` — Biome — Oxygen Not Included Wiki (secondary, mixed): https://oxygennotincluded.wiki.gg/wiki/Biome
 - `wiki-ice-cave` — Ice Cave Biome (secondary, current-mechanics): https://oxygennotincluded.wiki.gg/wiki/Ice_Cave_Biome
 - `wiki-nectar` — Nectar Biome (secondary, current-mechanics): https://oxygennotincluded.wiki.gg/wiki/Nectar_Biome

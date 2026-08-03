@@ -107,10 +107,10 @@ const rules: StrategyRule[] = [
     description_zh: '氧齒蕨候選可在適當種植後提供低流量的生物製氧方案。',
   },
   {
-    category: 'oxygen', id: 'rust-deoxidizer', anyOf: ['Rust'],
+    category: 'oxygen', id: 'rust-deoxidizer', allOf: ['Rust', 'Salt'],
     title_en: 'Rust deoxidizer', title_zh: '除鏽機製氧',
-    description_en: 'Use rust as deoxidizer feedstock, provided the companion chlorine input is available.',
-    description_zh: '可將鏽作為除鏽機原料，但需同時確認氯氣供應。',
+    description_en: 'Use Rust with Salt input to produce Oxygen, Chlorine output, and Iron Ore; both mined inputs are finite unless replenished.',
+    description_zh: '以鏽和鹽作為輸入，產出氧氣、氯氣與鐵礦；若無補充來源，兩種採掘原料都會耗盡。',
   },
   {
     category: 'oxygen', id: 'polluted-oxygen-chain', anyOf: ['SlimeMold', 'DirtyWater', 'ContaminatedOxygen'],

@@ -1,10 +1,16 @@
-import type { Subworld, World } from './types'
+import type { Subworld, TerrainResearchStage, World } from './types'
 
-export type WorldVariantRole = 'start' | 'warp' | 'mini' | 'general'
+export type WorldVariantRole = 'start' | 'warp' | 'general' | 'unreferenced'
+export type WorldWidthBand =
+  | 'extremely-small'
+  | 'moonlet-mini-width'
+  | 'spaced-out-standard-width'
+  | 'classic-large-width'
+  | 'base-game-extra-large-width'
 
 export interface WorldGroup {
   key: string
-  dlcTag: string
+  dlcTags: string[]
   name_en: string
   name_zh: string
   worlds: World[]
@@ -14,6 +20,11 @@ export interface BiomeGroup {
   zoneType: string
   terrains: Subworld[]
   resourceCount: number
+}
+
+export function recommendationPhases(stage: TerrainResearchStage): Array<'early' | 'repeatable'> {
+  if (stage === 'all' || stage === 'early-mid') return ['early', 'repeatable']
+  return stage === 'early' ? ['early'] : ['repeatable']
 }
 
 export interface ConfigurationCoverage {
@@ -33,18 +44,35 @@ const worldFamily = (world: World): string => {
   return family !== id || /^mini/i.test(id) ? family : world.name_en
 }
 
-const groupKey = (world: World) => `${world.dlcTag}\u0000${worldFamily(world).toLocaleLowerCase()}`
+const groupKey = (world: World) => worldFamily(world).toLocaleLowerCase()
+
+export function worldVariantDlcTag(world: World): string {
+  const id = world.id.split('/').pop() ?? world.id
+  if (/BaseGameAsteroid$/i.test(id)) return 'base'
+  if (/SpacedOutAsteroid$/i.test(id)) return 'expansion1'
+  return world.dlcTag
+}
 
 export function inferWorldVariantRole(world: World): WorldVariantRole {
-  const id = world.id.split('/').pop() ?? world.id
-  if (/start/i.test(id)) return 'start'
-  if (/warp/i.test(id)) return 'warp'
-  if (/mini/i.test(id)) return 'mini'
-  return 'general'
+  if (world.clusterRoles.includes('start')) return 'start'
+  if (world.clusterRoles.includes('warp')) return 'warp'
+  if (world.clusterRoles.includes('general')) return 'general'
+  return 'unreferenced'
+}
+
+export function worldWidthBand(world: Pick<World, 'width'>): WorldWidthBand {
+  if (world.width <= 96) return 'extremely-small'
+  if (world.width <= 128) return 'moonlet-mini-width'
+  if (world.width <= 160) return 'spaced-out-standard-width'
+  if (world.width <= 240) return 'classic-large-width'
+  return 'base-game-extra-large-width'
 }
 
 export function isAdvancedWorld(world: World): boolean {
-  return /\bfor devs?\b/i.test(world.name_en) || /(?:^|[/_:])spaceshipinterior$/i.test(world.id)
+  return world.internal
+    || !world.referencedByCluster
+    || /\bfor devs?\b/i.test(world.name_en)
+    || /(?:^|[/_:])spaceshipinterior$/i.test(world.id)
 }
 
 export function groupWorlds(worlds: World[]): WorldGroup[] {
@@ -53,8 +81,10 @@ export function groupWorlds(worlds: World[]): WorldGroup[] {
   worlds.forEach((world) => {
     const key = groupKey(world)
     const current = groups.get(key)
+    const variantDlcTag = worldVariantDlcTag(world)
     if (current) {
       current.worlds.push(world)
+      if (!current.dlcTags.includes(variantDlcTag)) current.dlcTags.push(variantDlcTag)
       if (world.name_en.length < current.name_en.length) {
         current.name_en = world.name_en
         current.name_zh = world.name_zh
@@ -63,7 +93,7 @@ export function groupWorlds(worlds: World[]): WorldGroup[] {
     }
     groups.set(key, {
       key,
-      dlcTag: world.dlcTag,
+      dlcTags: [variantDlcTag],
       name_en: world.name_en,
       name_zh: world.name_zh,
       worlds: [world],
@@ -78,18 +108,21 @@ export function filterWorldGroups(
   selectedDlcTags: ReadonlySet<string>,
   query: string,
   showAdvanced: boolean,
+  selectedId?: string,
 ): WorldGroup[] {
   const normalizedQuery = query.trim().toLocaleLowerCase()
 
   return groups.flatMap((group) => {
-    if (!selectedDlcTags.has(group.dlcTag)) return []
-    const visibleWorlds = showAdvanced ? group.worlds : group.worlds.filter((world) => !isAdvancedWorld(world))
+    const selectedWorlds = group.worlds.filter((world) => selectedDlcTags.has(worldVariantDlcTag(world)))
+    const visibleWorlds = showAdvanced
+      ? selectedWorlds
+      : selectedWorlds.filter((world) => !isAdvancedWorld(world) || world.id === selectedId)
     if (visibleWorlds.length === 0) return []
 
     const haystack = [
       group.name_en,
       group.name_zh,
-      group.dlcTag,
+      ...new Set(visibleWorlds.map(worldVariantDlcTag)),
       ...visibleWorlds.flatMap((world) => [world.id, world.name_en, world.name_zh]),
     ].join(' ').toLocaleLowerCase()
     if (normalizedQuery && !haystack.includes(normalizedQuery)) return []
@@ -114,19 +147,18 @@ export function groupTerrainsByBiome(terrains: Subworld[]): BiomeGroup[] {
 }
 
 export function configurationCoverageForResource(
-  simhash: string,
+  simhash: string | string[],
   terrains: Subworld[],
 ): ConfigurationCoverage[] {
-  return groupTerrainsByBiome(terrains).flatMap((group) => {
+  const simhashes = new Set(Array.isArray(simhash) ? simhash : [simhash])
+  return groupTerrainsByBiome(terrains).map((group) => {
     const matchingResources = group.terrains.flatMap((terrain) =>
       terrain.resources
-        .filter((resource) => resource.simhash === simhash)
+        .filter((resource) => simhashes.has(resource.simhash))
         .map((resource) => ({ resource, terrainId: terrain.id })),
     )
     const terrainIds = [...new Set(matchingResources.map((item) => item.terrainId))]
-    if (terrainIds.length === 0) return []
-
-    return [{
+    return {
       zoneType: group.zoneType,
       terrainIds,
       covered: terrainIds.length,
@@ -135,6 +167,20 @@ export function configurationCoverageForResource(
       conditional: matchingResources.some(({ resource }) =>
         resource.sources?.some((source) => source === 'spawn-tag' || source.includes('worldgen/features/')) ?? false,
       ),
-    }]
+    }
   })
+}
+
+export function totalConfigurationCoverage(coverage: ConfigurationCoverage[]): {
+  covered: number
+  total: number
+  percentage: number
+} {
+  const covered = coverage.reduce((sum, item) => sum + item.covered, 0)
+  const total = coverage.reduce((sum, item) => sum + item.total, 0)
+  return {
+    covered,
+    total,
+    percentage: total === 0 ? 0 : Math.round((covered / total) * 100),
+  }
 }

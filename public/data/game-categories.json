@@ -1,0 +1,177 @@
+[
+  {
+    "id": "Alloy",
+    "name_en": "Alloy",
+    "name_zh": "合金"
+  },
+  {
+    "id": "Metal",
+    "name_en": "Metal Ore",
+    "name_zh": "金屬礦物"
+  },
+  {
+    "id": "RefinedMetal",
+    "name_en": "Refined Metal",
+    "name_zh": "精煉金屬"
+  },
+  {
+    "id": "BuildableRaw",
+    "name_en": "Raw Mineral",
+    "name_zh": "礦物材料"
+  },
+  {
+    "id": "BuildableProcessed",
+    "name_en": "Refined Mineral",
+    "name_zh": "精煉礦物"
+  },
+  {
+    "id": "Filter",
+    "name_en": "Filtration Medium",
+    "name_zh": "過濾介質"
+  },
+  {
+    "id": "Liquifiable",
+    "name_en": "Liquefiable",
+    "name_zh": "會融化"
+  },
+  {
+    "id": "Liquid",
+    "name_en": "Liquid",
+    "name_zh": "液體"
+  },
+  {
+    "id": "Breathable",
+    "name_en": "Breathable Gas",
+    "name_zh": "可呼吸的氣體"
+  },
+  {
+    "id": "Unbreathable",
+    "name_en": "Unbreathable Gas",
+    "name_zh": "不可呼吸的氣體"
+  },
+  {
+    "id": "ConsumableOre",
+    "name_en": "Consumable Ore",
+    "name_zh": "消耗性礦石"
+  },
+  {
+    "id": "Sublimating",
+    "name_en": "Sublimator",
+    "name_zh": "昇華物"
+  },
+  {
+    "id": "Organics",
+    "name_en": "Organic",
+    "name_zh": "有機物"
+  },
+  {
+    "id": "Farmable",
+    "name_en": "Cultivable Soil",
+    "name_zh": "可耕種土壤"
+  },
+  {
+    "id": "Agriculture",
+    "name_en": "Agriculture",
+    "name_zh": "農業"
+  },
+  {
+    "id": "Other",
+    "name_en": "Miscellaneous",
+    "name_zh": "雜項"
+  },
+  {
+    "id": "ManufacturedMaterial",
+    "name_en": "Manufactured Material",
+    "name_zh": "加工材料"
+  },
+  {
+    "id": "CookingIngredient",
+    "name_en": "Cooking Ingredient",
+    "name_zh": "調味料"
+  },
+  {
+    "id": "RareMaterials",
+    "name_en": "Rare Resource",
+    "name_zh": "稀有資源"
+  },
+  {
+    "id": "Edible",
+    "name_en": "Edible",
+    "name_zh": "可食用"
+  },
+  {
+    "id": "Medicine",
+    "name_en": "Medicine",
+    "name_zh": "醫療"
+  },
+  {
+    "id": "MedicalSupplies",
+    "name_en": "Medical Supplies",
+    "name_zh": "醫療用品"
+  },
+  {
+    "id": "Seed",
+    "name_en": "Seed",
+    "name_zh": "種子"
+  },
+  {
+    "id": "Egg",
+    "name_en": "Critter Egg",
+    "name_zh": "動物蛋"
+  },
+  {
+    "id": "Clothes",
+    "name_en": "Clothing",
+    "name_zh": "服裝"
+  },
+  {
+    "id": "IndustrialIngredient",
+    "name_en": "Industrial Ingredient",
+    "name_zh": "工業原料"
+  },
+  {
+    "id": "IndustrialProduct",
+    "name_en": "Industrial Product",
+    "name_zh": "工業產品"
+  },
+  {
+    "id": "TechComponents",
+    "name_en": "Tech Component",
+    "name_zh": "科技組件"
+  },
+  {
+    "id": "Compostable",
+    "name_en": "Compostable",
+    "name_zh": "可堆肥"
+  },
+  {
+    "id": "HighEnergyParticle",
+    "name_en": "Radbolts",
+    "name_zh": "輻射粒子"
+  },
+  {
+    "id": "StoryTraitResource",
+    "name_en": "Story Trait",
+    "name_zh": "故事特質"
+  },
+  {
+    "id": "Dehydrated",
+    "name_en": "Dehydrated",
+    "name_zh": "脫水物"
+  },
+  {
+    "id": "ChargedPortableBattery",
+    "name_en": "Power Banks",
+    "name_zh": "行動電源"
+  },
+  {
+    "id": "BionicUpgrade",
+    "name_en": "Boosters",
+    "name_zh": "增效卡匣"
+  },
+  {
+    "id": "Special",
+    "name_en": "Special",
+    "name_zh": "特殊"
+  }
+]

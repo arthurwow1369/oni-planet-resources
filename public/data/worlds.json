@@ -41,7 +41,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/ForestHot",
@@ -83,7 +91,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/BigEmpty",
@@ -97,7 +113,13 @@
       "subworlds/space/SpaceNoBorder"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/Helicona",
@@ -121,7 +143,13 @@
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d",
       "poi/poi_gravitas"
-    ]
+    ],
+    "width": 384,
+    "height": 384,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": true,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/Oasis",
@@ -163,7 +191,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/Oceania",
@@ -210,7 +246,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/SandstoneFrozen",
@@ -262,7 +306,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/StrangeAsteroidKleiFest2023",
@@ -319,7 +371,15 @@
       "poi/oil/small_oilpockets_geyser_e",
       "poi/oil/small_oilpockets_geyser_f",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 380,
+    "height": 240,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/SandstoneDefault",
@@ -365,7 +425,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/Badlands",
@@ -406,7 +474,15 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/TheRock",
@@ -430,7 +506,13 @@
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d",
       "poi/poi_gravitas"
-    ]
+    ],
+    "width": 384,
+    "height": 384,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": true,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/TinyEmpty",
@@ -443,7 +525,13 @@
       "subworlds/Empty"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 32,
+    "height": 32,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/TinySurface",
@@ -458,7 +546,13 @@
       "subworlds/barren/BarrenGranite"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 32,
+    "height": 32,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/ForestLush",
@@ -500,7 +594,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "worlds/Volcanic",
@@ -546,7 +648,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/CeresBaseGameShatteredAsteroid",
@@ -599,7 +709,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/CeresClassicShatteredAsteroid",
@@ -660,6 +778,16 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -714,7 +842,15 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/CeresClassicAsteroid",
@@ -776,6 +912,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -811,7 +957,15 @@
       "geysers/salt_water",
       "geysers/small_volcano",
       "geysers/steam"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/MixingCeresAsteroid",
@@ -830,7 +984,13 @@
     "clusterExtensionSubworldIds": [],
     "guarantees": [
       "geysers/generic"
-    ]
+    ],
+    "width": 64,
+    "height": 128,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/MiniShatteredStartAsteroid",
@@ -868,7 +1028,15 @@
       "geysers/oil_drip",
       "geysers/slimy_po2",
       "geysers/slush_water"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/CeresSpacedOutAsteroid",
@@ -924,7 +1092,15 @@
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc2::worlds/MiniShatteredWarpAsteroid",
@@ -964,7 +1140,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc4::worlds/PrehistoricShatteredBaseGameAsteroid",
@@ -1008,6 +1192,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "iridium-demolior"
     ]
   },
   {
@@ -1059,6 +1253,17 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "iridium-demolior",
+      "uranium-nuclear"
     ]
   },
   {
@@ -1099,6 +1304,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "iridium-demolior"
     ]
   },
   {
@@ -1146,6 +1361,17 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "iridium-demolior",
+      "uranium-nuclear"
     ]
   },
   {
@@ -1166,7 +1392,13 @@
       "dlc4::poi/raptor/cool_chlorine_vent",
       "dlc4::poi/wetlands/pwater_geyser",
       "geysers/generic"
-    ]
+    ],
+    "width": 64,
+    "height": 128,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc4::worlds/PrehistoricSpacedOutAsteroid",
@@ -1210,6 +1442,17 @@
       "geysers/methane",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "iridium-demolior",
+      "uranium-nuclear"
     ]
   },
   {
@@ -1272,7 +1515,15 @@
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_gravitas",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 256,
+    "height": 384,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc5::worlds/AquaticClassicAsteroid",
@@ -1340,6 +1591,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1370,7 +1631,13 @@
       "dlc5::poi/reef/clam_small",
       "dlc5::poi/reef/smallReefGeyser",
       "geysers/generic"
-    ]
+    ],
+    "width": 64,
+    "height": 128,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "dlc5::worlds/AquaticSpacedOutAsteroid",
@@ -1430,6 +1697,16 @@
       "geysers/methane",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1480,6 +1757,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1529,6 +1816,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1545,7 +1842,13 @@
       "subworlds/space/Space"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 96,
+    "height": 96,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/SulfurMoonlet",
@@ -1564,7 +1867,13 @@
     "guarantees": [
       "poi/hotmarsh/geyser_methane",
       "poi/hotmarsh/geyser_steam"
-    ]
+    ],
+    "width": 64,
+    "height": 96,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniFlipped",
@@ -1600,7 +1909,15 @@
       "poi/frozen/heatsink_b",
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniFlippedStart",
@@ -1641,7 +1958,15 @@
       "poi/frozen/heatsink_b",
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniFlippedWarp",
@@ -1681,7 +2006,15 @@
       "poi/frozen/heatsink_b",
       "poi/frozen/heatsink_c",
       "poi/frozen/heatsink_d"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/ForestMoonlet",
@@ -1729,7 +2062,15 @@
       "poi/frozen/heatsink_b",
       "poi/jungle/geyser_chlorine",
       "poi/jungle/geyser_steam"
-    ]
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniForestFrozen",
@@ -1763,7 +2104,15 @@
       "geysers/small_volcano",
       "poi/jungle/geyser_chlorine",
       "poi/poi_satellite_3_a"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniForestFrozenStart",
@@ -1801,7 +2150,15 @@
       "geysers/small_volcano",
       "poi/jungle/geyser_chlorine",
       "poi/poi_satellite_3_a"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniForestFrozenWarp",
@@ -1838,7 +2195,15 @@
       "geysers/small_volcano",
       "poi/jungle/geyser_chlorine",
       "poi/poi_satellite_3_a"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MediumForestyWasteland",
@@ -1894,6 +2259,16 @@
       "geysers/small_volcano",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1940,6 +2315,16 @@
       "geysers/molten_copper",
       "geysers/small_volcano",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -1971,6 +2356,14 @@
       "expansion1::poi/boon/washroom",
       "expansion1::poi/boon/well",
       "geysers/generic"
+    ],
+    "width": 96,
+    "height": 128,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2013,6 +2406,16 @@
       "geysers/methane",
       "geysers/molten_copper",
       "geysers/small_volcano"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2056,6 +2459,16 @@
       "geysers/molten_copper",
       "geysers/slimy_po2",
       "geysers/small_volcano"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2085,6 +2498,16 @@
       "geysers/hot_po2",
       "geysers/methane",
       "geysers/slimy_po2"
+    ],
+    "width": 64,
+    "height": 96,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "sap-isosap"
     ]
   },
   {
@@ -2127,7 +2550,15 @@
       "geysers/slimy_po2",
       "geysers/small_volcano",
       "poi/hotmarsh/geyser_methane"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniMetallicSwampyStart",
@@ -2173,7 +2604,15 @@
       "geysers/slimy_po2",
       "geysers/small_volcano",
       "poi/hotmarsh/geyser_methane"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniMetallicSwampyWarp",
@@ -2218,7 +2657,13 @@
       "geysers/slimy_po2",
       "geysers/small_volcano",
       "poi/hotmarsh/geyser_methane"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MooMoonlet",
@@ -2239,6 +2684,16 @@
     "guarantees": [
       "expansion1::poi/genericGravitas/poi_genetics_lab",
       "geysers/chlorine_gas"
+    ],
+    "width": 96,
+    "height": 80,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "moo-brackene"
     ]
   },
   {
@@ -2288,6 +2743,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2341,6 +2806,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2383,7 +2858,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/SmallWarpOilySwamp",
@@ -2421,7 +2904,13 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 96,
+    "height": 128,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/WarpOilySwamp",
@@ -2469,7 +2958,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/SwampMoonlet",
@@ -2515,7 +3012,15 @@
       "poi/frozen/heatsink_b",
       "poi/jungle/geyser_chlorine",
       "poi/jungle/geyser_steam"
-    ]
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MediumForestyRadioactiveVanillaWarpPlanet",
@@ -2570,6 +3075,16 @@
       "geysers/small_volcano",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2607,6 +3122,16 @@
       "geysers/slush_water",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2648,6 +3173,16 @@
       "geysers/slush_water",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2688,6 +3223,16 @@
       "geysers/slush_water",
       "geysers/steam",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2749,6 +3294,16 @@
       "poi/frozen/heatsink_a",
       "poi/frozen/heatsink_b",
       "poi/hotmarsh/geyser_steam"
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2805,6 +3360,16 @@
       "geysers/small_volcano",
       "geysers/steam",
       "poi/jungle/geyser_steam"
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2864,6 +3429,16 @@
       "geysers/steam",
       "poi/frozen/heatsink_a",
       "poi/frozen/heatsink_b"
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -2886,7 +3461,15 @@
       "expansion1::poi/regolith/bunker_lab",
       "geysers/hot_steam",
       "geysers/steam"
-    ]
+    ],
+    "width": 96,
+    "height": 96,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/RegolithMoonlet",
@@ -2909,7 +3492,15 @@
       "expansion1::poi/regolith/landing_pad",
       "geysers/hot_steam",
       "geysers/steam"
-    ]
+    ],
+    "width": 160,
+    "height": 96,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/VanillaSandstoneFrozen",
@@ -2968,6 +3559,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3014,7 +3615,15 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/StrangeAsteroidKleiFest2023Cluster",
@@ -3075,7 +3684,15 @@
       "poi/oil/small_oilpockets_geyser_e",
       "poi/oil/small_oilpockets_geyser_f",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 380,
+    "height": 240,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/SpaceshipInterior",
@@ -3088,7 +3705,13 @@
       "expansion1::subworlds/space/ModuleInterior"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 96,
+    "height": 96,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/VanillaSwampDefault",
@@ -3161,6 +3784,16 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3220,7 +3853,15 @@
       "poi/jungle/geyser_chlorine",
       "poi/jungle/geyser_methane",
       "poi/jungle/geyser_steam"
-    ]
+    ],
+    "width": 160,
+    "height": 176,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/NiobiumMoonlet",
@@ -3243,6 +3884,16 @@
       "expansion1::bases/magmaBase",
       "expansion1::geysers/molten_niobium",
       "expansion1::poi/genericGravitas/poi_mining_room"
+    ],
+    "width": 64,
+    "height": 96,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "niobium-thermium"
     ]
   },
   {
@@ -3295,6 +3946,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3341,7 +4002,15 @@
       "geysers/steam",
       "poi/hotmarsh/geyser_methane",
       "poi/jungle/geyser_steam"
-    ]
+    ],
+    "width": 160,
+    "height": 274,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/VanillaBadlands",
@@ -3389,6 +4058,16 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3431,7 +4110,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniBadlandsStart",
@@ -3477,7 +4164,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/MiniBadlandsWarp",
@@ -3522,7 +4217,15 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 128,
+    "height": 153,
+    "clusterRoles": [
+      "warp"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TinyEmpty",
@@ -3535,7 +4238,13 @@
       "subworlds/Empty"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 32,
+    "height": 32,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TinyForest",
@@ -3551,7 +4260,13 @@
       "subworlds/space/Surface"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 64,
+    "height": 64,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": true,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TinyIce",
@@ -3566,7 +4281,13 @@
       "subworlds/space/Surface"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 64,
+    "height": 64,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TinyMagma",
@@ -3581,7 +4302,13 @@
       "subworlds/space/Surface"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 64,
+    "height": 64,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TinyStart",
@@ -3601,7 +4328,13 @@
       "subworlds/jungle/Jungle"
     ],
     "clusterExtensionSubworldIds": [],
-    "guarantees": []
+    "guarantees": [],
+    "width": 128,
+    "height": 96,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TwinMoonlet",
@@ -3632,7 +4365,13 @@
       "poi/jungle/geyser_methane",
       "poi/jungle/geyser_steam",
       "poi/poi_ocean_geyser_saltwater"
-    ]
+    ],
+    "width": 96,
+    "height": 160,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/TundraMoonlet",
@@ -3655,7 +4394,15 @@
       "expansion1::poi/poi_frozen_iron_geyser_3",
       "expansion1::poi/poi_frozen_iron_geyser_4",
       "expansion1::poi/poi_temporal_tear_opener_lab"
-    ]
+    ],
+    "width": 64,
+    "height": 128,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/VanillaForestDefault",
@@ -3703,6 +4450,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3729,7 +4486,13 @@
       "poi/oil/small_oilpockets_geyser_f",
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h"
-    ]
+    ],
+    "width": 64,
+    "height": 96,
+    "clusterRoles": [],
+    "referencedByCluster": false,
+    "internal": false,
+    "specialResourceIds": []
   },
   {
     "id": "expansion1::worlds/VanillaVolcanic",
@@ -3782,6 +4545,16 @@
       "poi/oil/small_oilpockets_geyser_g",
       "poi/oil/small_oilpockets_geyser_h",
       "poi/poi_ocean_geyser_saltwater"
+    ],
+    "width": 240,
+    "height": 380,
+    "clusterRoles": [
+      "start"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "uranium-nuclear"
     ]
   },
   {
@@ -3813,6 +4586,16 @@
       "expansion1::poi/aquatic/salt_geyser_geode",
       "expansion1::poi/aquatic/small_oxylite_geode",
       "expansion1::poi/genericGravitas/poi_thermo_building"
+    ],
+    "width": 80,
+    "height": 174,
+    "clusterRoles": [
+      "general"
+    ],
+    "referencedByCluster": true,
+    "internal": false,
+    "specialResourceIds": [
+      "graphite-super-coolant"
     ]
   }
 ]

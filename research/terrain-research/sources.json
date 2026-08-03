@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "accessed_at": "2026-08-01",
+  "accessed_at": "2026-08-02",
   "cleaning_policy": [
     "HTML tags, site navigation, cookie text, advertisements, and unrelated menus were removed.",
     "Only source metadata, mechanically relevant facts, strategy claims, and caveats were retained.",
@@ -71,10 +71,21 @@
       "kind": "version-reference",
       "url": "https://oxygennotincluded.wiki.gg/wiki/Versions/U59-740622",
       "published_at": "2026-07-07",
-      "version_scope": "Latest stable version located as of 2026-08-01",
+      "version_scope": "Arthur's installed U59 baseline; superseded publicly but retained for executable-value reproducibility",
       "reliability": "secondary-with-official-link",
-      "freshness": "current",
+      "freshness": "installed-not-latest",
       "clean_text": "U59-740622 released July 7, 2026. It changed Minnow bonuses and Seaquine excretion timing and fixed fish pool-boundary detection, Jawbo and Orehull grooming loops, Blowter bubble placement, Beakon audio performance, Kelpole harvesting visuals, and several other U59 issues."
+    },
+    {
+      "id": "wiki-u59-744825",
+      "title": "Versions/U59-744825",
+      "kind": "version-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Versions/U59-744825",
+      "published_at": "2026-07-28",
+      "version_scope": "Latest public U59 build located during the 2026-08-02 review",
+      "reliability": "secondary-with-official-link",
+      "freshness": "latest-public-checked",
+      "clean_text": "U59-744825 is newer than Arthur's installed U59-740622. The indexed patch information was reviewed for version-sensitive food, oxygen, power, radiation, aquatic worldgen and role/size changes; no superseding mechanic value was identified for the exact executable facts retained in this research. Re-decompile and diff the executable after the local Steam installation updates before implementing values that changed after 740622."
     },
     {
       "id": "wiki-biome-overview",

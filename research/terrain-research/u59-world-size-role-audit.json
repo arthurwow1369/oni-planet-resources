@@ -1,0 +1,1565 @@
+{
+  "source": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets",
+  "world_count": 94,
+  "cluster_file_count": 51,
+  "skipped_without_worldsize": [],
+  "worlds": [
+    {
+      "world_ref": "worlds/Badlands",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "Badlands"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/Badlands.yaml"
+    },
+    {
+      "world_ref": "worlds/BigEmpty",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/BigEmpty.yaml"
+    },
+    {
+      "world_ref": "worlds/ForestDefault",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "ForestDefault"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/ForestDefault.yaml"
+    },
+    {
+      "world_ref": "worlds/ForestHot",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "ForestHot"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/ForestHot.yaml"
+    },
+    {
+      "world_ref": "worlds/ForestLush",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "ForestLush"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/ForestLush.yaml"
+    },
+    {
+      "world_ref": "worlds/Helicona",
+      "namespace": "base",
+      "x": 384,
+      "y": 384,
+      "area": 147456,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/Helicona.yaml"
+    },
+    {
+      "world_ref": "worlds/Oasis",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "Oasis"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/Oasis.yaml"
+    },
+    {
+      "world_ref": "worlds/Oceania",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "Oceania"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/Oceania.yaml"
+    },
+    {
+      "world_ref": "worlds/SandstoneDefault",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "SandstoneDefault"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/SandstoneDefault.yaml"
+    },
+    {
+      "world_ref": "worlds/SandstoneFrozen",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "SandstoneFrozen"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/SandstoneFrozen.yaml"
+    },
+    {
+      "world_ref": "worlds/StrangeAsteroidKleiFest2023",
+      "namespace": "base",
+      "x": 380,
+      "y": 240,
+      "area": 91200,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "KleiFest2023"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/StrangeAsteroidKleiFest2023.yaml"
+    },
+    {
+      "world_ref": "worlds/TheRock",
+      "namespace": "base",
+      "x": 384,
+      "y": 384,
+      "area": 147456,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/TheRock.yaml"
+    },
+    {
+      "world_ref": "worlds/TinyEmpty",
+      "namespace": "base",
+      "x": 32,
+      "y": 32,
+      "area": 1024,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/TinyEmpty.yaml"
+    },
+    {
+      "world_ref": "worlds/TinySurface",
+      "namespace": "base",
+      "x": 32,
+      "y": 32,
+      "area": 1024,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/TinySurface.yaml"
+    },
+    {
+      "world_ref": "worlds/Volcanic",
+      "namespace": "base",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "Volcanic"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/worldgen/worlds/Volcanic.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/CeresBaseGameAsteroid",
+      "namespace": "dlc2",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresBaseGameCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/CeresBaseGameAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/CeresBaseGameShatteredAsteroid",
+      "namespace": "dlc2",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresBaseGameShatteredCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/CeresBaseGameShatteredAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/CeresClassicAsteroid",
+      "namespace": "dlc2",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/CeresClassicAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/CeresClassicShatteredAsteroid",
+      "namespace": "dlc2",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicShatteredCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/CeresClassicShatteredAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/CeresSpacedOutAsteroid",
+      "namespace": "dlc2",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/CeresSpacedOutAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/MiniShatteredGeoAsteroid",
+      "namespace": "dlc2",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutShatteredCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/MiniShatteredGeoAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/MiniShatteredStartAsteroid",
+      "namespace": "dlc2",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutShatteredCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/MiniShatteredStartAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/MiniShatteredWarpAsteroid",
+      "namespace": "dlc2",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutShatteredCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/MiniShatteredWarpAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc2::worlds/MixingCeresAsteroid",
+      "namespace": "dlc2",
+      "x": 64,
+      "y": 128,
+      "area": 8192,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc2/worldgen/worlds/MixingCeresAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/MixingPrehistoricAsteroid",
+      "namespace": "dlc4",
+      "x": 64,
+      "y": 128,
+      "area": 8192,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/MixingPrehistoricAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/PrehistoricBaseGameAsteroid",
+      "namespace": "dlc4",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricBaseGameCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/PrehistoricBaseGameAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/PrehistoricClassicAsteroid",
+      "namespace": "dlc4",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricClassicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/PrehistoricClassicAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/PrehistoricShatteredBaseGameAsteroid",
+      "namespace": "dlc4",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricShatteredBaseGameCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/PrehistoricShatteredBaseGameAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/PrehistoricShatteredClassicAsteroid",
+      "namespace": "dlc4",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricShatteredClassicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/PrehistoricShatteredClassicAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc4::worlds/PrehistoricSpacedOutAsteroid",
+      "namespace": "dlc4",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricSpacedOutCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc4/worldgen/worlds/PrehistoricSpacedOutAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc5::worlds/AquaticBaseGameAsteroid",
+      "namespace": "dlc5",
+      "x": 256,
+      "y": 384,
+      "area": 98304,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc5::AquaticBaseGameCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc5/worldgen/worlds/AquaticBaseGameAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc5::worlds/AquaticClassicAsteroid",
+      "namespace": "dlc5",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc5::AquaticClassicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc5/worldgen/worlds/AquaticClassicAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc5::worlds/AquaticSpacedOutAsteroid",
+      "namespace": "dlc5",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "dlc5::AquaticSpacedOutCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc5/worldgen/worlds/AquaticSpacedOutAsteroid.yaml"
+    },
+    {
+      "world_ref": "dlc5::worlds/MixingAquaticAsteroid",
+      "namespace": "dlc5",
+      "x": 64,
+      "y": 128,
+      "area": 8192,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/dlc5/worldgen/worlds/MixingAquaticAsteroid.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/ForestMoonlet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::ForestStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/ForestMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/IdealLandingSite",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::SandstoneStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/IdealLandingSite.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MarshyMoonlet",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 96,
+      "area": 6144,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticClassicCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MarshyMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumForestyRadioactiveVanillaWarpPlanet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::VanillaSwampCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumForestyRadioactiveVanillaWarpPlanet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumForestyWasteland",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::VanillaOceaniaCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumForestyWasteland.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumRadioactiveVanillaWarpPlanet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumRadioactiveVanillaWarpPlanet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumSandyRadioactiveVanillaWarpPlanet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaForestCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumSandyRadioactiveVanillaWarpPlanet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumSandySwamp",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::VanillaAridioCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumSandySwamp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MediumSwampy",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 176,
+      "area": 28160,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc5::AquaticClassicCluster",
+        "expansion1::VanillaSandstoneFrozenCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MediumSwampy.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MetalHeavyLandingSite",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::SwampStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MetalHeavyLandingSite.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniBadlands",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniBadlands.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniBadlandsStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterBadlandsStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniBadlandsStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniBadlandsWarp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniBadlandsWarp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniFlipped",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniFlipped.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniFlippedStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterFlippedStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniFlippedStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniFlippedWarp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterRadioactiveOceanStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniFlippedWarp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniForestFrozen",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterRadioactiveOceanStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniForestFrozen.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniForestFrozenStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterForestFrozenStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniForestFrozenStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniForestFrozenWarp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterMetallicSwampyStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniForestFrozenWarp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniMetallicSwampy",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterRadioactiveOceanStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniMetallicSwampy.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniMetallicSwampyStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterMetallicSwampyStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniMetallicSwampyStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniMetallicSwampyWarp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniMetallicSwampyWarp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniRadioactiveOcean",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniRadioactiveOcean.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniRadioactiveOceanStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterRadioactiveOceanStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniRadioactiveOceanStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniRadioactiveOceanWarp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::MiniClusterBadlandsStart"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniRadioactiveOceanWarp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MiniRegolithMoonlet",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 96,
+      "area": 9216,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc5::AquaticClassicCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MiniRegolithMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/MooMoonlet",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 80,
+      "area": 7680,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticClassicCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/MooMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/Moon_Barren",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 96,
+      "area": 9216,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/Moon_Barren.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/NiobiumMoonlet",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 96,
+      "area": 6144,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticClassicCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/NiobiumMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/OilRichWarpTarget",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::SwampStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/OilRichWarpTarget.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/OilyMoonlet",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 96,
+      "area": 6144,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/OilyMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/RegolithMoonlet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 96,
+      "area": 15360,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/RegolithMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SmallRadioactiveLandingSite",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 128,
+      "area": 12288,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SmallRadioactiveLandingSite.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SmallWarpOilySwamp",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 128,
+      "area": 12288,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SmallWarpOilySwamp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SpaceshipInterior",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 96,
+      "area": 9216,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SpaceshipInterior.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/StrangeAsteroidKleiFest2023Cluster",
+      "namespace": "expansion1",
+      "x": 380,
+      "y": 240,
+      "area": 91200,
+      "size_band": "base-game-extra-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::KleiFest2023Cluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/StrangeAsteroidKleiFest2023Cluster.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SulfurMoonlet",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 96,
+      "area": 6144,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SulfurMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SwampMoonlet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::SwampStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SwampMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/SwampyLandingSite",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "expansion1::ForestStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/SwampyLandingSite.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TerraMoonlet",
+      "namespace": "expansion1",
+      "x": 160,
+      "y": 274,
+      "area": 43840,
+      "size_band": "spaced-out-standard-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::SandstoneStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TerraMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TinyEmpty",
+      "namespace": "expansion1",
+      "x": 32,
+      "y": 32,
+      "area": 1024,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TinyEmpty.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TinyForest",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 64,
+      "area": 4096,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TinyForest.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TinyIce",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 64,
+      "area": 4096,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TinyIce.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TinyMagma",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 64,
+      "area": 4096,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TinyMagma.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TinyStart",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 96,
+      "area": 12288,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TinyStart.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TundraMoonlet",
+      "namespace": "expansion1",
+      "x": 64,
+      "y": 128,
+      "area": 8192,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticClassicCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TundraMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/TwinMoonlet",
+      "namespace": "expansion1",
+      "x": 96,
+      "y": 160,
+      "area": 15360,
+      "size_band": "extremely-small",
+      "roles": [
+        "unreferenced"
+      ],
+      "clusters": [],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/TwinMoonlet.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaArboria",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaArboriaCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaArboria.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaAridio",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaAridioCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaAridio.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaBadlands",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaBadlandsCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaBadlands.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaForestDefault",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaForestCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaForestDefault.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaOasis",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaOasisCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaOasis.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaOceania",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaOceaniaCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaOceania.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaSandstoneDefault",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaSandstoneCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaSandstoneDefault.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaSandstoneFrozen",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaSandstoneFrozenCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaSandstoneFrozen.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaSwampDefault",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaSwampCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaSwampDefault.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/VanillaVolcanic",
+      "namespace": "expansion1",
+      "x": 240,
+      "y": 380,
+      "area": 91200,
+      "size_band": "classic-large-width",
+      "roles": [
+        "start"
+      ],
+      "clusters": [
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/VanillaVolcanic.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/WarpOilySandySwamp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticSpacedOutCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/WarpOilySandySwamp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/WarpOilySwamp",
+      "namespace": "expansion1",
+      "x": 128,
+      "y": 153,
+      "area": 19584,
+      "size_band": "moonlet-mini-width",
+      "roles": [
+        "warp"
+      ],
+      "clusters": [
+        "expansion1::SandstoneStartCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/WarpOilySwamp.yaml"
+    },
+    {
+      "world_ref": "expansion1::worlds/WaterMoonlet",
+      "namespace": "expansion1",
+      "x": 80,
+      "y": 174,
+      "area": 13920,
+      "size_band": "extremely-small",
+      "roles": [
+        "general"
+      ],
+      "clusters": [
+        "dlc2::CeresClassicCluster",
+        "dlc2::CeresClassicShatteredCluster",
+        "dlc2::CeresSpacedOutCluster",
+        "dlc2::CeresSpacedOutShatteredCluster",
+        "dlc4::PrehistoricClassicCluster",
+        "dlc4::PrehistoricShatteredClassicCluster",
+        "dlc4::PrehistoricSpacedOutCluster",
+        "dlc5::AquaticClassicCluster",
+        "dlc5::AquaticSpacedOutCluster",
+        "expansion1::ForestStartCluster",
+        "expansion1::KleiFest2023Cluster",
+        "expansion1::MiniClusterBadlandsStart",
+        "expansion1::MiniClusterFlippedStart",
+        "expansion1::MiniClusterForestFrozenStart",
+        "expansion1::MiniClusterMetallicSwampyStart",
+        "expansion1::MiniClusterRadioactiveOceanStart",
+        "expansion1::SandstoneStartCluster",
+        "expansion1::SwampStartCluster",
+        "expansion1::VanillaArboriaCluster",
+        "expansion1::VanillaAridioCluster",
+        "expansion1::VanillaBadlandsCluster",
+        "expansion1::VanillaForestCluster",
+        "expansion1::VanillaOasisCluster",
+        "expansion1::VanillaOceaniaCluster",
+        "expansion1::VanillaSandstoneCluster",
+        "expansion1::VanillaSandstoneFrozenCluster",
+        "expansion1::VanillaSwampCluster",
+        "expansion1::VanillaVolcanicCluster"
+      ],
+      "source_file": "/Volumes/APP_SSD/SteamLibrary/steamapps/common/OxygenNotIncluded/OxygenNotIncluded.app/Contents/Resources/Data/StreamingAssets/dlc/expansion1/worldgen/worlds/WaterMoonlet.yaml"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
-import { groupTerrainsByBiome } from '../plannerModel'
+import { groupTerrainsByBiome, inferWorldVariantRole, worldWidthBand } from '../plannerModel'
 import type { Locale, Subworld, World } from '../types'
 
 interface Props {
@@ -21,6 +21,8 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
 
   const biomeGroups = groupTerrainsByBiome(terrains)
   const selectedBiomeCount = biomeGroups.filter((group) => group.terrains.every((terrain) => selected.has(terrain.id))).length
+  const role = inferWorldVariantRole(world)
+  const widthBand = worldWidthBand(world)
 
   return (
     <section className="panel terrain-panel">
@@ -30,6 +32,13 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
           <span className="eyebrow">{dlcLabel(world.dlcTag)}</span>
           <h1>{localName(world, locale)}</h1>
           <p className="secondary-title">{secondaryName(world, locale)}</p>
+          <div className="world-metadata" aria-label={t.worldVariant}>
+            <span>{t.worldRole}：<strong>{t.variantRoles[role]}</strong></span>
+            <span>{t.worldDimensions}：<strong>{world.width}×{world.height}</strong></span>
+            <span>{t.horizontalWidth}：<strong>{world.width} {locale === 'zh' ? '格' : 'tiles'}</strong></span>
+            <span><strong>{t.widthBands[widthBand]}</strong></span>
+          </div>
+          <p className="world-size-note">{t.starmapSizeNote}</p>
           {(locale === 'zh' ? world.desc_zh : world.desc_en) && <p className="world-description">{locale === 'zh' ? world.desc_zh : world.desc_en}</p>}
         </div>
       </div>

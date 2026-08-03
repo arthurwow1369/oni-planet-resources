@@ -1,9 +1,10 @@
 {
   "schema_version": 1,
   "baseline": {
-    "as_of": "2026-08-01",
+    "as_of": "2026-08-02",
     "game_version": "U59-740622",
     "installed_steam_build_id": "24423041",
+    "latest_public_checked": "U59-744825",
     "terrain_taxonomy": "26 zoneType groups used by the existing website and installed worldgen assets"
   },
   "interpretation_rules": [
@@ -23,14 +24,14 @@
       ],
       "energy": [
         {"method": "Use finite Carbon/Coal only as a bridge", "dependency": "native-finite", "stage": "early", "confidence": "high"},
-        {"method": "Where a Thermal Gas Fissure exists, evaluate a heat-to-steam-turbine system after measuring its output cycle", "dependency": "seed-dependent-native-feature", "stage": "late", "confidence": "medium"}
+        {"method": "Where a Thermal Gas Fissure exists, measure its output cycle before a Steam Turbine system; turbine input Steam must reach at least 125°C, the turbine body must stay below 100°C, and dormant periods need heat buffering", "dependency": "seed-dependent-native-feature", "stage": "late", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Pipe or carry oxygen from an established system and use Breathing Stations for underwater work", "dependency": "imported", "stage": "all", "confidence": "high"},
-        {"method": "Process renewable vent liquids only after confirming the exact polluted-brine treatment chain", "dependency": "seed-dependent", "stage": "mid", "confidence": "medium"}
+        {"method": "No dependable native one-building clean-oxygen route; polluted-brine treatment chains exceed the direct-path policy and are only advanced context", "dependency": "no-direct-native-route", "stage": "mid", "confidence": "high"}
       ],
       "radiation": [
-        {"method": "Import Wheezewort or Shine Bugs, or use a powered Radiation Lamp; collect with a Radbolt Generator", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+        {"method": "Import passive Wheezewort or Shine Bugs as ambient radiation sources, then use one Radbolt Generator to collect the field; a powered Radiation Lamp plus a Radbolt Generator is a two-active-building advanced chain and is not ranked as direct", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
       ],
       "attention": ["Deep flooding and long breath paths", "Thermal Gas Fissure heat", "Polluted Brine handling", "Marine Drill access and power", "No dependable native food or oxygen loop in every variant"],
       "source_ids": ["local-u59-assets", "klei-aquatic-release-736649", "klei-hotfix-737790", "wiki-aquatic-pack", "wiki-radiation"]
@@ -63,7 +64,7 @@
         {"method": "Treat wild forage as a bridge, not a permanent calorie budget", "dependency": "native-finite", "stage": "early", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Start with Manual Generators; transition to hydrogen from the water/oxygen system or import another fuel", "dependency": "mixed", "stage": "early-mid", "confidence": "high"},
+        {"method": "Start with Manual Generators; no Beach-native direct fuel route is guaranteed", "dependency": "native-manual-only", "stage": "early", "confidence": "high"},
         {"method": "Do not plan on a native Tidal Turbine in Beach; official 735589 moved Tidal Springs to Reef", "dependency": "requires-reef", "stage": "mid", "confidence": "high"}
       ],
       "oxygen": [
@@ -82,10 +83,10 @@
         {"method": "Grow Dusk Caps from Slime and ranch Pacu for food plus eggshell material", "dependency": "native", "stage": "early-mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Import Coal or another fuel; use local polluted-water processing to support later hydrogen power", "dependency": "mixed", "stage": "mid", "confidence": "medium"}
+        {"method": "Use Manual Generators unless a directly usable local fuel or geyser is proven by the exact world; polluted-water-to-hydrogen chains exceed the direct-path policy", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
-        {"method": "Exploit polluted oxygen with Deodorizers while containing Slimelung; use algae or cleaned water/electrolysis for controlled output", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+        {"method": "Breathe native Polluted Oxygen as an emergency source or clean it with one Deodorizer; use one Oxygen Diffuser where local Algae exists", "dependency": "native", "stage": "early-mid", "confidence": "high"}
       ],
       "radiation": [
         {"method": "Import Shine Bugs or Wheezeworts; the marsh itself has no dependable native source", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
@@ -118,7 +119,7 @@
         {"method": "Use Hexalent forage briefly, then Mealwood; use Pips and Arbor Trees to improve long-term Dirt/wood sustainability", "dependency": "native", "stage": "early", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Convert Arbor Tree lumber to Ethanol and burn it after the required production chain is built", "dependency": "native", "stage": "mid", "confidence": "high"}
+        {"method": "Burn native Arbor Tree Lumber directly in a Wood Burner; the Lumber-to-Ethanol-to-generator chain is advanced context and excluded from direct ranking", "dependency": "native", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Use Oxyferns only as a supplement; explore early for water and transition to an electrolyzer or imported algae", "dependency": "native-bridge-then-mixed", "stage": "early-mid", "confidence": "high"}
@@ -155,7 +156,7 @@
         {"method": "Transition finite Sherberries to Pikeapple farming; ranch Floxes only after feed supply is stable", "dependency": "native", "stage": "early", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Use Flox wood in an ethanol chain; bootstrap with Manual Generators and local finite fuels", "dependency": "native-plus-buildings", "stage": "early-mid", "confidence": "high"}
+        {"method": "Burn Flox Lumber directly in a Wood Burner or bootstrap with Manual Generators; the ethanol chain exceeds the direct-path policy", "dependency": "native-plus-one-building", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Farm Alveo Vera using Carbon Dioxide and Ice to produce Oxylite; later melt ice and electrolyze water", "dependency": "native", "stage": "early-mid", "confidence": "high"}
@@ -170,13 +171,13 @@
       "zone_type": "KelpForest",
       "summary": "Aquatic Kelp Forest with Polluted Water/Oxygen, Polluted Mud, Tower Kelp, Kelpoles, Orehulls, Thimble Reed, and Buddy Bud.",
       "food": [
-        {"method": "Use Tower Kelp/Kelpole Nori production and Orehull ranching as the native food foundation", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+        {"method": "Harvest Kelpoles for ingredient-only Nori and use exact Orehull edible drops where defined; Nori has 0 raw kcal and is not a standalone food foundation", "dependency": "native-ingredient-plus-fauna", "stage": "early-mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Use Manual Generators first; clean polluted water for an electrolyzer/hydrogen loop or import power", "dependency": "native-plus-processing", "stage": "mid", "confidence": "medium"}
+        {"method": "Use Manual Generators first; no Kelp-Forest-native direct generator fuel is guaranteed, and polluted-water cleanup plus electrolysis plus generation exceeds the direct-path policy", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
-        {"method": "Deodorize existing polluted oxygen and process polluted water into a controlled oxygen system", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+        {"method": "Use native Polluted Oxygen directly or clean it with one Deodorizer; polluted-water treatment chains are advanced context, not a direct recommendation", "dependency": "native-direct-gas", "stage": "early-mid", "confidence": "high"}
       ],
       "radiation": [
         {"method": "Import Wheezewort or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
@@ -191,7 +192,7 @@
         {"method": "Do not farm here; import food and isolate any nearby ranch or farm thermally", "dependency": "imported", "stage": "all", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Extract geothermal heat into a controlled steam chamber and Steam Turbines", "dependency": "native", "stage": "late", "confidence": "high"}
+        {"method": "Extract geothermal heat into a controlled Steam Turbine chamber; input Steam must reach at least 125°C, the turbine body must stay below 100°C, and the system needs controlled heat transfer and cooling", "dependency": "native", "stage": "late", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Use sealed Atmo Suit access and pipe oxygen from elsewhere", "dependency": "imported", "stage": "mid-late", "confidence": "high"}
@@ -245,10 +246,10 @@
         {"method": "Farm Waterweed for lettuce and ranch Pacu; use Pokeshell products primarily as industrial support", "dependency": "native", "stage": "mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Desalinate or otherwise process water for electrolysis and capture hydrogen; treat this as power-consuming life support with a fuel byproduct, not free energy", "dependency": "native-plus-infrastructure", "stage": "mid", "confidence": "high"}
+        {"method": "Use a Manual Generator; desalination to electrolysis to hydrogen generation is a multi-building advanced chain and is not ranked as direct power", "dependency": "native-manual-only", "stage": "early", "confidence": "high"}
       ],
       "oxygen": [
-        {"method": "Process Salt Water/Brine to water and run an electrolyzer", "dependency": "native", "stage": "mid", "confidence": "high"}
+        {"method": "No dependable native one-building clean-oxygen route; desalination plus electrolysis is a two-active-building advanced chain and is not ranked as direct", "dependency": "no-direct-native-route", "stage": "mid", "confidence": "high"}
       ],
       "radiation": [
         {"method": "Import Wheezewort or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
@@ -264,7 +265,7 @@
         {"method": "Import a heat-tolerant or insulated crop system", "dependency": "imported", "stage": "mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Refine or boil Crude Oil to Petroleum; exploit Natural Gas where generated", "dependency": "native", "stage": "mid-late", "confidence": "high"}
+        {"method": "Use a Manual Generator unless the exact world has a directly usable Natural Gas source; refining or boiling Crude Oil before a Petroleum Generator is an advanced chain and is not ranked as direct", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Pipe oxygen through an Atmo Suit network; use imported or geyser water for electrolysis", "dependency": "imported", "stage": "mid", "confidence": "high"}
@@ -318,10 +319,10 @@
         {"method": "Ranch Pacu/Jawbo for seafood; protect supporting populations from uncontrolled predation", "dependency": "native", "stage": "mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Process polluted water for an electrolyzer/hydrogen system or import Peat power from Garden", "dependency": "mixed", "stage": "mid", "confidence": "medium"}
+        {"method": "Use Manual Generators unless the exact terrain union proves local Peat or another directly burnable fuel; polluted-water-to-hydrogen chains exceed the direct-path policy", "dependency": "variant-or-imported", "stage": "early-mid", "confidence": "high"}
       ],
       "oxygen": [
-        {"method": "Clean polluted water and electrolyze it; isolate polluted reservoirs and offgassing", "dependency": "native", "stage": "mid", "confidence": "high"}
+        {"method": "Use exposed Polluted Water offgassing as emergency Polluted Oxygen or clean that gas with one Deodorizer; water cleaning plus electrolysis exceeds the direct-path policy", "dependency": "native-direct-offgassing", "stage": "early-mid", "confidence": "high"}
       ],
       "radiation": [
         {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
@@ -333,16 +334,16 @@
       "zone_type": "Radioactive",
       "summary": "Cold Spaced Out terrain with Uranium Ore, Beeta Hives, Wheezeworts, Saturn Critter Traps, Tranquil Toes, and radiation hazards.",
       "food": [
-        {"method": "Use native Saturn Critter Traps only with imported or connected renewable Hydrogen and a critter-delivery plan; otherwise import food", "dependency": "native-plant-plus-imported-or-connected-hydrogen-and-critters", "stage": "mid", "confidence": "medium"}
+        {"method": "Harvest native Saturn Critter Traps for Plant Meat only after providing a critter; treat the 30-cycle domestic growth and 4x wild slowdown as a specialty route, with Hydrogen as a separate by-product", "dependency": "native-plant-plus-critter", "stage": "mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Use Beetas to enrich Uranium and feed a properly cooled Research Reactor", "dependency": "native-spaced-out", "stage": "late", "confidence": "high"}
+        {"method": "Use a Manual Generator for direct local startup; Beeta enrichment to Research Reactor to Steam Turbine is advanced multi-building background and is not ranked as direct", "dependency": "native-manual-only", "stage": "early", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Melt ice and electrolyze water, or pipe oxygen through protected access", "dependency": "native-plus-infrastructure", "stage": "mid", "confidence": "high"}
       ],
       "radiation": [
-        {"method": "Use Wheezeworts for manageable early radbolts; use Beetas/Hives or a reactor only with shielding, access control, and automation", "dependency": "native-spaced-out", "stage": "mid-late", "confidence": "high"}
+        {"method": "Wheezeworts and Beeta Hives create ambient radiation; one Radbolt Generator is required to collect that field and produce radbolts. Reactor-based collection is advanced background needing shielding, cooling, access control, and automation", "dependency": "native-spaced-out", "stage": "mid-late", "confidence": "high"}
       ],
       "attention": ["Beetas are aggressive even around suited workers", "Preserve Hives; they are strategically valuable and not normal replacements", "Natural uranium tiles radiate but debris does not equivalently radiate", "Lead Suit and exposure planning", "Reactor cooling and meltdown risk"],
       "source_ids": ["local-u59-assets", "wiki-radioactive", "wiki-radiation", "wiki-wheezewort"]
@@ -354,7 +355,7 @@
         {"method": "Ranch aquatic critters for seafood and use Seaquine Ovolene for Caviar after infrastructure is stable", "dependency": "native", "stage": "mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Install Tidal Turbines over native Tidal Springs; retain backup generation because output follows geyser activity", "dependency": "native-feature", "stage": "mid", "confidence": "high"}
+        {"method": "Install Tidal Turbines over attached native Tidal Springs for 300 W while active; output is cyclic rather than continuous, so retain backup generation", "dependency": "native-feature", "stage": "mid", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Choose Flue Coral for direct farmed oxygen or Blowters for a combined oxygen-and-food ranch; measure current U59 inputs and output in game", "dependency": "native", "stage": "mid", "confidence": "high"}
@@ -426,7 +427,7 @@
         {"method": "Use Spigot Seal Tallow in supported food chains, but import a simpler staple crop for colony calories", "dependency": "native-plus-imported", "stage": "mid", "confidence": "medium"}
       ],
       "energy": [
-        {"method": "Feed Spigot Seals from Bonbon Trees for Ethanol; use Bonbon wood in a conventional ethanol chain as an alternative", "dependency": "native", "stage": "mid", "confidence": "high"}
+        {"method": "Feed Spigot Seals from Bonbon Trees and burn their direct Ethanol output in a Petroleum Generator; burn direct Bonbon Lumber in a Wood Burner as the separate one-building alternative", "dependency": "native", "stage": "mid", "confidence": "high"}
       ],
       "oxygen": [
         {"method": "Melt Ice/Snow and electrolyze Water, or import Alveo Vera from Ice Caves", "dependency": "native-plus-connected", "stage": "mid", "confidence": "high"}
@@ -444,10 +445,10 @@
         {"method": "Use Swamp Chard forage briefly, then Bog Bucket farming and Pacu ranching", "dependency": "native", "stage": "early-mid", "confidence": "high"}
       ],
       "energy": [
-        {"method": "Use Plug Slugs as early supplemental power with careful feed economics; do not assume their metal diet is free", "dependency": "native", "stage": "early", "confidence": "high"}
+        {"method": "Use wild Plug Slugs as early supplemental power at about 400 W when fully fed; 1,600 W is the domesticated full-fed rating, starvation lowers output further, and their metal feed is not free", "dependency": "native", "stage": "early", "confidence": "high"}
       ],
       "oxygen": [
-        {"method": "Convert Mud with a Sludge Press, use polluted oxygen plus Deodorizers, and later electrolyze cleaned water", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+        {"method": "Use native Polluted Oxygen directly in an emergency or clean it with one Deodorizer; show Mud/Sludge-Press and cleaned-water electrolysis only as excluded advanced chains", "dependency": "native-direct-gas", "stage": "early-mid", "confidence": "high"}
       ],
       "radiation": [
         {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}

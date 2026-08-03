@@ -16,6 +16,99 @@ OUT_JSON = HERE / "terrain-research.json"
 OUT_MD = HERE / "terrain-research.md"
 VALIDATION_PATH = HERE / "validation-report.json"
 
+CATEGORY_IDS = ("food", "energy", "oxygen", "radiation")
+NO_DIRECT_NATIVE_ROUTE = "no-direct-native-route"
+DEPENDENCY_PENALTIES = {
+    **dict.fromkeys((
+        "native", "native-direct-gas", "native-direct-offgassing",
+        "native-feature", "native-plus-one-building", "native-spaced-out",
+    ), 0),
+    **dict.fromkeys((
+        "connected-frosty-biome", "imported-or-connected",
+        "imported-or-location-dependent", "location-dependent",
+        "location-dependent-spaced-out", "native-bridge", "native-finite",
+        "native-finite-unless-looped", "native-ingredient-plus-fauna",
+        "native-location", "native-plant-plus-critter",
+        "native-plant-plus-imported-or-connected-dirt", "native-plus-connected",
+        "native-plus-infrastructure", "native-variant",
+        "native-variant-ice-or-imported", "native-variant-or-imported",
+        "native-variant-or-imported-ethanol", "native-variant-spaced-out",
+        "requires-reef", "seed-dependent-native-feature", "variant-or-imported",
+    ), 1),
+    **dict.fromkeys((
+        "imported", "imported-spaced-out", "mixed", "native-complex",
+        "native-manual-only", "native-plus-imported", "native-variant-finite",
+        "no-guaranteed-direct-native-fuel",
+    ), 2),
+    **dict.fromkeys((
+        "native-bridge-then-mixed", "native-finite-then-imported",
+        "native-variant-finite-then-imported", "native-variant-plus-imported",
+    ), 3),
+}
+STAGE_PENALTIES = {
+    "all": 0, "early": 0,
+    "early-mid": 1, "mid": 1,
+    "mid-late": 2, "late": 2,
+}
+CONFIDENCE_PENALTIES = {"high": 0, "medium": 1, "low": 2}
+
+
+def cost_efficiency_rating(methods: list[dict[str, Any]]) -> dict[str, Any]:
+    """Rate the best usable method without penalizing a terrain for extra fallbacks."""
+    has_no_direct_route = any(
+        method["dependency"] == NO_DIRECT_NATIVE_ROUTE for method in methods
+    )
+    scored: list[tuple[int, int, int, int, int]] = []
+    for index, method in enumerate(methods):
+        dependency = method["dependency"]
+        if dependency == NO_DIRECT_NATIVE_ROUTE:
+            continue
+        dependency_penalty = DEPENDENCY_PENALTIES[dependency]
+        stage_penalty = STAGE_PENALTIES[method["stage"]]
+        confidence_penalty = CONFIDENCE_PENALTIES[method["confidence"]]
+        score = max(1, 5 - dependency_penalty - stage_penalty - confidence_penalty)
+        scored.append((score, -index, dependency_penalty, stage_penalty, confidence_penalty))
+
+    if not scored:
+        return {
+            "rating": 1,
+            "best_method_index": None,
+            "dependency_penalty": 0,
+            "stage_penalty": 0,
+            "confidence_penalty": 0,
+            "no_direct_native_route": has_no_direct_route,
+        }
+
+    score, negative_index, dependency_penalty, stage_penalty, confidence_penalty = max(scored)
+    if has_no_direct_route:
+        score = min(score, 2)
+    return {
+        "rating": score,
+        "best_method_index": -negative_index,
+        "dependency_penalty": dependency_penalty,
+        "stage_penalty": stage_penalty,
+        "confidence_penalty": confidence_penalty,
+        "no_direct_native_route": has_no_direct_route,
+    }
+
+
+COST_EFFICIENCY_RUBRIC = {
+    "scale": {"min": 1, "max": 5},
+    "aggregation": "best-usable-method",
+    "formula": "clamp(1, 5, 5 - dependency - stage - confidence penalties)",
+    "dependency_penalties": {
+        str(penalty): sorted(
+            dependency
+            for dependency, value in DEPENDENCY_PENALTIES.items()
+            if value == penalty
+        )
+        for penalty in range(4)
+    },
+    "stage_penalties": STAGE_PENALTIES,
+    "confidence_penalties": CONFIDENCE_PENALTIES,
+    "no_direct_native_route_rule": "rating 1 when no usable route exists; otherwise cap at 2",
+}
+
 
 def load(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -60,9 +153,17 @@ def main() -> None:
         game_zone = game_by_zone[zone_type]
         strategy = strategy_by_zone[zone_type]
 
-        for category in ("food", "energy", "oxygen", "radiation"):
+        for category in CATEGORY_IDS:
             if not strategy.get(category):
                 errors.append(f"{zone_type}: no {category} recommendation")
+            for method in strategy.get(category, []):
+                dependency = method.get("dependency")
+                if dependency not in DEPENDENCY_PENALTIES and dependency != NO_DIRECT_NATIVE_ROUTE:
+                    errors.append(f"{zone_type}: unclassified dependency {dependency}")
+                if method.get("stage") not in STAGE_PENALTIES:
+                    errors.append(f"{zone_type}: unclassified stage {method.get('stage')}")
+                if method.get("confidence") not in CONFIDENCE_PENALTIES:
+                    errors.append(f"{zone_type}: unclassified confidence {method.get('confidence')}")
         if not strategy.get("attention"):
             errors.append(f"{zone_type}: no attention flags")
         if "local-u59-assets" not in strategy.get("source_ids", []):
@@ -111,6 +212,10 @@ def main() -> None:
                     "oxygen": strategy["oxygen"],
                     "radiation": strategy["radiation"],
                 },
+                "cost_efficiency_ratings": {
+                    category: cost_efficiency_rating(strategy[category])
+                    for category in CATEGORY_IDS
+                },
                 "attention": strategy["attention"],
                 "source_ids": strategy["source_ids"],
                 "confidence": {
@@ -142,7 +247,7 @@ def main() -> None:
 
     if any(
         "Hydrogen" in item["method"]
-        and not any(word in item["dependency"] for word in ("imported", "connected"))
+        and "by-product" not in item["method"]
         for item in strategy_by_zone["Radioactive"]["food"]
     ):
         errors.append("Radioactive: Saturn Critter Trap Hydrogen source is overstated")
@@ -166,7 +271,7 @@ def main() -> None:
         errors.append("Space: mixed subworld-variant caveat missing")
 
     output = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": strategies["baseline"]["as_of"],
         "accessed_at": sources_doc["accessed_at"],
         "baseline": strategies["baseline"],
@@ -177,6 +282,7 @@ def main() -> None:
             "on every asteroid, seed, or DLC combination."
         ),
         "interpretation_rules": strategies["interpretation_rules"],
+        "cost_efficiency_rubric": COST_EFFICIENCY_RUBRIC,
         "cleaning_policy": sources_doc["cleaning_policy"],
         "entity_profiles": list(entity_profiles.values()),
         "zones": merged_zones,
@@ -203,7 +309,7 @@ def main() -> None:
             "every_zone_has_four_recommendation_categories": not any(
                 f"no {category} recommendation" in error
                 for error in errors
-                for category in ("food", "energy", "oxygen", "radiation")
+                for category in CATEGORY_IDS
             ),
             "every_zone_has_attention_flags": not any(
                 "no attention flags" in error for error in errors
@@ -232,6 +338,17 @@ def main() -> None:
             "reviewed_version_and_variant_caveats_present": not any(
                 any(marker in error for marker in ("citation missing", "caveat missing"))
                 for error in errors
+            ),
+            "all_cost_efficiency_inputs_classified": not any(
+                "unclassified" in error for error in errors
+            ),
+            "every_zone_has_four_cost_efficiency_ratings": all(
+                set(zone["cost_efficiency_ratings"]) == set(CATEGORY_IDS)
+                and all(
+                    1 <= item["rating"] <= 5
+                    for item in zone["cost_efficiency_ratings"].values()
+                )
+                for zone in merged_zones
             ),
         },
     }

@@ -29,7 +29,19 @@ ENTITY_PROFILES_PATH = (
     Path(__file__).resolve().parents[1]
     / "research/terrain-research/entity-profiles.json"
 )
+GAME_TAXONOMY_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/resource-catalog/game-taxonomy.json"
+)
+SPECIAL_RESOURCE_RESEARCH_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/special-resources/special-resources.json"
+)
 RESOURCE_CATALOG: dict[str, dict[str, Any]] = {}
+ENTITY_REPRESENTATIVES: dict[str, dict[str, Any]] = {}
+PREFAB_CATEGORIES: dict[str, str] = {}
+ELEMENT_CATEGORIES: dict[str, str] = {}
+GAME_CATEGORIES: list[dict[str, str]] = []
 FEATURE_ENTITY_ALIASES = {"AnyLiquidPacu": "Pacu", "BeeHive": "Bee"}
 RESOURCE_ID_ALIASES = {"dirt": "Dirt"}
 NON_RESOURCE_FEATURE_ENTITIES = {"Vacuum"}
@@ -318,6 +330,40 @@ def load_resource_catalog(path: Path = CATALOG_PATH) -> dict[str, dict[str, Any]
     return entries
 
 
+def load_game_taxonomy(path: Path = GAME_TAXONOMY_PATH) -> tuple[list[dict[str, str]], dict[str, dict[str, Any]], dict[str, str]]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    categories = payload.get("categories")
+    representatives = payload.get("representatives")
+    prefab_categories = payload.get("prefab_categories")
+    if not isinstance(categories, list) or not isinstance(representatives, dict) or not isinstance(prefab_categories, dict):
+        raise SystemExit(f"invalid game taxonomy: {path}")
+    return categories, representatives, prefab_categories
+
+
+def load_element_categories() -> dict[str, str]:
+    result: dict[str, str] = {}
+    for path in sorted((ASSETS / "elements").glob("*.yaml")):
+        for entry in load_yaml(path).get("elements", []):
+            if not isinstance(entry, dict) or not entry.get("elementId"):
+                continue
+            result[str(entry["elementId"])] = str(entry.get("materialCategory") or entry.get("state") or "Other")
+    return result
+
+
+def representative_for_output(record: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "id": record["id"],
+        "kind": record["kind"],
+        "isVirtual": record["is_virtual"],
+        "name_en": record["name_en"],
+        "name_zh": record["name_zh"],
+        "entity": record["entity"],
+        "mechanism_en": record.get("mechanism_en", ""),
+        "mechanism_zh": record.get("mechanism_zh", ""),
+        "sourceEvidence": record.get("evidence", ""),
+    }
+
+
 def add_resource(bucket: dict[str, dict[str, Any]], strings: dict[str, tuple[str, str]], simhash: str, weight: float = 0, source: str = "terrain") -> None:
     if not simhash or simhash in {"Vacuum", "Void"}: return
     simhash = str(simhash)
@@ -325,12 +371,20 @@ def add_resource(bucket: dict[str, dict[str, Any]], strings: dict[str, tuple[str
         simhash = simhash[4:]
     en, zh = element_name(strings, simhash)
     catalog = RESOURCE_CATALOG.get(simhash, {})
+    representative = ENTITY_REPRESENTATIVES.get(simhash)
+    primary_category = (
+        representative["primary_category"]
+        if representative
+        else PREFAB_CATEGORIES.get(simhash, ELEMENT_CATEGORIES.get(simhash, "Other"))
+    )
     item = bucket.setdefault(simhash, {
         "simhash": simhash,
         "name_en": catalog.get("name_en", en),
         "name_zh": catalog.get("name_zh", zh),
         "type": catalog.get("type", resource_type(simhash)),
         "categories": catalog.get("categories", CATEGORY_MAP.get(simhash, [])),
+        "primaryCategory": primary_category,
+        **({"representative": representative_for_output(representative)} if representative else {}),
         "use_en": catalog.get("use_en", USE_EN.get(simhash, "")),
         "use_zh": catalog.get("use_zh", USE_ZH.get(simhash, "")),
         "weight": 0.0, "sources": [],
@@ -462,8 +516,57 @@ def terrain_record(
     }
 
 
+def attach_special_resource_routes(
+    worlds: list[dict[str, Any]],
+    subworlds: list[dict[str, Any]],
+    source_path: Path,
+) -> dict[str, Any]:
+    data = json.loads(source_path.read_text(encoding="utf-8"))
+    routes = data.get("routes", [])
+    sources = data.get("sources", [])
+    route_ids = [route["id"] for route in routes]
+    if len(route_ids) != len(set(route_ids)):
+        raise ValueError("Special-resource route IDs must be unique")
+    source_ids = {source["id"] for source in sources}
+    for route in routes:
+        missing_sources = sorted(set(route.get("source_ids", [])) - source_ids)
+        if missing_sources:
+            raise ValueError(f"Special-resource route {route['id']} has unknown sources: {missing_sources}")
+
+    resources_by_subworld = {
+        subworld["id"]: {resource["simhash"] for resource in subworld.get("resources", [])}
+        for subworld in subworlds
+    }
+    for world in worlds:
+        world_resource_ids: set[str] = set()
+        subworld_ids = world.get("subworldIds", []) + world.get("clusterExtensionSubworldIds", [])
+        for subworld_id in subworld_ids:
+            world_resource_ids.update(resources_by_subworld.get(subworld_id, set()))
+        world_guarantees = set(world.get("guarantees", []))
+        matched_ids: list[str] = []
+        for route in routes:
+            match = route.get("match", {})
+            resource_match = bool(world_resource_ids.intersection(match.get("resource_ids", [])))
+            guarantee_match = bool(world_guarantees.intersection(match.get("guarantees", [])))
+            world_match = world["id"] in match.get("world_ids", [])
+            if resource_match or guarantee_match or world_match:
+                matched_ids.append(route["id"])
+        world["specialResourceIds"] = matched_ids
+
+    public_routes = [
+        {key: value for key, value in route.items() if key != "match"}
+        for route in routes
+    ]
+    return {
+        "schema_version": data["schema_version"],
+        "baseline": data["baseline"],
+        "routes": public_routes,
+        "sources": sources,
+    }
+
+
 def main() -> None:
-    global ASSETS, PO_PATH, RESOURCE_CATALOG
+    global ASSETS, PO_PATH, RESOURCE_CATALOG, ENTITY_REPRESENTATIVES, PREFAB_CATEGORIES, ELEMENT_CATEGORIES, GAME_CATEGORIES
     UNCATALOGUED_CANDIDATES.clear()
     UNRESOLVED_FEATURES.clear()
     parser = argparse.ArgumentParser(description=__doc__)
@@ -489,6 +592,8 @@ def main() -> None:
     if not ASSETS.exists(): raise SystemExit(f"StreamingAssets not found: {ASSETS}")
     if not PO_PATH.exists(): raise SystemExit(f"Dolphinwing strings.po not found: {PO_PATH}")
     RESOURCE_CATALOG = load_resource_catalog()
+    GAME_CATEGORIES, ENTITY_REPRESENTATIVES, PREFAB_CATEGORIES = load_game_taxonomy()
+    ELEMENT_CATEGORIES = load_element_categories()
     OUT.mkdir(parents=True, exist_ok=True)
     strings = parse_po(PO_PATH)
     world_index = build_index("worlds")
@@ -500,11 +605,35 @@ def main() -> None:
     # Cluster-level additions and guaranteed templates, keyed by world reference.
     cluster_extra: dict[str, set[str]] = defaultdict(set)
     cluster_rules: dict[str, set[str]] = defaultdict(set)
+    cluster_roles: dict[str, set[str]] = defaultdict(set)
     for path in ASSETS.glob("**/worldgen/clusters/**/*.yaml"):
         data = load_yaml(path)
-        for placement in data.get("worldPlacements", []) or []:
+        if data.get("skip"):
+            continue
+        placements = data.get("worldPlacements", []) or []
+        raw_placements = [
+            (match.group(1), (match.group(2) or "").lower())
+            for line in path.read_text(encoding="utf-8-sig").splitlines()
+            if (match := re.match(r"\s*-\s+world:\s+([^\s#]+)(?:\s*#\s*(.*))?", line))
+        ]
+        if len(raw_placements) != len(placements):
+            raise SystemExit(f"cluster placement parse mismatch: {path}")
+        start_world_index = data.get("startWorldIndex")
+        for index, placement in enumerate(placements):
             if not isinstance(placement, dict) or not placement.get("world"): continue
             wid = str(placement["world"])
+            raw_wid, comment = raw_placements[index]
+            if raw_wid != wid:
+                raise SystemExit(f"cluster placement order mismatch: {path}: {raw_wid} != {wid}")
+            leaf = wid.rsplit("/", 1)[-1]
+            role = (
+                "start"
+                if placement.get("locationType") == "StartWorld" or index == start_world_index
+                else "warp"
+                if "warp" in leaf.lower() or "warp world" in comment or "warp destination" in comment
+                else "general"
+            )
+            cluster_roles[wid].add(role)
             mixing = placement.get("worldMixing", {}) or {}
             for row in mixing.get("additionalSubworldFiles", []) or []:
                 if isinstance(row, dict) and row.get("name"): cluster_extra[wid].add(str(row["name"]))
@@ -554,16 +683,29 @@ def main() -> None:
         for rule in data.get("worldTemplateRules", []) or []:
             if isinstance(rule, dict): own_rules.extend(str(x) for x in (rule.get("names", []) or []))
         guarantees = sorted(set(own_rules) | cluster_rules.get(world_ref, set()) | cluster_rules.get(f"expansion1::worlds/{rel}", set()) | cluster_rules.get(f"dlc5::worlds/{rel}", set()))
+        roles = sorted(
+            cluster_roles.get(world_ref, set()),
+            key={"start": 0, "warp": 1, "general": 2}.__getitem__,
+        )
+        worldsize = data.get("worldsize", {}) or {}
+        width = int(worldsize.get("X", 0))
+        height = int(worldsize.get("Y", 0))
+        if width <= 0 or height <= 0:
+            raise SystemExit(f"world is missing a valid worldsize: {world_ref}")
         worlds.append({
             "id": world_ref, "name_en": name_en, "name_zh": name_zh,
             "desc_en": desc_en, "desc_zh": desc_zh, "dlcTag": ns,
             "subworldIds": normalized_ids, "clusterExtensionSubworldIds": [x for x in normalized_ids if any(e.split('/')[-1] in x for e in extras)],
             "guarantees": guarantees,
+            "width": width, "height": height,
+            "clusterRoles": roles, "referencedByCluster": bool(roles),
+            "internal": bool(data.get("skip")),
         })
 
     worlds.sort(key=lambda x: (x["dlcTag"], x["name_en"]))
     terrain_list = sorted(terrains.values(), key=lambda x: (x["dlcTag"], x["name_en"], x["variant_en"]))
     resource_list = sorted(global_resources.values(), key=lambda x: x["name_en"])
+    special_resources = attach_special_resource_routes(worlds, terrain_list, SPECIAL_RESOURCE_RESEARCH_PATH)
     if UNRESOLVED_FEATURES:
         raise SystemExit("unresolved worldgen features: " + ", ".join(sorted(UNRESOLVED_FEATURES)))
     if UNCATALOGUED_CANDIDATES:
@@ -586,7 +728,13 @@ def main() -> None:
     )
     if missing_uses:
         raise SystemExit("resources missing curated uses: " + ", ".join(missing_uses))
-    for name, payload in (("worlds.json", worlds), ("subworlds.json", terrain_list), ("resources.json", resource_list)):
+    for name, payload in (
+        ("worlds.json", worlds),
+        ("subworlds.json", terrain_list),
+        ("resources.json", resource_list),
+        ("game-categories.json", GAME_CATEGORIES),
+        ("special-resources.json", special_resources),
+    ):
         (OUT / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     mapped = sum(bool(x.get("categories")) for x in resource_list)

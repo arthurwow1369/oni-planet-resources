@@ -17,4 +17,13 @@ describe('dlcLabel', () => {
     expect(dlcLabel('EXPANSION1')).toBe('Spaced Out!')
     expect(dlcLabel('DLC5')).toBe('The Aquatic Planet Pack')
   })
+
+  it('uses only localized product names in Traditional Chinese mode', () => {
+    expect(dlcLabel('base', true, 'zh')).toBe('本體')
+    expect(dlcLabel('expansion1', true, 'zh')).toBe('太空拓荒')
+    expect(dlcLabel('dlc2', true, 'zh')).toBe('寒霜行星包')
+    expect(dlcLabel('dlc3', true, 'zh')).toBe('仿生增幅包')
+    expect(dlcLabel('dlc4', true, 'zh')).toBe('史前行星包')
+    expect(dlcLabel('dlc5', true, 'zh')).toBe('水生行星包')
+  })
 })

@@ -80,16 +80,6 @@ ZH_SUMMARY_OVERRIDES = {
     "DivergentBeetle": "甜素甲蟲會食用硫並照料蟲果植物，可產生蔗糖與蛋；適合把可再生硫轉成食物及蔗糖火箭燃料。牧場效率取決於植物、溫度與種群管理。",
 }
 
-ROLE_PATTERNS = {
-    "food": r"\b(food|edible|calorie|kcal|crop|fruit|meat|fillet|egg|cooking|harvest|grain|berry|lettuce|mushroom)\b",
-    "oxygen": r"\b(oxygen|oxylite|breathable|deoxid)\b",
-    "power": r"\b(power|electric|generator|hydrogen|natural gas|coal|ethanol|biodiesel|peat|fuel)\b",
-    "radiation": r"\b(radiation|radioactive|radbolt|radbolts)\b",
-    "industrial": r"\b(fiber|plastic|lime|phosphorite|bleach stone|sand|slime|resin|lumber|metal|sucrose|polluted dirt)\b",
-    "decor": r"\b(decor|decorative|morale|light)\b",
-    "hazard": r"\b(attack|hostile|danger|disease|spore|consume oxygen|radiation sickness|scald|allerg)\b",
-}
-
 
 def normalized_title(name: str) -> str:
     if name in PAGE_TITLE_OVERRIDES:
@@ -150,14 +140,6 @@ def description_for(
     return "", "", ""
 
 
-def profile_roles(extract: str, kind: str) -> list[str]:
-    text = extract.casefold()
-    roles = [role for role, pattern in ROLE_PATTERNS.items() if re.search(pattern, text)]
-    if not roles and kind == "flora":
-        roles.append("decor")
-    return roles
-
-
 def main() -> None:
     game = json.loads(GAME_DATA.read_text(encoding="utf-8"))
     wiki = json.loads(WIKI_DATA.read_text(encoding="utf-8"))
@@ -208,7 +190,6 @@ def main() -> None:
                 "name_en": name_en,
                 "name_zh": name_zh,
                 "kind": item["kind"],
-                "roles": profile_roles(extract or summary_en, item["kind"]),
                 "summary_en": summary_en,
                 "summary_zh": summary_zh,
                 "mechanics_url": page["url"] if page else "",
@@ -222,7 +203,7 @@ def main() -> None:
     if errors:
         raise SystemExit("entity profile validation failed:\n" + "\n".join(errors))
     output = {
-        "schema_version": 1,
+        "schema_version": 2,
         "updated_at": date.today().isoformat(),
         "baseline": game["source"]["version_baseline"],
         "accessed_at": wiki["accessed_at"],
