@@ -65,9 +65,53 @@ export interface Subworld {
   variant_en: string
   variant_zh: string
   zoneType: string
+  temperatureRange?: string
   dlcTag: string
   resources: Resource[]
   features: string[]
+}
+
+export type SettlementClassification = 'recommended' | 'conditional' | 'outpost'
+export type SettlementOperationMode =
+  | 'settlement'
+  | 'conditional-settlement'
+  | 'extract-and-leave'
+  | 'automated-outpost'
+  | 'managed-outpost'
+  | 'avoid'
+
+export interface SpecialOperation {
+  routeId: string
+  routeName_en: string
+  routeName_zh: string
+  mode: 'extract-and-leave' | 'automated-outpost' | 'managed-outpost'
+  label_en: string
+  label_zh: string
+  detail_en: string
+  detail_zh: string
+}
+
+export interface SettlementAnalysis {
+  classification: SettlementClassification
+  recommendedMission: 'settlement' | 'conditional-settlement' | 'resource-expedition' | 'automated-resource-outpost' | 'managed-production-outpost' | 'no-resource-destination'
+  operationMode: SettlementOperationMode
+  specialOperations: SpecialOperation[]
+  score: number
+  summary_en: string
+  summary_zh: string
+  strengths_en: string[]
+  strengths_zh: string[]
+  risks_en: string[]
+  risks_zh: string[]
+  metrics: {
+    hasWater: boolean
+    hasOxygen: boolean
+    hasFood: boolean
+    hasPower: boolean
+    comfortableTerrainRatio: number
+    extremeTerrainRatio: number
+    terrainCount: number
+  }
 }
 
 export interface World {
@@ -82,10 +126,13 @@ export interface World {
   guarantees: string[]
   width: number
   height: number
+  fixedTraits?: string[]
+  seasons?: string[]
   clusterRoles: Array<'start' | 'warp' | 'general'>
   referencedByCluster: boolean
   internal: boolean
   specialResourceIds: string[]
+  settlement?: SettlementAnalysis
 }
 
 export interface SpecialResourceRoute {
@@ -94,6 +141,15 @@ export interface SpecialResourceRoute {
   name_zh: string
   stage_en: string
   stage_zh: string
+  operations?: Array<{
+    mode: 'extract-and-leave' | 'automated-outpost' | 'managed-outpost'
+    label_en: string
+    label_zh: string
+    detail_en: string
+    detail_zh: string
+    requires_any_resource_ids?: string[]
+    requires_any_guarantee_tokens?: string[]
+  }>
   availability_en: string
   availability_zh: string
   production_en: string[]

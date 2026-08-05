@@ -6,6 +6,7 @@
     "variant_en": "Forest",
     "variant_zh": "Forest",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -437,6 +438,7 @@
     "variant_en": "ForestFrozen",
     "variant_zh": "ForestFrozen",
     "zoneType": "Forest",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -764,6 +766,7 @@
     "variant_en": "ForestHot",
     "variant_zh": "ForestHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -1195,6 +1198,7 @@
     "variant_en": "ForestMiniMetal",
     "variant_zh": "ForestMiniMetal",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -1601,6 +1605,7 @@
     "variant_en": "ForestMiniMetalHot",
     "variant_zh": "ForestMiniMetalHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -2007,6 +2012,7 @@
     "variant_en": "ForestMiniOxy",
     "variant_zh": "ForestMiniOxy",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -2451,6 +2457,7 @@
     "variant_en": "ForestMiniOxyHot",
     "variant_zh": "ForestMiniOxyHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -2895,6 +2902,7 @@
     "variant_en": "ForestMiniWater",
     "variant_zh": "ForestMiniWater",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -3301,6 +3309,7 @@
     "variant_en": "ForestMiniWaterHot",
     "variant_zh": "ForestMiniWaterHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -3707,6 +3716,7 @@
     "variant_en": "ForestStart",
     "variant_zh": "ForestStart",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -4181,6 +4191,7 @@
     "variant_en": "ForestStartHot",
     "variant_zh": "ForestStartHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -4655,6 +4666,7 @@
     "variant_en": "CO2Lakes",
     "variant_zh": "CO2Lakes",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [
       {
@@ -4933,6 +4945,7 @@
     "variant_en": "Frozen",
     "variant_zh": "Frozen",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -5232,6 +5245,7 @@
     "variant_en": "FrozenStrange",
     "variant_zh": "FrozenStrange",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -5531,6 +5545,7 @@
     "variant_en": "Jungle",
     "variant_zh": "Jungle",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "HumanHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -5966,6 +5981,7 @@
     "variant_en": "JungleFrozen",
     "variant_zh": "JungleFrozen",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -6228,6 +6244,7 @@
     "variant_en": "JungleStrange",
     "variant_zh": "JungleStrange",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "HumanHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6663,6 +6680,7 @@
     "variant_en": "Bottom",
     "variant_zh": "Bottom",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6723,6 +6741,7 @@
     "variant_en": "MagmaNoUnobtanium",
     "variant_zh": "MagmaNoUnobtanium",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6769,6 +6788,7 @@
     "variant_en": "MagmaVent",
     "variant_zh": "MagmaVent",
     "zoneType": "MagmaCore",
+    "temperatureRange": "VeryHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6815,6 +6835,7 @@
     "variant_en": "SolidMagma",
     "variant_zh": "SolidMagma",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6873,6 +6894,7 @@
     "variant_en": "VolcanoHole",
     "variant_zh": "VolcanoHole",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -6931,6 +6953,7 @@
     "variant_en": "HotMarsh",
     "variant_zh": "HotMarsh",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -7415,6 +7438,7 @@
     "variant_en": "HotMarshSlush",
     "variant_zh": "HotMarshSlush",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -7817,6 +7841,7 @@
     "variant_en": "HotMarshStrange",
     "variant_zh": "HotMarshStrange",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -8301,6 +8326,7 @@
     "variant_en": "Ocean",
     "variant_zh": "Ocean",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -8697,6 +8723,7 @@
     "variant_en": "OceanDeep",
     "variant_zh": "OceanDeep",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -9045,6 +9072,7 @@
     "variant_en": "OceanDeepSlush",
     "variant_zh": "OceanDeepSlush",
     "zoneType": "Ocean",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -9342,6 +9370,7 @@
     "variant_en": "OceanFrozen",
     "variant_zh": "OceanFrozen",
     "zoneType": "Ocean",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -9542,6 +9571,7 @@
     "variant_en": "OceanHot",
     "variant_zh": "OceanHot",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanHot",
     "dlcTag": "base",
     "resources": [
       {
@@ -9929,6 +9959,7 @@
     "variant_en": "OceanSlush",
     "variant_zh": "OceanSlush",
     "zoneType": "Ocean",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -10218,6 +10249,7 @@
     "variant_en": "OceanStrange",
     "variant_zh": "OceanStrange",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -10620,6 +10652,7 @@
     "variant_en": "OilPatch",
     "variant_zh": "OilPatch",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "base",
     "resources": [
       {
@@ -10970,6 +11003,7 @@
     "variant_en": "OilPockets",
     "variant_zh": "OilPockets",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "base",
     "resources": [
       {
@@ -11302,6 +11336,7 @@
     "variant_en": "OilPocketsFrozen",
     "variant_zh": "OilPocketsFrozen",
     "zoneType": "OilField",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [
       {
@@ -11527,6 +11562,7 @@
     "variant_en": "OilPocketsSandy",
     "variant_zh": "OilPocketsSandy",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "base",
     "resources": [
       {
@@ -11837,6 +11873,7 @@
     "variant_en": "OilPocketsStrange",
     "variant_zh": "OilPocketsStrange",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "base",
     "resources": [
       {
@@ -12175,6 +12212,7 @@
     "variant_en": "Rust",
     "variant_zh": "Rust",
     "zoneType": "Rust",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -12561,6 +12599,7 @@
     "variant_en": "RustFrozen",
     "variant_zh": "RustFrozen",
     "zoneType": "Rust",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -12727,6 +12766,7 @@
     "variant_en": "RustWarm",
     "variant_zh": "RustWarm",
     "zoneType": "Rust",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -13079,6 +13119,7 @@
     "variant_en": "BarrenGranite",
     "variant_zh": "BarrenGranite",
     "zoneType": "Sandstone",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "base",
     "resources": [
       {
@@ -13173,6 +13214,7 @@
     "variant_en": "Default",
     "variant_zh": "Default",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -13723,6 +13765,7 @@
     "variant_en": "Desert",
     "variant_zh": "Desert",
     "zoneType": "Sandstone",
+    "temperatureRange": "Hot",
     "dlcTag": "base",
     "resources": [
       {
@@ -13960,6 +14003,7 @@
     "variant_en": "Empty",
     "variant_zh": "Empty",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [],
     "features": []
@@ -13971,6 +14015,7 @@
     "variant_en": "Sandstone",
     "variant_zh": "Sandstone",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -14507,6 +14552,7 @@
     "variant_en": "SandstoneFrozen",
     "variant_zh": "SandstoneFrozen",
     "zoneType": "Sandstone",
+    "temperatureRange": "Cold",
     "dlcTag": "base",
     "resources": [
       {
@@ -14939,6 +14985,7 @@
     "variant_en": "SandstoneMiniAlgae",
     "variant_zh": "SandstoneMiniAlgae",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -15396,6 +15443,7 @@
     "variant_en": "SandstoneMiniAlgaeCold",
     "variant_zh": "SandstoneMiniAlgaeCold",
     "zoneType": "Sandstone",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -15853,6 +15901,7 @@
     "variant_en": "SandstoneMiniAlgaeStrange",
     "variant_zh": "SandstoneMiniAlgaeStrange",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -16310,6 +16359,7 @@
     "variant_en": "SandstoneMiniMetal",
     "variant_zh": "SandstoneMiniMetal",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -16511,6 +16561,7 @@
     "variant_en": "SandstoneMiniMetalCold",
     "variant_zh": "SandstoneMiniMetalCold",
     "zoneType": "Sandstone",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -16712,6 +16763,7 @@
     "variant_en": "SandstoneMiniMetalStrange",
     "variant_zh": "SandstoneMiniMetalStrange",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -16913,6 +16965,7 @@
     "variant_en": "SandstoneMiniWater",
     "variant_zh": "SandstoneMiniWater",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -17097,6 +17150,7 @@
     "variant_en": "SandstoneMiniWaterCold",
     "variant_zh": "SandstoneMiniWaterCold",
     "zoneType": "Sandstone",
+    "temperatureRange": "Cool",
     "dlcTag": "base",
     "resources": [
       {
@@ -17281,6 +17335,7 @@
     "variant_en": "SandstoneMiniWaterStrange",
     "variant_zh": "SandstoneMiniWaterStrange",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -17465,6 +17520,7 @@
     "variant_en": "SandstoneStart",
     "variant_zh": "SandstoneStart",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -18006,6 +18062,7 @@
     "variant_en": "SandstoneStartCold",
     "variant_zh": "SandstoneStartCold",
     "zoneType": "Sandstone",
+    "temperatureRange": "Mild",
     "dlcTag": "base",
     "resources": [
       {
@@ -18547,6 +18604,7 @@
     "variant_en": "SandstoneStartStrange",
     "variant_zh": "SandstoneStartStrange",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -19081,6 +19139,7 @@
     "variant_en": "SandstoneStrange",
     "variant_zh": "SandstoneStrange",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "base",
     "resources": [
       {
@@ -19617,6 +19676,7 @@
     "variant_en": "Space",
     "variant_zh": "Space",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [],
     "features": []
@@ -19628,6 +19688,7 @@
     "variant_en": "SpaceNoBorder",
     "variant_zh": "SpaceNoBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [],
     "features": []
@@ -19639,6 +19700,7 @@
     "variant_en": "SpaceWithBorder",
     "variant_zh": "SpaceWithBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [],
     "features": []
@@ -19650,6 +19712,7 @@
     "variant_en": "Surface",
     "variant_zh": "Surface",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [
       {
@@ -19762,6 +19825,7 @@
     "variant_en": "SurfaceCrags",
     "variant_zh": "SurfaceCrags",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "base",
     "resources": [
       {
@@ -19874,6 +19938,7 @@
     "variant_en": "TheVoid",
     "variant_zh": "TheVoid",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "ExtremelyCold",
     "dlcTag": "base",
     "resources": [],
     "features": []
@@ -19885,6 +19950,7 @@
     "variant_en": "CarrotQuarryBasic",
     "variant_zh": "CarrotQuarryBasic",
     "zoneType": "CarrotQuarry",
+    "temperatureRange": "Cold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -20095,6 +20161,7 @@
     "variant_en": "CarrotQuarryBasicScarce",
     "variant_zh": "CarrotQuarryBasicScarce",
     "zoneType": "CarrotQuarry",
+    "temperatureRange": "Cold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -20304,6 +20371,7 @@
     "variant_en": "CarrotQuarryEthanolPools",
     "variant_zh": "CarrotQuarryEthanolPools",
     "zoneType": "CarrotQuarry",
+    "temperatureRange": "Cold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -20547,6 +20615,7 @@
     "variant_en": "CarrotQuarrySlush",
     "variant_zh": "CarrotQuarrySlush",
     "zoneType": "CarrotQuarry",
+    "temperatureRange": "Cool",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -20774,6 +20843,7 @@
     "variant_en": "FrozenStart",
     "variant_zh": "FrozenStart",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -21073,6 +21143,7 @@
     "variant_en": "IceCavesBasic",
     "variant_zh": "IceCavesBasic",
     "zoneType": "IceCaves",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -21492,6 +21563,7 @@
     "variant_en": "IceCavesMiniMetal",
     "variant_zh": "IceCavesMiniMetal",
     "zoneType": "IceCaves",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -21842,6 +21914,7 @@
     "variant_en": "IceCavesMiniOxy",
     "variant_zh": "IceCavesMiniOxy",
     "zoneType": "IceCaves",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -22262,6 +22335,7 @@
     "variant_en": "IceCavesMiniWater",
     "variant_zh": "IceCavesMiniWater",
     "zoneType": "IceCaves",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -22672,6 +22746,7 @@
     "variant_en": "IceCavesStart",
     "variant_zh": "IceCavesStart",
     "zoneType": "IceCaves",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -23091,6 +23166,7 @@
     "variant_en": "SnowBanks",
     "variant_zh": "SnowBanks",
     "zoneType": "IceCaves",
+    "temperatureRange": "VeryVeryCold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -23174,6 +23250,7 @@
     "variant_en": "LargeMagma",
     "variant_zh": "LargeMagma",
     "zoneType": "MagmaCore",
+    "temperatureRange": "VeryHot",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -23220,6 +23297,7 @@
     "variant_en": "SugarWoodsBasic",
     "variant_zh": "SugarWoodsBasic",
     "zoneType": "SugarWoods",
+    "temperatureRange": "VeryCold",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -23461,6 +23539,7 @@
     "variant_en": "OilPocketsFossil",
     "variant_zh": "OilPocketsFossil",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "dlc2",
     "resources": [
       {
@@ -23841,6 +23920,7 @@
     "variant_en": "SpaceWithDebris",
     "variant_zh": "SpaceWithDebris",
     "zoneType": "Space",
+    "temperatureRange": "VeryHot",
     "dlcTag": "dlc2",
     "resources": [],
     "features": []
@@ -23852,6 +23932,7 @@
     "variant_en": "GardenBasic",
     "variant_zh": "GardenBasic",
     "zoneType": "PrehistoricGarden",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -24382,6 +24463,7 @@
     "variant_en": "GardenMiniMetal",
     "variant_zh": "GardenMiniMetal",
     "zoneType": "PrehistoricGarden",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -24840,6 +24922,7 @@
     "variant_en": "GardenMiniOxygen",
     "variant_zh": "GardenMiniOxygen",
     "zoneType": "PrehistoricGarden",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -25136,6 +25219,7 @@
     "variant_en": "GardenMiniWater",
     "variant_zh": "GardenMiniWater",
     "zoneType": "PrehistoricGarden",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -25640,6 +25724,7 @@
     "variant_en": "GardenStart",
     "variant_zh": "GardenStart",
     "zoneType": "PrehistoricGarden",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -26213,6 +26298,7 @@
     "variant_en": "RaptorBasic",
     "variant_zh": "RaptorBasic",
     "zoneType": "PrehistoricRaptor",
+    "temperatureRange": "Chilly",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -26583,6 +26669,7 @@
     "variant_en": "SpaceWithPrehistoricBorder",
     "variant_zh": "SpaceWithPrehistoricBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "dlc4",
     "resources": [],
     "features": []
@@ -26594,6 +26681,7 @@
     "variant_en": "WetlandsBasic",
     "variant_zh": "WetlandsBasic",
     "zoneType": "PrehistoricWetlands",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc4",
     "resources": [
       {
@@ -27025,6 +27113,7 @@
     "variant_en": "AbyssBasic",
     "variant_zh": "AbyssBasic",
     "zoneType": "Abyss",
+    "temperatureRange": "SomewhatHot",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -27262,6 +27351,7 @@
     "variant_en": "BeachBasic",
     "variant_zh": "BeachBasic",
     "zoneType": "Beach",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -27633,6 +27723,7 @@
     "variant_en": "BeachMiniAlgae",
     "variant_zh": "BeachMiniAlgae",
     "zoneType": "Beach",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -27868,6 +27959,7 @@
     "variant_en": "BeachMiniMetal",
     "variant_zh": "BeachMiniMetal",
     "zoneType": "Beach",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -28171,6 +28263,7 @@
     "variant_en": "BeachMiniWater",
     "variant_zh": "BeachMiniWater",
     "zoneType": "Beach",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -28524,6 +28617,7 @@
     "variant_en": "BeachStart",
     "variant_zh": "BeachStart",
     "zoneType": "Beach",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -28938,6 +29032,7 @@
     "variant_en": "KelpForestBasic",
     "variant_zh": "KelpForestBasic",
     "zoneType": "KelpForest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -29224,6 +29319,7 @@
     "variant_en": "KelpForestBasicNearby",
     "variant_zh": "KelpForestBasicNearby",
     "zoneType": "KelpForest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -29510,6 +29606,7 @@
     "variant_en": "ReefBasic",
     "variant_zh": "ReefBasic",
     "zoneType": "Reef",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "dlc5",
     "resources": [
       {
@@ -30027,6 +30124,7 @@
     "variant_en": "SpaceWithBeachBorder",
     "variant_zh": "SpaceWithBeachBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "dlc5",
     "resources": [],
     "features": []
@@ -30038,6 +30136,7 @@
     "variant_en": "BarrenCore",
     "variant_zh": "BarrenCore",
     "zoneType": "Barren",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30153,6 +30252,7 @@
     "variant_en": "BarrenDust",
     "variant_zh": "BarrenDust",
     "zoneType": "Barren",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30265,6 +30365,7 @@
     "variant_en": "BarrenGranite",
     "variant_zh": "BarrenGranite",
     "zoneType": "Barren",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30359,6 +30460,7 @@
     "variant_en": "BarrenStart",
     "variant_zh": "BarrenStart",
     "zoneType": "Barren",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30453,6 +30555,7 @@
     "variant_en": "CoalyGranite",
     "variant_zh": "CoalyGranite",
     "zoneType": "Barren",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30568,6 +30671,7 @@
     "variant_en": "HospitableClassicSurface",
     "variant_zh": "HospitableClassicSurface",
     "zoneType": "Barren",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30696,6 +30800,7 @@
     "variant_en": "IcySurface",
     "variant_zh": "IcySurface",
     "zoneType": "Barren",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30808,6 +30913,7 @@
     "variant_en": "OpenWater",
     "variant_zh": "OpenWater",
     "zoneType": "Barren",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30839,6 +30945,7 @@
     "variant_en": "SurfaceBeach",
     "variant_zh": "SurfaceBeach",
     "zoneType": "Barren",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -30870,6 +30977,7 @@
     "variant_en": "Forest",
     "variant_zh": "Forest",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -31325,6 +31433,7 @@
     "variant_en": "ForestHot",
     "variant_zh": "ForestHot",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -31780,6 +31889,7 @@
     "variant_en": "ForestMiniWaterCold",
     "variant_zh": "ForestMiniWaterCold",
     "zoneType": "Forest",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -32186,6 +32296,7 @@
     "variant_en": "ForestStart",
     "variant_zh": "ForestStart",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -32685,6 +32796,7 @@
     "variant_en": "ForestStartCold",
     "variant_zh": "ForestStartCold",
     "zoneType": "Forest",
+    "temperatureRange": "Mild",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -33218,6 +33330,7 @@
     "variant_en": "ForestSurface",
     "variant_zh": "ForestSurface",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -33649,6 +33762,7 @@
     "variant_en": "ForestWarpStart",
     "variant_zh": "ForestWarpStart",
     "zoneType": "Forest",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -34123,6 +34237,7 @@
     "variant_en": "LargeChasm",
     "variant_zh": "LargeChasm",
     "zoneType": "Forest",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -34493,6 +34608,7 @@
     "variant_en": "DeadOasis",
     "variant_zh": "DeadOasis",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Chilly",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -34659,6 +34775,7 @@
     "variant_en": "FrozenCore",
     "variant_zh": "FrozenCore",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "ExtremelyCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -34742,6 +34859,7 @@
     "variant_en": "FrozenGravitas",
     "variant_zh": "FrozenGravitas",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -35041,6 +35159,7 @@
     "variant_en": "FrozenMedium",
     "variant_zh": "FrozenMedium",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -35339,6 +35458,7 @@
     "variant_en": "FrozenSlush",
     "variant_zh": "FrozenSlush",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Chilly",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -35631,6 +35751,7 @@
     "variant_en": "FrozenSurface",
     "variant_zh": "FrozenSurface",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -35868,6 +35989,7 @@
     "variant_en": "MooCore",
     "variant_zh": "MooCore",
     "zoneType": "FrozenWastes",
+    "temperatureRange": "ExtremelyCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -35965,6 +36087,7 @@
     "variant_en": "JungleFrozen",
     "variant_zh": "JungleFrozen",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -36227,6 +36350,7 @@
     "variant_en": "JungleGassy",
     "variant_zh": "JungleGassy",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -36662,6 +36786,7 @@
     "variant_en": "JungleInactive",
     "variant_zh": "JungleInactive",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -37097,6 +37222,7 @@
     "variant_en": "JungleSteamy",
     "variant_zh": "JungleSteamy",
     "zoneType": "ToxicJungle",
+    "temperatureRange": "HumanHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -37532,6 +37658,7 @@
     "variant_en": "BottomSmall",
     "variant_zh": "BottomSmall",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -37592,6 +37719,7 @@
     "variant_en": "BottomSmallNoUnobtanium",
     "variant_zh": "BottomSmallNoUnobtanium",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -37638,6 +37766,7 @@
     "variant_en": "MagmaSurface",
     "variant_zh": "MagmaSurface",
     "zoneType": "MagmaCore",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -37698,6 +37827,7 @@
     "variant_en": "HotMarshInactive",
     "variant_zh": "HotMarshInactive",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -38132,6 +38262,7 @@
     "variant_en": "HotMarshLandingSite",
     "variant_zh": "HotMarshLandingSite",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -38532,6 +38663,7 @@
     "variant_en": "HotMarshMushrooms",
     "variant_zh": "HotMarshMushrooms",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -38970,6 +39102,7 @@
     "variant_en": "HotMarshStart",
     "variant_zh": "HotMarshStart",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -39404,6 +39537,7 @@
     "variant_en": "HotMarshSteamy",
     "variant_zh": "HotMarshSteamy",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -39888,6 +40022,7 @@
     "variant_en": "HotMarshSurface",
     "variant_zh": "HotMarshSurface",
     "zoneType": "BoggyMarsh",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -40372,6 +40507,7 @@
     "variant_en": "RenewableMetallic",
     "variant_zh": "RenewableMetallic",
     "zoneType": "Metallic",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -40484,6 +40620,7 @@
     "variant_en": "SwampyRenewableMetallic",
     "variant_zh": "SwampyRenewableMetallic",
     "zoneType": "Metallic",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -40596,6 +40733,7 @@
     "variant_en": "SwampyRenewableMetallicCold",
     "variant_zh": "SwampyRenewableMetallicCold",
     "zoneType": "Metallic",
+    "temperatureRange": "Chilly",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -40708,6 +40846,7 @@
     "variant_en": "MooCaverns",
     "variant_zh": "MooCaverns",
     "zoneType": "Moo",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -40886,6 +41025,7 @@
     "variant_en": "MooChasms",
     "variant_zh": "MooChasms",
     "zoneType": "Moo",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -41029,6 +41169,7 @@
     "variant_en": "Ocean",
     "variant_zh": "Ocean",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -41425,6 +41566,7 @@
     "variant_en": "OceanDeep",
     "variant_zh": "OceanDeep",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -41773,6 +41915,7 @@
     "variant_en": "OceanSurface",
     "variant_zh": "OceanSurface",
     "zoneType": "Ocean",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -42168,6 +42311,7 @@
     "variant_en": "NiobiumPatch",
     "variant_zh": "NiobiumPatch",
     "zoneType": "OilField",
+    "temperatureRange": "ExtremelyHot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -42213,6 +42357,7 @@
     "variant_en": "OilSparse",
     "variant_zh": "OilSparse",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -42522,6 +42667,7 @@
     "variant_en": "OilSurface",
     "variant_zh": "OilSurface",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -42812,6 +42958,7 @@
     "variant_en": "OilWells",
     "variant_zh": "OilWells",
     "zoneType": "OilField",
+    "temperatureRange": "Hot",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -43108,6 +43255,7 @@
     "variant_en": "FrozenUraniumFields",
     "variant_zh": "FrozenUraniumFields",
     "zoneType": "Radioactive",
+    "temperatureRange": "ExtremelyCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -43244,6 +43392,7 @@
     "variant_en": "Radioactive",
     "variant_zh": "Radioactive",
     "zoneType": "Radioactive",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -43627,6 +43776,7 @@
     "variant_en": "UraniumFields",
     "variant_zh": "UraniumFields",
     "zoneType": "Radioactive",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -43837,6 +43987,7 @@
     "variant_en": "UraniumSprinkles",
     "variant_zh": "UraniumSprinkles",
     "zoneType": "Radioactive",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -44082,6 +44233,7 @@
     "variant_en": "Rust",
     "variant_zh": "Rust",
     "zoneType": "Rust",
+    "temperatureRange": "Cool",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -44433,6 +44585,7 @@
     "variant_en": "RustFrozen",
     "variant_zh": "RustFrozen",
     "zoneType": "Rust",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -44670,6 +44823,7 @@
     "variant_en": "EmptyCaves",
     "variant_zh": "EmptyCaves",
     "zoneType": "Sandstone",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -44681,6 +44835,7 @@
     "variant_en": "HospitableSurface",
     "variant_zh": "HospitableSurface",
     "zoneType": "Sandstone",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -44758,6 +44913,7 @@
     "variant_en": "Sandstone",
     "variant_zh": "Sandstone",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -45294,6 +45450,7 @@
     "variant_en": "SandstoneFrozen",
     "variant_zh": "SandstoneFrozen",
     "zoneType": "Sandstone",
+    "temperatureRange": "Cold",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -45710,6 +45867,7 @@
     "variant_en": "SandstoneMini",
     "variant_zh": "SandstoneMini",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -46210,6 +46368,7 @@
     "variant_en": "SandstoneMiniWater",
     "variant_zh": "SandstoneMiniWater",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -46750,6 +46909,7 @@
     "variant_en": "SandstoneResourceful",
     "variant_zh": "SandstoneResourceful",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -47294,6 +47454,7 @@
     "variant_en": "SandstoneStart",
     "variant_zh": "SandstoneStart",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -47846,6 +48007,7 @@
     "variant_en": "SandstoneWarp",
     "variant_zh": "SandstoneWarp",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -48399,6 +48561,7 @@
     "variant_en": "SandstoneWarpStart",
     "variant_zh": "SandstoneWarpStart",
     "zoneType": "Sandstone",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -48960,6 +49123,7 @@
     "variant_en": "LargeChasmStart",
     "variant_zh": "LargeChasmStart",
     "zoneType": "Space",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -49330,6 +49494,7 @@
     "variant_en": "ModuleInterior",
     "variant_zh": "ModuleInterior",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49341,6 +49506,7 @@
     "variant_en": "SpaceWithAbyssaliteBorder",
     "variant_zh": "SpaceWithAbyssaliteBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49352,6 +49518,7 @@
     "variant_en": "SpaceWithBorder",
     "variant_zh": "SpaceWithBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49363,6 +49530,7 @@
     "variant_en": "SpaceWithFrozenBorder",
     "variant_zh": "SpaceWithFrozenBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49374,6 +49542,7 @@
     "variant_en": "SpaceWithFrozenRustBorder",
     "variant_zh": "SpaceWithFrozenRustBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49385,6 +49554,7 @@
     "variant_en": "SpaceWithNoBorder",
     "variant_zh": "SpaceWithNoBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49396,6 +49566,7 @@
     "variant_en": "SpaceWithOrganicBorder",
     "variant_zh": "SpaceWithOrganicBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49407,6 +49578,7 @@
     "variant_en": "SpaceWithSaltyBorder",
     "variant_zh": "SpaceWithSaltyBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49418,6 +49590,7 @@
     "variant_en": "SpaceWithSandyBorder",
     "variant_zh": "SpaceWithSandyBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49429,6 +49602,7 @@
     "variant_en": "SpaceWithSwampyBorder",
     "variant_zh": "SpaceWithSwampyBorder",
     "zoneType": "Space",
+    "temperatureRange": "VeryCold",
     "dlcTag": "expansion1",
     "resources": [],
     "features": []
@@ -49440,6 +49614,7 @@
     "variant_en": "GraphiteCaves",
     "variant_zh": "GraphiteCaves",
     "zoneType": "Swamp",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -49520,6 +49695,7 @@
     "variant_en": "Swamp",
     "variant_zh": "Swamp",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -49999,6 +50175,7 @@
     "variant_en": "SwampMini",
     "variant_zh": "SwampMini",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -50504,6 +50681,7 @@
     "variant_en": "SwampStart",
     "variant_zh": "SwampStart",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -51098,6 +51276,7 @@
     "variant_en": "SwampStartDense",
     "variant_zh": "SwampStartDense",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -51692,6 +51871,7 @@
     "variant_en": "SwampSurface",
     "variant_zh": "SwampSurface",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -52171,6 +52351,7 @@
     "variant_en": "SwampWarpStart",
     "variant_zh": "SwampWarpStart",
     "zoneType": "Swamp",
+    "temperatureRange": "Room",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -52652,6 +52833,7 @@
     "variant_en": "SwampyChasm",
     "variant_zh": "SwampyChasm",
     "zoneType": "Swamp",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -52955,6 +53137,7 @@
     "variant_en": "SwampyChasmStart",
     "variant_zh": "SwampyChasmStart",
     "zoneType": "Swamp",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -53258,6 +53441,7 @@
     "variant_en": "WastelandBeetle",
     "variant_zh": "WastelandBeetle",
     "zoneType": "Wasteland",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -53558,6 +53742,7 @@
     "variant_en": "WastelandBeetleCool",
     "variant_zh": "WastelandBeetleCool",
     "zoneType": "Wasteland",
+    "temperatureRange": "Chilly",
     "dlcTag": "expansion1",
     "resources": [
       {
@@ -53833,6 +54018,7 @@
     "variant_en": "WastelandWorm",
     "variant_zh": "WastelandWorm",
     "zoneType": "Wasteland",
+    "temperatureRange": "HumanWarm",
     "dlcTag": "expansion1",
     "resources": [
       {

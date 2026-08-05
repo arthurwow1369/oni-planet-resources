@@ -136,6 +136,14 @@ export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSe
                       {t.variantRoles[role]}
                       {qualifier && <> · <small>{qualifier}</small></>}
                       {world.specialResourceIds.length > 0 && <span className="variant-special-marker" aria-hidden="true" title={worldMarkerTitle}>✦</span>}
+                      {world.settlement && (
+                        <span
+                          className={`settlement-mini-badge settlement-mini-${world.settlement.classification}`}
+                          title={`${t.settlementLabels[world.settlement.classification]} · ${t.operationLabels[world.settlement.operationMode]}`}
+                        >
+                          {t.settlementLabels[world.settlement.classification]}
+                        </span>
+                      )}
                     </button>
                   )
                 })}

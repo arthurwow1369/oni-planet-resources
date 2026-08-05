@@ -14,6 +14,15 @@
       "name_zh": "石墨 → 富勒烯 → 超級冷卻液",
       "stage_en": "Late game / cryogenics",
       "stage_zh": "後期／低溫工程",
+      "operations": [
+        {
+          "mode": "extract-and-leave",
+          "label_en": "Finite mining expedition",
+          "label_zh": "有限礦藏採集任務",
+          "detail_en": "Mine the native Graphite and ship it home. Fullerene and Super Coolant processing can be performed on the main colony; no permanent local operator is required.",
+          "detail_zh": "挖完原生石墨後運回主星，富勒烯與超級冷卻液可在主殖民地加工；不需要永久留人。"
+        }
+      ],
       "match": {
         "resource_ids": ["Graphite"]
       },
@@ -51,6 +60,24 @@
       "name_zh": "鈮 → 超導體 → 塑膠質",
       "stage_en": "Late game / extreme heat",
       "stage_zh": "後期／極端高溫",
+      "operations": [
+        {
+          "mode": "extract-and-leave",
+          "requires_any_resource_ids": ["Niobium"],
+          "label_en": "Bootstrap mining expedition",
+          "label_zh": "啟動用短期採礦",
+          "detail_en": "Mine enough native Niobium for the first Thermium batch, then leave if renewable production is not needed.",
+          "detail_zh": "挖取足夠製造第一批超導體的原生鈮；若不需要可再生產量，之後即可撤離。"
+        },
+        {
+          "mode": "automated-outpost",
+          "requires_any_guarantee_tokens": ["molten_niobium"],
+          "label_en": "Automated volcano outpost",
+          "label_zh": "自動化火山前哨",
+          "detail_en": "Taming the Molten Niobium Volcano provides renewable output. It can run without permanent residents after construction, but cooling, storage and repairs need periodic attention.",
+          "detail_zh": "馴化熔融鈮火山可持續產出。完工後可不常駐複製人，但冷卻、儲存與維修仍需定期巡查。"
+        }
+      ],
       "match": {
         "resource_ids": ["Niobium"]
       },
@@ -94,6 +121,15 @@
       "name_zh": "實驗體 52B → 原生膠 → 異構膠晶",
       "stage_en": "Late game / perfect insulation and liquid locks",
       "stage_zh": "後期／極限隔熱與液封",
+      "operations": [
+        {
+          "mode": "managed-outpost",
+          "label_en": "Continuously supplied production outpost",
+          "label_zh": "需持續供應的生產前哨",
+          "detail_en": "Experiment 52B must keep receiving colony food and stay thermally safe. Conveyor delivery can reduce staffing, but this is an ongoing production chain rather than mine-and-leave extraction.",
+          "detail_zh": "實驗體 52B 必須持續收到殖民地食物並保持安全溫度。可用輸送軌道減少駐員，但這是持續生產鏈，不是挖完即走。"
+        }
+      ],
       "match": {
         "guarantees": ["expansion1::poi/worldmixing/sap_tree_room"]
       },
@@ -139,6 +175,15 @@
       "name_zh": "瓦斯牛 → 鹹乳 → 鹹乳蠟 → 塑膠質",
       "stage_en": "Late game / renewable Plastium ingredient",
       "stage_zh": "後期／可再生塑膠質材料",
+      "operations": [
+        {
+          "mode": "managed-outpost",
+          "label_en": "Staffed ranching outpost",
+          "label_zh": "需駐員照顧的畜牧前哨",
+          "detail_en": "Renewable Brackene depends on keeping Gassy Moos fed, managing replacement animals and operating the milking chain. Plan for resident ranching labor or frequent crew visits.",
+          "detail_zh": "可再生鹹乳需要持續餵養瓦斯牛、管理替代個體並操作擠奶產線；應安排常駐畜牧人力或頻繁輪班。"
+        }
+      ],
       "match": {
         "resource_ids": ["Moo", "GasGrass"]
       },
@@ -182,6 +227,15 @@
       "name_zh": "毀滅者事件 → 銥",
       "stage_en": "Timed event / hotter-than-Steel metal",
       "stage_zh": "限時事件／高於鋼材的耐熱金屬",
+      "operations": [
+        {
+          "mode": "extract-and-leave",
+          "label_en": "One-time event and recovery",
+          "label_zh": "一次性事件與回收任務",
+          "detail_en": "Resolve the Demolior event, recover the resulting Iridium and relocate once the hazardous work is complete. Continuous local production is not required.",
+          "detail_zh": "處理毀滅者事件並回收產生的銥；危險作業完成後即可撤離，不需要持續在當地生產。"
+        }
+      ],
       "match": {
         "world_ids": [
           "dlc4::worlds/PrehistoricBaseGameAsteroid",
@@ -227,6 +281,24 @@
       "name_zh": "鈾礦 → 濃縮鈾",
       "stage_en": "Mid-late game / nuclear power and radiation",
       "stage_zh": "中後期／核能與輻射",
+      "operations": [
+        {
+          "mode": "extract-and-leave",
+          "requires_any_resource_ids": ["UraniumOre"],
+          "label_en": "Uranium mining expedition",
+          "label_zh": "鈾礦採集任務",
+          "detail_en": "Raw Uranium Ore can be mined and shipped home without maintaining a permanent colony.",
+          "detail_zh": "原生鈾礦可直接挖掘並運回主星，不需要維持永久殖民地。"
+        },
+        {
+          "mode": "automated-outpost",
+          "requires_any_resource_ids": ["Bee"],
+          "label_en": "Managed Beeta processing site",
+          "label_zh": "鈾蜂處理前哨",
+          "detail_en": "Using Beeta Hives for efficient enrichment needs controlled carbon dioxide, ore delivery and radiation-safe maintenance. The site may be mostly automated but needs periodic service.",
+          "detail_zh": "利用鈾蜂巢高效率濃縮需要控制二氧化碳、輸送礦石並進行防輻射維護；可高度自動化，但仍需定期保養。"
+        }
+      ],
       "match": {
         "resource_ids": ["UraniumOre"]
       },

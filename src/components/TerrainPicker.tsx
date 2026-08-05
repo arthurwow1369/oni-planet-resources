@@ -2,6 +2,7 @@ import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
 import { groupTerrainsByBiome, inferWorldVariantRole, worldWidthBand } from '../plannerModel'
 import type { Locale, Subworld, World } from '../types'
+import { SettlementPanel } from './SettlementPanel'
 
 interface Props {
   world: World | undefined
@@ -42,6 +43,8 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
           {(locale === 'zh' ? world.desc_zh : world.desc_en) && <p className="world-description">{locale === 'zh' ? world.desc_zh : world.desc_en}</p>}
         </div>
       </div>
+
+      {world.settlement && <SettlementPanel analysis={world.settlement} locale={locale} />}
 
       <div className="section-heading terrain-title">
         <div>

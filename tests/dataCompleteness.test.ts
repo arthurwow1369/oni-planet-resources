@@ -62,6 +62,13 @@ type SpecialResourceData = {
     uses_zh: string[]
     attention_en: string[]
     attention_zh: string[]
+    operations: Array<{
+      mode: string
+      label_en: string
+      label_zh: string
+      detail_en: string
+      detail_zh: string
+    }>
     source_ids: string[]
   }>
   sources: Array<{ id: string; url: string; kind: string }>
@@ -86,6 +93,27 @@ describe('generated data completeness', () => {
     referencedByCluster: boolean
     internal: boolean
     specialResourceIds: string[]
+    settlement: {
+      classification: string
+      score: number
+      operationMode: string
+      recommendedMission: string
+      summary_en: string
+      summary_zh: string
+      strengths_en: string[]
+      strengths_zh: string[]
+      risks_en: string[]
+      risks_zh: string[]
+      metrics: Record<'hasWater' | 'hasOxygen' | 'hasFood' | 'hasPower', boolean>
+      specialOperations: Array<{
+        routeId: string
+        mode: string
+        label_en: string
+        label_zh: string
+        detail_en: string
+        detail_zh: string
+      }>
+    }
   }>>('public/data/worlds.json')
   const specialResources = readJson<SpecialResourceData>('public/data/special-resources.json')
   const gameCategories = readJson<Array<{ id: string }>>('public/data/game-categories.json')
@@ -184,6 +212,101 @@ describe('generated data completeness', () => {
     }
   })
 
+  it('classifies every world for settlement and operational staffing', () => {
+    const classificationCounts = new Map<string, number>()
+    for (const world of worlds) {
+      const analysis = world.settlement
+      expect(['recommended', 'conditional', 'outpost'], world.id).toContain(analysis.classification)
+      expect(analysis.score, world.id).toBeGreaterThanOrEqual(0)
+      expect(analysis.score, world.id).toBeLessThanOrEqual(100)
+      expect(analysis.summary_en, world.id).not.toBe('')
+      expect(analysis.summary_zh, world.id).not.toBe('')
+      expect(Object.keys(analysis.metrics).sort(), world.id).toEqual([
+        'comfortableTerrainRatio',
+        'extremeTerrainRatio',
+        'hasFood',
+        'hasOxygen',
+        'hasPower',
+        'hasWater',
+        'terrainCount',
+      ])
+      classificationCounts.set(analysis.classification, (classificationCounts.get(analysis.classification) ?? 0) + 1)
+    }
+    expect(Object.fromEntries(classificationCounts)).toEqual({ recommended: 45, conditional: 30, outpost: 19 })
+
+    const byId = new Map(worlds.map((world) => [world.id, world]))
+    expect(byId.get('dlc5::worlds/AquaticSpacedOutAsteroid')?.settlement).toMatchObject({ classification: 'recommended' })
+    expect(byId.get('expansion1::worlds/RegolithMoonlet')?.settlement).toMatchObject({ classification: 'conditional' })
+    expect(byId.get('expansion1::worlds/WaterMoonlet')?.settlement).toMatchObject({ classification: 'outpost', operationMode: 'extract-and-leave' })
+    expect(byId.get('expansion1::worlds/NiobiumMoonlet')?.settlement).toMatchObject({ classification: 'outpost', operationMode: 'automated-outpost' })
+    expect(byId.get('expansion1::worlds/MarshyMoonlet')?.settlement).toMatchObject({ classification: 'outpost', operationMode: 'managed-outpost' })
+    expect(byId.get('expansion1::worlds/MooMoonlet')?.settlement).toMatchObject({ classification: 'outpost', operationMode: 'managed-outpost' })
+  })
+
+  it('gives every non-recommended world at least one applicable bilingual risk', () => {
+    for (const world of worlds.filter((world) => world.settlement.classification !== 'recommended')) {
+      expect(world.settlement.risks_en.length, world.id).toBeGreaterThan(0)
+      expect(world.settlement.risks_zh.length, world.id).toBe(world.settlement.risks_en.length)
+    }
+  })
+
+  it('describes MiniShatteredGeoAsteroid as size-limited without claiming life-support imports', () => {
+    const world = worlds.find((world) => world.id === 'dlc2::worlds/MiniShatteredGeoAsteroid')
+    expect(world).toBeDefined()
+    expect(world).toMatchObject({ width: 128, settlement: { classification: 'conditional' } })
+    expect(world?.settlement.metrics).toMatchObject({
+      hasWater: true,
+      hasOxygen: true,
+      hasFood: true,
+      hasPower: true,
+    })
+    expect(world?.settlement.risks_en.some((risk) => /wide|expansion space/i.test(risk))).toBe(true)
+    expect(world?.settlement.risks_zh.some((risk) => /寬度|擴建空間/.test(risk))).toBe(true)
+    expect(world?.settlement.summary_en).toMatch(/expansion space/i)
+    expect(world?.settlement.summary_en).not.toMatch(/import/i)
+    expect(world?.settlement.summary_zh).toMatch(/擴建空間/)
+    expect(world?.settlement.summary_zh).not.toMatch(/輸入/)
+  })
+
+  it('marks BigEmpty as a destination with no settlement or extraction target', () => {
+    const world = worlds.find((world) => world.id === 'worlds/BigEmpty')
+    expect(world?.settlement).toMatchObject({
+      classification: 'outpost',
+      operationMode: 'avoid',
+      recommendedMission: 'no-resource-destination',
+      specialOperations: [],
+    })
+    expect(world?.settlement.summary_en).toMatch(/no settlement or extraction target/i)
+    expect(world?.settlement.summary_zh).toMatch(/未找到定居或採集目標/)
+  })
+
+  it('prioritizes a conditional world special-resource operation over its settlement mission', () => {
+    const world = worlds.find((world) => world.id === 'expansion1::worlds/MiniRadioactiveOcean')
+    expect(world?.specialResourceIds).toContain('uranium-nuclear')
+    expect(world?.settlement).toMatchObject({
+      classification: 'conditional',
+      operationMode: 'automated-outpost',
+      recommendedMission: 'automated-resource-outpost',
+    })
+    expect(world?.settlement.specialOperations.some((operation) => operation.mode === 'automated-outpost')).toBe(true)
+  })
+
+  it('requires worldgen evidence before recommending renewable special-resource operations', () => {
+    const uraniumOnly = worlds.find((world) => world.id === 'expansion1::worlds/VanillaArboria')
+    expect(uraniumOnly?.specialResourceIds).toContain('uranium-nuclear')
+    expect(uraniumOnly?.settlement.specialOperations.some((operation) => operation.mode === 'extract-and-leave')).toBe(true)
+    expect(uraniumOnly?.settlement.specialOperations.some((operation) => operation.mode === 'automated-outpost')).toBe(false)
+
+    const beetaWorld = worlds.find((world) => world.id === 'expansion1::worlds/SmallRadioactiveLandingSite')
+    expect(beetaWorld?.settlement.specialOperations.some((operation) => operation.mode === 'automated-outpost')).toBe(true)
+
+    const niobiumWorld = worlds.find((world) => world.id === 'expansion1::worlds/NiobiumMoonlet')
+    expect(niobiumWorld?.settlement.specialOperations.map((operation) => operation.mode)).toEqual([
+      'extract-and-leave',
+      'automated-outpost',
+    ])
+  })
+
   it('ships bilingual, cited and current special-resource guidance', () => {
     expect(specialResources.schema_version).toBe(1)
     expect(specialResources.baseline).toMatchObject({ as_of: '2026-08-03', latest_public_checked: 'U59-744825' })
@@ -204,6 +327,14 @@ describe('generated data completeness', () => {
       expect(route.production_zh.length, route.id).toBe(route.production_en.length)
       expect(route.uses_zh.length, route.id).toBe(route.uses_en.length)
       expect(route.attention_zh.length, route.id).toBe(route.attention_en.length)
+      expect(route.operations.length, route.id).toBeGreaterThan(0)
+      for (const operation of route.operations) {
+        expect(['extract-and-leave', 'automated-outpost', 'managed-outpost'], route.id).toContain(operation.mode)
+        expect(operation.label_en, route.id).not.toBe('')
+        expect(operation.label_zh, route.id).not.toBe('')
+        expect(operation.detail_en, route.id).not.toBe('')
+        expect(operation.detail_zh, route.id).not.toBe('')
+      }
       expect(route.source_ids.length, route.id).toBeGreaterThan(0)
       expect(route.source_ids.every((id) => sourceIds.has(id)), route.id).toBe(true)
     }

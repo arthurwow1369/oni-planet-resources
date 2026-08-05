@@ -58,6 +58,11 @@ select:focus, input:focus { border-color: #5dd9da; box-shadow: 0 0 0 3px rgba(93
 .planet-special-marker { display: grid; width: 23px; height: 23px; place-items: center; border: 1px solid #70562e; border-radius: 50%; background: #322718; font-size: 13px; }
 .variant-special-marker { margin-left: 2px; font-size: 10px; }
 .world-variant-options button.active .variant-special-marker { color: #684300; filter: none; }
+.settlement-mini-badge { padding: 2px 5px; border-radius: 999px; font-size: 7px; font-weight: 800; }
+.settlement-mini-recommended { color: #bdf2d3; background: #1d513c; }
+.settlement-mini-conditional { color: #f8e2a1; background: #594921; }
+.settlement-mini-outpost { color: #ffc2bc; background: #64332f; }
+.world-variant-options button.active .settlement-mini-badge { color: #092329; background: rgba(255,255,255,.48); }
 
 .terrain-panel { padding: 24px; }
 .world-summary { display: flex; align-items: center; gap: 22px; padding: 4px 0 23px; border-bottom: 1px solid #213551; }
@@ -209,6 +214,43 @@ select:focus, input:focus { border-color: #5dd9da; box-shadow: 0 0 0 3px rgba(93
 .world-metadata span { padding: 4px 7px; border: 1px solid #2b465d; border-radius: 999px; color: #91a9be; background: #10243a; font-size: 9px; }
 .world-metadata strong { color: #77dcd4; }
 .world-size-note { margin: 7px 0 0; color: #7890a6; font-size: 9px; }
+.settlement-panel { margin-top: 20px; padding: 18px; border: 1px solid #37516b; border-radius: 15px; background: linear-gradient(145deg, rgba(15, 37, 56, .92), rgba(9, 22, 39, .96)); }
+.settlement-recommended { border-color: #34765c; box-shadow: inset 4px 0 #55c88e; }
+.settlement-conditional { border-color: #746232; box-shadow: inset 4px 0 #d8b85e; }
+.settlement-outpost { border-color: #74413d; box-shadow: inset 4px 0 #d66d64; }
+.settlement-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.settlement-heading h2 { margin: 3px 0 0; font-size: 17px; }
+.settlement-verdict { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.settlement-verdict strong { padding: 5px 9px; border-radius: 999px; color: #f4f8ff; background: #29445c; font-size: 10px; }
+.settlement-recommended .settlement-verdict strong { color: #bdf2d3; background: #1d513c; }
+.settlement-conditional .settlement-verdict strong { color: #f8e2a1; background: #594921; }
+.settlement-outpost .settlement-verdict strong { color: #ffc2bc; background: #64332f; }
+.settlement-verdict span { color: #7f94ae; font-size: 9px; }
+.operation-banner { display: flex; align-items: flex-start; gap: 11px; margin-top: 14px; padding: 12px 13px; border: 1px solid #35536b; border-radius: 11px; background: rgba(7, 20, 35, .72); }
+.operation-banner > span { font-size: 22px; }
+.operation-banner strong { color: #dcecff; font-size: 13px; }
+.operation-banner p { margin: 4px 0 0; color: #98abc1; font-size: 10px; line-height: 1.55; }
+.life-support-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 11px; }
+.life-support-row > strong { margin-right: 3px; color: #899db6; font-size: 9px; }
+.life-support-row span { padding: 4px 7px; border-radius: 999px; font-size: 9px; }
+.life-support-row .available { color: #bcebd0; background: #1a4938; }
+.life-support-row .missing { color: #ffc0bb; background: #552c2b; }
+.settlement-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; margin-top: 12px; }
+.settlement-detail-grid > section { padding: 11px; border: 1px solid #2f4e62; border-radius: 10px; background: rgba(12, 30, 47, .72); }
+.settlement-detail-grid .settlement-risks { border-color: #604440; background: rgba(54, 31, 31, .36); }
+.settlement-detail-grid h3, .operation-plans > h3 { margin: 0 0 8px; color: #a9bed2; font-size: 10px; }
+.settlement-detail-grid ul { display: grid; gap: 5px; margin: 0; padding-left: 17px; color: #9dafc2; font-size: 9px; line-height: 1.5; }
+.operation-plans { margin-top: 13px; padding-top: 12px; border-top: 1px solid #30485e; }
+.operation-plans > div { display: grid; gap: 7px; }
+.operation-plan { display: flex; align-items: flex-start; gap: 10px; padding: 10px 11px; border: 1px solid #3b5367; border-radius: 10px; background: rgba(8, 22, 37, .72); }
+.operation-plan > span { font-size: 18px; }
+.operation-plan > div { display: flex; flex-direction: column; min-width: 0; }
+.operation-plan small { color: #7089a4; font-size: 8px; }
+.operation-plan strong { margin-top: 2px; color: #dce9f5; font-size: 11px; }
+.operation-plan p { margin: 4px 0 0; color: #98aabd; font-size: 9px; line-height: 1.55; }
+.operation-managed-outpost { border-color: #755333; background: rgba(60, 40, 22, .42); }
+.operation-automated-outpost { border-color: #365d70; background: rgba(20, 48, 64, .5); }
+.operation-extract-and-leave { border-color: #3e5c50; background: rgba(21, 50, 42, .4); }
 .research-empty { margin: 0; color: #607692; font-size: 9px; }
 .research-recommendations { margin-top: 15px; }
 .research-recommendations > h4, .research-bottom-grid h4 { margin: 0 0 9px; font-size: 12px; }
@@ -314,7 +356,9 @@ footer { display: flex; justify-content: space-between; gap: 15px; padding: 19px
   .resource-search { width: 100%; }.terrain-grid, .resource-grid, .main-source-grid { grid-template-columns: 1fr; }
   .main-source-section, .terrain-research-section { padding: 13px; }
   .main-source-card { min-height: 0; }
-  .research-worldgen-grid, .research-recommendation-grid, .research-bottom-grid, .special-resource-detail-grid { grid-template-columns: 1fr; }
+  .research-worldgen-grid, .research-recommendation-grid, .research-bottom-grid, .special-resource-detail-grid, .settlement-detail-grid { grid-template-columns: 1fr; }
+  .settlement-heading { align-items: flex-start; flex-direction: column; }
+  .settlement-verdict { align-items: flex-start; }
   .special-resource-section { padding: 13px; }
   .special-resource-card > summary { align-items: flex-start; }
   .special-stage-chip { max-width: 145px; }

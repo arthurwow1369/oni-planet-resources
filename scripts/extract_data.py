@@ -510,7 +510,7 @@ def terrain_record(
     return {
         "id": ref_id, "name_en": name_en, "name_zh": name_zh,
         "variant_en": fallback, "variant_zh": fallback,
-        "zoneType": zone, "dlcTag": ns,
+        "zoneType": zone, "temperatureRange": str(data.get("temperatureRange", "Unknown")), "dlcTag": ns,
         "resources": sorted(resources.values(), key=lambda x: x["name_en"]),
         "features": sorted(feature_references),
     }
@@ -562,6 +562,254 @@ def attach_special_resource_routes(
         "baseline": data["baseline"],
         "routes": public_routes,
         "sources": sources,
+    }
+
+
+WATER_RESOURCES = {"Water", "DirtyWater", "SaltWater", "Brine", "Ice", "Snow", "Mud", "ToxicMud", "Steam"}
+OXYGEN_RESOURCES = {"Oxygen", "OxyRock", "Algae", "Water", "DirtyWater", "Rust", "SlimeMold", "ContaminatedOxygen"}
+COMFORTABLE_TEMPERATURES = {"Room", "Mild", "HumanWarm", "Cool", "Chilly"}
+EXTREME_TEMPERATURES = {"VeryCold", "VeryVeryCold", "VeryHot", "ExtremelyHot", "ExtremelyCold"}
+PERMANENT_SETTLEMENT_MIN_WIDTH = 160
+PERMANENT_SETTLEMENT_MIN_COMFORTABLE_RATIO = 0.25
+PERMANENT_SETTLEMENT_MAX_EXTREME_RATIO = 0.6
+
+
+def settlement_analysis(
+    world: dict[str, Any],
+    terrains: dict[str, dict[str, Any]],
+    special_routes: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    world_terrains = [terrains[sid] for sid in world["subworldIds"] if sid in terrains]
+    resources = {
+        resource["simhash"]: resource
+        for terrain in world_terrains
+        for resource in terrain.get("resources", [])
+    }
+    resource_ids = set(resources)
+    categories = {
+        category
+        for resource in resources.values()
+        for category in resource.get("categories", [])
+    }
+    practical_terrains = [
+        terrain for terrain in world_terrains
+        if terrain.get("zoneType") not in {"Space", "MagmaCore"}
+    ]
+    denominator = max(len(practical_terrains), 1)
+    comfortable_count = sum(
+        terrain.get("temperatureRange") in COMFORTABLE_TEMPERATURES
+        for terrain in practical_terrains
+    )
+    extreme_count = sum(
+        terrain.get("temperatureRange") in EXTREME_TEMPERATURES
+        for terrain in practical_terrains
+    )
+    comfortable_ratio = comfortable_count / denominator
+    extreme_ratio = extreme_count / denominator
+
+    has_water = bool(resource_ids & WATER_RESOURCES)
+    has_oxygen = bool(resource_ids & OXYGEN_RESOURCES)
+    has_food = "food" in categories
+    has_power = "power" in categories
+    has_industry = "industrial" in categories
+    survival_count = sum((has_water, has_oxygen, has_food))
+    width = world["width"]
+    has_all_life_support = has_water and has_oxygen and has_food and has_power
+    size_gate_failed = width < PERMANENT_SETTLEMENT_MIN_WIDTH
+    comfort_gate_failed = comfortable_ratio < PERMANENT_SETTLEMENT_MIN_COMFORTABLE_RATIO
+    extreme_temperature_gate_failed = extreme_ratio >= PERMANENT_SETTLEMENT_MAX_EXTREME_RATIO
+
+    score = 0
+    score += 18 if has_water else 0
+    score += 18 if has_oxygen else 0
+    score += 18 if has_food else 0
+    score += 12 if has_power else 0
+    score += 8 if has_industry else 0
+    score += 16 if width >= PERMANENT_SETTLEMENT_MIN_WIDTH else 12 if width >= 128 else 7 if width >= 96 else 3
+    score += 10 if comfortable_ratio >= 0.5 else 6 if comfortable_ratio >= 0.25 else 2 if comfortable_count else 0
+    score -= 18 if extreme_ratio >= 0.75 else 10 if extreme_ratio >= 0.5 else 4 if extreme_ratio >= 0.25 else 0
+    if width <= 80:
+        score -= 8
+    score = max(0, min(100, score))
+
+    can_recommend = (
+        not size_gate_failed
+        and has_all_life_support
+        and not comfort_gate_failed
+        and not extreme_temperature_gate_failed
+    )
+    can_conditionally_settle = (
+        width >= 96
+        and survival_count >= 2
+        and score >= 45
+        and extreme_ratio < 0.75
+    )
+    if can_recommend:
+        classification = "recommended"
+        mission = "settlement"
+    elif can_conditionally_settle:
+        classification = "conditional"
+        mission = "conditional-settlement"
+    else:
+        classification = "outpost"
+        mission = "resource-expedition"
+
+    strengths_en: list[str] = []
+    strengths_zh: list[str] = []
+    risks_en: list[str] = []
+    risks_zh: list[str] = []
+    if not size_gate_failed:
+        strengths_en.append(f"Wide {width}-tile map provides room for long-term infrastructure.")
+        strengths_zh.append(f"水平寬度 {width} 格，長期基礎設施空間充足。")
+    else:
+        risks_en.append(
+            f"At {width} tiles wide, this world is below the {PERMANENT_SETTLEMENT_MIN_WIDTH}-tile "
+            "permanent-settlement threshold; long-term expansion space is limited."
+        )
+        risks_zh.append(
+            f"水平寬度 {width} 格，低於永久定居所需的 {PERMANENT_SETTLEMENT_MIN_WIDTH} 格門檻；"
+            "長期擴建空間有限。"
+        )
+    for available, en, zh in (
+        (has_water, "Native water-bearing resources support plumbing and oxygen production.", "有原生含水資源，可支援管線及製氧。"),
+        (has_oxygen, "At least one native oxygen route is available.", "至少有一條原生製氧路線。"),
+        (has_food, "Native food, crop or ranching inputs are available.", "有原生食物、作物或畜牧輸入。"),
+        (has_power, "Native fuel or power resources are available.", "有原生燃料或發電資源。"),
+    ):
+        if available:
+            strengths_en.append(en)
+            strengths_zh.append(zh)
+    for available, en, zh in (
+        (has_water, "No native water source was identified; water must be imported or recovered from another chain.", "未找到原生水源；需要輸入水或建立其他回收鏈。"),
+        (has_oxygen, "No native oxygen-production feedstock was identified.", "未找到原生製氧原料。"),
+        (has_food, "No reliable native food, crop or ranching route was identified.", "未找到可靠的原生食物、作物或畜牧路線。"),
+        (has_power, "No reliable native fuel or power route was identified.", "未找到可靠的原生燃料或發電路線。"),
+    ):
+        if not available:
+            risks_en.append(en)
+            risks_zh.append(zh)
+    if extreme_temperature_gate_failed:
+        risks_en.append("Most usable terrain is extremely hot or cold and needs major thermal engineering.")
+        risks_zh.append("多數可用地形屬極熱或極冷環境，需要大量溫控工程。")
+    elif extreme_ratio >= 0.25:
+        risks_en.append("A significant portion of the terrain has extreme temperatures.")
+        risks_zh.append("相當比例的地形具有極端溫度。")
+    if comfort_gate_failed:
+        risks_en.append("Less than 25% of usable terrain is naturally comfortable for habitation.")
+        risks_zh.append("自然適合居住的可用地形不足 25%。")
+    fixed_traits = world.get("fixedTraits", [])
+    if any("cosmicRadiationHigh" in trait or "cosmicRadiationVeryHigh" in trait for trait in fixed_traits):
+        risks_en.append("High surface radiation requires shielding and exposure management.")
+        risks_zh.append("地表輻射偏高，需要遮蔽及曝露管理。")
+    if any("Meteor" in season for season in world.get("seasons", [])):
+        risks_en.append("Meteor seasons require protected surface infrastructure.")
+        risks_zh.append("有流星雨季，地表設施需要防護。")
+    if world.get("specialResourceIds"):
+        strengths_en.append("Contains special or late-game strategic resources worth an expedition.")
+        strengths_zh.append("含特殊或後期戰略資源，值得派遣採集任務。")
+
+    guarantees = [str(guarantee).lower() for guarantee in world.get("guarantees", [])]
+
+    def operation_applies(operation: dict[str, Any]) -> bool:
+        required_resources = set(operation.get("requires_any_resource_ids", []))
+        if required_resources and not required_resources.intersection(resources):
+            return False
+        required_guarantee_tokens = [str(token).lower() for token in operation.get("requires_any_guarantee_tokens", [])]
+        if required_guarantee_tokens and not any(
+            token in guarantee
+            for token in required_guarantee_tokens
+            for guarantee in guarantees
+        ):
+            return False
+        return True
+
+    special_operations = [
+        {
+            "routeId": route_id,
+            "routeName_en": special_routes[route_id]["name_en"],
+            "routeName_zh": special_routes[route_id]["name_zh"],
+            **operation,
+        }
+        for route_id in world.get("specialResourceIds", [])
+        if route_id in special_routes
+        for operation in special_routes[route_id].get("operations", [])
+        if operation_applies(operation)
+    ]
+    operation_modes = {operation["mode"] for operation in special_operations}
+    if classification == "recommended":
+        operation_mode = "settlement"
+        mission = "settlement"
+    elif "managed-outpost" in operation_modes:
+        operation_mode = "managed-outpost"
+        mission = "managed-production-outpost"
+    elif "automated-outpost" in operation_modes:
+        operation_mode = "automated-outpost"
+        mission = "automated-resource-outpost"
+    elif classification == "conditional":
+        operation_mode = "conditional-settlement"
+        mission = "conditional-settlement"
+    elif special_operations or resources:
+        operation_mode = "extract-and-leave"
+        mission = "resource-expedition"
+    else:
+        operation_mode = "avoid"
+        mission = "no-resource-destination"
+
+    summaries = {
+        "recommended": (
+            "Suitable for a long-term colony: core life-support routes and adequate expansion space are available.",
+            "適合長期定居：具備核心生命維持路線及足夠擴建空間。",
+        ),
+    }
+    if classification == "conditional":
+        limitations_en: list[str] = []
+        limitations_zh: list[str] = []
+        if size_gate_failed:
+            limitations_en.append("permanent-colony expansion space is limited")
+            limitations_zh.append("永久殖民地的擴建空間有限")
+        if not has_all_life_support:
+            limitations_en.append("missing native life-support inputs require imports or external supply chains")
+            limitations_zh.append("缺少的原生生命維持物資需要輸入或由外部供應鏈補足")
+        if extreme_temperature_gate_failed:
+            limitations_en.append("extreme-temperature terrain requires major thermal engineering")
+            limitations_zh.append("極端溫度地形需要大量溫控工程")
+        elif comfort_gate_failed:
+            limitations_en.append("limited naturally comfortable terrain requires environmental preparation")
+            limitations_zh.append("自然舒適地形比例過低，需要環境整備")
+        summary_en = "Conditional settlement: " + "; ".join(limitations_en) + ". Review the listed risks first."
+        summary_zh = "有條件定居：" + "；".join(limitations_zh) + "；請先檢視列出的風險。"
+    elif classification == "outpost" and special_operations:
+        summary_en = "Not recommended for a full permanent colony. Use the operation plan below to decide whether to leave after mining or maintain a production outpost."
+        summary_zh = "不建議建立完整永久殖民地。請依下方營運方案決定採完撤離，或維持生產前哨。"
+    elif classification == "outpost" and resources:
+        summary_en = "Not recommended for a permanent colony. Ordinary terrain resources are identified; make a short extraction-and-leave expedition."
+        summary_zh = "不建議建立永久殖民地。已找到一般地形資源；建議短期採集，採完即撤離。"
+    elif classification == "outpost":
+        summary_en = "No settlement or extraction target was identified. Avoid this destination unless you have a separate non-resource objective."
+        summary_zh = "未找到定居或採集目標。除非另有非資源任務，否則應避開此目的地。"
+    else:
+        summary_en, summary_zh = summaries[classification]
+    return {
+        "classification": classification,
+        "recommendedMission": mission,
+        "operationMode": operation_mode,
+        "specialOperations": special_operations,
+        "score": score,
+        "summary_en": summary_en,
+        "summary_zh": summary_zh,
+        "strengths_en": strengths_en,
+        "strengths_zh": strengths_zh,
+        "risks_en": risks_en,
+        "risks_zh": risks_zh,
+        "metrics": {
+            "hasWater": has_water,
+            "hasOxygen": has_oxygen,
+            "hasFood": has_food,
+            "hasPower": has_power,
+            "comfortableTerrainRatio": round(comfortable_ratio, 3),
+            "extremeTerrainRatio": round(extreme_ratio, 3),
+            "terrainCount": len(world_terrains),
+        },
     }
 
 
@@ -698,6 +946,8 @@ def main() -> None:
             "subworldIds": normalized_ids, "clusterExtensionSubworldIds": [x for x in normalized_ids if any(e.split('/')[-1] in x for e in extras)],
             "guarantees": guarantees,
             "width": width, "height": height,
+            "fixedTraits": [str(value) for value in data.get("fixedTraits", []) or []],
+            "seasons": [str(value) for value in data.get("seasons", []) or []],
             "clusterRoles": roles, "referencedByCluster": bool(roles),
             "internal": bool(data.get("skip")),
         })
@@ -706,6 +956,9 @@ def main() -> None:
     terrain_list = sorted(terrains.values(), key=lambda x: (x["dlcTag"], x["name_en"], x["variant_en"]))
     resource_list = sorted(global_resources.values(), key=lambda x: x["name_en"])
     special_resources = attach_special_resource_routes(worlds, terrain_list, SPECIAL_RESOURCE_RESEARCH_PATH)
+    special_routes = {route["id"]: route for route in special_resources["routes"]}
+    for world in worlds:
+        world["settlement"] = settlement_analysis(world, terrains, special_routes)
     if UNRESOLVED_FEATURES:
         raise SystemExit("unresolved worldgen features: " + ", ".join(sorted(UNRESOLVED_FEATURES)))
     if UNCATALOGUED_CANDIDATES:
