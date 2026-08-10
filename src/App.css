@@ -50,7 +50,7 @@ select:focus, input:focus { border-color: #5dd9da; box-shadow: 0 0 0 3px rgba(93
 .world-variant-options button:hover { color: #ccebe8; border-color: #467d88; }
 .world-variant-options button.active { color: #062126; border-color: #6bded3; background: #6bded3; font-weight: 800; }
 .world-variant-options button small { max-width: none; overflow: visible; opacity: .72; text-overflow: clip; white-space: nowrap; font-size: 7px; }
-.planet-icon { color: #6ee8d7; }
+.planet-icon { width: 1.35rem; height: 1.35rem; flex: 0 0 1.35rem; color: #6ee8d7; image-rendering: pixelated; }
 .planet-copy { min-width: 0; display: flex; flex-direction: column; flex: 1; }
 .planet-copy strong { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 13px; }
 .planet-copy small { color: #778dad; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -69,7 +69,10 @@ select:focus, input:focus { border-color: #5dd9da; box-shadow: 0 0 0 3px rgba(93
 .terrain-panel { padding: 24px; }
 .world-summary { display: flex; align-items: center; gap: 22px; padding: 4px 0 23px; border-bottom: 1px solid #213551; }
 .world-orbit { width: 76px; height: 76px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #8df4e1, #246887 55%, #101d36 57%); box-shadow: 0 0 0 7px rgba(58, 126, 159, .13), 0 0 35px rgba(85, 219, 216, .2); }
-.world-orbit span { opacity: .4; }
+.world-orbit > .world-summary-icon { width: 62px; height: 62px; vertical-align: 0; }
+.world-orbit > .oni-icon-fallback { opacity: .4; }
+.world-orbit:has(> img.world-summary-icon) { border-radius: 0; background: none; box-shadow: none; }
+.world-orbit:has(> img.world-summary-icon) > .world-summary-icon { width: 76px; height: 76px; }
 .world-summary h1 { margin: 3px 0 0; font-size: clamp(24px, 3vw, 36px); }
 .secondary-title { color: #73dce2; margin: 2px 0 0; }
 .world-description { color: #8fa2c1; max-width: 720px; margin: 10px 0 0; font-size: 13px; line-height: 1.6; }
@@ -363,6 +366,8 @@ footer { display: flex; justify-content: space-between; gap: 15px; padding: 19px
 .geyser-guaranteed { color: #bdf2d3 !important; background: #1d513c !important; }
 .geyser-pool-note { margin: 0; color: #7f94ae; font-size: 10px; line-height: 1.5; }
 .geyser-card { position: relative; height: auto; min-height: 0; }
+.geyser-icon { width: 2.5rem; height: 2.5rem; flex: 0 0 2.5rem; margin-top: -2px; object-fit: contain; image-rendering: pixelated; }
+.geyser-card .resource-title > div { flex: 1; }
 .geyser-facts { display: grid; gap: 4px; margin-top: 10px; color: #8fa6c2; font-size: 10px; }
 .geyser-facts strong { color: #c3d4e8; }
 .geyser-count-badge { position: absolute; top: 12px; right: 12px; padding: 2px 7px; border-radius: 999px; color: #062126; background: #6bded3; font-size: 9px; font-weight: 800; }
@@ -406,6 +411,12 @@ footer { display: flex; justify-content: space-between; gap: 15px; padding: 19px
 .space-poi-detail-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
 .space-poi-detail-heading h2 { margin: 3px 0 0; font-size: 20px; }
 .space-poi-detail-heading small { display: block; margin-top: 3px; color: #61779a; font-size: 11px; }
+
+/* Downloaded wiki icons stay compact alongside the existing emoji fallback. */
+.oni-icon { width: 1.25em; height: 1.25em; object-fit: contain; vertical-align: -0.22em; image-rendering: pixelated; }
+.poi-option-icon.oni-icon { width: 2rem; height: 2rem; flex: 0 0 2rem; }
+.oni-icon-fallback { display: inline-block; text-align: center; }
+.icon-source-link { display: inline-block; margin-left: .5rem; font-size: .75rem; }
 .space-poi-detail-section { margin-top: 18px; }
 .space-poi-detail-section h3, .space-poi-detail-grid h3 { margin: 0 0 8px; color: #8ee6e7; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
 .space-poi-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
@@ -436,6 +447,9 @@ footer { display: flex; justify-content: space-between; gap: 15px; padding: 19px
 .space-poi-cluster-grid > span { display: grid; gap: 2px; padding: 7px 9px; border: 1px solid #22364f; border-radius: 8px; background: #101e33; }
 .space-poi-cluster-grid strong { color: #c9d6e9; font-size: 11px; }
 .space-poi-cluster-grid em { color: #7f94ae; font-size: 9px; font-style: normal; }
+.space-poi-cluster-worlds { display: grid; gap: 3px; margin-top: 4px; }
+.space-poi-cluster-worlds > span { display: flex; align-items: center; gap: 4px; color: #b9cce1; font-size: 10px; }
+.space-poi-cluster-worlds .oni-icon { width: 20px; height: 20px; object-fit: contain; }
 .space-poi-citations { margin: 0; padding-left: 17px; color: #8094b4; font-size: 10px; line-height: 1.6; }
 .space-poi-empty { margin: 12px 0 0; padding: 26px 16px; border: 1px dashed #2b4462; border-radius: 10px; color: #7f94ae; font-size: 12px; text-align: center; }
 
@@ -452,7 +466,7 @@ footer { display: flex; justify-content: space-between; gap: 15px; padding: 19px
 @media (max-width: 580px) {
   .topbar { padding: 13px; }.brand-mark { width: 42px; height: 42px; }.brand-copy h1 { font-size: 16px; }
   .planner-layout { padding: 12px; }.terrain-panel, .resource-panel { padding: 16px; }
-  .world-orbit { width: 57px; height: 57px; }.world-summary { align-items: flex-start; gap: 14px; }
+  .world-orbit { width: 57px; height: 57px; }.world-orbit > .world-summary-icon { width: 47px; height: 47px; }.world-orbit:has(> img.world-summary-icon) > .world-summary-icon { width: 57px; height: 57px; }.world-summary { align-items: flex-start; gap: 14px; }
   .terrain-title, .resource-heading, .main-source-heading { align-items: flex-start; flex-direction: column; }
   .resource-search { width: 100%; }.terrain-grid, .resource-grid, .main-source-grid { grid-template-columns: 1fr; }
   .main-source-section, .terrain-research-section { padding: 13px; }

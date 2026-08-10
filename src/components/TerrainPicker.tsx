@@ -1,5 +1,6 @@
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
+import { OniIcon } from '../oniIcon'
 import { groupTerrainsByBiome, inferWorldVariantRole, worldWidthBand } from '../plannerModel'
 import type { Locale, Subworld, World } from '../types'
 import { SettlementPanel } from './SettlementPanel'
@@ -28,7 +29,15 @@ export function TerrainPicker({ world, terrains, selected, locale, onToggle, onS
   return (
     <section className="panel terrain-panel">
       <div className="world-summary">
-        <div className="world-orbit"><span>◉</span></div>
+        <div className="world-orbit">
+          <OniIcon
+            group="worlds"
+            id={world.id}
+            alt={localName(world, locale)}
+            fallback="◉"
+            className="world-summary-icon"
+          />
+        </div>
         <div>
           <span className="eyebrow">{dlcLabel(world.dlcTag)}</span>
           <h1>{localName(world, locale)}</h1>

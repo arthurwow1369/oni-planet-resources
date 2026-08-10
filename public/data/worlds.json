@@ -5494,70 +5494,6 @@
     }
   },
   {
-    "id": "expansion1::worlds/Moon_Barren",
-    "name_en": "Barren Moon",
-    "name_zh": "荒蕪衛星",
-    "desc_en": "A smaller planetoid in orbit around a larger, resource rich world.\n\nBarren Moons are rich in minerals, but Duplicants will need to branch out into space early to find the resources the colony needs to stay alive.",
-    "desc_zh": "一顆環繞著一個較大、資源豐富世界運行的小型行星。\n\n「荒蕪衛星」富含礦物，但複製人必須提早進入太空，才能找到維持殖民地生存所需的資源。",
-    "dlcTag": "expansion1",
-    "subworldIds": [
-      "expansion1::subworlds/moon_barren/BarrenStart",
-      "expansion1::subworlds/moon_barren/BarrenGranite",
-      "subworlds/space/SurfaceCrags",
-      "subworlds/space/Space"
-    ],
-    "clusterExtensionSubworldIds": [],
-    "guarantees": [],
-    "width": 96,
-    "height": 96,
-    "fixedTraits": [],
-    "seasons": [],
-    "clusterRoles": [],
-    "referencedByCluster": false,
-    "internal": false,
-    "geysers": {
-      "fixed": [],
-      "pools": []
-    },
-    "specialResourceIds": [],
-    "settlement": {
-      "classification": "outpost",
-      "recommendedMission": "resource-expedition",
-      "operationMode": "extract-and-leave",
-      "specialOperations": [],
-      "score": 55,
-      "summary_en": "Not recommended for a permanent colony. Ordinary terrain resources are identified; make a short extraction-and-leave expedition.",
-      "summary_zh": "不建議建立永久殖民地。已找到一般地形資源；建議短期採集，採完即撤離。",
-      "strengths_en": [
-        "Native food, crop or ranching inputs are available.",
-        "Native fuel or power resources are available."
-      ],
-      "strengths_zh": [
-        "有原生食物、作物或畜牧輸入。",
-        "有原生燃料或發電資源。"
-      ],
-      "risks_en": [
-        "At 96 tiles wide, this world is below the 160-tile permanent-settlement threshold; long-term expansion space is limited.",
-        "No native water source was identified; water must be imported or recovered from another chain.",
-        "No native oxygen-production feedstock was identified."
-      ],
-      "risks_zh": [
-        "水平寬度 96 格，低於永久定居所需的 160 格門檻；長期擴建空間有限。",
-        "未找到原生水源；需要輸入水或建立其他回收鏈。",
-        "未找到原生製氧原料。"
-      ],
-      "metrics": {
-        "hasWater": false,
-        "hasOxygen": false,
-        "hasFood": true,
-        "hasPower": true,
-        "comfortableTerrainRatio": 1.0,
-        "extremeTerrainRatio": 0.0,
-        "terrainCount": 4
-      }
-    }
-  },
-  {
     "id": "expansion1::worlds/SulfurMoonlet",
     "name_en": "Brimstonia Asteroid",
     "name_zh": "硫磺小行星",
@@ -11139,67 +11075,6 @@
         "comfortableTerrainRatio": 0.7,
         "extremeTerrainRatio": 0.0,
         "terrainCount": 14
-      }
-    }
-  },
-  {
-    "id": "expansion1::worlds/SpaceshipInterior",
-    "name_en": "SpaceshipInterior",
-    "name_zh": "SpaceshipInterior",
-    "desc_en": "",
-    "desc_zh": "",
-    "dlcTag": "expansion1",
-    "subworldIds": [
-      "expansion1::subworlds/space/ModuleInterior"
-    ],
-    "clusterExtensionSubworldIds": [],
-    "guarantees": [],
-    "width": 96,
-    "height": 96,
-    "fixedTraits": [],
-    "seasons": [],
-    "clusterRoles": [],
-    "referencedByCluster": false,
-    "internal": false,
-    "geysers": {
-      "fixed": [],
-      "pools": []
-    },
-    "specialResourceIds": [],
-    "settlement": {
-      "classification": "outpost",
-      "recommendedMission": "no-resource-destination",
-      "operationMode": "avoid",
-      "specialOperations": [],
-      "score": 7,
-      "summary_en": "No settlement or extraction target was identified. Avoid this destination unless you have a separate non-resource objective.",
-      "summary_zh": "未找到定居或採集目標。除非另有非資源任務，否則應避開此目的地。",
-      "strengths_en": [],
-      "strengths_zh": [],
-      "risks_en": [
-        "At 96 tiles wide, this world is below the 160-tile permanent-settlement threshold; long-term expansion space is limited.",
-        "No native water source was identified; water must be imported or recovered from another chain.",
-        "No native oxygen-production feedstock was identified.",
-        "No reliable native food, crop or ranching route was identified.",
-        "No reliable native fuel or power route was identified.",
-        "Less than 25% of usable terrain is naturally comfortable for habitation."
-      ],
-      "risks_zh": [
-        "水平寬度 96 格，低於永久定居所需的 160 格門檻；長期擴建空間有限。",
-        "未找到原生水源；需要輸入水或建立其他回收鏈。",
-        "未找到原生製氧原料。",
-        "未找到可靠的原生食物、作物或畜牧路線。",
-        "未找到可靠的原生燃料或發電路線。",
-        "自然適合居住的可用地形不足 25%。"
-      ],
-      "metrics": {
-        "hasWater": false,
-        "hasOxygen": false,
-        "hasFood": false,
-        "hasPower": false,
-        "comfortableTerrainRatio": 0.0,
-        "extremeTerrainRatio": 0.0,
-        "terrainCount": 1
       }
     }
   },

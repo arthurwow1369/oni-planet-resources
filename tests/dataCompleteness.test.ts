@@ -171,7 +171,7 @@ describe('generated data completeness', () => {
   })
 
   it('publishes exact world dimensions and cluster-backed roles independently', () => {
-    expect(worlds).toHaveLength(94)
+    expect(worlds).toHaveLength(92)
     expect(worlds.filter((world) => world.width === 128 && world.height === 153)).toHaveLength(24)
     for (const world of worlds) {
       expect(world.width, world.id).toBeGreaterThan(0)
@@ -193,7 +193,7 @@ describe('generated data completeness', () => {
       return counts
     }, new Map<string, number>())
     expect(Object.fromEntries(roleCounts)).toEqual({ start: 43, warp: 12, general: 18 })
-    expect(worlds.filter((world) => !world.referencedByCluster)).toHaveLength(21)
+    expect(worlds.filter((world) => !world.referencedByCluster)).toHaveLength(19)
   })
 
   it('maps curated strategic resource routes to exact player-facing world variants', () => {
@@ -232,7 +232,7 @@ describe('generated data completeness', () => {
       ])
       classificationCounts.set(analysis.classification, (classificationCounts.get(analysis.classification) ?? 0) + 1)
     }
-    expect(Object.fromEntries(classificationCounts)).toEqual({ recommended: 45, conditional: 30, outpost: 19 })
+    expect(Object.fromEntries(classificationCounts)).toEqual({ recommended: 45, conditional: 30, outpost: 17 })
 
     const byId = new Map(worlds.map((world) => [world.id, world]))
     expect(byId.get('dlc5::worlds/AquaticSpacedOutAsteroid')?.settlement).toMatchObject({ classification: 'recommended' })

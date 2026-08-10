@@ -252,6 +252,7 @@ export interface SpacePoiPlacement {
   clusterId: string
   clusterName_en: string
   clusterName_zh: string
+  worldIds?: string[]
   allowedRings: SpacePoiRange
   numToSpawn: number
   canSpawnDuplicates: boolean

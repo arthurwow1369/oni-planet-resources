@@ -1,0 +1,1867 @@
+{
+  "schema_version": 1,
+  "generated_by": "scripts/download_oni_icons.mjs",
+  "mediawiki_api": "https://oxygennotincluded.wiki.gg/api.php",
+  "resources": {
+    "SolidOxygen": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Solid_Oxygen.png?4a5ddb",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Solid_Oxygen.png",
+      "file_title": "File:Solid Oxygen.png"
+    },
+    "SolidMethane": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Solid_Methane.png?4b983d",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Solid_Methane.png",
+      "file_title": "File:Solid Methane.png"
+    },
+    "Glass": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Resource_Glass.png?cabe05",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Resource_Glass.png",
+      "file_title": "File:Resource Glass.png"
+    },
+    "Fullerene": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Fullerene.png?64b615",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Fullerene.png",
+      "file_title": "File:Fullerene.png"
+    },
+    "RefinedCarbon": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Refined_Carbon.png?7beae2",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Refined_Carbon.png",
+      "file_title": "File:Refined Carbon.png"
+    },
+    "Iridium": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Iridium.png?a998d5",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Iridium.png",
+      "file_title": "File:Iridium.png"
+    },
+    "Gold": {
+      "url": "https://oxygennotincluded.wiki.gg/images/Gold.png?131fa9",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gold.png",
+      "file_title": "File:Gold.png"
+    },
+    "Katairite": {
+      "path": "assets/oni-icons/resource-Katairite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Abyssalite.png",
+      "file_title": "File:Abyssalite.png"
+    },
+    "BlueGrass": {
+      "path": "assets/oni-icons/resource-BlueGrass.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Alveo_Vera.png",
+      "file_title": "File:Alveo Vera.png"
+    },
+    "Algae": {
+      "path": "assets/oni-icons/resource-Algae.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Algae.png",
+      "file_title": "File:Algae.png"
+    },
+    "BlueGrassSeed": {
+      "path": "assets/oni-icons/resource-BlueGrassSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Alveo_Vera_Seed.png",
+      "file_title": "File:Alveo Vera Seed.png"
+    },
+    "AluminumOre": {
+      "path": "assets/oni-icons/resource-AluminumOre.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Aluminum_Ore.png",
+      "file_title": "File:Aluminum Ore.png"
+    },
+    "ForestTree": {
+      "path": "assets/oni-icons/resource-ForestTree.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Arbor_Tree.png",
+      "file_title": "File:Arbor Tree.png"
+    },
+    "SwampLily": {
+      "path": "assets/oni-icons/resource-SwampLily.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Balm_Lily.png",
+      "file_title": "File:Balm Lily.png"
+    },
+    "Basalt": {
+      "path": "assets/oni-icons/resource-Basalt.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Basalt.png",
+      "file_title": "File:Basalt.png"
+    },
+    "IceBelly": {
+      "path": "assets/oni-icons/resource-IceBelly.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bammoth.png",
+      "file_title": "File:Bammoth.png"
+    },
+    "ParrotFish": {
+      "path": "assets/oni-icons/resource-ParrotFish.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Beakon.png",
+      "file_title": "File:Beakon.png"
+    },
+    "Bee": {
+      "path": "assets/oni-icons/resource-Bee.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Beeta.png",
+      "file_title": "File:Beeta.png"
+    },
+    "CylindricaSeed": {
+      "path": "assets/oni-icons/resource-CylindricaSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bliss_Burst_Seed.png",
+      "file_title": "File:Bliss Burst Seed.png"
+    },
+    "BleachStone": {
+      "path": "assets/oni-icons/resource-BleachStone.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bleach_Stone.png",
+      "file_title": "File:Bleach Stone.png"
+    },
+    "Cylindrica": {
+      "path": "assets/oni-icons/resource-Cylindrica.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bliss_Burst_(Spaced_Out).png",
+      "file_title": "File:Bliss Burst.png"
+    },
+    "PufferFish": {
+      "path": "assets/oni-icons/resource-PufferFish.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Blowter.png",
+      "file_title": "File:Blowter.png"
+    },
+    "PrickleGrass": {
+      "path": "assets/oni-icons/resource-PrickleGrass.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bluff_Briar.png",
+      "file_title": "File:Bluff Briar.png"
+    },
+    "PrickleGrassSeed": {
+      "path": "assets/oni-icons/resource-PrickleGrassSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bluff_Briar.png",
+      "file_title": "File:Bluff Briar.png"
+    },
+    "SwampHarvestPlant": {
+      "path": "assets/oni-icons/resource-SwampHarvestPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bog_Bucket_(Spaced_Out).png",
+      "file_title": "File:Bog Bucket.png"
+    },
+    "SwampHarvestPlantSeed": {
+      "path": "assets/oni-icons/resource-SwampHarvestPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bog_Bucket_Seed.png",
+      "file_title": "File:Bog Bucket Seed.png"
+    },
+    "SpaceTree": {
+      "path": "assets/oni-icons/resource-SpaceTree.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bonbon_Tree.png",
+      "file_title": "File:Bonbon Tree.png"
+    },
+    "Brine": {
+      "path": "assets/oni-icons/resource-Brine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Brine.png",
+      "file_title": "File:Brine.png"
+    },
+    "BrineIce": {
+      "path": "assets/oni-icons/resource-BrineIce.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Brine_Ice.png",
+      "file_title": "File:Brine Ice.png"
+    },
+    "PrickleFlowerSeed": {
+      "path": "assets/oni-icons/resource-PrickleFlowerSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bristle_Blossom.png",
+      "file_title": "File:Bristle Blossom.png"
+    },
+    "PrickleFlower": {
+      "path": "assets/oni-icons/resource-PrickleFlower.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bristle_Blossom.png",
+      "file_title": "File:Bristle Blossom.png"
+    },
+    "BulbPlant": {
+      "path": "assets/oni-icons/resource-BulbPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Buddy_Bud.png",
+      "file_title": "File:Buddy Bud.png"
+    },
+    "BasicForagePlant": {
+      "path": "assets/oni-icons/resource-BasicForagePlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Buried_Muckroot.png",
+      "file_title": "File:Buried Muckroot.png"
+    },
+    "BulbPlantSeed": {
+      "path": "assets/oni-icons/resource-BulbPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Buddy_Bud_Seed.png",
+      "file_title": "File:Buddy Bud Seed.png"
+    },
+    "Bulbloom": {
+      "path": "assets/oni-icons/resource-Bulbloom.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Bulbloom.png",
+      "file_title": "File:Bulbloom.png"
+    },
+    "CarbonDioxide": {
+      "path": "assets/oni-icons/resource-CarbonDioxide.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Carbon_Dioxide.png",
+      "file_title": "File:Carbon Dioxide.png"
+    },
+    "BasicForagePlantPlanted": {
+      "path": "assets/oni-icons/resource-BasicForagePlantPlanted.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Buried_Muckroot.png",
+      "file_title": "File:Buried Muckroot.png"
+    },
+    "Cinnabar": {
+      "path": "assets/oni-icons/resource-Cinnabar.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cinnabar_Ore.png",
+      "file_title": "File:Cinnabar Ore.png"
+    },
+    "ChlorineGas": {
+      "path": "assets/oni-icons/resource-ChlorineGas.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Chlorine_Gas.png",
+      "file_title": "File:Chlorine Gas.png"
+    },
+    "Clam": {
+      "path": "assets/oni-icons/resource-Clam.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Clampum.png",
+      "file_title": "File:Clampum.png"
+    },
+    "Clay": {
+      "path": "assets/oni-icons/resource-Clay.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Clay.png",
+      "file_title": "File:Clay.png"
+    },
+    "Carbon": {
+      "path": "assets/oni-icons/resource-Carbon.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Coal.png",
+      "file_title": "File:Coal.png"
+    },
+    "Cobaltite": {
+      "path": "assets/oni-icons/resource-Cobaltite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cobalt_Ore_(Spaced_Out).png",
+      "file_title": "File:Cobalt Ore.png"
+    },
+    "Cuprite": {
+      "path": "assets/oni-icons/resource-Cuprite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Copper_Ore.png",
+      "file_title": "File:Copper Ore.png"
+    },
+    "Coquina": {
+      "path": "assets/oni-icons/resource-Coquina.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Coquina.png",
+      "file_title": "File:Coquina.png"
+    },
+    "Corallium": {
+      "path": "assets/oni-icons/resource-Corallium.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Corallium.png",
+      "file_title": "File:Corallium.png"
+    },
+    "CrudeOil": {
+      "path": "assets/oni-icons/resource-CrudeOil.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Crude_Oil.png",
+      "file_title": "File:Crude Oil.png"
+    },
+    "CrushedIce": {
+      "path": "assets/oni-icons/resource-CrushedIce.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Crushed_Ice.png",
+      "file_title": "File:Crushed Ice.png"
+    },
+    "Chameleon": {
+      "path": "assets/oni-icons/resource-Chameleon.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dartle.png",
+      "file_title": "File:Dartle.png"
+    },
+    "SaltPlant": {
+      "path": "assets/oni-icons/resource-SaltPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dasha_Saltvine.png",
+      "file_title": "File:Dasha Saltvine.png"
+    },
+    "DewDripperPlant": {
+      "path": "assets/oni-icons/resource-DewDripperPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dew_Dripper.png",
+      "file_title": "File:Dew Dripper.png"
+    },
+    "SaltPlantSeed": {
+      "path": "assets/oni-icons/resource-SaltPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dasha_Saltvine_Seed.png",
+      "file_title": "File:Dasha Saltvine Seed.png"
+    },
+    "Dirt": {
+      "path": "assets/oni-icons/resource-Dirt.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Resource_Dirt.png",
+      "file_title": "File:Dirt.png"
+    },
+    "Diamond": {
+      "path": "assets/oni-icons/resource-Diamond.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Diamond.png",
+      "file_title": "File:Diamond.png"
+    },
+    "Drecko": {
+      "path": "assets/oni-icons/resource-Drecko.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Drecko.png",
+      "file_title": "File:Drecko.png"
+    },
+    "MushroomPlant": {
+      "path": "assets/oni-icons/resource-MushroomPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dusk_Cap.png",
+      "file_title": "File:Dusk Cap.png"
+    },
+    "Fertilizer": {
+      "path": "assets/oni-icons/resource-Fertilizer.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Fertilizer.png",
+      "file_title": "File:Fertilizer.png"
+    },
+    "MushroomSeed": {
+      "path": "assets/oni-icons/resource-MushroomSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Dusk_Cap.png",
+      "file_title": "File:Dusk Cap.png"
+    },
+    "Ethanol": {
+      "path": "assets/oni-icons/resource-Ethanol.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ethanol.png",
+      "file_title": "File:Ethanol.png"
+    },
+    "WoodDeer": {
+      "path": "assets/oni-icons/resource-WoodDeer.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flox.png",
+      "file_title": "File:Flox.png"
+    },
+    "OxyCoral": {
+      "path": "assets/oni-icons/resource-OxyCoral.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flue_Coral.png",
+      "file_title": "File:Flue Coral.png"
+    },
+    "OxyCoralSeed": {
+      "path": "assets/oni-icons/resource-OxyCoralSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flue_Coral_Seed.png",
+      "file_title": "File:Flue Coral Seed.png"
+    },
+    "Fossil": {
+      "path": "assets/oni-icons/resource-Fossil.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Fossil.png",
+      "file_title": "File:Fossil.png"
+    },
+    "GasGrass": {
+      "path": "assets/oni-icons/resource-GasGrass.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gas_Grass.png",
+      "file_title": "File:Gas Grass.png"
+    },
+    "Galena": {
+      "path": "assets/oni-icons/resource-Galena.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Galena.png",
+      "file_title": "File:Galena.png"
+    },
+    "Moo": {
+      "path": "assets/oni-icons/resource-Moo.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gassy_Moo.png",
+      "file_title": "File:Gassy Moo.png"
+    },
+    "Squid": {
+      "path": "assets/oni-icons/resource-Squid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Glo_Squid.png",
+      "file_title": "File:Glo Squid.png"
+    },
+    "Mosquito": {
+      "path": "assets/oni-icons/resource-Mosquito.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gnit.png",
+      "file_title": "File:Gnit.png"
+    },
+    "GoldAmalgam": {
+      "path": "assets/oni-icons/resource-GoldAmalgam.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gold_Amalgam.png",
+      "file_title": "File:Gold Amalgam.png"
+    },
+    "Granite": {
+      "path": "assets/oni-icons/resource-Granite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Granite.png",
+      "file_title": "File:Granite.png"
+    },
+    "DewPalm": {
+      "path": "assets/oni-icons/resource-DewPalm.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gum_Palm.png",
+      "file_title": "File:Gum Palm.png"
+    },
+    "Graphite": {
+      "path": "assets/oni-icons/resource-Graphite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Graphite.png",
+      "file_title": "File:Graphite.png"
+    },
+    "Hatch": {
+      "path": "assets/oni-icons/resource-Hatch.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Hatch.png",
+      "file_title": "File:Hatch.png"
+    },
+    "ForestForagePlantPlanted": {
+      "path": "assets/oni-icons/resource-ForestForagePlantPlanted.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Hexalent.png",
+      "file_title": "File:Hexalent.png"
+    },
+    "WaterCups": {
+      "path": "assets/oni-icons/resource-WaterCups.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Husha_Cups.png",
+      "file_title": "File:Husha Cups.png"
+    },
+    "Hydrogen": {
+      "path": "assets/oni-icons/resource-Hydrogen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Hydrogen_Gas.png",
+      "file_title": "File:Hydrogen Gas.png"
+    },
+    "Ice": {
+      "path": "assets/oni-icons/resource-Ice.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ice.png",
+      "file_title": "File:Ice.png"
+    },
+    "IceFlower": {
+      "path": "assets/oni-icons/resource-IceFlower.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Idylla_Flower.png",
+      "file_title": "File:Idylla Flower.png"
+    },
+    "IceFlowerSeed": {
+      "path": "assets/oni-icons/resource-IceFlowerSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Idylla_Seed.png",
+      "file_title": "File:Idylla Seed.png"
+    },
+    "IgneousRock": {
+      "path": "assets/oni-icons/resource-IgneousRock.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Igneous_Rock.png",
+      "file_title": "File:Igneous Rock.png"
+    },
+    "PrehistoricPacu": {
+      "path": "assets/oni-icons/resource-PrehistoricPacu.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Jawbo.png",
+      "file_title": "File:Jawbo.png"
+    },
+    "Iron": {
+      "path": "assets/oni-icons/resource-Iron.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Iron.png",
+      "file_title": "File:Iron.png"
+    },
+    "IronOre": {
+      "path": "assets/oni-icons/resource-IronOre.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Iron_Ore.png",
+      "file_title": "File:Iron Ore.png"
+    },
+    "CactusPlant": {
+      "path": "assets/oni-icons/resource-CactusPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Jumping_Joya.png",
+      "file_title": "File:Jumping Joya.png"
+    },
+    "SeaFairy": {
+      "path": "assets/oni-icons/resource-SeaFairy.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Kelpole.png",
+      "file_title": "File:Kelpole.png"
+    },
+    "FossilBitsLarge": {
+      "path": "assets/oni-icons/resource-FossilBitsLarge.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Fossil.png",
+      "file_title": "File:Fossil.png"
+    },
+    "CactusPlantSeed": {
+      "path": "assets/oni-icons/resource-CactusPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Jumping_Joya.png",
+      "file_title": "File:Jumping Joya.png"
+    },
+    "LiquidOxygen": {
+      "path": "assets/oni-icons/resource-LiquidOxygen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Liquid_Oxygen.png",
+      "file_title": "File:Liquid Oxygen.png"
+    },
+    "Lead": {
+      "path": "assets/oni-icons/resource-Lead.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Lead.png",
+      "file_title": "File:Lead.png"
+    },
+    "LiquidCarbonDioxide": {
+      "path": "assets/oni-icons/resource-LiquidCarbonDioxide.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Liquid_Carbon_Dioxide.png",
+      "file_title": "File:Liquid Carbon Dioxide.png"
+    },
+    "Chlorine": {
+      "path": "assets/oni-icons/resource-Chlorine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Liquid_Chlorine.png",
+      "file_title": "File:Liquid Chlorine.png"
+    },
+    "MaficRock": {
+      "path": "assets/oni-icons/resource-MaficRock.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mafic_Rock.png",
+      "file_title": "File:Mafic Rock.png"
+    },
+    "PinkRock": {
+      "path": "assets/oni-icons/resource-PinkRock.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Lumen_Quartz.png",
+      "file_title": "File:Lumen Quartz.png"
+    },
+    "Stego": {
+      "path": "assets/oni-icons/resource-Stego.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Lumb.png",
+      "file_title": "File:Lumb.png"
+    },
+    "FlyTrapPlant": {
+      "path": "assets/oni-icons/resource-FlyTrapPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Lura_Plant.png",
+      "file_title": "File:Lura Plant.png"
+    },
+    "Magma": {
+      "path": "assets/oni-icons/resource-Magma.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Magma.png",
+      "file_title": "File:Magma.png"
+    },
+    "BasicSingleHarvestPlantSeed": {
+      "path": "assets/oni-icons/resource-BasicSingleHarvestPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mealwood_Seed.png",
+      "file_title": "File:Mealwood Seed.png"
+    },
+    "BasicSingleHarvestPlant": {
+      "path": "assets/oni-icons/resource-BasicSingleHarvestPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mealwood.png",
+      "file_title": "File:Mealwood.png"
+    },
+    "Dinofern": {
+      "path": "assets/oni-icons/resource-Dinofern.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Megafrond.png",
+      "file_title": "File:Megafrond.png"
+    },
+    "WineCups": {
+      "path": "assets/oni-icons/resource-WineCups.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mellow_Mallow.png",
+      "file_title": "File:Mellow Mallow.png"
+    },
+    "WineCupsSeed": {
+      "path": "assets/oni-icons/resource-WineCupsSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mellow_Mallow.png",
+      "file_title": "File:Mellow Mallow.png"
+    },
+    "SolidMercury": {
+      "path": "assets/oni-icons/resource-SolidMercury.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Liquid_Mercury.png",
+      "file_title": "File:Mercury.png"
+    },
+    "ButterflyPlant": {
+      "path": "assets/oni-icons/resource-ButterflyPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mimika_Bud.png",
+      "file_title": "File:Mimika Bud.png"
+    },
+    "Butterfly": {
+      "path": "assets/oni-icons/resource-Butterfly.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mimika.png",
+      "file_title": "File:Mimika.png"
+    },
+    "LeafyPlant": {
+      "path": "assets/oni-icons/resource-LeafyPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mirth_Leaf.png",
+      "file_title": "File:Mirth Leaf.png"
+    },
+    "LeafyPlantSeed": {
+      "path": "assets/oni-icons/resource-LeafyPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mirth_Leaf_Seed.png",
+      "file_title": "File:Mirth Leaf Seed.png"
+    },
+    "Glom": {
+      "path": "assets/oni-icons/resource-Glom.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Morb.png",
+      "file_title": "File:Morb.png"
+    },
+    "Mud": {
+      "path": "assets/oni-icons/resource-Mud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mud_(Spaced_Out).png",
+      "file_title": "File:Mud.png"
+    },
+    "Unobtanium": {
+      "path": "assets/oni-icons/resource-Unobtanium.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Neutronium.png",
+      "file_title": "File:Neutronium.png"
+    },
+    "Methane": {
+      "path": "assets/oni-icons/resource-Methane.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Natural_Gas.png",
+      "file_title": "File:Natural Gas.png"
+    },
+    "MusselSprout": {
+      "path": "assets/oni-icons/resource-MusselSprout.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Mussel_Sprout.png",
+      "file_title": "File:Mussel Sprout.png"
+    },
+    "NickelOre": {
+      "path": "assets/oni-icons/resource-NickelOre.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Nickel_Ore.png",
+      "file_title": "File:Nickel Ore.png"
+    },
+    "Niobium": {
+      "path": "assets/oni-icons/resource-Niobium.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Niobium.png",
+      "file_title": "File:Niobium.png"
+    },
+    "BeanPlantSeed": {
+      "path": "assets/oni-icons/resource-BeanPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Nosh_Bean.png",
+      "file_title": "File:Nosh Bean.png"
+    },
+    "BeanPlant": {
+      "path": "assets/oni-icons/resource-BeanPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Nosh_Sprout.png",
+      "file_title": "File:Nosh Sprout.png"
+    },
+    "Obsidian": {
+      "path": "assets/oni-icons/resource-Obsidian.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Obsidian.png",
+      "file_title": "File:Obsidian.png"
+    },
+    "OilWell": {
+      "path": "assets/oni-icons/resource-OilWell.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oil_Reservoir.png",
+      "file_title": "File:Oil Reservoir.png"
+    },
+    "SeaTurtle": {
+      "path": "assets/oni-icons/resource-SeaTurtle.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Orehull.png",
+      "file_title": "File:Orehull.png"
+    },
+    "Oxyfern": {
+      "path": "assets/oni-icons/resource-Oxyfern.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxyfern.png",
+      "file_title": "File:Oxyfern.png"
+    },
+    "Oxygen": {
+      "path": "assets/oni-icons/resource-Oxygen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxygen.png",
+      "file_title": "File:Oxygen.png"
+    },
+    "OxyfernSeed": {
+      "path": "assets/oni-icons/resource-OxyfernSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxyfern_Seed.png",
+      "file_title": "File:Oxyfern Seed.png"
+    },
+    "Pacu": {
+      "path": "assets/oni-icons/resource-Pacu.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pacu.png",
+      "file_title": "File:Pacu.png"
+    },
+    "OxyRock": {
+      "path": "assets/oni-icons/resource-OxyRock.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxylite.png",
+      "file_title": "File:Oxylite.png"
+    },
+    "FilamentPlant": {
+      "path": "assets/oni-icons/resource-FilamentPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Petta_Pouf.png",
+      "file_title": "File:Petta Pouf.png"
+    },
+    "Peat": {
+      "path": "assets/oni-icons/resource-Peat.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Peat.png",
+      "file_title": "File:Peat.png"
+    },
+    "Phosphorite": {
+      "path": "assets/oni-icons/resource-Phosphorite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Phosphorite.png",
+      "file_title": "File:Phosphorite.png"
+    },
+    "HardSkinBerryPlant": {
+      "path": "assets/oni-icons/resource-HardSkinBerryPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pikeapple_Bush.png",
+      "file_title": "File:Pikeapple Bush.png"
+    },
+    "HardSkinBerryPlantSeed": {
+      "path": "assets/oni-icons/resource-HardSkinBerryPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pikeapple_Bush_Seed.png",
+      "file_title": "File:Pikeapple Bush Seed.png"
+    },
+    "SpiceVineSeed": {
+      "path": "assets/oni-icons/resource-SpiceVineSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pincha_Peppernut.png",
+      "file_title": "File:Pincha Peppernut.png"
+    },
+    "SpiceVine": {
+      "path": "assets/oni-icons/resource-SpiceVine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pincha_Pepperplant.png",
+      "file_title": "File:Pincha Pepperplant.png"
+    },
+    "Squirrel": {
+      "path": "assets/oni-icons/resource-Squirrel.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pip.png",
+      "file_title": "File:Pip.png"
+    },
+    "UrchinPlant": {
+      "path": "assets/oni-icons/resource-UrchinPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pinpoket.png",
+      "file_title": "File:Pinpoket.png"
+    },
+    "CarrotPlant": {
+      "path": "assets/oni-icons/resource-CarrotPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Plume_Squash_Plant.png",
+      "file_title": "File:Plume Squash Plant.png"
+    },
+    "Staterpillar": {
+      "path": "assets/oni-icons/resource-Staterpillar.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Plug_Slug.png",
+      "file_title": "File:Plug Slug.png"
+    },
+    "Crab": {
+      "path": "assets/oni-icons/resource-Crab.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Pokeshell.png",
+      "file_title": "File:Pokeshell.png"
+    },
+    "CarrotPlantSeed": {
+      "path": "assets/oni-icons/resource-CarrotPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Plume_Squash_Seed.png",
+      "file_title": "File:Plume Squash Seed.png"
+    },
+    "VineMotherSeed": {
+      "path": "assets/oni-icons/resource-VineMotherSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ovagro_Node_Seed.png",
+      "file_title": "File:Ovagro Node Seed.png"
+    },
+    "ToxicSand": {
+      "path": "assets/oni-icons/resource-ToxicSand.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Dirt.png",
+      "file_title": "File:Polluted Dirt.png"
+    },
+    "MurkyBrine": {
+      "path": "assets/oni-icons/resource-MurkyBrine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Brine.png",
+      "file_title": "File:Polluted Brine.png"
+    },
+    "DirtyIce": {
+      "path": "assets/oni-icons/resource-DirtyIce.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Ice.png",
+      "file_title": "File:Polluted Ice.png"
+    },
+    "ContaminatedOxygen": {
+      "path": "assets/oni-icons/resource-ContaminatedOxygen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Oxygen.png",
+      "file_title": "File:Polluted Oxygen.png"
+    },
+    "ToxicMud": {
+      "path": "assets/oni-icons/resource-ToxicMud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Mud_(Spaced_Out).png",
+      "file_title": "File:Polluted Mud.png"
+    },
+    "DirtyWater": {
+      "path": "assets/oni-icons/resource-DirtyWater.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Water.png",
+      "file_title": "File:Polluted Water.png"
+    },
+    "VineMother": {
+      "path": "assets/oni-icons/resource-VineMother.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ovagro_Node.png",
+      "file_title": "File:Ovagro Node.png"
+    },
+    "Puft": {
+      "path": "assets/oni-icons/resource-Puft.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Puft.png",
+      "file_title": "File:Puft.png"
+    },
+    "Regolith": {
+      "path": "assets/oni-icons/resource-Regolith.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Regolith.png",
+      "file_title": "File:Regolith.png"
+    },
+    "Raptor": {
+      "path": "assets/oni-icons/resource-Raptor.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rhex.png",
+      "file_title": "File:Rhex.png"
+    },
+    "GardenDecorPlant": {
+      "path": "assets/oni-icons/resource-GardenDecorPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ring_Rosebush.png",
+      "file_title": "File:Ring Rosebush.png"
+    },
+    "Rust": {
+      "path": "assets/oni-icons/resource-Rust.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rust.png",
+      "file_title": "File:Rust.png"
+    },
+    "SaltWater": {
+      "path": "assets/oni-icons/resource-SaltWater.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Salt_Water.png",
+      "file_title": "File:Salt Water.png"
+    },
+    "Salt": {
+      "path": "assets/oni-icons/resource-Salt.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Salt.png",
+      "file_title": "File:Salt.png"
+    },
+    "Sand": {
+      "path": "assets/oni-icons/resource-Sand.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sand.png",
+      "file_title": "File:Sand.png"
+    },
+    "CrabFreshWater": {
+      "path": "assets/oni-icons/resource-CrabFreshWater.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sanishell.png",
+      "file_title": "File:Sanishell.png"
+    },
+    "SandStone": {
+      "path": "assets/oni-icons/resource-SandStone.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sandstone.png",
+      "file_title": "File:Sandstone.png"
+    },
+    "CritterTrapPlant": {
+      "path": "assets/oni-icons/resource-CritterTrapPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Saturn_Critter_Trap.png",
+      "file_title": "File:Saturn Critter Trap.png"
+    },
+    "CritterTrapPlantSeed": {
+      "path": "assets/oni-icons/resource-CritterTrapPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Saturn_Critter_Trap_Seed.png",
+      "file_title": "File:Saturn Critter Trap Seed.png"
+    },
+    "KelpPlant": {
+      "path": "assets/oni-icons/resource-KelpPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Seakomb.png",
+      "file_title": "File:Seakomb.png"
+    },
+    "KelpPlantSeed": {
+      "path": "assets/oni-icons/resource-KelpPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Seakomb_Seed.png",
+      "file_title": "File:Seakomb Seed.png"
+    },
+    "SeaHorse": {
+      "path": "assets/oni-icons/resource-SeaHorse.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Seaquine.png",
+      "file_title": "File:Seaquine.png"
+    },
+    "IceCavesForagePlantPlanted": {
+      "path": "assets/oni-icons/resource-IceCavesForagePlantPlanted.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sherberry_Plant.png",
+      "file_title": "File:Sherberry Plant.png"
+    },
+    "SedimentaryRock": {
+      "path": "assets/oni-icons/resource-SedimentaryRock.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sedimentary_Rock.png",
+      "file_title": "File:Sedimentary Rock.png"
+    },
+    "Shale": {
+      "path": "assets/oni-icons/resource-Shale.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Shale.png",
+      "file_title": "File:Shale.png"
+    },
+    "LightBug": {
+      "path": "assets/oni-icons/resource-LightBug.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Shine_Bug.png",
+      "file_title": "File:Shine Bug.png"
+    },
+    "IceCavesForagePlant": {
+      "path": "assets/oni-icons/resource-IceCavesForagePlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sherberry_Plant.png",
+      "file_title": "File:Sherberry Plant.png"
+    },
+    "ColdWheat": {
+      "path": "assets/oni-icons/resource-ColdWheat.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sleet_Wheat.png",
+      "file_title": "File:Sleet Wheat.png"
+    },
+    "SiltStone": {
+      "path": "assets/oni-icons/resource-SiltStone.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Siltstone.png",
+      "file_title": "File:Siltstone.png"
+    },
+    "Mole": {
+      "path": "assets/oni-icons/resource-Mole.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Shove_Vole.png",
+      "file_title": "File:Shove Vole.png"
+    },
+    "OilFloater": {
+      "path": "assets/oni-icons/resource-OilFloater.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Slickster.png",
+      "file_title": "File:Slickster.png"
+    },
+    "ColdWheatSeed": {
+      "path": "assets/oni-icons/resource-ColdWheatSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sleet_Wheat_Grain.png",
+      "file_title": "File:Sleet Wheat Grain.png"
+    },
+    "Snail": {
+      "path": "assets/oni-icons/resource-Snail.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Slogo.png",
+      "file_title": "File:Slogo.png"
+    },
+    "FossilBitsSmall": {
+      "path": "assets/oni-icons/resource-FossilBitsSmall.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Fossil.png",
+      "file_title": "File:Fossil.png"
+    },
+    "SlimeMold": {
+      "path": "assets/oni-icons/resource-SlimeMold.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Slime.png",
+      "file_title": "File:Slime.png"
+    },
+    "GardenForagePlant": {
+      "path": "assets/oni-icons/resource-GardenForagePlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Snactus.png",
+      "file_title": "File:Snactus.png"
+    },
+    "GardenForagePlantPlanted": {
+      "path": "assets/oni-icons/resource-GardenForagePlantPlanted.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Snactus.png",
+      "file_title": "File:Snactus.png"
+    },
+    "SaltySticksPlant": {
+      "path": "assets/oni-icons/resource-SaltySticksPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sodicane.png",
+      "file_title": "File:Sodicane.png"
+    },
+    "Snow": {
+      "path": "assets/oni-icons/resource-Snow.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Snow.png",
+      "file_title": "File:Snow.png"
+    },
+    "SaltySticksPlantSeed": {
+      "path": "assets/oni-icons/resource-SaltySticksPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sodicane_Seed.png",
+      "file_title": "File:Sodicane Seed.png"
+    },
+    "SolidCarbonDioxide": {
+      "path": "assets/oni-icons/resource-SolidCarbonDioxide.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Solid_Carbon_Dioxide.png",
+      "file_title": "File:Solid Carbon Dioxide.png"
+    },
+    "SolidCrudeOil": {
+      "path": "assets/oni-icons/resource-SolidCrudeOil.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Solid_Crude_Oil.png",
+      "file_title": "File:Solid Crude Oil.png"
+    },
+    "SourGas": {
+      "path": "assets/oni-icons/resource-SourGas.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sour_Gas.png",
+      "file_title": "File:Sour Gas.png"
+    },
+    "SolidChlorine": {
+      "path": "assets/oni-icons/resource-SolidChlorine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Solid_Chlorine.png",
+      "file_title": "File:Solid Chlorine.png"
+    },
+    "Seal": {
+      "path": "assets/oni-icons/resource-Seal.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Spigot_Seal.png",
+      "file_title": "File:Spigot Seal.png"
+    },
+    "WormPlant": {
+      "path": "assets/oni-icons/resource-WormPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Spindly_Grubfruit_Plant.png",
+      "file_title": "File:Spindly Grubfruit Plant.png"
+    },
+    "EvilFlower": {
+      "path": "assets/oni-icons/resource-EvilFlower.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sporechid.png",
+      "file_title": "File:Sporechid.png"
+    },
+    "EvilFlowerSeed": {
+      "path": "assets/oni-icons/resource-EvilFlowerSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sporechid_Seed.png",
+      "file_title": "File:Sporechid Seed.png"
+    },
+    "WormPlantSeed": {
+      "path": "assets/oni-icons/resource-WormPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Spindly_Grubfruit.png",
+      "file_title": "File:Spindly Grubfruit.png"
+    },
+    "PlanktonCoral": {
+      "path": "assets/oni-icons/resource-PlanktonCoral.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Starnacle.png",
+      "file_title": "File:Starnacle.png"
+    },
+    "GardenDecorPlantSeed": {
+      "path": "assets/oni-icons/resource-GardenDecorPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rosebush_Seed.png",
+      "file_title": "File:Rosebush Seed.png"
+    },
+    "PuftBleachstone": {
+      "path": "assets/oni-icons/resource-PuftBleachstone.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Squeaky_Puft.png",
+      "file_title": "File:Squeaky Puft.png"
+    },
+    "Sucrose": {
+      "path": "assets/oni-icons/resource-Sucrose.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sucrose_(Spaced_Out).png",
+      "file_title": "File:Sucrose.png"
+    },
+    "SwampForagePlant": {
+      "path": "assets/oni-icons/resource-SwampForagePlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Swamp_Chard.png",
+      "file_title": "File:Swamp Chard.png"
+    },
+    "Sulfur": {
+      "path": "assets/oni-icons/resource-Sulfur.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sulfur.png",
+      "file_title": "File:Sulfur.png"
+    },
+    "SwampForagePlantPlanted": {
+      "path": "assets/oni-icons/resource-SwampForagePlantPlanted.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Swamp_Chard.png",
+      "file_title": "File:Swamp Chard.png"
+    },
+    "GardenFoodPlant": {
+      "path": "assets/oni-icons/resource-GardenFoodPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sweatcorn_Stalk.png",
+      "file_title": "File:Sweatcorn Stalk.png"
+    },
+    "GardenFoodPlantSeed": {
+      "path": "assets/oni-icons/resource-GardenFoodPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sweatcorn_Seed.png",
+      "file_title": "File:Sweatcorn Seed.png"
+    },
+    "DivergentBeetle": {
+      "path": "assets/oni-icons/resource-DivergentBeetle.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sweetle.png",
+      "file_title": "File:Sweetle.png"
+    },
+    "BasicFabricPlant": {
+      "path": "assets/oni-icons/resource-BasicFabricPlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Thimble_Reed.png",
+      "file_title": "File:Thimble Reed.png"
+    },
+    "BasicFabricMaterialPlantSeed": {
+      "path": "assets/oni-icons/resource-BasicFabricMaterialPlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Thimble_Reed_Seed.png",
+      "file_title": "File:Thimble Reed Seed.png"
+    },
+    "SeaTree": {
+      "path": "assets/oni-icons/resource-SeaTree.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tower_Kelp.png",
+      "file_title": "File:Tower Kelp.png"
+    },
+    "ToePlant": {
+      "path": "assets/oni-icons/resource-ToePlant.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tranquil_Toes.png",
+      "file_title": "File:Tranquil Toes.png"
+    },
+    "PacuTropical": {
+      "path": "assets/oni-icons/resource-PacuTropical.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tropical_Pacu.png",
+      "file_title": "File:Tropical Pacu.png"
+    },
+    "ToePlantSeed": {
+      "path": "assets/oni-icons/resource-ToePlantSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tranquil_Toes.png",
+      "file_title": "File:Tranquil Toes.png"
+    },
+    "Water": {
+      "path": "assets/oni-icons/resource-Water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Water.png",
+      "file_title": "File:Water.png"
+    },
+    "TubeWorm": {
+      "path": "assets/oni-icons/resource-TubeWorm.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tublia.png",
+      "file_title": "File:Tublia.png"
+    },
+    "UraniumOre": {
+      "path": "assets/oni-icons/resource-UraniumOre.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Uranium_Ore.png",
+      "file_title": "File:Uranium Ore.png"
+    },
+    "SeaLettuceSeed": {
+      "path": "assets/oni-icons/resource-SeaLettuceSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Waterweed_Seed.png",
+      "file_title": "File:Waterweed Seed.png"
+    },
+    "SeaLettuce": {
+      "path": "assets/oni-icons/resource-SeaLettuce.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Waterweed.png",
+      "file_title": "File:Waterweed.png"
+    },
+    "ColdBreather": {
+      "path": "assets/oni-icons/resource-ColdBreather.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Wheezewort.png",
+      "file_title": "File:Wheezewort.png"
+    },
+    "ColdBreatherSeed": {
+      "path": "assets/oni-icons/resource-ColdBreatherSeed.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Wheezewort.png",
+      "file_title": "File:Wheezewort.png"
+    },
+    "Wolframite": {
+      "path": "assets/oni-icons/resource-Wolframite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Wolframite.png",
+      "file_title": "File:Wolframite.png"
+    },
+    "ZincOre": {
+      "path": "assets/oni-icons/resource-ZincOre.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Zinc_Ore.png",
+      "file_title": "File:Zinc Ore.png"
+    }
+  },
+  "pois": {
+    "ArtifactSpacePOI_GravitasSpaceStation6": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation6.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Annihilated_Satellite.png",
+      "file_title": "File:Annihilated Satellite.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation2": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation2.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Demolished_Rocket.png",
+      "file_title": "File:Demolished Rocket.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation1": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation1.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Destroyed_Satellite_A.png",
+      "file_title": "File:Destroyed Satellite.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation5": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation5.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Destroyed_Satellite_A.png",
+      "file_title": "File:Destroyed Satellite.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation8": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation8.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Obsolete_Space_Station_Module.png",
+      "file_title": "File:Obsolete Space Station Module.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation3": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation3.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ruined_Rocket.png",
+      "file_title": "File:Ruined Rocket.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation4": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation4.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Retired_Planetary_Excursion_Module.png",
+      "file_title": "File:Retired Planetary Excursion Module.png"
+    },
+    "ArtifactSpacePOI_RussellsTeapot": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_RussellsTeapot.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Russell%27s_Teapot.png",
+      "file_title": "File:Russell's Teapot.png"
+    },
+    "HarvestableSpacePOI_DLC4PrehistoricOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC4PrehistoricOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Amber_Field.png",
+      "file_title": "File:Amber Field.png"
+    },
+    "ArtifactSpacePOI_GravitasSpaceStation7": {
+      "path": "assets/oni-icons/poi-ArtifactSpacePOI_GravitasSpaceStation7.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Wrecked_Space_Shuttle.png",
+      "file_title": "File:Wrecked Space Shuttle.png"
+    },
+    "HarvestableSpacePOI_CarbonAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_CarbonAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Carbon_Asteroid_Field.png",
+      "file_title": "File:Carbon Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_ChlorineCloud": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_ChlorineCloud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Chlorine_Cloud.png",
+      "file_title": "File:Chlorine Cloud.png"
+    },
+    "HarvestableSpacePOI_GasGiantCloud": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_GasGiantCloud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Exploded_Gas_Giant.png",
+      "file_title": "File:Exploded Gas Giant.png"
+    },
+    "HarvestableSpacePOI_IceAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_IceAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Exploded_Ice_Giant.png",
+      "file_title": "File:Exploded Ice Giant.png"
+    },
+    "HarvestableSpacePOI_DLC4PrehistoricMixingField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC4PrehistoricMixingField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Conductive_Ore_Field.png",
+      "file_title": "File:Conductive Ore Field.png"
+    },
+    "HarvestableSpacePOI_ForestyOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_ForestyOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Forested_Ore_Field.png",
+      "file_title": "File:Forested Ore Field.png"
+    },
+    "HarvestableSpacePOI_DLC2CeresField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC2CeresField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Cinnabar_Asteroid_Field.png",
+      "file_title": "File:Frozen Cinnabar Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_DLC2CeresOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC2CeresOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Mercury_Asteroid_Field.png",
+      "file_title": "File:Frozen Mercury Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_FrozenOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_FrozenOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Ore_Asteroid_Field.png",
+      "file_title": "File:Frozen Ore Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_GlimmeringAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_GlimmeringAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Glimmering_Asteroid_Field.png",
+      "file_title": "File:Glimmering Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_GildedAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_GildedAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gilded_Asteroid_Field.png",
+      "file_title": "File:Gilded Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_HeliumCloud": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_HeliumCloud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Helium_Cloud.png",
+      "file_title": "File:Helium Cloud.png"
+    },
+    "HarvestableSpacePOI_InterstellarOcean": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_InterstellarOcean.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Interstellar_Ocean.png",
+      "file_title": "File:Interstellar Ocean.png"
+    },
+    "HarvestableSpacePOI_InterstellarIceField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_InterstellarIceField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ice_Asteroid_Field.png",
+      "file_title": "File:Ice Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_MetallicAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_MetallicAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Metallic_Asteroid_Field.png",
+      "file_title": "File:Metallic Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_OrganicMassField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_OrganicMassField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Organic_Mass_Field.png",
+      "file_title": "File:Organic Mass Field.png"
+    },
+    "HarvestableSpacePOI_OilyAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_OilyAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oily_Asteroid_Field.png",
+      "file_title": "File:Oily Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_OxidizedAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_OxidizedAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxidized_Asteroid_Field.png",
+      "file_title": "File:Oxidized Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_OxygenRichAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_OxygenRichAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oxygen_Rich_Asteroid_Field.png",
+      "file_title": "File:Oxygen Rich Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_RadioactiveAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_RadioactiveAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Asteroid_Field.png",
+      "file_title": "File:Radioactive Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_RockyAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_RockyAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rocky_Asteroid_Field.png",
+      "file_title": "File:Rocky Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_SaltyAsteroidField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_SaltyAsteroidField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Salty_Asteroid_Field.png",
+      "file_title": "File:Salty Asteroid Field.png"
+    },
+    "HarvestableSpacePOI_RadioactiveGasCloud": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_RadioactiveGasCloud.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Gas_Cloud.png",
+      "file_title": "File:Radioactive Gas Cloud.png"
+    },
+    "HarvestableSpacePOI_SandyOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_SandyOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sandy_Ore_Field.png",
+      "file_title": "File:Sandy Ore Field.png"
+    },
+    "HarvestableSpacePOI_SatelliteField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_SatelliteField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Space_Debris.png",
+      "file_title": "File:Space Debris.png"
+    },
+    "HarvestableSpacePOI_SwampyOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_SwampyOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Swampy_Ore_Field.png",
+      "file_title": "File:Swampy Ore Field.png"
+    },
+    "HarvestableSpacePOI_DLC5AquaticOreField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC5AquaticOreField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Zinc_Ore_Field.png",
+      "file_title": "File:Zinc Ore Field.png"
+    },
+    "HarvestableSpacePOI_DLC5AquaticMixingField": {
+      "path": "assets/oni-icons/poi-HarvestableSpacePOI_DLC5AquaticMixingField.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Zinc_Ore_Field.png",
+      "file_title": "File:Zinc Ore Field.png"
+    },
+    "TemporalTear": {
+      "path": "assets/oni-icons/poi-TemporalTear.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Temporal_Tear.png",
+      "file_title": "File:Temporal Tear.png"
+    }
+  },
+  "worlds": {
+    "worlds/ForestDefault": {
+      "path": "assets/oni-icons/world-worlds_ForestDefault.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Arboria_Asteroid_(Spaced_Out).png",
+      "file_title": "File:Arboria.png"
+    },
+    "worlds/ForestLush": {
+      "path": "assets/oni-icons/world-worlds_ForestLush.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Verdante_Asteroid_(Spaced_Out).png",
+      "file_title": "File:Verdante.png"
+    },
+    "worlds/SandstoneFrozen": {
+      "path": "assets/oni-icons/world-worlds_SandstoneFrozen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rime_Asteroid_(Spaced_Out).png",
+      "file_title": "File:Rime.png"
+    },
+    "worlds/StrangeAsteroidKleiFest2023": {
+      "path": "assets/oni-icons/world-worlds_StrangeAsteroidKleiFest2023.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Skewed_Asteroid.png",
+      "file_title": "File:Skewed Asteroid.png"
+    },
+    "worlds/Helicona": {
+      "path": "assets/oni-icons/world-worlds_Helicona.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon Asteroid_icysandstone; Texture2D Asteroid_icysandstone"
+    },
+    "worlds/TheRock": {
+      "path": "assets/oni-icons/world-worlds_TheRock.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon Asteroid_sandstone; Texture2D Asteroid_sandstone"
+    },
+    "dlc2::worlds/CeresClassicAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_CeresClassicAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "KAnim asteroid_classic_ceres / symbol ceres_0"
+    },
+    "dlc2::worlds/CeresBaseGameAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_CeresBaseGameAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon asteroid_classic_base; KAnim symbol ceres_0"
+    },
+    "dlc2::worlds/MiniShatteredStartAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_MiniShatteredStartAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ceres_Mantle_Asteroid.png",
+      "file_title": "File:Ceres Mantle Asteroid.png"
+    },
+    "dlc2::worlds/CeresSpacedOutAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_CeresSpacedOutAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "KAnim asteroid_classic_mini_ceres_so / symbol asteroidmini_so_0"
+    },
+    "dlc2::worlds/MixingCeresAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_MixingCeresAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon asteroid_classic_mini_ceres_so_kanim; KAnim symbol asteroidmini_so_0"
+    },
+    "expansion1::worlds/SulfurMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_SulfurMoonlet.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon asteroid_sandstone_start_kanim (placeholder); KAnim symbol asteroid_art_0"
+    },
+    "dlc2::worlds/MiniShatteredGeoAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_MiniShatteredGeoAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Ceres_Core_Asteroid.png",
+      "file_title": "File:Ceres Core Asteroid.png"
+    },
+    "dlc2::worlds/MiniShatteredWarpAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_MiniShatteredWarpAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Sweet_Ceres_Asteroid.png",
+      "file_title": "File:Sweet Ceres Asteroid.png"
+    },
+    "dlc4::worlds/PrehistoricClassicAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_PrehistoricClassicAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Relica_Asteroid.png",
+      "file_title": "File:Relica Asteroid.png"
+    },
+    "dlc4::worlds/PrehistoricShatteredBaseGameAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_PrehistoricShatteredBaseGameAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon prehistoric_lab_so_kanim; KAnim symbol asteroid_0"
+    },
+    "dlc4::worlds/PrehistoricShatteredClassicAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_PrehistoricShatteredClassicAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "world YAML asteroidIcon prehistoric_lab_so_kanim; KAnim symbol asteroid_0"
+    },
+    "dlc5::worlds/AquaticBaseGameAsteroid": {
+      "path": "assets/oni-icons/world-dlc5__worlds_AquaticBaseGameAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Marinea_Asteroid.png",
+      "file_title": "File:Marinea.png"
+    },
+    "dlc5::worlds/MixingAquaticAsteroid": {
+      "path": "assets/oni-icons/world-dlc5__worlds_MixingAquaticAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Marinea_Fragment_Asteroid.png",
+      "file_title": "File:Marinea Fragment.png"
+    },
+    "dlc5::worlds/AquaticClassicAsteroid": {
+      "path": "assets/oni-icons/world-dlc5__worlds_AquaticClassicAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Marinea_Asteroid.png",
+      "file_title": "File:Marinea Asteroid.png"
+    },
+    "dlc5::worlds/AquaticSpacedOutAsteroid": {
+      "path": "assets/oni-icons/world-dlc5__worlds_AquaticSpacedOutAsteroid.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Marinea_Minor_Asteroid.png",
+      "file_title": "File:Marinea Minor.png"
+    },
+    "expansion1::worlds/MiniFlipped": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniFlipped.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flipped_Asteroid.png",
+      "file_title": "File:Flipped Asteroid.png"
+    },
+    "expansion1::worlds/VanillaArboria": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaArboria.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Arboria_Asteroid.png",
+      "file_title": "File:Arboria Asteroid.png"
+    },
+    "expansion1::worlds/VanillaAridio": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaAridio.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Aridio_Asteroid.png",
+      "file_title": "File:Aridio Asteroid.png"
+    },
+    "expansion1::worlds/MiniFlippedStart": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniFlippedStart.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flipped_Asteroid.png",
+      "file_title": "File:Flipped Asteroid.png"
+    },
+    "expansion1::worlds/MiniFlippedWarp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniFlippedWarp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Flipped_Asteroid.png",
+      "file_title": "File:Flipped Asteroid.png"
+    },
+    "expansion1::worlds/MiniForestFrozenStart": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniForestFrozenStart.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Forest_Asteroid.png",
+      "file_title": "File:Frozen Forest Asteroid.png"
+    },
+    "expansion1::worlds/MiniForestFrozenWarp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniForestFrozenWarp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Forest_Asteroid.png",
+      "file_title": "File:Frozen Forest Asteroid.png"
+    },
+    "expansion1::worlds/MiniForestFrozen": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniForestFrozen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Frozen_Forest_Asteroid.png",
+      "file_title": "File:Frozen Forest Asteroid.png"
+    },
+    "expansion1::worlds/ForestMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_ForestMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Folia_Asteroid.png",
+      "file_title": "File:Folia Asteroid.png"
+    },
+    "expansion1::worlds/MetalHeavyLandingSite": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MetalHeavyLandingSite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Irradiated_Marsh_Asteroid.png",
+      "file_title": "File:Irradiated Marsh Asteroid.png"
+    },
+    "expansion1::worlds/MediumForestyWasteland": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumForestyWasteland.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Glowood_Wasteland_Asteroid.png",
+      "file_title": "File:Glowood Wasteland Asteroid.png"
+    },
+    "expansion1::worlds/IdealLandingSite": {
+      "path": "assets/oni-icons/world-expansion1__worlds_IdealLandingSite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Irradiated_Forest_Asteroid.png",
+      "file_title": "File:Irradiated Forest Asteroid.png"
+    },
+    "expansion1::worlds/SmallRadioactiveLandingSite": {
+      "path": "assets/oni-icons/world-expansion1__worlds_SmallRadioactiveLandingSite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Irradiated_Forest_Asteroid.png",
+      "file_title": "File:Irradiated Forest Asteroid.png"
+    },
+    "expansion1::worlds/SwampyLandingSite": {
+      "path": "assets/oni-icons/world-expansion1__worlds_SwampyLandingSite.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Irradiated_Swampy_Asteroid.png",
+      "file_title": "File:Irradiated Swampy Asteroid.png"
+    },
+    "expansion1::worlds/MarshyMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MarshyMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Marshy_Asteroid.png",
+      "file_title": "File:Marshy Asteroid.png"
+    },
+    "expansion1::worlds/MiniMetallicSwampy": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniMetallicSwampy.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Metallic_Swampy_Asteroid.png",
+      "file_title": "File:Metallic Swampy Asteroid.png"
+    },
+    "expansion1::worlds/MiniMetallicSwampyStart": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniMetallicSwampyStart.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Metallic_Swampy_Asteroid.png",
+      "file_title": "File:Metallic Swampy Asteroid.png"
+    },
+    "expansion1::worlds/MiniMetallicSwampyWarp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniMetallicSwampyWarp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Metallic_Swampy_Asteroid.png",
+      "file_title": "File:Metallic Swampy Asteroid.png"
+    },
+    "expansion1::worlds/MooMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MooMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Moo_Asteroid.png",
+      "file_title": "File:Moo Asteroid.png"
+    },
+    "expansion1::worlds/WarpOilySandySwamp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_WarpOilySandySwamp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oily_Sandy_Swamp_Asteroid.png",
+      "file_title": "File:Oily Sandy Swamp Asteroid.png"
+    },
+    "expansion1::worlds/VanillaOasis": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaOasis.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oasisse_Asteroid.png",
+      "file_title": "File:Oasisse Asteroid.png"
+    },
+    "expansion1::worlds/VanillaOceania": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaOceania.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oceania_Asteroid.png",
+      "file_title": "File:Oceania Asteroid.png"
+    },
+    "expansion1::worlds/SmallWarpOilySwamp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_SmallWarpOilySwamp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oily_Swamp_Asteroid.png",
+      "file_title": "File:Oily Swamp Asteroid.png"
+    },
+    "expansion1::worlds/WarpOilySwamp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_WarpOilySwamp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Oily_Swamp_Asteroid.png",
+      "file_title": "File:Oily Swamp Asteroid.png"
+    },
+    "expansion1::worlds/SwampMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_SwampMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Quagmiris_Asteroid.png",
+      "file_title": "File:Quagmiris Asteroid.png"
+    },
+    "expansion1::worlds/MediumForestyRadioactiveVanillaWarpPlanet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumForestyRadioactiveVanillaWarpPlanet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Forest_Asteroid.png",
+      "file_title": "File:Radioactive Forest Asteroid.png"
+    },
+    "expansion1::worlds/MiniRadioactiveOceanStart": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniRadioactiveOceanStart.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Ocean_Asteroid.png",
+      "file_title": "File:Radioactive Ocean Asteroid.png"
+    },
+    "expansion1::worlds/MiniRadioactiveOcean": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniRadioactiveOcean.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Ocean_Asteroid.png",
+      "file_title": "File:Radioactive Ocean Asteroid.png"
+    },
+    "expansion1::worlds/MiniRadioactiveOceanWarp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniRadioactiveOceanWarp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Ocean_Asteroid.png",
+      "file_title": "File:Radioactive Ocean Asteroid.png"
+    },
+    "expansion1::worlds/MediumSandySwamp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumSandySwamp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Terrabog_Asteroid.png",
+      "file_title": "File:Radioactive Terrabog Asteroid.png"
+    },
+    "expansion1::worlds/MediumSandyRadioactiveVanillaWarpPlanet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumSandyRadioactiveVanillaWarpPlanet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Terra_Asteroid.png",
+      "file_title": "File:Radioactive Terra Asteroid.png"
+    },
+    "expansion1::worlds/MiniRegolithMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniRegolithMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Regolith_Asteroid.png",
+      "file_title": "File:Regolith Asteroid.png"
+    },
+    "expansion1::worlds/RegolithMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_RegolithMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Regolith_Asteroid.png",
+      "file_title": "File:Regolith Asteroid.png"
+    },
+    "expansion1::worlds/MediumRadioactiveVanillaWarpPlanet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumRadioactiveVanillaWarpPlanet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Radioactive_Swamp_Asteroid.png",
+      "file_title": "File:Radioactive Swamp Asteroid.png"
+    },
+    "expansion1::worlds/OilRichWarpTarget": {
+      "path": "assets/oni-icons/world-expansion1__worlds_OilRichWarpTarget.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rusty_Oil_Asteroid.png",
+      "file_title": "File:Rusty Oil Asteroid.png"
+    },
+    "expansion1::worlds/VanillaSandstoneFrozen": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaSandstoneFrozen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Rime_Asteroid.png",
+      "file_title": "File:Rime Asteroid.png"
+    },
+    "expansion1::worlds/StrangeAsteroidKleiFest2023Cluster": {
+      "path": "assets/oni-icons/world-expansion1__worlds_StrangeAsteroidKleiFest2023Cluster.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Skewed_Asteroid.png",
+      "file_title": "File:Skewed Asteroid.png"
+    },
+    "expansion1::worlds/MediumSwampy": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MediumSwampy.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Stinko_Swamp_Asteroid.png",
+      "file_title": "File:Stinko Swamp Asteroid.png"
+    },
+    "expansion1::worlds/VanillaSwampDefault": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaSwampDefault.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Squelchy_Asteroid.png",
+      "file_title": "File:Squelchy Asteroid.png"
+    },
+    "expansion1::worlds/NiobiumMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_NiobiumMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Superconductive_Asteroid.png",
+      "file_title": "File:Superconductive Asteroid.png"
+    },
+    "expansion1::worlds/VanillaSandstoneDefault": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaSandstoneDefault.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Terra_Asteroid.png",
+      "file_title": "File:Terra Asteroid.png"
+    },
+    "expansion1::worlds/MiniBadlandsStart": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniBadlandsStart.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:The_Desolands_Asteroid.png",
+      "file_title": "File:The Desolands Asteroid.png"
+    },
+    "expansion1::worlds/TerraMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_TerraMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Terrania_Asteroid.png",
+      "file_title": "File:Terrania Asteroid.png"
+    },
+    "expansion1::worlds/MiniBadlands": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniBadlands.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:The_Desolands_Asteroid.png",
+      "file_title": "File:The Desolands Asteroid.png"
+    },
+    "expansion1::worlds/VanillaBadlands": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaBadlands.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:The_Badlands_Asteroid.png",
+      "file_title": "File:The Badlands Asteroid.png"
+    },
+    "expansion1::worlds/MiniBadlandsWarp": {
+      "path": "assets/oni-icons/world-expansion1__worlds_MiniBadlandsWarp.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:The_Desolands_Asteroid.png",
+      "file_title": "File:The Desolands Asteroid.png"
+    },
+    "expansion1::worlds/VanillaForestDefault": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaForestDefault.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Verdante_Asteroid.png",
+      "file_title": "File:Verdante Asteroid.png"
+    },
+    "expansion1::worlds/TundraMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_TundraMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tundra_Asteroid.png",
+      "file_title": "File:Tundra Asteroid.png"
+    },
+    "expansion1::worlds/VanillaVolcanic": {
+      "path": "assets/oni-icons/world-expansion1__worlds_VanillaVolcanic.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Volcanea_Asteroid.png",
+      "file_title": "File:Volcanea Asteroid.png"
+    },
+    "expansion1::worlds/WaterMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_WaterMoonlet.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Water_Asteroid.png",
+      "file_title": "File:Water Asteroid.png"
+    },
+    "worlds/ForestHot": {
+      "path": "assets/oni-icons/world-worlds_ForestHot.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_hotforest"
+    },
+    "worlds/Badlands": {
+      "path": "assets/oni-icons/world-worlds_Badlands.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_badlands"
+    },
+    "worlds/Volcanic": {
+      "path": "assets/oni-icons/world-worlds_Volcanic.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_volcanic"
+    },
+    "worlds/Oceania": {
+      "path": "assets/oni-icons/world-worlds_Oceania.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_oceania"
+    },
+    "worlds/Oasis": {
+      "path": "assets/oni-icons/world-worlds_Oasis.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_oasis"
+    },
+    "worlds/SandstoneDefault": {
+      "path": "assets/oni-icons/world-worlds_SandstoneDefault.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D Asteroid_sandstone"
+    },
+    "dlc2::worlds/CeresBaseGameShatteredAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_CeresBaseGameShatteredAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D asteroid_base_ceres_shattered_0"
+    },
+    "dlc2::worlds/CeresClassicShatteredAsteroid": {
+      "path": "assets/oni-icons/world-dlc2__worlds_CeresClassicShatteredAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D asteroid_classic_ceres_shattered_0"
+    },
+    "dlc4::worlds/PrehistoricBaseGameAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_PrehistoricBaseGameAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D prehistoric_asteroid_base_0"
+    },
+    "dlc4::worlds/MixingPrehistoricAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_MixingPrehistoricAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D asteroid_prehistoric_0"
+    },
+    "dlc4::worlds/PrehistoricSpacedOutAsteroid": {
+      "path": "assets/oni-icons/world-dlc4__worlds_PrehistoricSpacedOutAsteroid.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D prehistoric_asteroid_so_0"
+    },
+    "expansion1::worlds/OilyMoonlet": {
+      "path": "assets/oni-icons/world-expansion1__worlds_OilyMoonlet.png",
+      "source": "local-owned-game",
+      "local_asset": "Texture2D asteroid_oil_planet_0"
+    }
+  },
+  "geysers": {
+    "big_volcano": {
+      "path": "assets/oni-icons/geyser-big_volcano.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Volcano.png",
+      "file_title": "File:Volcano.png"
+    },
+    "chlorine_gas": {
+      "path": "assets/oni-icons/geyser-chlorine_gas.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Chlorine_Gas_Vent.png",
+      "file_title": "File:Chlorine Gas Vent.png"
+    },
+    "filthy_water": {
+      "path": "assets/oni-icons/geyser-filthy_water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Water_Vent.png",
+      "file_title": "File:Polluted Water Vent.png"
+    },
+    "chlorine_gas_cool": {
+      "path": "assets/oni-icons/geyser-chlorine_gas_cool.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Chlorine_Gas_Vent.png",
+      "file_title": "File:Cool Chlorine Gas Vent.png"
+    },
+    "hot_co2": {
+      "path": "assets/oni-icons/geyser-hot_co2.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Carbon_Dioxide_Vent.png",
+      "file_title": "File:Carbon Dioxide Vent.png"
+    },
+    "hot_po2": {
+      "path": "assets/oni-icons/geyser-hot_po2.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Hot_Polluted_Oxygen_Vent.png",
+      "file_title": "File:Hot Polluted Oxygen Vent.png"
+    },
+    "hot_hydrogen": {
+      "path": "assets/oni-icons/geyser-hot_hydrogen.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Hydrogen_Vent.png",
+      "file_title": "File:Hydrogen Vent.png"
+    },
+    "hot_steam": {
+      "path": "assets/oni-icons/geyser-hot_steam.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Steam_Vent.png",
+      "file_title": "File:Steam Vent.png"
+    },
+    "liquid_co2": {
+      "path": "assets/oni-icons/geyser-liquid_co2.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Carbon_Dioxide_Geyser.png",
+      "file_title": "File:Carbon Dioxide Geyser.png"
+    },
+    "hot_water": {
+      "path": "assets/oni-icons/geyser-hot_water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Water_Geyser.png",
+      "file_title": "File:Water Geyser.png"
+    },
+    "liquid_sulfur": {
+      "path": "assets/oni-icons/geyser-liquid_sulfur.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Liquid_Sulfur_Geyser.png",
+      "file_title": "File:Liquid Sulfur Geyser.png"
+    },
+    "methane": {
+      "path": "assets/oni-icons/geyser-methane.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Natural_Gas_Geyser.png",
+      "file_title": "File:Natural Gas Geyser.png"
+    },
+    "molten_aluminum": {
+      "path": "assets/oni-icons/geyser-molten_aluminum.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Aluminum_Volcano.png",
+      "file_title": "File:Aluminum Volcano.png"
+    },
+    "molten_cobalt": {
+      "path": "assets/oni-icons/geyser-molten_cobalt.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cobalt_Volcano.png",
+      "file_title": "File:Cobalt Volcano.png"
+    },
+    "molten_copper": {
+      "path": "assets/oni-icons/geyser-molten_copper.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Copper_Volcano.png",
+      "file_title": "File:Copper Volcano.png"
+    },
+    "molten_gold": {
+      "path": "assets/oni-icons/geyser-molten_gold.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Gold_Volcano.png",
+      "file_title": "File:Gold Volcano.png"
+    },
+    "molten_iron": {
+      "path": "assets/oni-icons/geyser-molten_iron.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Iron_Volcano.png",
+      "file_title": "File:Iron Volcano.png"
+    },
+    "molten_niobium": {
+      "path": "assets/oni-icons/geyser-molten_niobium.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Niobium_Volcano.png",
+      "file_title": "File:Niobium Volcano.png"
+    },
+    "molten_tungsten": {
+      "path": "assets/oni-icons/geyser-molten_tungsten.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Tungsten_Volcano.png",
+      "file_title": "File:Tungsten Volcano.png"
+    },
+    "murky_brine": {
+      "path": "assets/oni-icons/geyser-murky_brine.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Polluted_Brine_Vent.png",
+      "file_title": "File:Polluted Brine Vent.png"
+    },
+    "oil_drip": {
+      "path": "assets/oni-icons/geyser-oil_drip.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Leaky_Oil_Fissure.png",
+      "file_title": "File:Leaky Oil Fissure.png"
+    },
+    "salt_water": {
+      "path": "assets/oni-icons/geyser-salt_water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Salt_Water_Geyser.png",
+      "file_title": "File:Salt Water Geyser.png"
+    },
+    "slimy_po2": {
+      "path": "assets/oni-icons/geyser-slimy_po2.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Infectious_Polluted_Oxygen_Vent.png",
+      "file_title": "File:Infectious Polluted Oxygen Vent.png"
+    },
+    "slush_water": {
+      "path": "assets/oni-icons/geyser-slush_water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cool_Slush_Geyser.png",
+      "file_title": "File:Cool Slush Geyser.png"
+    },
+    "slush_salt_water": {
+      "path": "assets/oni-icons/geyser-slush_salt_water.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cool_Salt_Slush_Geyser.png",
+      "file_title": "File:Cool Salt Slush Geyser.png"
+    },
+    "small_volcano": {
+      "path": "assets/oni-icons/geyser-small_volcano.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Minor_Volcano.png",
+      "file_title": "File:Minor Volcano.png"
+    },
+    "steam": {
+      "path": "assets/oni-icons/geyser-steam.png",
+      "source_page_url": "https://oxygennotincluded.wiki.gg/wiki/File:Cool_Steam_Vent.png",
+      "file_title": "File:Cool Steam Vent.png"
+    }
+  },
+  "misses": {
+    "resources": [],
+    "pois": [],
+    "worlds": [
+      {
+        "id": "worlds/BigEmpty",
+        "name_en": "Big Empty FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+
+      {
+        "id": "worlds/TinyEmpty",
+        "name_en": "Tiny Empty FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "worlds/TinySurface",
+        "name_en": "Tiny Surface FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+
+      {
+        "id": "expansion1::worlds/TinyEmpty",
+        "name_en": "Tiny Empty FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "expansion1::worlds/TinyForest",
+        "name_en": "Tiny Forest FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "expansion1::worlds/TinyIce",
+        "name_en": "Tiny Ice FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "expansion1::worlds/TinyMagma",
+        "name_en": "Tiny Magma FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "expansion1::worlds/TinyStart",
+        "name_en": "Tiny Start FOR DEVS",
+        "reason": "no exact PNG file"
+      },
+      {
+        "id": "expansion1::worlds/TwinMoonlet",
+        "name_en": "Tiny Twin Asteroid FOR DEVS",
+        "reason": "no exact PNG file"
+      }
+    ],
+    "geysers": []
+  }
+}

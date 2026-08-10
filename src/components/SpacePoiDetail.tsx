@@ -3,11 +3,14 @@ import { categoryIcon } from '../resourcePresentation'
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
 import { cargoIcon, formatMass, formatRingRange, groupOutputsByCategory, groupPlacementsByCluster, kindIcon, resolveOutputCategory, spacePoiRingRange } from '../spacePoiModel'
-import type { GameCategory, GameCategoryId, Locale, SpacePoiData } from '../types'
+import { OniIcon } from '../oniIcon'
+import { oniIconSourceUrl } from '../oniIconIndex'
+import type { GameCategory, GameCategoryId, Locale, SpacePoiData, World } from '../types'
 
 interface Props {
   data: SpacePoiData
   poi: SpacePoiData['pois'][number] | undefined
+  worlds?: World[]
   locale: Locale
   categories?: GameCategory[]
 }
@@ -18,7 +21,7 @@ const typeLabel: Record<string, { zh: string; en: string }> = {
   gas: { zh: '氣體', en: 'Gas' },
 }
 
-export function SpacePoiDetail({ data, poi, locale, categories = [] }: Props) {
+export function SpacePoiDetail({ data, poi, worlds = [], locale, categories = [] }: Props) {
   const t = ui[locale]
   const [outputFilter, setOutputFilter] = useState<{ poiId: string; category: GameCategoryId | 'all' }>({ poiId: '', category: 'all' })
   const coordinatePolicy = locale === 'zh' ? data.baseline.coordinatePolicy_zh : data.baseline.coordinatePolicy_en
@@ -39,6 +42,7 @@ export function SpacePoiDetail({ data, poi, locale, categories = [] }: Props) {
 
   const rings = spacePoiRingRange(poi)
   const clusters = groupPlacementsByCluster(poi.placements)
+  const worldById = new Map(worlds.map((world) => [world.id, world]))
   const strategic = locale === 'zh' ? poi.strategic_zh : poi.strategic_en
   const attention = locale === 'zh' ? poi.attention_zh : poi.attention_en
   const sourceById = new Map(data.sources.map((source) => [source.id, source]))
@@ -57,8 +61,9 @@ export function SpacePoiDetail({ data, poi, locale, categories = [] }: Props) {
       <div className="space-poi-detail-heading">
         <div>
           <span className="eyebrow">STARMAP</span>
-          <h2>{localName(poi, locale)}</h2>
+          <h2><OniIcon group="pois" id={poi.id} alt={localName(poi, locale)} fallback={kindIcon[poi.kind]} /> {localName(poi, locale)}</h2>
           <small>{secondaryName(poi, locale)}</small>
+          {oniIconSourceUrl('pois', poi.id) && <a className="icon-source-link" href={oniIconSourceUrl('pois', poi.id)} target="_blank" rel="noreferrer">wiki.gg</a>}
         </div>
         <span className={`type-chip type-${poi.kind}`}>
           <span aria-hidden="true">{kindIcon[poi.kind]}</span> {t.spacePoiKindLabels[poi.kind]}
@@ -148,7 +153,7 @@ export function SpacePoiDetail({ data, poi, locale, categories = [] }: Props) {
                       >
                         <div className="resource-title">
                           <div>
-                            <strong>{localName(output, locale)}</strong>
+                            <strong><OniIcon group="resources" id={output.id} alt={localName(output, locale)} fallback={categoryIcon(output.primaryCategory)} /> {localName(output, locale)}</strong>
                             <small>{secondaryName(output, locale)}</small>
                           </div>
                           <span className={`type-chip type-${output.type}`}>
@@ -194,6 +199,12 @@ export function SpacePoiDetail({ data, poi, locale, categories = [] }: Props) {
               <span key={cluster.clusterId}>
                 <strong>{localName({ name_en: cluster.clusterName_en, name_zh: cluster.clusterName_zh }, locale)}</strong>
                 <em>{t.spacePoiRingRange} {formatRingRange(cluster.allowedRings)}{cluster.guaranteed ? ` · ${t.spacePoiGuaranteed}` : ''}</em>
+                {cluster.worldIds.length > 0 && <span className="space-poi-cluster-worlds">
+                  {cluster.worldIds.map((worldId) => {
+                    const world = worldById.get(worldId)
+                    return world && <span key={world.id}><OniIcon group="worlds" id={world.id} alt={localName(world, locale)} fallback="🪐" /> {localName(world, locale)}</span>
+                  })}
+                </span>}
               </span>
             ))}
           </div>

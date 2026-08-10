@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
 import { filterSpacePois, formatRingRange, kindIcon, spacePoiRingRange, type SpacePoiKindFilter } from '../spacePoiModel'
+import { OniIcon } from '../oniIcon'
 import type { BrowseMode, Locale, SpacePoi } from '../types'
 import { BrowseModeToggle } from './BrowseModeToggle'
 
@@ -69,7 +70,7 @@ export function SpacePoiSelector({ pois, selectedId, locale, mode, onSelect, onM
               aria-pressed={poi.id === selectedId}
               onClick={() => onSelect(poi.id)}
             >
-              <span className="poi-option-icon" aria-hidden="true">{kindIcon[poi.kind]}</span>
+              <OniIcon className="poi-option-icon" group="pois" id={poi.id} alt={localName(poi, locale)} fallback={kindIcon[poi.kind]} />
               <span className="poi-option-copy">
                 <strong>{localName(poi, locale)}</strong>
                 <small>{secondaryName(poi, locale)}</small>

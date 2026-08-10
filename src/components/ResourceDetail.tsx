@@ -1,6 +1,8 @@
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
 import { categoryIcon } from '../resourcePresentation'
+import { OniIcon } from '../oniIcon'
+import { oniIconSourceUrl } from '../oniIconIndex'
 import { kindIcon } from '../spacePoiModel'
 import { filterResourceSources, sourceDlcTags, type IndexedResource, type ResourceSourceSelection } from '../resourceIndex'
 import type { GameCategory, Locale, SpacePoi, World } from '../types'
@@ -48,6 +50,9 @@ export function ResourceDetail({
   }
 
   const category = categories.find((item) => item.id === resource.primaryCategory)
+  const iconGroup = resource.geyser ? 'geysers' : 'resources'
+  const iconId = resource.geyser?.id ?? resource.id
+  const iconFallback = resource.geyser ? '🌋' : categoryIcon(resource.primaryCategory)
   const { worlds: matchedWorlds, pois: matchedPois } = filterResourceSources(resource, worlds, pois, selection)
   const dlcTags = sourceDlcTags(worlds, pois)
   // A resource with no source of a given kind cannot be filtered by it, so the
@@ -61,8 +66,9 @@ export function ResourceDetail({
       <div className="space-poi-detail-heading">
         <div>
           <span className="eyebrow">RESOURCE</span>
-          <h2>{localName(resource, locale)}</h2>
+          <h2><OniIcon group={iconGroup} id={iconId} alt={localName(resource, locale)} fallback={iconFallback} /> {localName(resource, locale)}</h2>
           <small>{secondaryName(resource, locale)}</small>
+          {oniIconSourceUrl(iconGroup, iconId) && <a className="icon-source-link" href={oniIconSourceUrl(iconGroup, iconId)} target="_blank" rel="noreferrer">wiki.gg</a>}
         </div>
         <span className={`type-chip type-${resource.type}`}>
           {typeLabel[resource.type]?.[locale] ?? resource.type}
@@ -143,7 +149,7 @@ export function ResourceDetail({
           <div className="resource-source-grid">
             {matchedWorlds.map((world) => (
               <button type="button" className="resource-source-link" key={world.id} onClick={() => onOpenWorld(world.id)}>
-                <span aria-hidden="true">🪐</span>
+                <OniIcon group="worlds" id={world.id} alt={localName(world, locale)} fallback="🪐" />
                 <span>
                   <strong>{localName(world, locale)}</strong>
                   <em>
@@ -169,7 +175,7 @@ export function ResourceDetail({
               const output = poi.outputs.find((item) => item.id === resource.id)
               return (
                 <button type="button" className="resource-source-link" key={poi.id} onClick={() => onOpenPoi(poi.id)}>
-                  <span aria-hidden="true">{kindIcon[poi.kind]}</span>
+                  <OniIcon group="pois" id={poi.id} alt={localName(poi, locale)} fallback={kindIcon[poi.kind]} />
                   <span>
                     <strong>{localName(poi, locale)}</strong>
                     <em>{output ? `${t.spacePoiRatio} ${output.ratio}%` : dlcLabel(poi.dlcTag, true, locale)}</em>

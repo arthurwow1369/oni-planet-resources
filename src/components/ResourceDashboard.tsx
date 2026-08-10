@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { localName, secondaryName, ui } from '../i18n'
 import { configurationCoverageForResource, totalConfigurationCoverage } from '../plannerModel'
 import { aggregateTerrainResources, categoryIcon, effectiveGameCategory, resourceMatchesQuery, resourceTone, sortGameCategories } from '../resourcePresentation'
+import { OniIcon } from '../oniIcon'
 import type { AggregatedResource, GameCategory, GameCategoryId, Locale, SpecialResourceRoute, SpecialResourceSource, Subworld, TerrainResearchData } from '../types'
 import { TerrainResearchPanel } from './TerrainResearchPanel'
 import { AnchoredPopover } from './AnchoredPopover'
@@ -188,7 +189,7 @@ export function ResourceDashboard({ terrains, research, categories = [], locale,
                     return (
                       <article className={`resource-card resource-card-${resourceTone(resource)} representative-card`} key={`${category.id}-${resource.simhash}`}>
                         <div className="resource-title">
-                          <div><strong>{localName(resource, locale)}</strong><small>{secondaryName(resource, locale)}</small></div>
+                          <div><strong><OniIcon group="resources" id={resource.simhash} alt={localName(resource, locale)} fallback={categoryIcon(resource.primaryCategory)} /> {localName(resource, locale)}</strong><small>{secondaryName(resource, locale)}</small></div>
                           <span className={`type-chip type-${representative.kind}`}>{representativeType}</span>
                         </div>
                         {representative.isVirtual && <span className="virtual-object-chip">⚠ {t.virtualObject}</span>}
@@ -215,7 +216,7 @@ export function ResourceDashboard({ terrains, research, categories = [], locale,
                   return (
                     <article className={`resource-card resource-card-${resourceTone(resource)}`} key={`${category.id}-${resource.simhash}`}>
                       <div className="resource-title">
-                        <div><strong>{localName(resource, locale)}</strong><small>{secondaryName(resource, locale)}</small></div>
+                        <div><strong><OniIcon group="resources" id={resource.simhash} alt={localName(resource, locale)} fallback={categoryIcon(resource.primaryCategory)} /> {localName(resource, locale)}</strong><small>{secondaryName(resource, locale)}</small></div>
                         <span className={`type-chip type-${resource.type}`}>{typeLabel[resource.type]?.[locale] ?? resource.type}</span>
                       </div>
                       <p className="use-copy" title={use}>{use}</p>

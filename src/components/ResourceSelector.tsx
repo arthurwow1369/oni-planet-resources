@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { localName, secondaryName, ui } from '../i18n'
 import { categoryIcon } from '../resourcePresentation'
+import { OniIcon } from '../oniIcon'
 import { filterResources, usedCategoryIds, type IndexedResource } from '../resourceIndex'
 import type { BrowseMode, GameCategory, GameCategoryId, Locale } from '../types'
 import { BrowseModeToggle } from './BrowseModeToggle'
@@ -64,15 +65,17 @@ export function ResourceSelector({
 
       <div className="planet-list" aria-label={t.resourceSelect}>
         {visible.length === 0 && <p className="empty">{t.noResources}</p>}
-        {visible.map((resource) => (
-          <button
+        {visible.map((resource) => {
+          const iconGroup = resource.geyser ? 'geysers' : 'resources'
+          const iconId = resource.geyser?.id ?? resource.id
+          return <button
             type="button"
             key={resource.id}
             className={`poi-option ${resource.id === selectedId ? 'selected' : ''}`}
             aria-pressed={resource.id === selectedId}
             onClick={() => onSelect(resource.id)}
           >
-            <span className="poi-option-icon" aria-hidden="true">{categoryIcon(resource.primaryCategory)}</span>
+            <OniIcon className="poi-option-icon" group={iconGroup} id={iconId} alt={localName(resource, locale)} fallback={resource.geyser ? '🌋' : categoryIcon(resource.primaryCategory)} />
             <span className="poi-option-copy">
               <strong>{localName(resource, locale)}</strong>
               <small>{secondaryName(resource, locale)}</small>
@@ -85,7 +88,7 @@ export function ResourceSelector({
               </span>
             </span>
           </button>
-        ))}
+        })}
       </div>
     </section>
   )

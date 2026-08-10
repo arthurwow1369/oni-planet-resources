@@ -4,6 +4,7 @@ import { localName, secondaryName, ui } from '../i18n'
 import { filterWorldGroups, groupWorlds, inferWorldVariantRole, worldVariantDlcTag, worldWidthBand } from '../plannerModel'
 import type { BrowseMode, Locale, World } from '../types'
 import { BrowseModeToggle } from './BrowseModeToggle'
+import { OniIcon } from '../oniIcon'
 
 interface Props {
   worlds: World[]
@@ -91,6 +92,10 @@ export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSe
           const orderedWorlds = [...group.worlds].sort((a, b) => roleOrder[inferWorldVariantRole(a)] - roleOrder[inferWorldVariantRole(b)])
           const visibleDlcTags = [...new Set(orderedWorlds.map(worldVariantDlcTag))]
           const active = orderedWorlds.some((world) => world.id === selectedId)
+          // A group is represented once: use its primary/start world only when
+          // that identity is apparent, otherwise retain the generic fallback.
+          const primaryWorld = orderedWorlds.find((world) => inferWorldVariantRole(world) === 'start')
+            ?? (orderedWorlds.length === 1 ? orderedWorlds[0] : undefined)
           const groupSpecialIds = [...new Set(orderedWorlds.flatMap((world) => world.specialResourceIds))]
           const groupSpecialNames = groupSpecialIds.map((id) => specialResourceNames[id] ?? id)
           const markerLabel = locale === 'zh' ? '含特殊／後期戰略資源' : 'Contains special / late-game strategic resources'
@@ -100,7 +105,9 @@ export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSe
           return (
             <div className={`planet-group ${active ? 'selected' : ''}`} key={group.key}>
               <div className="planet-group-heading">
-                <span className="planet-icon">◉</span>
+                {primaryWorld
+                  ? <OniIcon className="planet-icon" group="worlds" id={primaryWorld.id} alt={localName(group, locale)} fallback="◉" />
+                  : <span className="planet-icon oni-icon-fallback" aria-hidden="true">◉</span>}
                 <span className="planet-copy">
                   <strong>{localName(group, locale)}</strong>
                   <small>{secondaryName(group, locale)}</small>

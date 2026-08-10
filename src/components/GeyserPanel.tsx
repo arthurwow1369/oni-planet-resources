@@ -1,5 +1,6 @@
 import { localName, secondaryName, ui } from '../i18n'
 import type { Geyser, GeyserShape, Locale, WorldGeyserPool, WorldGeysers } from '../types'
+import { OniIcon } from '../oniIcon'
 
 interface Props {
   geysers: WorldGeysers | undefined
@@ -18,6 +19,7 @@ function GeyserCard({ geyser, locale, count }: { geyser: Geyser; locale: Locale;
   return (
     <article className={`resource-card resource-card-material geyser-card geyser-${geyser.shape}`}>
       <div className="resource-title">
+        <OniIcon className="geyser-icon" group="geysers" id={geyser.id} alt={localName(geyser, locale)} fallback={shapeIcon[geyser.shape]} />
         <div>
           <strong>{localName(geyser, locale)}</strong>
           <small>{secondaryName(geyser, locale)}</small>

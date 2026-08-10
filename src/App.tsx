@@ -15,6 +15,10 @@ import { ui } from './i18n'
 import type { BrowseMode, GameCategory, GameCategoryId, Geyser, Locale, SpacePoiData, SpecialResourceData, Stats, Subworld, TerrainResearchData, World } from './types'
 
 const preferredWorld = 'dlc5::worlds/AquaticSpacedOutAsteroid'
+const hiddenWorldIds = new Set([
+  'expansion1::worlds/Moon_Barren',
+  'expansion1::worlds/SpaceshipInterior',
+])
 
 function App() {
   const [locale, setLocale] = useState<Locale>('zh')
@@ -52,7 +56,8 @@ function App() {
       fetch(dataUrl('space-pois.json')).then((response) => response.json()),
       fetch(dataUrl('geysers.json')).then((response) => response.json()),
     ]).then(([worldData, terrainData, statsData, researchData, categoryData, specialData, spacePoiPayload, geyserPayload]: [World[], Subworld[], Stats, TerrainResearchData, GameCategory[], SpecialResourceData, SpacePoiData, Geyser[]]) => {
-      setWorlds(worldData)
+      const visibleWorlds = worldData.filter((world) => !hiddenWorldIds.has(world.id))
+      setWorlds(visibleWorlds)
       setSubworlds(terrainData)
       setStats(statsData)
       setTerrainResearch(researchData)
@@ -61,7 +66,7 @@ function App() {
       setSpacePoiData(spacePoiPayload)
       setGeyserCatalog(geyserPayload)
       if (spacePoiPayload.pois[0]) setSpacePoiId(spacePoiPayload.pois[0].id)
-      const initial = worldData.find((world) => world.id === preferredWorld) ?? worldData[0]
+      const initial = visibleWorlds.find((world) => world.id === preferredWorld) ?? visibleWorlds[0]
       if (initial) {
         setWorldId(initial.id)
         setSelectedTerrainIds(new Set(initial.subworldIds))
@@ -225,7 +230,7 @@ function App() {
               />
             )
             : browseMode === 'pois' && spacePoiData
-            ? <SpacePoiDetail data={spacePoiData} poi={activeSpacePoi} locale={locale} categories={gameCategories} />
+            ? <SpacePoiDetail data={spacePoiData} poi={activeSpacePoi} worlds={worlds} locale={locale} categories={gameCategories} />
             : (
               <>
                 <TerrainPicker

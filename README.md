@@ -92,6 +92,16 @@ Exact starmap coordinates are deliberately absent from this dataset: the game ro
 
 ## Data and research provenance
 
+### Local wiki icon cache
+
+Resource, Space POI, world, and named geyser/volcano icons are downloaded locally from the Oxygen Not Included wiki.gg MediaWiki API. The checked-in `public/data/icon-index.json` records every verified local path, exact `File:` title, and wiki source page; its separate `misses` lists record entities with no exact PNG or a download failure. World and geyser lookups are exact-name only (world aliases require a documented one-to-one naming difference); a generic vent image is never presented as a specific geyser variant. Refresh them without accessing a game installation with:
+
+```bash
+node scripts/download_oni_icons.mjs
+```
+
+The artwork remains Klei-owned game artwork, downloaded from wiki.gg for personal planner use. Source links are retained in the icon index and relevant detail views; no license grant for the artwork is implied.
+
 The checked-in app data was extracted from a locally installed Steam build using `scripts/extract_data.py`. Its current `public/data/stats.json` records 94 worlds, 186 referenced subworld variants, and 126 resources. These counts describe that extraction snapshot, not every possible future game version.
 
 The terrain research baseline is **U59-740622, Steam build 24423041, as of 2026-08-01**. It groups 232 installed base-game/DLC subworld definitions into 26 `zoneType` unions. A union entry means that content appeared in at least one installed variant; it does not guarantee the content on every map.

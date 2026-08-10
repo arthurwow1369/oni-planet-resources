@@ -5,6 +5,7 @@ export interface SpacePoiClusterPlacement {
   clusterId: string
   clusterName_en: string
   clusterName_zh: string
+  worldIds: string[]
   allowedRings: SpacePoiRange
   guaranteed: boolean
 }
@@ -51,6 +52,7 @@ export const groupPlacementsByCluster = (placements: SpacePoiPlacement[]): Space
         clusterId: placement.clusterId,
         clusterName_en: placement.clusterName_en,
         clusterName_zh: placement.clusterName_zh,
+        worldIds: [...(placement.worldIds ?? [])],
         allowedRings: { ...placement.allowedRings },
         guaranteed: placement.guaranteedInGroup,
       })
@@ -59,6 +61,9 @@ export const groupPlacementsByCluster = (placements: SpacePoiPlacement[]): Space
     existing.allowedRings.min = Math.min(existing.allowedRings.min, placement.allowedRings.min)
     existing.allowedRings.max = Math.max(existing.allowedRings.max, placement.allowedRings.max)
     existing.guaranteed = existing.guaranteed || placement.guaranteedInGroup
+    for (const worldId of placement.worldIds ?? []) {
+      if (!existing.worldIds.includes(worldId)) existing.worldIds.push(worldId)
+    }
   }
   return [...byCluster.values()].sort((a, b) => a.clusterName_en.localeCompare(b.clusterName_en))
 }

@@ -21,6 +21,10 @@ import yaml
 ASSETS: Path
 PO_PATH: Path
 OUT = Path(__file__).resolve().parents[1] / "public/data"
+HIDDEN_WORLD_IDS = {
+    "expansion1::worlds/Moon_Barren",
+    "expansion1::worlds/SpaceshipInterior",
+}
 CATALOG_PATH = (
     Path(__file__).resolve().parents[1]
     / "research/resource-catalog/resource-catalog.json"
@@ -983,6 +987,7 @@ def space_poi_placement(
     cluster_id: str,
     cluster_en: str,
     cluster_zh: str,
+    world_ids: list[str],
 ) -> tuple[list[str], dict[str, Any]] | None:
     """Normalize one `poiPlacements` / `spacePois` group into a placement record."""
     pois = [str(x) for x in (group.get("pois", []) or [])]
@@ -995,6 +1000,7 @@ def space_poi_placement(
         "clusterId": cluster_id,
         "clusterName_en": cluster_en,
         "clusterName_zh": cluster_zh,
+        "worldIds": world_ids,
         "allowedRings": {"min": int(rings.get("min", 0)), "max": int(rings.get("max", 0))},
         "numToSpawn": num_to_spawn,
         "canSpawnDuplicates": can_duplicate,
@@ -1032,10 +1038,17 @@ def build_space_pois(
         rel = path.relative_to(next(p for p in path.parents if p.name == "worldgen") / "clusters").with_suffix("").as_posix()
         cluster_id = f"{ns}::clusters/{rel}" if ns != "base" else f"clusters/{rel}"
         cluster_en, cluster_zh = translated(strings, str(data.get("name", "")), path.stem)
+        world_ids = [
+            str(placement["world"])
+            for placement in data.get("worldPlacements", []) or []
+            if isinstance(placement, dict)
+            and placement.get("world")
+            and str(placement["world"]) not in HIDDEN_WORLD_IDS
+        ]
         for group in data.get("poiPlacements", []) or []:
             if not isinstance(group, dict):
                 continue
-            parsed = space_poi_placement(group, cluster_id, cluster_en, cluster_zh)
+            parsed = space_poi_placement(group, cluster_id, cluster_en, cluster_zh, world_ids)
             if not parsed:
                 continue
             pois, placement = parsed
@@ -1053,7 +1066,7 @@ def build_space_pois(
         for group in data.get("spacePois", []) or []:
             if not isinstance(group, dict):
                 continue
-            parsed = space_poi_placement(group, f"{ns}::mixing", cluster_en, cluster_zh)
+            parsed = space_poi_placement(group, f"{ns}::mixing", cluster_en, cluster_zh, [])
             if not parsed:
                 continue
             pois, placement = parsed
@@ -1270,6 +1283,8 @@ def main() -> None:
                 ref = row.get("name") if isinstance(row, dict) else row
                 if ref: refs.append(str(ref))
         world_ref = f"{ns}::worlds/{rel}" if ns != "base" else f"worlds/{rel}"
+        if world_ref in HIDDEN_WORLD_IDS:
+            continue
         extras = sorted(cluster_extra.get(world_ref, set()) | cluster_extra.get(f"expansion1::worlds/{rel}", set()) | cluster_extra.get(f"dlc5::worlds/{rel}", set()))
         refs.extend(extras)
         normalized_ids: list[str] = []
