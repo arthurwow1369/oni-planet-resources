@@ -1,0 +1,2313 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-02",
+  "baseline": "ONI U59-740622 / Steam build 24423041",
+  "scope": "Every emitted worldgen resource plus source-backed flora/fauna profiles",
+  "source_policy": [
+    "Names follow installed game strings and Dolphinwing Traditional Chinese terminology.",
+    "Curated resources use strategic summaries; additional flora/fauna use current installed-game and wiki.gg-backed bilingual entity profiles.",
+    "Worldgen presence remains possible rather than guaranteed unless the terrain record says otherwise."
+  ],
+  "entries": {
+    "Algae": {
+      "name_en": "Algae",
+      "name_zh": "藻類",
+      "type": "solid",
+      "categories": [
+        "oxygen",
+        "food"
+      ],
+      "use_en": "Feed an Oxygen Diffuser or Algae Terrarium for early oxygen; Pacu also eat it. It is finite unless renewed through slime or space sources.",
+      "use_zh": "可供氧氣擴散器或藻類箱早期製氧，帕庫也會食用。除非由軟泥或太空來源補充，否則屬有限資源。"
+    },
+    "AluminumOre": {
+      "name_en": "Aluminum Ore",
+      "name_zh": "鋁礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Refine into aluminum, an excellent heat-conducting metal for radiant pipes, metal tiles and thermal machinery.",
+      "use_zh": "可精煉成鋁；鋁導熱優秀，適合輻射管、金屬磚與熱能設備。"
+    },
+    "Basalt": {
+      "name_en": "Basalt",
+      "name_zh": "玄武岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A high-temperature raw mineral for construction and bulk thermal mass. Preserve better insulating materials for places where heat transfer matters.",
+      "use_zh": "耐高溫的建築原礦，可作大量熱容量材料；需要隔熱時應保留更合適的材料。"
+    },
+    "BasicFabricMaterialPlantSeed": {
+      "name_en": "Thimble Reed Seed",
+      "name_zh": "頂針蘆葦種子",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Consumes polluted water and produces Reed Fiber for Atmo Suits, clothing and Insulation recipes. Farms are resource-hungry; wild plants are valuable.",
+      "use_zh": "消耗汙水並產出蘆葦纖維，可製氣壓服、衣物與隔熱配方。人工種植耗水高，野生植株很有價值。"
+    },
+    "BasicFabricPlant": {
+      "name_en": "Thimble Reed",
+      "name_zh": "頂針蘆葦",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Consumes polluted water and produces Reed Fiber for Atmo Suits, clothing and Insulation recipes. Farms are resource-hungry; wild plants are valuable.",
+      "use_zh": "消耗汙水並產出蘆葦纖維，可製氣壓服、衣物與隔熱配方。人工種植耗水高，野生植株很有價值。"
+    },
+    "BasicForagePlant": {
+      "name_en": "Buried Muckroot",
+      "name_zh": "埋住的塊根",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A one-time buried food source placed by worldgen features. It helps during early exploration but cannot be replanted as a renewable crop.",
+      "use_zh": "由世界生成特徵放置的一次性埋藏食物，可協助早期探索，但不能重新種植成可再生農作。"
+    },
+    "BasicForagePlantPlanted": {
+      "name_en": "Buried Muckroot",
+      "name_zh": "埋住的塊根",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "The Muckroot is an aggressively invasive yet exceedingly delicate root plant known for its earthy flavor and unusual texture.\n\nIt is easy to store and keeps for unusually long periods of time, characteristics that once made it a staple food for explorers on long expeditions.",
+      "use_zh": "塊根是一種根莖膨脹但非常脆弱的植物，以其樸實的味道和特別口感而聞名。\n\n它易於儲存，並且可以保存異常長的時間，這使得它曾經成為探險家在長途旅行中的主要食物。"
+    },
+    "BasicSingleHarvestPlant": {
+      "name_en": "Mealwood",
+      "name_zh": "米虱木",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "An easy early crop that consumes dirt and yields Meal Lice. It needs duplicant labor and has poor food quality; transition before dirt becomes a bottleneck.",
+      "use_zh": "容易栽種的早期作物，消耗泥土並產出米虱；需要複製人勞動且食物品質低，泥土成為瓶頸前應轉型。"
+    },
+    "BasicSingleHarvestPlantSeed": {
+      "name_en": "Mealwood Seed",
+      "name_zh": "米虱木種子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "An easy early crop that consumes dirt and yields Meal Lice. It needs duplicant labor and has poor food quality; transition before dirt becomes a bottleneck.",
+      "use_zh": "容易栽種的早期作物，消耗泥土並產出米虱；需要複製人勞動且食物品質低，泥土成為瓶頸前應轉型。"
+    },
+    "BeanPlant": {
+      "name_en": "Nosh Sprout",
+      "name_zh": "小吃芽",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold crop irrigated with ethanol that produces Nosh Beans for cooking. It is powerful when ethanol and cooling are already sustainable.",
+      "use_zh": "低溫作物，以乙醇灌溉並產出小吃豆供烹飪；在乙醇與冷卻已可持續時才特別划算。"
+    },
+    "BeanPlantSeed": {
+      "name_en": "Nosh Bean",
+      "name_zh": "小吃豆",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold crop irrigated with ethanol that produces Nosh Beans for cooking. It is powerful when ethanol and cooling are already sustainable.",
+      "use_zh": "低溫作物，以乙醇灌溉並產出小吃豆供烹飪；在乙醇與冷卻已可持續時才特別划算。"
+    },
+    "BeanPlantSeedSparse": {
+      "name_en": "Nosh Bean (sparse spawn)",
+      "name_zh": "小吃豆（稀疏生成）",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold crop irrigated with ethanol that produces Nosh Beans for cooking. It is powerful when ethanol and cooling are already sustainable.",
+      "use_zh": "低溫作物，以乙醇灌溉並產出小吃豆供烹飪；在乙醇與冷卻已可持續時才特別划算。"
+    },
+    "Bee": {
+      "name_en": "Beeta (via Beeta Hive)",
+      "name_zh": "輻射蜂（由輻射蜂巢生成）",
+      "type": "critter",
+      "categories": [
+        "radiation",
+        "hazard"
+      ],
+      "use_en": "Beetas are insectoid creatures that enjoy a symbiotic relationship with the radioactive environment they thrive in.\n\nMuch like the honey bee gathers nectar and processes it to honey, the Beeta turns Uranium Ore into Enriched Uranium through a complex process of isotope separation inside the Beeta Hive.\n\nWhen first observing the Beeta's enrichment process, many scientists note with surprise just how much more efficient the cooperative combination of insect and hive is when compared to even the most advanced industrial processes.",
+      "use_zh": "輻射蜂是一種類昆蟲生物，與牠們賴以生存的放射性環境有著共生關係。\n\n就像蜜蜂採集花蜜並將其加工成蜂蜜一樣，輻射蜂通過輻射蜂巢內複雜的同位素分離過程，將鈾礦轉化成濃縮鈾。\n\n當第一次觀察輻射蜂的濃縮過程時，許多科學家驚訝地注意到，即使與最先進的工業流程相比，昆蟲與蜂巢的結合工作效率也要高的多。"
+    },
+    "BleachStone": {
+      "name_en": "Bleach Stone",
+      "name_zh": "漂白石",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "food"
+      ],
+      "use_en": "Off-gasses chlorine and fertilizes Waterweed; it also supports sanitation and bleach-stone production chains. Store it in liquid or sealed chlorine to prevent mass loss.",
+      "use_zh": "會逸散氯氣，也是水草肥料，並用於消毒及漂白石生產鏈。宜浸液或密封於氯氣中，避免逸散損失。"
+    },
+    "BlueGrass": {
+      "name_en": "Alveo Vera",
+      "name_zh": "多孔蘆薈",
+      "type": "plant",
+      "categories": [
+        "oxygen"
+      ],
+      "use_en": "The Alveo Vera's fleshy stems are dotted with small apertures featuring bidirectional valves through which Carbon Dioxide is absorbed and sticky oxygenated waste is secreted.\n\nThe buildup from this respiration cycle crystallizes into Oxylite ore.\n\nHorticulturists have long been curious about the protective epithelium that prevents the Oxylite ore from sublimating while on the plant. Unfortunately, it is too fragile to survive handling, and has thus far proven impossible to study.",
+      "use_zh": "多孔蘆薈的肉質莖上分佈著小孔，這些孔具有雙向閥膜，可以吸收二氧化碳並分泌黏性含氧廢物。\n\n這種呼吸迴圈產生的分泌物最終會結晶成氧石。\n\n園藝家長期以來都對其保護性的上皮細胞感到好奇，因為這種上皮細胞能防止植物上的氧石昇華。不幸的是，上皮細胞過於脆弱而無法承受任何方式的處理，因此到目前為止，研究也無法進行。"
+    },
+    "BlueGrassSeed": {
+      "name_en": "Alveo Vera Seed",
+      "name_zh": "多孔蘆薈種子",
+      "type": "plant",
+      "categories": [
+        "oxygen"
+      ],
+      "use_en": "The Alveo Vera's fleshy stems are dotted with small apertures featuring bidirectional valves through which Carbon Dioxide is absorbed and sticky oxygenated waste is secreted.\n\nThe buildup from this respiration cycle crystallizes into Oxylite ore.\n\nHorticulturists have long been curious about the protective epithelium that prevents the Oxylite ore from sublimating while on the plant. Unfortunately, it is too fragile to survive handling, and has thus far proven impossible to study.",
+      "use_zh": "多孔蘆薈的肉質莖上分佈著小孔，這些孔具有雙向閥膜，可以吸收二氧化碳並分泌黏性含氧廢物。\n\n這種呼吸迴圈產生的分泌物最終會結晶成氧石。\n\n園藝家長期以來都對其保護性的上皮細胞感到好奇，因為這種上皮細胞能防止植物上的氧石昇華。不幸的是，上皮細胞過於脆弱而無法承受任何方式的處理，因此到目前為止，研究也無法進行。"
+    },
+    "Brine": {
+      "name_en": "Brine",
+      "name_zh": "濃鹽水",
+      "type": "liquid",
+      "categories": [
+        "liquid",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "Desalinate into water and salt; the water can support crops or electrolysis. Freezing separates useful temperature and phase-change opportunities.",
+      "use_zh": "可淡化成水與鹽；所得水可灌溉或電解製氧。其凝固與融化也能用於溫控與相變處理。"
+    },
+    "BrineIce": {
+      "name_en": "Brine Ice",
+      "name_zh": "濃鹽水冰",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "oxygen"
+      ],
+      "use_en": "Melt into brine, then desalinate for water and salt. It is also a portable cold reserve, so control where it melts.",
+      "use_zh": "融化後成為濃鹽水，再淡化可得水與鹽；也是可搬運的冷量來源，需控制融化位置。"
+    },
+    "BulbPlant": {
+      "name_en": "Buddy Bud",
+      "name_zh": "同心芽",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant whose floral scent can suppress other airborne germs, but the scent itself is a germ and may trigger allergies.",
+      "use_zh": "裝飾植物，其花香可排擠其他空氣病菌，但花香本身也是病菌，可能引發過敏。"
+    },
+    "BulbPlantSeed": {
+      "name_en": "Buddy Bud Seed",
+      "name_zh": "同心芽種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant whose floral scent can suppress other airborne germs, but the scent itself is a germ and may trigger allergies.",
+      "use_zh": "裝飾植物，其花香可排擠其他空氣病菌，但花香本身也是病菌，可能引發過敏。"
+    },
+    "Bulbloom": {
+      "name_en": "Bulbloom",
+      "name_zh": "燈泡花",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "On a molecular level, it is nearly impossible to distinguish between the Bulbloom's translucent bulbar envelope and high-quality arachnid silk.\n\nThis combination of strength and extensibility keep its bright bloom intact in even the strongest currents, making this plant a beacon of hope in dark marine environments.",
+      "use_zh": "在分子層面上，幾乎無法區分燈泡花那半透明的球莖外膜與高品質的蛛絲。\n\n其強度與延展性結合的特性，使其即便在強勁的水流中也能保持花朵完好，成為了黑暗海洋環境中的希望之光。"
+    },
+    "Butterfly": {
+      "name_en": "Mimika",
+      "name_zh": "擬葉蛾",
+      "type": "critter",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Mimikas are difficult to categorize. Biologists theorize that the Mimika Bud engages in this rare variation of reproductive mimicry to improve seed-dispersal and survive the extinction of key species native to its original habitat.\n\nThese charming moth-like organisms feature a microscopic cluster of phytoprotein \"brain\" cells and are driven by a singular instinct to tend to their host plants.\n\nDue to a monogenic malfunction, however, this plant-tending behavior benefits all of the flora in its area except its own.",
+      "use_zh": "擬葉蛾難以分類。生物學家推測，擬葉蛾芽透過這種罕見的生殖擬態變異，來提升種子傳播效率，從而在其原生地一些關鍵物種滅絕後也能得以存活。\n\n這些迷人的類蛾生物體內具有微小的植物蛋白「腦」細胞叢集，受一種奇異本能的驅動，會照料它們的宿主植物。\n\n然而，由於單基因的缺陷，這種照料行為會使區域內自身以外的所有植物受益。"
+    },
+    "ButterflyPlant": {
+      "name_en": "Mimika Bud",
+      "name_zh": "擬葉蛾芽",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Mimika Buds are excellent companion plants that provide a farm with the advantages of beneficial insect presence without the challenges of managing an additional critter population.\n\nInside each tightly wrapped bud is a highly concentrated pool of enzymes and imaginal discs similar to those found in the Lepidoptera insect family.\n\nUnder the right conditions, this unique concoction produces a Mimika, an ephemeral pseudo-insect organism that accelerates growth in neighboring plants before settling into its final seed form.\n\nThe sight of a Mimika never fails to fill a gardener with awe.",
+      "use_zh": "擬葉蛾芽是絕佳的伴生植物，能為農場帶來有益昆蟲的優勢，同時免去管理額外生物群體的挑戰。\n\n每個緊密包裹的芽中都含有高濃度的酶和類似鱗翅目昆蟲的胚盤。\n\n在適宜條件下，這種獨特的混合物將孕育出一隻擬葉蛾，這是一種短暫的類昆蟲生物，在最終化為種子形態之前，能顯著加速周邊植物的生長。\n\n每當擬葉蛾現身，總能令園丁驚嘆不已。"
+    },
+    "CactusPlant": {
+      "name_en": "Jumping Joya",
+      "name_zh": "雀躍掌",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "The Jumping Joya is a decorative plant that brings a feeling of calmness and wellbeing to individuals in its vicinity.\n\nTheir rounded appendages and eccentrically shaped polyps are a favorite of interior designers looking to offset the rigid straight walls of an institutional setting.\n\nThe Jumping Joya's capacity to thrive in many environments and the ease in which they propagate make them the go-to house plant for the lazy gardener.",
+      "use_zh": "雀躍掌是一種裝飾植物，能為身處其附近的人帶來平靜與幸福的感覺。\n\n它們圓潤的附肢和奇形怪狀的叢生體是室內設計師的最愛，旨在緩和機構環境中僵硬筆直的牆壁。\n\n雀躍掌適應多種環境的能力，加上其易於繁殖的特性，使其成為懶人園丁的首選盆栽植物。"
+    },
+    "CactusPlantSeed": {
+      "name_en": "Jumping Joya Seed",
+      "name_zh": "雀躍掌種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "The Jumping Joya is a decorative plant that brings a feeling of calmness and wellbeing to individuals in its vicinity.\n\nTheir rounded appendages and eccentrically shaped polyps are a favorite of interior designers looking to offset the rigid straight walls of an institutional setting.\n\nThe Jumping Joya's capacity to thrive in many environments and the ease in which they propagate make them the go-to house plant for the lazy gardener.",
+      "use_zh": "雀躍掌是一種裝飾植物，能為身處其附近的人帶來平靜與幸福的感覺。\n\n它們圓潤的附肢和奇形怪狀的叢生體是室內設計師的最愛，旨在緩和機構環境中僵硬筆直的牆壁。\n\n雀躍掌適應多種環境的能力，加上其易於繁殖的特性，使其成為懶人園丁的首選盆栽植物。"
+    },
+    "Carbon": {
+      "name_en": "Coal",
+      "name_zh": "煤炭",
+      "type": "solid",
+      "categories": [
+        "power",
+        "industrial"
+      ],
+      "use_en": "Fuel for Coal Generators and a kiln input. Hatch ranches can renew it, but generators emit carbon dioxide and substantial heat.",
+      "use_zh": "煤炭發電機燃料及窯爐原料；可由哈奇牧場再生，但發電會排放二氧化碳與大量熱。"
+    },
+    "CarbonDioxide": {
+      "name_en": "Carbon Dioxide",
+      "name_zh": "二氧化碳",
+      "type": "gas",
+      "categories": [
+        "gas",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "Feeds Oxyferns, Alveo Veras and Slicksters, and creates sterile food storage. It is not breathable and settles in low areas; skim or pump excess.",
+      "use_zh": "可供氧氣蕨、多孔蘆薈與浮油生物使用，也可形成無菌食物環境。不可呼吸且會沉積低處，過量時需撇除或抽走。"
+    },
+    "CarrotPlant": {
+      "name_en": "Plume Squash Plant",
+      "name_zh": "羽葉南瓜藤",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Plume Squashes contain over a dozen types of remarkably stable anthocyanins; twice the number found in any other plant. This high concentration of flavonoids contributes to the tuber's vivid pigmentation and tolerance to low temperatures.\n\nThe entire root is safe to eat, including the peel. The upper \"plume\" can be used to brush wayward bits off one's chin after the meal.",
+      "use_zh": "羽葉果薯含有十幾種極其穩定的花青素；其含量是其他任何植物的兩倍。這種高濃度的類黃酮有助於該塊莖呈現鮮豔的色素沉著，並提升其耐低溫能力。\n\n整個根部連同外皮都可安全食用。其上部的「羽狀物」則可用於飯後拂去下巴上的頑固碎屑。"
+    },
+    "CarrotPlantSeed": {
+      "name_en": "Plume Squash Seed",
+      "name_zh": "羽葉南瓜種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Plume Squashes contain over a dozen types of remarkably stable anthocyanins; twice the number found in any other plant. This high concentration of flavonoids contributes to the tuber's vivid pigmentation and tolerance to low temperatures.\n\nThe entire root is safe to eat, including the peel. The upper \"plume\" can be used to brush wayward bits off one's chin after the meal.",
+      "use_zh": "羽葉果薯含有十幾種極其穩定的花青素；其含量是其他任何植物的兩倍。這種高濃度的類黃酮有助於該塊莖呈現鮮豔的色素沉著，並提升其耐低溫能力。\n\n整個根部連同外皮都可安全食用。其上部的「羽狀物」則可用於飯後拂去下巴上的頑固碎屑。"
+    },
+    "Chameleon": {
+      "name_en": "Dartle",
+      "name_zh": "逸蜥",
+      "type": "critter",
+      "categories": [
+        "food",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Dartles are docile reptilian critters whose existence centers around maximum energy conservation.\n\nThis species was once known as the fastest land-based critter in existence. However, its deep aversion to physical exertion has grown stronger than its desire to escape predation. Researchers are uncertain what, if anything, the Dartle is saving its energy for.",
+      "use_zh": "逸蜥是一種溫順的爬行類生物，其生存哲學以能量消耗最小化為核心。\n\n這種物種曾被譽為現存速度最快的陸地小動物。但如今，它們對體力消耗的極度厭惡已超越了逃避天敵的本能。研究人員至今無法確定逸蜥儲存能量，如果真有的話，究竟意欲何為。"
+    },
+    "Chlorine": {
+      "name_en": "Liquid Chlorine",
+      "name_zh": "液氯",
+      "type": "liquid",
+      "categories": [
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "A cryogenic chlorine phase used mainly for storage or thermal designs before warming back into chlorine gas. It is extremely cold and phase changes can break pipes.",
+      "use_zh": "氯的低溫液相，主要用於儲存或熱力設計，升溫後會成氯氣。溫度極低，發生相變時可能損壞管線。"
+    },
+    "ChlorineGas": {
+      "name_en": "Chlorine Gas",
+      "name_zh": "氯氣",
+      "type": "gas",
+      "categories": [
+        "gas",
+        "industrial",
+        "food"
+      ],
+      "use_en": "Kills exposed germs, supports Dasha Saltvines and some ranching chains, and preserves food atmospheres. It is unbreathable and does not disinfect material inside pipes or solid tiles.",
+      "use_zh": "可殺死暴露其中的病菌，供沙鹽藤及部分牧場鏈使用，也能作食物保存氣氛。不可呼吸，且不會消毒管內物質或實心磚內部。"
+    },
+    "Cinnabar": {
+      "name_en": "Cinnabar Ore",
+      "name_zh": "辰砂",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Mercury-bearing ore from cold regions; process it when mercury or its specialized low-temperature material properties are required.",
+      "use_zh": "寒冷地區的含汞礦石；需要汞或其特殊低溫材料性質時再加工。"
+    },
+    "Clam": {
+      "name_en": "Clampum",
+      "name_zh": "巨鉗貝",
+      "type": "plant",
+      "categories": [
+        "food",
+        "hazard"
+      ],
+      "use_en": "Clampum, also known as Arcticidae hafrunus, are the largest species of bivalve mollusk in the known universe. Their powerful adductor muscles and serrated shell edges are well-documented; in early scientific literature, field notes often included the words \"accidental amputation.\"\n\nAlthough development of proper handling techniques has long since eliminated the danger, these anecdotes still serve as cautionary tales for newbie marine biologists.",
+      "use_zh": "巨鉗貝，也稱為哈夫魯努斯北極貝 (Arcticidae hafrunus)，是已知宇宙中體型最大的雙殼類軟體動物。其強壯的內收肌和鋸齒狀的殼緣都有詳細的記載；在早期的文獻中，野外筆記經常會出現「意外截肢」一詞。\n\n儘管正確的操作技術早已消除了這些風險，但這些軼事對新手海洋生物學家而言，仍是具有警示意義的恐怖故事。"
+    },
+    "Clay": {
+      "name_en": "Clay",
+      "name_zh": "黏土",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Fire it with coal in a Kiln to make Ceramic, a strong insulation and high-temperature construction material. Deodorizers can renew clay from polluted oxygen and sand.",
+      "use_zh": "可與煤炭在窯爐燒製陶瓷，供隔熱及高溫建築使用。除臭器能以汙氧與沙子持續產出黏土。"
+    },
+    "Cobaltite": {
+      "name_en": "Cobalt Ore",
+      "name_zh": "鈷礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Refine into cobalt for machinery and heat-transfer construction. Compare its temperature properties with aluminum before committing scarce ore.",
+      "use_zh": "可精煉成鈷，供機械與熱傳建築使用；消耗稀有礦石前應與鋁的溫度性能比較。"
+    },
+    "ColdBreather": {
+      "name_en": "Wheezewort",
+      "name_zh": "冰樹",
+      "type": "plant",
+      "categories": [
+        "radiation",
+        "industrial"
+      ],
+      "use_en": "Consumes phosphorite, cools nearby gas and emits radiation in Spaced Out. Use it for spot cooling or radbolts, but provide fertilizer and radiation protection.",
+      "use_zh": "消耗磷礦、冷卻周圍氣體，並在太空包中放出輻射；可作局部降溫或輻射粒子源，但需供肥及防護。"
+    },
+    "ColdBreatherSeed": {
+      "name_en": "Wheezewort Seed",
+      "name_zh": "冰樹種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "The Wheezewort is best known for its ability to alter the temperature of its surrounding environment, directly absorbing heat energy to maintain its bodily processes.\n\nThis environmental management also serves to enact a type of self-induced hibernation, slowing the Wheezewort's metabolism to require less nutrients over long periods of time.",
+      "use_zh": "冰樹以調節環境溫度的能力出名，直接地吸收熱量以維持生命。\n\n這種環境管理也有助於實施一種自我誘導的冬眠，減緩自身的新陳代謝，從而在較長時間內需要更少的營養。"
+    },
+    "ColdBreatherSparse": {
+      "name_en": "Wheezewort (sparse spawn)",
+      "name_zh": "冰樹（稀疏生成）",
+      "type": "plant",
+      "categories": [
+        "radiation",
+        "industrial"
+      ],
+      "use_en": "Consumes phosphorite, cools nearby gas and emits radiation in Spaced Out. Use it for spot cooling or radbolts, but provide fertilizer and radiation protection.",
+      "use_zh": "消耗磷礦、冷卻周圍氣體，並在太空包中放出輻射；可作局部降溫或輻射粒子源，但需供肥及防護。"
+    },
+    "ColdWheat": {
+      "name_en": "Sleet Wheat",
+      "name_zh": "雪地小麥",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold food crop consuming water and dirt; its grain supports high-quality recipes. Cooling and irrigation are the main engineering costs.",
+      "use_zh": "寒冷食用作物，消耗水與泥土；穀粒可製高品質料理。冷卻與灌溉是主要工程成本。"
+    },
+    "ColdWheatSeed": {
+      "name_en": "Sleet Wheat Grain",
+      "name_zh": "雪麥穀粒",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold food crop consuming water and dirt; its grain supports high-quality recipes. Cooling and irrigation are the main engineering costs.",
+      "use_zh": "寒冷食用作物，消耗水與泥土；穀粒可製高品質料理。冷卻與灌溉是主要工程成本。"
+    },
+    "ContaminatedOxygen": {
+      "name_en": "Polluted Oxygen",
+      "name_zh": "汙氧",
+      "type": "gas",
+      "categories": [
+        "oxygen",
+        "gas",
+        "industrial"
+      ],
+      "use_en": "Duplicants can breathe it, but it can carry Slimelung and irritants. Deodorize it into clean oxygen and clay, or feed Pufts where disease control is established.",
+      "use_zh": "複製人可呼吸，但可能帶有黏液肺病菌及刺激物。可除臭成氧氣與黏土，或在妥善防疫後供帕夫食用。"
+    },
+    "Coquina": {
+      "name_en": "Coquina",
+      "name_zh": "殼灰岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A shell-rich Aquatic raw mineral. Use it for construction or process it when lime-bearing material is needed for steel production.",
+      "use_zh": "水族包的富含貝殼原礦；可作建材，或在製鋼需要含石灰材料時加工。"
+    },
+    "Corallium": {
+      "name_en": "Corallium",
+      "name_zh": "紅珊瑚",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Aquatic coral material used in specialized construction and processing chains. Treat deposits as finite until a renewable coral source is secured.",
+      "use_zh": "水族包的珊瑚材料，可用於特殊建築與加工鏈；在建立可再生珊瑚來源前應視為有限資源。"
+    },
+    "Crab": {
+      "name_en": "Pokeshell",
+      "name_zh": "拋殼蟹",
+      "type": "critter",
+      "categories": [
+        "industrial",
+        "food",
+        "hazard"
+      ],
+      "use_en": "Eats polluted dirt and rot piles, producing sand; molts provide shells for lime. Adults guarding eggs can attack duplicants, so isolate ranch traffic.",
+      "use_zh": "食用汙土與腐爛堆並產沙；蛻殼可提供製石灰的殼。成體護卵時會攻擊複製人，牧場動線需隔離。"
+    },
+    "CrabFreshWater": {
+      "name_en": "Sanishell",
+      "name_zh": "淨水蟹",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Pictured: \"Sanishell\" variant",
+      "use_zh": "圖為：「淨水蟹」變種"
+    },
+    "CritterTrapPlant": {
+      "name_en": "Saturn Critter Trap",
+      "name_zh": "捕獸草",
+      "type": "plant",
+      "categories": [
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Consumes small critters and produces hydrogen after digestion. It can power a niche renewable loop, but feeding and safe ranch integration are complex.",
+      "use_zh": "捕食小型生物並在消化後產氫；可形成特殊再生能源鏈，但供餌與安全牧場整合較複雜。"
+    },
+    "CritterTrapPlantSeed": {
+      "name_en": "Saturn Critter Trap Seed",
+      "name_zh": "捕獸草種子",
+      "type": "plant",
+      "categories": [
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Consumes small critters and produces hydrogen after digestion. It can power a niche renewable loop, but feeding and safe ranch integration are complex.",
+      "use_zh": "捕食小型生物並在消化後產氫；可形成特殊再生能源鏈，但供餌與安全牧場整合較複雜。"
+    },
+    "CrudeOil": {
+      "name_en": "Crude Oil",
+      "name_zh": "原油",
+      "type": "liquid",
+      "categories": [
+        "power",
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "Refine into petroleum for power, plastic and rockets, or boil it for higher-yield petroleum. Oil systems produce heat and carbon-heavy byproducts.",
+      "use_zh": "可精煉成石油，用於發電、塑膠與火箭；亦可加熱裂解以提高產率。原油系統會產生熱與含碳副產物。"
+    },
+    "CrushedIce": {
+      "name_en": "Crushed Ice",
+      "name_zh": "碎冰",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "Melts into water while absorbing heat. It is useful for emergency cooling or water delivery, but loose piles may melt in unwanted locations.",
+      "use_zh": "融化成水時可吸熱，適合緊急降溫或搬運供水；散落堆積可能在不希望的位置融化。"
+    },
+    "Cuprite": {
+      "name_en": "Copper Ore",
+      "name_zh": "銅礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A common metal ore for early wires, automation and machinery; refine it into copper when refined-metal recipes or better decor are required.",
+      "use_zh": "常見的早期金屬礦，可製電線、自動化與機械；需要精煉金屬配方或較佳裝飾時再精煉成銅。"
+    },
+    "Cylindrica": {
+      "name_en": "Bliss Burst",
+      "name_zh": "天堂草",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "The Bliss Burst is a succulent in the genus Haworthia and is a hardy plant well-suited for beginner gardeners.\n\nThey require little in the way of upkeep, to the point that the most common cause of death for Bliss Bursts is overwatering from over-eager carers.",
+      "use_zh": "天堂草一種十二卷屬的多肉植物，它很強壯，適合初學者種植。\n\n它們幾乎不需要照顧，常見的死因是過度的灌溉。"
+    },
+    "CylindricaSeed": {
+      "name_en": "Bliss Burst Seed",
+      "name_zh": "天堂草種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "The Bliss Burst is a succulent in the genus Haworthia and is a hardy plant well-suited for beginner gardeners.\n\nThey require little in the way of upkeep, to the point that the most common cause of death for Bliss Bursts is overwatering from over-eager carers.",
+      "use_zh": "天堂草一種十二卷屬的多肉植物，它很強壯，適合初學者種植。\n\n它們幾乎不需要照顧，常見的死因是過度的灌溉。"
+    },
+    "DewDripperPlant": {
+      "name_en": "Dew Dripper",
+      "name_zh": "凝露藤",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "The Dew Dripper is sometimes referred to as the \"purple starling\" of the plant world for the magnificent feather-like leaves that encircle its base.\n\nThis sculptural plant slow-drips excess sap that coagulates upon contact with air. The resulting globule is so dense that its weight would snap the Dew Dripper's hollow stem if planted in the ground.\n\nNo one has ever been seriously injured by a falling Dewdrip, but it's best not to linger beneath them.",
+      "use_zh": "凝露藤根部環繞著華麗的羽毛狀葉子，有時被稱為植物界的「紫椋鳥」。\n\n這種雕塑般的植物會緩慢滴下多餘的樹液，樹液接觸空氣後便會凝固。形成的凝結物極其緻密，若種植在地面上，其重量會折斷凝露草的空心莖。\n\n從未有人被掉落的凝露珠嚴重傷害，但最好不要在其下方逗留。"
+    },
+    "DewPalm": {
+      "name_en": "Gum Palm",
+      "name_zh": "黏膠棕櫚",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Gum Palms have developed an eye-catching defense mechanism similar to that of poisonous amphibians.\n\nBright reddish coloring displayed in their leaves and sharp ornamental bark scales deter most predators, who recognize the warning signs of toxicity. Pacus, however, consider the tree's highly toxic seed a spicy treat.",
+      "use_zh": "黏膠棕櫚已經演化出了一種類似有毒兩棲動物的醒目防禦機制。\n\n葉片上鮮豔的紅色與樹皮上鋒利的觀賞性鱗片，能讓大多數捕食者望而卻步，因為牠們能辨識出這些有毒的警告訊號。然而，帕庫卻將這種樹的劇毒種子視為辛辣的美味。"
+    },
+    "Diamond": {
+      "name_en": "Diamond",
+      "name_zh": "鑽石",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "decoration",
+        "lateGame"
+      ],
+      "use_en": "Consumed by drillcones and used for high-conductivity Tempshift Plates, Window Tiles and decor. Keep a reserve for space mining.",
+      "use_zh": "鑽頭會消耗鑽石，也可製高導熱變溫板、窗戶磚與裝飾品；應為太空採礦保留庫存。"
+    },
+    "Dinofern": {
+      "name_en": "Megafrond",
+      "name_zh": "巨蕨",
+      "type": "plant",
+      "categories": [
+        "food",
+        "oxygen",
+        "hazard"
+      ],
+      "use_en": "Megafrondia Byronalis, commonly known as \"Megafrond,\" is a gigantic plant that dwarfs its surroundings.\n\nIts size is not the only daunting factor in its cultivation: the Megafrond's gigantism is possible thanks to its singular adaptation to cold temperatures and a caustic gas environment that few other living things (including farmers) enjoy.\n\nThese challenges are considered a fair price for bragging rights and a useful grain harvest.",
+      "use_zh": "拜倫利斯巨型葉狀體 (Megafrondia Byronalis)，俗稱「巨蕨」，是一種使周圍環境相形見絀的巨型植物。\n\n其栽培的困難之處不僅在於體型：巨蕨的巨型化得益於其對低溫和腐蝕性氣體環境的獨特適應，這兩種環境是鮮少其他生物（包括農民）所能忍受的。\n\n這些挑戰被認為是值得付出的代價，既能獲得炫耀的資本，也能帶來有用的穀物收成。"
+    },
+    "Dirt": {
+      "name_en": "Dirt",
+      "name_zh": "泥土",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Fertilizes Mealwood, Sleet Wheat and other crops and feeds Sage Hatches. Compost, mud processing and Pip ranches can replenish it; monitor long-term farm demand.",
+      "use_zh": "是米虱木、雪地小麥等作物的肥料，也可餵賢者哈奇。堆肥、泥漿加工及樹鼠牧場可補充，需監控長期農業消耗。"
+    },
+    "DirtyIce": {
+      "name_en": "Polluted Ice",
+      "name_zh": "汙冰",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "oxygen"
+      ],
+      "use_en": "Melts into polluted water, a source of irrigation, coolant and filtered water. It can release germs and should be melted in a controlled basin.",
+      "use_zh": "融化成汙水，可供灌溉、冷卻或過濾成水；可能帶菌，應在受控槽體中融化。"
+    },
+    "DirtyWater": {
+      "name_en": "Polluted Water",
+      "name_zh": "汙水",
+      "type": "liquid",
+      "categories": [
+        "oxygen",
+        "liquid",
+        "food"
+      ],
+      "use_en": "Off-gasses polluted oxygen, irrigates several crops and can be sieved into water. Control germs and heat before routing the output to food or oxygen systems.",
+      "use_zh": "會逸散汙氧，可灌溉多種作物，也能過濾成水；輸往食物或製氧系統前需處理病菌與熱量。"
+    },
+    "DivergentBeetle": {
+      "name_en": "Sweetle",
+      "name_zh": "甜素甲蟲",
+      "type": "critter",
+      "categories": [
+        "food",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Divergent is the term for the two different variants of a single Critter species, those being Sweetles and Grubgrubs. While visually very different, one can lay the egg of the other. Both varieties can be found in the Wasteland Biome, along with Spindly Grubfruit Plants.",
+      "use_zh": "甜素甲蟲會食用硫並照料蟲果植物，可產生蔗糖與蛋；適合把可再生硫轉成食物及蔗糖火箭燃料。牧場效率取決於植物、溫度與種群管理。"
+    },
+    "Drecko": {
+      "name_en": "Drecko",
+      "name_zh": "龍鱗蜥",
+      "type": "critter",
+      "categories": [
+        "industrial",
+        "food"
+      ],
+      "use_en": "Grazes suitable plants, produces phosphorite and can be sheared for Reed Fiber; Glossy morphs yield plastic. Hydrogen regrows scales, while plants require their own gas and temperature zones.",
+      "use_zh": "啃食適合植物並產磷礦，可剪取蘆葦纖維；滑鱗變種可產塑膠。鱗片需氫氣再生，而植物另有氣體與溫度需求。"
+    },
+    "Ethanol": {
+      "name_en": "Ethanol",
+      "name_zh": "乙醇",
+      "type": "liquid",
+      "categories": [
+        "power",
+        "liquid",
+        "food"
+      ],
+      "use_en": "Burn it in Petroleum Generators and use it as a cold-range coolant or Nosh Sprout irrigation. The production and generator chain emits carbon dioxide and polluted water.",
+      "use_zh": "可供石油發電機燃燒，也可作低溫冷媒或灌溉小吃芽。生產與發電鏈會排放二氧化碳及汙水。"
+    },
+    "EvilFlower": {
+      "name_en": "Sporechid",
+      "name_zh": "惡魔花",
+      "type": "plant",
+      "categories": [
+        "decoration",
+        "hazard"
+      ],
+      "use_en": "Sporechids take advantage of their flower's attractiveness to lure unsuspecting victims into clouds of parasitic Zombie Spores.\n\nThey are a rare form of holoparasitic plant which finds mammalian hosts to infect rather than the usual plant species.\n\nThe Zombie Spore was originally designed for medicinal purposes but its sedative properties were never refined to the point of usefulness.",
+      "use_zh": "惡魔花利用它們的花朵引誘沒有戒心的受害者到殭屍孢子雲中。\n\n它們是一種罕見的全寄生植物，它找到哺乳動物宿主感染而不是普通的植物物種。\n\n殭屍孢子最初設計用於藥用目的，但其鎮靜特性從未被提煉到有用的程度。"
+    },
+    "EvilFlowerSeed": {
+      "name_en": "Sporechid Seed",
+      "name_zh": "惡魔花種子",
+      "type": "plant",
+      "categories": [
+        "decoration",
+        "hazard"
+      ],
+      "use_en": "Sporechids take advantage of their flower's attractiveness to lure unsuspecting victims into clouds of parasitic Zombie Spores.\n\nThey are a rare form of holoparasitic plant which finds mammalian hosts to infect rather than the usual plant species.\n\nThe Zombie Spore was originally designed for medicinal purposes but its sedative properties were never refined to the point of usefulness.",
+      "use_zh": "惡魔花利用它們的花朵引誘沒有戒心的受害者到殭屍孢子雲中。\n\n它們是一種罕見的全寄生植物，它找到哺乳動物宿主感染而不是普通的植物物種。\n\n殭屍孢子最初設計用於藥用目的，但其鎮靜特性從未被提煉到有用的程度。"
+    },
+    "Fertilizer": {
+      "name_en": "Fertilizer",
+      "name_zh": "肥料",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Consumed by Farm Stations to apply Farmer's Touch and accelerate crop growth. Production costs polluted water, dirt and phosphorite, so boost only worthwhile crops.",
+      "use_zh": "農業站會消耗肥料施加「農夫之觸」以加速作物；生產需汙水、泥土與磷礦，宜只強化值得的作物。"
+    },
+    "FilamentPlant": {
+      "name_en": "Petta Pouf",
+      "name_zh": "蓬茸柳",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "The catkins that bloom at the end of each Petta Pouf branch are made up of thousands of silky soft hairs akin to a luxurious fur coat. Many growers find themselves regarding this diminutive member of the willow family as a beloved companion.",
+      "use_zh": "蓬茸柳每一根枝條末端盛開的絨絮，由數千根絲滑柔軟的細毛組成，觸感宛如一件奢華的皮草大衣。許多種植者都將這種小巧的楊柳科植物視為心愛的陪伴。"
+    },
+    "FlyTrapPlant": {
+      "name_en": "Lura Plant",
+      "name_zh": "誘捕花",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Lura Plants are carnivorous flowers with ribbon-like anthers that detect the presence of airborne critters within trapping range.\n\nThe Lura's petals are covered in fine, hollow hairs that immobilize prey and ensure even distribution of digestive enzymes. The only part of a critter that the plant cannot fully digest is the exoskeleton, which irritate its mucous membrane.\n\nLiquefied exoskeletal remains are flushed from the plant as needed.",
+      "use_zh": "誘捕花是一種肉食性花卉，其絲帶狀的蕊絲能感知捕獵範圍內飛行小動物的存在。\n\n誘捕花的花瓣覆蓋著細小中空的毛髮，能固定獵物並確保消化酶的均勻分佈。這種植物唯一無法完全消化的部分是生物的外骨骼，這會刺激牠的黏膜。\n\n液化的外骨骼殘骸會視需要從植物中排出。"
+    },
+    "ForestForagePlantPlanted": {
+      "name_en": "Hexalent",
+      "name_zh": "蜂巢仙人掌",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A one-harvest forage plant containing emergency calories. It cannot support a renewable farm, so treat it as an exploration reserve.",
+      "use_zh": "一次收穫的覓食植物，提供緊急熱量；不能形成可再生農場，應視為探索備糧。"
+    },
+    "ForestTree": {
+      "name_en": "Arbor Tree",
+      "name_zh": "喬木樹",
+      "type": "plant",
+      "categories": [
+        "power",
+        "industrial"
+      ],
+      "use_en": "Consumes polluted water and dirt to grow lumber branches. Lumber becomes ethanol, power, polluted water and carbon dioxide, enabling a renewable industrial loop.",
+      "use_zh": "消耗汙水與泥土長出木材；木材可轉為乙醇、電力、汙水與二氧化碳，形成可再生工業循環。"
+    },
+    "ForestTreeSeed": {
+      "name_en": "Arbor Acorn",
+      "name_zh": "喬木橡實",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Arbor Trees have been cultivated to spread horizontally when they grow so as to produce a high yield of lumber in vertically cramped spaces.\n\nArbor Trees are related to the oak tree, specifically the Japanese Evergreen, though they have been genetically hybridized significantly.\n\nDespite having many hardy, evenly spaced branches, the short stature of the Arbor Tree makes climbing it rather irrelevant.",
+      "use_zh": "喬木樹生長時呈水平方向發展，以便在垂直狹窄的空間獲得大量的木材。\n\n喬木樹與橡木樹有關，特別是日本長青樹，雖然他們明顯經過基因雜交。\n\n雖然有許多堅固、均勻分佈的樹支，但喬木樹身體矮小使其容易攀爬。"
+    },
+    "Fossil": {
+      "name_en": "Fossil",
+      "name_zh": "化石",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Crush into lime, then combine lime with iron and refined carbon to make steel. Fossil deposits are a key early steel bottleneck.",
+      "use_zh": "可粉碎成石灰，再與鐵及精煉碳製成鋼；化石礦床常是早期製鋼瓶頸。"
+    },
+    "FossilBitsLarge": {
+      "name_en": "Large Fossil Fragment",
+      "name_zh": "大型化石碎片",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Crush into lime, then combine lime with iron and refined carbon to make steel. Fossil deposits are a key early steel bottleneck.",
+      "use_zh": "可粉碎成石灰，再與鐵及精煉碳製成鋼；化石礦床常是早期製鋼瓶頸。"
+    },
+    "FossilBitsSmall": {
+      "name_en": "Small Fossil Fragment",
+      "name_zh": "小型化石碎片",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Crush into lime, then combine lime with iron and refined carbon to make steel. Fossil deposits are a key early steel bottleneck.",
+      "use_zh": "可粉碎成石灰，再與鐵及精煉碳製成鋼；化石礦床常是早期製鋼瓶頸。"
+    },
+    "Galena": {
+      "name_en": "Galena",
+      "name_zh": "方鉛礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Lead-bearing Aquatic ore for refined-metal production. Lead is useful for cheap automation and radiation shielding but melts easily.",
+      "use_zh": "水族包的含鉛礦石，可加工為精煉金屬；鉛適合低成本自動化及輻射屏蔽，但熔點很低。"
+    },
+    "GardenDecorPlant": {
+      "name_en": "Ring Rosebush",
+      "name_zh": "環玫叢",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "Ring Rosebushes are decorative plants with circular blooms and bottom leaves reminiscent of cheery polka dots. A single prominent stamen protrudes from each flower, like a pin stuck into a map to mark a favorite destination.",
+      "use_zh": "環玫叢是一種裝飾植物，其環形花朵與底部葉片上的明快波點相映成趣。每朵花中央都探出一根醒目的花蕊，宛如釘在地圖上的圖釘，標記著心儀的目的地。"
+    },
+    "GardenDecorPlantSeed": {
+      "name_en": "Ring Rose Seed",
+      "name_zh": "環玫瑰種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "Ring Rosebushes are decorative plants with circular blooms and bottom leaves reminiscent of cheery polka dots. A single prominent stamen protrudes from each flower, like a pin stuck into a map to mark a favorite destination.",
+      "use_zh": "環玫叢是一種裝飾植物，其環形花朵與底部葉片上的明快波點相映成趣。每朵花中央都探出一根醒目的花蕊，宛如釘在地圖上的圖釘，標記著心儀的目的地。"
+    },
+    "GardenFoodPlant": {
+      "name_en": "Sweatcorn Stalk",
+      "name_zh": "津甜玉米稈",
+      "type": "plant",
+      "categories": [
+        "power"
+      ],
+      "use_en": "The Sweatcorn Stalk is one of the oldest living members of the Zea genus.\n\nThis robust monopodial plant features eye-catching vegetable cobs prized for their color and intense sweetness.\n\nFarmers gift the best of their harvest to their most valued neighbors. Some etymologists theorize that the term \"corny\" was coined to describe the heartfelt sentiments expressed in the accompanying card.",
+      "use_zh": "津甜玉米稈是玉米屬現存最古老的成員之一。\n\n這種堅韌的單軸植物，其引人注目的蔬菜玉米穗因其色彩和強烈甜味而備受珍視。\n\n農民會將收成中最好的部分贈送給他們最珍視的鄰居。一些詞源學家推測，「老套」這個詞，正是為描述隨附卡片中所表達的真摯情感而創造的。"
+    },
+    "GardenFoodPlantSeed": {
+      "name_en": "Sweatcorn Seed",
+      "name_zh": "津甜玉米種子",
+      "type": "plant",
+      "categories": [
+        "power"
+      ],
+      "use_en": "The Sweatcorn Stalk is one of the oldest living members of the Zea genus.\n\nThis robust monopodial plant features eye-catching vegetable cobs prized for their color and intense sweetness.\n\nFarmers gift the best of their harvest to their most valued neighbors. Some etymologists theorize that the term \"corny\" was coined to describe the heartfelt sentiments expressed in the accompanying card.",
+      "use_zh": "津甜玉米稈是玉米屬現存最古老的成員之一。\n\n這種堅韌的單軸植物，其引人注目的蔬菜玉米穗因其色彩和強烈甜味而備受珍視。\n\n農民會將收成中最好的部分贈送給他們最珍視的鄰居。一些詞源學家推測，「老套」這個詞，正是為描述隨附卡片中所表達的真摯情感而創造的。"
+    },
+    "GardenForagePlant": {
+      "name_en": "Snactus",
+      "name_zh": "食仙掌",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A worldgen forage plant that provides one-time food in Garden regions. Treat it as exploration supply rather than a scalable farm.",
+      "use_zh": "花園區域的世界生成覓食植物，可提供一次性食物；應視為探索補給而非可擴充農場。"
+    },
+    "GardenForagePlantPlanted": {
+      "name_en": "Snactus",
+      "name_zh": "食仙掌",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Snacti are fruit-bearing succulents whose DNA shows signs of having been crossed with an unnaturally formed fungi long ago.\n\nThe infestation is neither fatal nor contagious. It does, however, produce visible discoloration spots and fruit whose flavor is best described as \"musty\".",
+      "use_zh": "食仙掌是會結果的多肉植物，其 DNA 顯示很久以前曾與非自然形成的真菌雜交過。\n\n這種感染既不致命也不具傳染性。然而，它會產生可見的變色斑點，且果實的味道最好形容為「霉味」。"
+    },
+    "GasGrass": {
+      "name_en": "Gas Grass",
+      "name_zh": "瓦斯草",
+      "type": "plant",
+      "categories": [
+        "oxygen",
+        "power",
+        "radiation",
+        "decoration"
+      ],
+      "use_en": "Much remains a mystery about the biology of Gas Grass, a plant-like lifeform only recently recovered from missions into outer space.\n\nHowever, it appears to use ambient radiation from space as an energy source, growing rapidly when given a suitable Liquid Chlorine-laden environment.",
+      "use_zh": "關於瓦斯草在生物學方面還有許多未解的謎團，這是一種最近才從外太空探索任務發現的一種類植物生命體。。\n\n無論如何，它似乎是利用來自太空的環境輻射作為能量來源，當給予適當液氯環境時會快速生長。"
+    },
+    "Glom": {
+      "name_en": "Morb",
+      "name_zh": "莫布",
+      "type": "critter",
+      "categories": [
+        "oxygen",
+        "hazard"
+      ],
+      "use_en": "Produces polluted oxygen when exposed to unsanitary waste conditions. It is an emergency oxygen source, not a clean system, because germs and low output complicate scaling.",
+      "use_zh": "在不衛生的廢物環境中產生汙氧；可作緊急氧源，但病菌與低產量使其不適合當乾淨的大型系統。"
+    },
+    "GoldAmalgam": {
+      "name_en": "Gold Amalgam",
+      "name_zh": "金汞齊",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Build machinery with a useful overheat-temperature bonus or refine it into gold for decor and refined-metal recipes. Ore availability is usually limited.",
+      "use_zh": "製作機械時可提高過熱溫度，或精煉成金供裝飾與精煉金屬配方；礦量通常有限。"
+    },
+    "Granite": {
+      "name_en": "Granite",
+      "name_zh": "花崗岩",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Strong raw mineral with a decor bonus, ideal for ladders, tiles and statues in occupied areas. Its thermal conductivity is not insulation-grade.",
+      "use_zh": "堅固且有裝飾加成，適合生活區的梯子、磚與雕像；導熱性能不適合作真正隔熱層。"
+    },
+    "Graphite": {
+      "name_en": "Graphite",
+      "name_zh": "石墨",
+      "type": "solid",
+      "categories": [
+        "lateGame",
+        "industrial"
+      ],
+      "use_en": "Process through the molecular-forge chain toward Fullerene and Super Coolant. Avoid spending rare graphite as ordinary construction material.",
+      "use_zh": "可經分子鍛造鏈製成富勒烯與超級冷卻液；不應把稀有石墨浪費在一般建築。"
+    },
+    "HardSkinBerryPlant": {
+      "name_en": "Pikeapple Bush",
+      "name_zh": "刺殼果灌木",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "use_en": "The Pikeapple Bush produces a nutritious fruit distantly related to those in the Durio genus.\n\nThose who find the Pikeapple pulp's fragrance overwhelming should consume their portion whilst standing near the plant itself; the shrubbery's gentle swaying produces a wafting effect that promotes air circulation.\n\nClosed-toe footwear is recommended, as barefoot contact with the plant's sharp seeds inevitably leads to infection.",
+      "use_zh": "刺殼果灌木能產生一種營養豐富的果實，與榴槤屬的關係較遠。\n\n那些發現刺殼果果肉的撲鼻香氣的人應當站在植株附近將其吃完；灌木輕微搖曳能產生一種吹拂效果，促進空氣流動。\n\n建議穿不露腳趾的鞋，因為赤腳接觸這種植物的尖銳種子會不可避免地導致感染。"
+    },
+    "HardSkinBerryPlantSeed": {
+      "name_en": "Pikeapple Bush Seed",
+      "name_zh": "刺殼果灌木種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "use_en": "The Pikeapple Bush produces a nutritious fruit distantly related to those in the Durio genus.\n\nThose who find the Pikeapple pulp's fragrance overwhelming should consume their portion whilst standing near the plant itself; the shrubbery's gentle swaying produces a wafting effect that promotes air circulation.\n\nClosed-toe footwear is recommended, as barefoot contact with the plant's sharp seeds inevitably leads to infection.",
+      "use_zh": "刺殼果灌木能產生一種營養豐富的果實，與榴槤屬的關係較遠。\n\n那些發現刺殼果果肉的撲鼻香氣的人應當站在植株附近將其吃完；灌木輕微搖曳能產生一種吹拂效果，促進空氣流動。\n\n建議穿不露腳趾的鞋，因為赤腳接觸這種植物的尖銳種子會不可避免地導致感染。"
+    },
+    "Hatch": {
+      "name_en": "Hatch",
+      "name_zh": "哈奇",
+      "type": "critter",
+      "categories": [
+        "food",
+        "power",
+        "industrial",
+        "decoration",
+        "hazard"
+      ],
+      "use_en": "The Hatch has no eyes and is completely blind, although a photosensitive patch atop its head is capable of detecting even minor changes in overhead light, making it prefer dark caves and tunnels.",
+      "use_zh": "哈奇沒有眼睛，是完全失明的。雖說頭上感光部位可以偵測微量的光線變化，但使其更喜歡待在黑暗的洞穴與通道。"
+    },
+    "Hydrogen": {
+      "name_en": "Hydrogen Gas",
+      "name_zh": "氫氣",
+      "type": "gas",
+      "categories": [
+        "power",
+        "gas",
+        "lateGame"
+      ],
+      "use_en": "Burn in Hydrogen Generators, use in Drecko ranch atmospheres and liquefy for advanced rockets. It rises and is highly thermally conductive, so capture it above electrolyzers.",
+      "use_zh": "可供氫氣發電機、龍鱗蜥牧場氣氛，並液化作進階火箭燃料。氫氣上浮且導熱高，宜在電解器上方收集。"
+    },
+    "Ice": {
+      "name_en": "Ice",
+      "name_zh": "冰",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "oxygen",
+        "food"
+      ],
+      "use_en": "Melt for water while absorbing heat; Ice-E Fans provide local cooling. Plan drainage because mined ice loses mass and may melt during transport.",
+      "use_zh": "融化可得水並吸熱，也可供冰冷風扇局部降溫。開採會損失質量，運送途中也可能融化，需先規劃排水。"
+    },
+    "IceBelly": {
+      "name_en": "Bammoth",
+      "name_zh": "猛瑪絨兔",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial"
+      ],
+      "use_en": "The Bammoth is one of the oldest species on record, with ancient skeletal remains dating back approximately 10,000 years.\n\nThis placid herbivore is known for its unique body language: an angry young Bammoth expresses displeasure by flopping down dramatically in front of its opponent, while older creatures with limited mobility will sit facing away from the source of their annoyance.\n\nLicking the ground in front of a caregiver can be a sign of either deep affection or mineral deficiency.",
+      "use_zh": "猛瑪絨兔是有紀錄以來最古老的物種，其古老的遺骸可追溯到大約 10,000 年前。\n\n這種平靜的食草動物因其獨特的肢體語言而出名：一隻憤怒的青年猛瑪絨兔會透過在對手面前戲劇性地摔倒表達不滿，而行動不便的年長猛瑪絨兔會背對著引起它煩惱的來源坐著。\n\n在看護者面前舔舐地面可能是其深厚感情的表現，也可能是缺乏礦物質的表現。"
+    },
+    "IceCavesForagePlant": {
+      "name_en": "Sherberry Plant",
+      "name_zh": "雪漿果藤",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A cold-biome forage plant placed by worldgen features. Harvest it for early food, but do not count it as a renewable production chain.",
+      "use_zh": "由世界生成特徵放置的寒冷生態覓食植物，可供早期採集，但不能視為可再生生產鏈。"
+    },
+    "IceCavesForagePlantPlanted": {
+      "name_en": "Sherberry Plant",
+      "name_zh": "雪漿果藤",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Sherberries are incapable of propagating, but can be harvested for a single Food serving.",
+      "use_zh": "雪漿果無法繁育，生長在原生冰錐內，只能作為一次性食物被收成。"
+    },
+    "IceFlower": {
+      "name_en": "Idylla Flower",
+      "name_zh": "恬靜花",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "Idylla Flowers are a rare species of everblooms that thrive with very little care, making them a perennial favorite among newbie gardeners.\n\nTheir springy blossoms can be 'bopped' gently for sensory entertainment, but hands should be washed immediately as the petal residue can permanently stain most textiles.",
+      "use_zh": "恬靜花是一種常開花的稀有物種，只需要非常少的照顧就能健康成長，使其常年成為新手園丁的最愛。\n\n其富有活力的花可以輕輕地跳「博普舞」以帶來感官的娛樂，但之後應該立即洗手，因為花瓣殘留物能永久弄髒大多數紡織品。"
+    },
+    "IceFlowerSeed": {
+      "name_en": "Idylla Seed",
+      "name_zh": "恬靜花種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "Idylla Flowers are a rare species of everblooms that thrive with very little care, making them a perennial favorite among newbie gardeners.\n\nTheir springy blossoms can be 'bopped' gently for sensory entertainment, but hands should be washed immediately as the petal residue can permanently stain most textiles.",
+      "use_zh": "恬靜花是一種常開花的稀有物種，只需要非常少的照顧就能健康成長，使其常年成為新手園丁的最愛。\n\n其富有活力的花可以輕輕地跳「博普舞」以帶來感官的娛樂，但之後應該立即洗手，因為花瓣殘留物能永久弄髒大多數紡織品。"
+    },
+    "IgneousRock": {
+      "name_en": "Igneous Rock",
+      "name_zh": "火成岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Abundant construction mineral and Stone Hatch feed; also a practical pipe and tile material. It is only moderately insulating despite common use in insulated builds.",
+      "use_zh": "常見建材，也是石殼哈奇飼料，適合一般管線與磚；雖常用於隔熱建築，但本身僅屬中等隔熱。"
+    },
+    "Iron": {
+      "name_en": "Iron",
+      "name_zh": "鐵",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Refined metal for machinery and the main metal input to steel. Reserve enough for steel before using large quantities in ordinary wiring or decor.",
+      "use_zh": "精煉金屬，可製機械，也是鋼的主要金屬原料；大量用於一般電線或裝飾前應先保留製鋼量。"
+    },
+    "IronOre": {
+      "name_en": "Iron Ore",
+      "name_zh": "鐵礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Build early machinery directly or refine into iron for advanced equipment and steel. Metal Refineries recover more metal than Rock Crushers.",
+      "use_zh": "可直接製作早期機械，或精煉成鐵供進階設備與鋼；金屬精煉器的金屬回收率高於碎石機。"
+    },
+    "Katairite": {
+      "name_en": "Abyssalite",
+      "name_zh": "深淵水晶",
+      "type": "solid",
+      "categories": [
+        "lateGame",
+        "industrial"
+      ],
+      "use_en": "Naturally insulates biome boundaries and normally cannot be used for construction. Extreme late-game melting can convert it toward tungsten, but ordinary mining destroys much of its value.",
+      "use_zh": "天然隔開生態區，通常不能作建材。極後期可用極端高溫熔融取得鎢鏈資源，但一般開採價值有限。"
+    },
+    "KelpPlant": {
+      "name_en": "Seakomb",
+      "name_zh": "海梳蕨",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Seakombs are hyperefficient photosynthesizers. While most plants grow towards the light, this aquatic fern's needs are so low that it can prioritize other survival needs.\n\nIt sprouts on the ceiling of liquid-filled caves, its tendrils reaching down to brush passing critters. This contact encourages critters to consume the plant and excrete the fertilizer that supports its continued growth.",
+      "use_zh": "海梳蕨是一種超高效率的光合作用植物。雖然大多數植物都向光生長，但這種水生蕨類的能量需求極低，讓它可以把精力優先放在其他的生存需求上。\n\n它會從充滿液體的洞穴頂部發芽生長，捲鬚向下伸展，輕觸經過的小動物。透過這種接觸，能鼓勵這些小動物食用海梳蕨，並排出支持其持續生長的肥料。"
+    },
+    "KelpPlantSeed": {
+      "name_en": "Seakomb Seed",
+      "name_zh": "海梳蕨種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Seakombs are hyperefficient photosynthesizers. While most plants grow towards the light, this aquatic fern's needs are so low that it can prioritize other survival needs.\n\nIt sprouts on the ceiling of liquid-filled caves, its tendrils reaching down to brush passing critters. This contact encourages critters to consume the plant and excrete the fertilizer that supports its continued growth.",
+      "use_zh": "海梳蕨是一種超高效率的光合作用植物。雖然大多數植物都向光生長，但這種水生蕨類的能量需求極低，讓它可以把精力優先放在其他的生存需求上。\n\n它會從充滿液體的洞穴頂部發芽生長，捲鬚向下伸展，輕觸經過的小動物。透過這種接觸，能鼓勵這些小動物食用海梳蕨，並排出支持其持續生長的肥料。"
+    },
+    "Lead": {
+      "name_en": "Lead",
+      "name_zh": "鉛",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "radiation"
+      ],
+      "use_en": "A plentiful refined metal for automation, conductive wires and radiation shielding. Its very low melting point makes it unsafe near hot machinery.",
+      "use_zh": "常見精煉金屬，適合自動化、導線與輻射屏蔽；熔點極低，不可用於高溫機械附近。"
+    },
+    "LeafyPlant": {
+      "name_en": "Mirth Leaf",
+      "name_zh": "合歡葉",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A low-maintenance decorative plant for decor and room bonuses. It does not generate food, oxygen, power or radiation.",
+      "use_zh": "低維護裝飾植物，可提升裝飾與房間效果；不生產食物、氧氣、電力或輻射。"
+    },
+    "LeafyPlantSeed": {
+      "name_en": "Mirth Leaf Seed",
+      "name_zh": "合歡葉種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A low-maintenance decorative plant for decor and room bonuses. It does not generate food, oxygen, power or radiation.",
+      "use_zh": "低維護裝飾植物，可提升裝飾與房間效果；不生產食物、氧氣、電力或輻射。"
+    },
+    "LightBug": {
+      "name_en": "Shine Bug",
+      "name_zh": "發光蟲",
+      "type": "critter",
+      "categories": [
+        "radiation",
+        "food",
+        "decoration"
+      ],
+      "use_en": "Provides light, decor and radiation; eggs and morphs enable radbolt or solar experiments. It needs food and population control to avoid pathfinding and performance costs.",
+      "use_zh": "提供光照、裝飾與輻射；蛋與變種可支援輻射粒子或太陽能實驗。需供食並控制數量，避免尋路與效能負擔。"
+    },
+    "LightBugRadioactive": {
+      "name_en": "Ionizing Bug",
+      "name_zh": "電離發光蟲",
+      "type": "critter",
+      "categories": [
+        "food",
+        "power",
+        "radiation",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "The bioluminescence of the Shine Bug's body serves the social purpose of finding and communicating with others of its kind.",
+      "use_zh": "發光蟲生物冷光的身體，是用來尋找同伴並進行溝通的。"
+    },
+    "LiquidCarbonDioxide": {
+      "name_en": "Liquid Carbon Dioxide",
+      "name_zh": "液態二氧化碳",
+      "type": "liquid",
+      "categories": [
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Very cold liquid carbon dioxide from special worldgen pockets. Its phase changes and extreme temperature require insulated handling.",
+      "use_zh": "特殊世界生成區塊中的極低溫液態二氧化碳；相變與極端低溫都需要隔熱處理。"
+    },
+    "LiquidOxygen": {
+      "name_en": "Liquid Oxygen",
+      "name_zh": "液氧",
+      "type": "liquid",
+      "categories": [
+        "oxygen",
+        "liquid",
+        "lateGame"
+      ],
+      "use_en": "A cryogenic oxidizer for high-performance rockets. It requires deep cooling and insulated plumbing; any warming causes pipe-breaking phase change.",
+      "use_zh": "高性能火箭的低溫氧化劑；需要深度冷卻與隔熱管路，升溫相變會導致管線破裂。"
+    },
+    "MaficRock": {
+      "name_en": "Mafic Rock",
+      "name_zh": "基性岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Common surface and space construction mineral. Use it as expendable bulk material where stronger decor, insulation or conductivity is unnecessary.",
+      "use_zh": "常見於地表與太空的建築原礦；在不需要高裝飾、隔熱或導熱時可作消耗性大量建材。"
+    },
+    "Magma": {
+      "name_en": "Magma",
+      "name_zh": "岩漿",
+      "type": "liquid",
+      "categories": [
+        "power",
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "A massive heat source for steam-turbine geothermal power and igneous-rock production. Containment failures are catastrophic; use vacuum, insulated barriers and controlled heat exchangers.",
+      "use_zh": "可供蒸汽渦輪地熱發電並產生火成岩。圍堵失敗後果嚴重，應使用真空、隔熱屏障與受控熱交換器。"
+    },
+    "Methane": {
+      "name_en": "Natural Gas",
+      "name_zh": "天然氣",
+      "type": "gas",
+      "categories": [
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Fuel for Natural Gas Generators and an input to industrial gas handling. Ventilation and carbon-dioxide byproducts must be planned.",
+      "use_zh": "天然氣發電機的燃料，也可用於工業氣體鏈；需規劃通風及二氧化碳副產物。"
+    },
+    "Mole": {
+      "name_en": "Shove Vole",
+      "name_zh": "鑽地田鼠",
+      "type": "critter",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "The Shove Vole is a unique creature that possesses two fully developed sets of lungs, allowing it to hold its breath during the long periods it spends underground.",
+      "use_zh": "鑽地田鼠是一種獨特的生物，牠們有兩個完全發育好的肺，讓牠們可以長時間閉氣待在地底下。"
+    },
+    "Moo": {
+      "name_en": "Gassy Moo",
+      "name_zh": "瓦斯牛",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "radiation",
+        "decoration"
+      ],
+      "use_en": "Little is currently known of the Moo due to its alien nature and origin.\n\nIt is capable of surviving in zero gravity conditions and no atmosphere, and its method of reproduction has yet to be discovered.",
+      "use_zh": "由於其外星本質和起源，目前對瓦斯牛知之甚少。\n\n牠能夠在零重力和無大氣的條件下生存，而其繁殖方式目前尚未被發現。"
+    },
+    "Mosquito": {
+      "name_en": "Gnit",
+      "name_zh": "匿蚊",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "hazard"
+      ],
+      "use_en": "The Gnit is an insectoid critter that relies on supplementary nutrients and minerals from Duplicants and other critters to mitigate the outsized energy requirements of its reproductive system.\n\nGnits' antennae double as maxillary palps equipped with finely tuned olfactory receptor neurons that enable them to pinpoint nutrient sources from a great distance.\n\nThese same receptors activate the insectoid's flight response upon detecting certain changes in an organism's respiration, such as the sharp intake of breath that precedes a fatal counter-attack.",
+      "use_zh": "匿蚊是一種昆蟲類生物，牠們依賴複製人及其他生物的額外養分和礦物質，以彌補其繁殖系統過高的能量需求。\n\n匿蚊的觸角兼具上顎鬚的功能，配備有精密調諧的嗅覺受體神經元，使其能夠從遠處精準定位養分來源。\n\n這些相同的受體在偵測到生物呼吸的特定變化時，例如致命反擊前急促的吸氣聲，便會啟動此昆蟲的飛行反應。"
+    },
+    "Mud": {
+      "name_en": "Mud",
+      "name_zh": "泥漿",
+      "type": "solid",
+      "categories": [
+        "food",
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "Process in a Sludge Press into dirt and water, supporting farms and oxygen systems. Automation prevents duplicants from spending excessive labor on hauling.",
+      "use_zh": "可在污泥壓榨器分離成泥土與水，支援農業及製氧；自動化可減少複製人大量搬運時間。"
+    },
+    "MurkyBrine": {
+      "name_en": "Polluted Brine",
+      "name_zh": "汙染濃鹽水",
+      "type": "liquid",
+      "categories": [
+        "liquid",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "A contaminated saline liquid accepted by several Aquatic plants. Treat or separate it before using the recovered water in sensitive food and oxygen loops.",
+      "use_zh": "受汙染的鹽水，可供數種水族植物生長；回收水進入敏感的食物或製氧循環前應先處理或分流。"
+    },
+    "MushroomPlant": {
+      "name_en": "Dusk Cap",
+      "name_zh": "黃昏蘑菇",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes slime in a carbon-dioxide atmosphere and yields mushrooms. It turns risky slime into good food, but farms need germ-safe slime handling.",
+      "use_zh": "在二氧化碳中消耗軟泥並產出蘑菇，可把高風險軟泥轉成優良食物，但農場需要安全的病菌處理。"
+    },
+    "MushroomSeed": {
+      "name_en": "Dusk Cap Spore",
+      "name_zh": "黃昏蘑菇孢子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes slime in a carbon-dioxide atmosphere and yields mushrooms. It turns risky slime into good food, but farms need germ-safe slime handling.",
+      "use_zh": "在二氧化碳中消耗軟泥並產出蘑菇，可把高風險軟泥轉成優良食物，但農場需要安全的病菌處理。"
+    },
+    "MusselSprout": {
+      "name_en": "Mussel Sprout",
+      "name_zh": "貽貝芽",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Mussel Sprouts are hardy plants that thrive in wild marine environments. A dense shell protects the edible sprout (colloquially referred to as its \"tongue\") during growth.\n\nWhile not sentient per se, Mussel Sprouts do possess a survival instinct: during harvesting, they may attempt to escape by dragging themselves away using their prehensile tongue. This action occurs at such a glacial pace, however, that it is effectively invisible to the naked eye.",
+      "use_zh": "貽貝芽是一種在惡劣海洋環境中也能生長的頑強植物。一層堅硬的殼保護著生長期的可食芽體（俗稱「舌」）。\n\n雖然本身並無感知能力，但貽貝芽確實具備生存本能：在收穫過程中，它們可能會嘗試利用其具有抓握能力的「舌」將自己拖離現場以逃生。然而，這個動作進行得過於緩慢，肉眼幾乎無法察覺。"
+    },
+    "NickelOre": {
+      "name_en": "Nickel Ore",
+      "name_zh": "鎳礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Refine into nickel for specialized construction and alloy chains introduced with Prehistoric content. Keep a strategic stock instead of using it as generic ore.",
+      "use_zh": "可精煉成鎳，供史前內容的特殊建築與合金鏈；宜保留戰略庫存，不要當一般礦石消耗。"
+    },
+    "Niobium": {
+      "name_en": "Niobium",
+      "name_zh": "鈮",
+      "type": "solid",
+      "categories": [
+        "lateGame",
+        "industrial"
+      ],
+      "use_en": "Alloy with tungsten into Thermium for extreme-temperature machinery. It is a rare space material, so bootstrap a renewable Thermium/niobium loop before broad use.",
+      "use_zh": "可與鎢製成導熱質，供極端高溫機械；屬稀有太空材料，廣泛使用前宜先建立可再生循環。"
+    },
+    "Obsidian": {
+      "name_en": "Obsidian",
+      "name_zh": "黑曜石",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Very high-melting raw mineral for hot-area construction and magma contact. It is not a true insulator, so use insulated tiles or vacuum for heat isolation.",
+      "use_zh": "熔點極高，適合高溫區與岩漿接觸建築；並非真正隔熱材，隔熱仍應使用隔熱磚或真空。"
+    },
+    "OilFloater": {
+      "name_en": "Slickster",
+      "name_zh": "小油怪",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Slicksters are a unique creature most renowned for their ability to exude hydrocarbon waste that is nearly identical in makeup to crude oil.\n\nThe two tufts atop a Slickster's head are called rhinophores, and help guide the Slickster toward breathable carbon dioxide.",
+      "use_zh": "小油怪是一種獨特的動物，以排放與石油幾乎相同的廢棄物而聞名。\n\n小油怪頭部突出的兩個觸角是化學接收器，幫助找到可呼吸的二氧化碳。"
+    },
+    "OilWell": {
+      "name_en": "Oil Reservoir",
+      "name_zh": "油田",
+      "type": "solid",
+      "categories": [
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "An oil reservoir accepts water through an Oil Well to produce crude oil. It is a conditional point resource and releases hot natural gas during pressure relief.",
+      "use_zh": "油田可透過油井注水產出原油；它是條件式點資源，洩壓時會釋放高溫天然氣。"
+    },
+    "OxyCoral": {
+      "name_en": "Flue Coral",
+      "name_zh": "煙囪珊瑚",
+      "type": "plant",
+      "categories": [
+        "oxygen",
+        "decoration"
+      ],
+      "use_en": "Flue Corals are nurse plants that provide homes for countless microscopic organisms, as well as a rare species of seagrass that grows exclusively inside the narrow openings at the top of the coral.\n\nAgriculturalists who attempt to trim these unsightly \"nose hairs\" soon find that their instruments are blunted by the coarse grass fibers.",
+      "use_zh": "煙囪珊瑚是一種護育植物，為無數微小生物提供了棲息地，同時也供養著一種極為罕見的海草，這種海草僅會生長在珊瑚頂部的狹窄開口處。\n\n試圖修剪這些難看「鼻毛」的農學家們很快便會發現，他們的工具會被那些粗糙的海草纖維弄鈍。"
+    },
+    "OxyCoralSeed": {
+      "name_en": "Flue Coral Seed",
+      "name_zh": "煙囪珊瑚種子",
+      "type": "plant",
+      "categories": [
+        "oxygen",
+        "decoration"
+      ],
+      "use_en": "Flue Corals are nurse plants that provide homes for countless microscopic organisms, as well as a rare species of seagrass that grows exclusively inside the narrow openings at the top of the coral.\n\nAgriculturalists who attempt to trim these unsightly \"nose hairs\" soon find that their instruments are blunted by the coarse grass fibers.",
+      "use_zh": "煙囪珊瑚是一種護育植物，為無數微小生物提供了棲息地，同時也供養著一種極為罕見的海草，這種海草僅會生長在珊瑚頂部的狹窄開口處。\n\n試圖修剪這些難看「鼻毛」的農學家們很快便會發現，他們的工具會被那些粗糙的海草纖維弄鈍。"
+    },
+    "OxyRock": {
+      "name_en": "Oxylite",
+      "name_zh": "氧石",
+      "type": "solid",
+      "categories": [
+        "oxygen",
+        "industrial"
+      ],
+      "use_en": "Off-gasses breathable oxygen and serves as a rocket oxidizer. Store at high gas pressure or submerged to prevent unwanted mass loss.",
+      "use_zh": "會逸散可呼吸氧氣，也可作火箭氧化劑；應存於高氣壓或浸液環境，避免非預期逸散損失。"
+    },
+    "Oxyfern": {
+      "name_en": "Oxyfern",
+      "name_zh": "氧氣蕨",
+      "type": "plant",
+      "categories": [
+        "oxygen"
+      ],
+      "use_en": "Consumes dirt, water and carbon dioxide to emit oxygen. It is useful early but scales poorly because fixed planting spots and fertilizer demand constrain output.",
+      "use_zh": "消耗泥土、水與二氧化碳並放出氧氣；早期有用，但固定種植點與肥料需求使其難以大量擴充。"
+    },
+    "OxyfernSeed": {
+      "name_en": "Oxyfern Seed",
+      "name_zh": "氧氣蕨種子",
+      "type": "plant",
+      "categories": [
+        "oxygen"
+      ],
+      "use_en": "Consumes dirt, water and carbon dioxide to emit oxygen. It is useful early but scales poorly because fixed planting spots and fertilizer demand constrain output.",
+      "use_zh": "消耗泥土、水與二氧化碳並放出氧氣；早期有用，但固定種植點與肥料需求使其難以大量擴充。"
+    },
+    "Oxygen": {
+      "name_en": "Oxygen",
+      "name_zh": "氧氣",
+      "type": "gas",
+      "categories": [
+        "oxygen",
+        "gas"
+      ],
+      "use_en": "Primary breathable gas for duplicants and some Aquatic systems. Maintain pressure and temperature, and separate it from hydrogen or contaminants when designs depend on pure gas.",
+      "use_zh": "複製人的主要可呼吸氣體，也供部分水族系統使用。需維持壓力與溫度；要求純氣時應與氫氣及汙染物分離。"
+    },
+    "Pacu": {
+      "name_en": "Pacu",
+      "name_zh": "帕庫",
+      "type": "critter",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Aquatic ranch animal that eats algae or seeds and produces eggs, fillets and polluted dirt. Its cramped reproduction mechanics can provide low-labor food after a breeding pool is established.",
+      "use_zh": "水生牧場動物，食用藻類或種子並產蛋、魚肉與汙土；建立繁殖池後可利用擁擠繁殖機制提供低勞力食物。"
+    },
+    "PacuTropical": {
+      "name_en": "Tropical Pacu",
+      "name_zh": "熱帶帕庫",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Pictured: \"Tropical\" Pacu variant",
+      "use_zh": "圖為：「熱帶」帕庫變種"
+    },
+    "ParrotFish": {
+      "name_en": "Beakon",
+      "name_zh": "燈喙魚",
+      "type": "critter",
+      "categories": [
+        "oxygen",
+        "industrial"
+      ],
+      "use_en": "Beakons are highly sought-after by ichthyophiles due to their radiant bioluminescence and unusual habit of surfacing for Oxygen.\n\nThese brilliant critters enjoy the tickle of air in their gills, and are happiest cohabiting with bubbly Flue Coral that provide abundant air pockets for their entertainment.\n\nSome Beakons have even been known to nap atop their preferred coral formation. Such sightings are extremely rare.",
+      "use_zh": "燈喙魚因其耀眼的生物發光，以及會浮出水面吸取氧的奇特習性，深受魚類愛好者追捧。\n\n這些光彩奪目的小動物喜歡空氣在鰓中發癢的感覺，且最喜歡與能提供豐富氣泡供其玩耍的煙囪珊瑚同居。\n\n據說有些燈喙魚甚至會在牠們鍾愛的珊瑚礁頂端小憩。這種景象極為罕見"
+    },
+    "Peat": {
+      "name_en": "Peat",
+      "name_zh": "泥炭",
+      "type": "solid",
+      "categories": [
+        "power",
+        "industrial"
+      ],
+      "use_en": "Renewable solid fuel produced by Lumbs from suitable plant food. It can supplement coal power, but ranch space and feed supply determine true output.",
+      "use_zh": "可由隆布食用適當植物食物後再生的固體燃料，可補充煤電；實際產量受牧場空間與飼料供應限制。"
+    },
+    "Phosphorite": {
+      "name_en": "Phosphorite",
+      "name_zh": "磷礦",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial",
+        "radiation"
+      ],
+      "use_en": "Fertilizes Pincha Pepperplants and Wheezeworts, feeds Dreckos, and can become phosphorus for Shine Bug morphs. Ranching provides a renewable source.",
+      "use_zh": "可施肥火椒藤與冰樹、餵龍鱗蜥，也能轉為磷以培育發光蟲變種；牧場可提供再生來源。"
+    },
+    "PinkRock": {
+      "name_en": "Lumen Quartz",
+      "name_zh": "輝亮石英",
+      "type": "solid",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A naturally occurring luminous object in Cool Pool terrain. It provides light and decor and can be carved for stronger decorative value.",
+      "use_zh": "冷池生態中自然生成的發光物件，可提供光照與裝飾，雕刻後具有更高裝飾價值。"
+    },
+    "PlanktonCoral": {
+      "name_en": "Starnacle",
+      "name_zh": "藤壺星",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Starnacles share DNA with both arthropods and echinoderms, though they retain elements of the latter's fascinating digestive mechanism.\n\nDuring feeding, a Starnacle's stomach is pushed out through its small mouthpiece to envelop the nutrient source. Digestion is completed outside the body, and the stomach then retracts.\n\nThe process can be disturbing to witness. Fortunately, the organism's mouthpiece is located on its underside.",
+      "use_zh": "藤壺星與節肢動物及棘皮動物擁有共同的 DNA，並保留了後者那令人著迷的消化機制特徵。\n\n在進食時，藤壺星會將胃部透過細小的口部向外推展，以包裹住營養來源。消化作用在體外完成後，胃部便會縮回體內。\n\n這個過程目擊起來可能會讓人感到不安。幸運的是，這種生物的口器位於身體底部。"
+    },
+    "PrehistoricPacu": {
+      "name_en": "Jawbo",
+      "name_zh": "顎魚",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "industrial"
+      ],
+      "use_en": "While the Jawbo may be terrifying to behold, in truth it is quite harmless for trained handlers.\n\nA disproportionately sized mandible makes it impossible for this critter to properly chew its food, necessitating a preference for prey that are small enough to be swallowed whole.\n\nThough much of its DNA suggests that the Jawbo evolved in isolation, it does share a small number of genetic markers with serrasalmids such as the Pacu. Familial connection, however, does not preclude consideration as a food source.",
+      "use_zh": "顎魚或許看起來令人生畏，但對於受過訓練的馴養師而言，牠其實相當無害。\n\n其不成比例大的下顎使其無法正確咀嚼食物，因此偏好能夠被完整吞嚥的小型獵物。\n\n儘管基因分析顯示牠是在隔離狀態下演化而來，但仍與帕庫魚等鋸脂鯉科魚類存在部分相似基因。然而，血緣關係並不妨礙將其視為食物來源。"
+    },
+    "PrickleFlower": {
+      "name_en": "Bristle Blossom",
+      "name_zh": "鬃花",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes water and light to produce Bristle Berries for several quality foods. Lighting adds power and heat, so combine it with efficient lamps and cooling.",
+      "use_zh": "消耗水與光照產出鬃刺莓，可製多種優質料理；照明增加耗電與熱，宜搭配高效率燈具及冷卻。"
+    },
+    "PrickleFlowerSeed": {
+      "name_en": "Bristle Blossom Seed",
+      "name_zh": "鬃花種子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes water and light to produce Bristle Berries for several quality foods. Lighting adds power and heat, so combine it with efficient lamps and cooling.",
+      "use_zh": "消耗水與光照產出鬃刺莓，可製多種優質料理；照明增加耗電與熱，宜搭配高效率燈具及冷卻。"
+    },
+    "PrickleGrass": {
+      "name_en": "Bluff Briar",
+      "name_zh": "魅惑棘",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A hardy decorative plant for decor and room bonuses. It has no production output but is easy to maintain within its temperature and pressure range.",
+      "use_zh": "耐受性高的裝飾植物，可提升裝飾與房間效果；沒有生產產物，但在適合溫壓範圍內容易維護。"
+    },
+    "PrickleGrassSeed": {
+      "name_en": "Bluff Briar Seed",
+      "name_zh": "魅惑棘種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A hardy decorative plant for decor and room bonuses. It has no production output but is easy to maintain within its temperature and pressure range.",
+      "use_zh": "耐受性高的裝飾植物，可提升裝飾與房間效果；沒有生產產物，但在適合溫壓範圍內容易維護。"
+    },
+    "PufferFish": {
+      "name_en": "Blowter",
+      "name_zh": "鼓氣魚",
+      "type": "critter",
+      "categories": [
+        "oxygen"
+      ],
+      "use_en": "Blowters are docile fish with a poorly developed gastrointestinal tract.\n\nThis species eats only Waterweed but lacks the digestive enzymes required to process the plant efficiently. Large amounts of excess Oxygen build up in the critter's gut during digestion, resulting in chronic and extreme bloating.\n\nMarine explorers have learned to siphon Oxygen from Blowters in an emergency. It's not clear who was the first to attempt this.",
+      "use_zh": "鼓氣魚是一種溫順的魚類，但其胃腸道發育不良。\n\n該物種僅以水草為食，卻缺乏能有效處理該植物的消化酶。在其消化過程中，腸道內會堆積大量多餘的氧氣，導致其長期處於極度膨脹的狀態。\n\n海洋探險家們已學會了在緊急情況下從鼓氣魚體內抽取氧氣的方法。至於最初是誰嘗試了這種做法，目前尚不可知。"
+    },
+    "Puft": {
+      "name_en": "Puft",
+      "name_zh": "帕夫",
+      "type": "critter",
+      "categories": [
+        "industrial",
+        "oxygen"
+      ],
+      "use_en": "Consumes polluted oxygen and excretes slime, renewing algae and mushroom resources. Morph control depends on ranch gases and Puft Prince population.",
+      "use_zh": "食用汙氧並排出軟泥，可再生藻類與蘑菇資源；變種控制取決於牧場氣體及帕夫王數量。"
+    },
+    "PuftBleachstone": {
+      "name_en": "Squeaky Puft",
+      "name_zh": "氯氣帕夫",
+      "type": "critter",
+      "categories": [
+        "industrial",
+        "food"
+      ],
+      "use_en": "Consumes chlorine and excretes bleach stone for Waterweed and sanitation chains. Stable chlorine supply and morph management are required.",
+      "use_zh": "食用氯氣並排出漂白石，支援水草與消毒鏈；需要穩定氯源及變種管理。"
+    },
+    "Raptor": {
+      "name_en": "Rhexes",
+      "name_zh": "霸王鸚類",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial"
+      ],
+      "use_en": "For all their bluster, Rhexes are emotionally sensitive creatures that thrive on positive reinforcement, especially words of affirmation.\n\nThese sightless apex predators have exceptionally acidic gastric juices that kill most known bacteria and toxins, enabling them to safely digest their prey. This protective mechanism renders them susceptible to chronic ulcers if food is not readily available.\n\nThe Rhex's tailfeather can be shorn to harvest fibers for textile production. Rhexes don't mind this - some even enjoy it.",
+      "use_zh": "霸王鸚雖然看似虛張聲勢，實則情感豐富。透過正向鼓勵，尤其是肯定的話語，牠們便能茁壯成長。\n\n這些無眼的頂級掠食者擁有極度酸性的胃液，可殺死大多數已知細菌和毒素，使其能安全消化獵物。然而，若食物不充足，這種保護機制會使牠們容易患上慢性潰瘍。\n\n霸王鸚的尾羽可以剪下，用於紡織品生產。霸王鸚對此並不介意——有些甚至樂在其中。"
+    },
+    "Regolith": {
+      "name_en": "Regolith",
+      "name_zh": "表土",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A falling filtration medium and Shove Vole food found at the surface. It arrives extremely hot and can bury equipment, but also offers heat and filtration opportunities.",
+      "use_zh": "地表常見的落砂型過濾介質，也是尖嗓田鼠飼料。通常非常熱且會掩埋設備，但也可利用其熱量與過濾性。"
+    },
+    "Rust": {
+      "name_en": "Rust",
+      "name_zh": "鐵鏽",
+      "type": "solid",
+      "categories": [
+        "oxygen",
+        "industrial"
+      ],
+      "use_en": "Feed a Rust Deoxidizer with salt to produce oxygen, chlorine and iron ore. The oxygen chain is finite unless rust is renewed through space or other sources.",
+      "use_zh": "與鹽一起供除鏽機，可產生氧氣、氯氣與鐵礦。除非由太空或其他來源補充，這條製氧鏈屬有限資源。"
+    },
+    "Salt": {
+      "name_en": "Salt",
+      "name_zh": "鹽",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial",
+        "oxygen"
+      ],
+      "use_en": "Used with rust for oxygen, crushed into table salt for morale, and involved in saline processing. Desalinators provide a renewable stream when salt water or brine is renewable.",
+      "use_zh": "可與鐵鏽製氧，也可磨成食鹽提高士氣，並參與鹽水加工；若鹽水或濃鹽水可再生，淡化器能持續產鹽。"
+    },
+    "SaltPlant": {
+      "name_en": "Dasha Saltvine",
+      "name_zh": "沙鹽藤",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Consumes chlorine gas and produces salt. It can reclaim chlorine and support rust oxygen or table-salt chains, but needs the correct gas atmosphere.",
+      "use_zh": "消耗氯氣並產出鹽，可回收氯並支援鐵鏽製氧或食鹽鏈，但需要正確的氣體環境。"
+    },
+    "SaltPlantSeed": {
+      "name_en": "Dasha Saltvine Seed",
+      "name_zh": "沙鹽藤種子",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Consumes chlorine gas and produces salt. It can reclaim chlorine and support rust oxygen or table-salt chains, but needs the correct gas atmosphere.",
+      "use_zh": "消耗氯氣並產出鹽，可回收氯並支援鐵鏽製氧或食鹽鏈，但需要正確的氣體環境。"
+    },
+    "SaltPlantSeedSparse": {
+      "name_en": "Dasha Saltvine Seed (sparse spawn)",
+      "name_zh": "沙鹽藤種子（稀疏生成）",
+      "type": "plant",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Consumes chlorine gas and produces salt. It can reclaim chlorine and support rust oxygen or table-salt chains, but needs the correct gas atmosphere.",
+      "use_zh": "消耗氯氣並產出鹽，可回收氯並支援鐵鏽製氧或食鹽鏈，但需要正確的氣體環境。"
+    },
+    "SaltWater": {
+      "name_en": "Salt Water",
+      "name_zh": "鹽水",
+      "type": "liquid",
+      "categories": [
+        "liquid",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "Desalinate into water and salt and use directly for Waterweed or compatible Aquatic crops. Pumping and desalination add power and heat costs.",
+      "use_zh": "可淡化成水與鹽，也可直接供水草或相容水族作物；抽水與淡化會增加耗電及熱量。"
+    },
+    "SaltySticksPlant": {
+      "name_en": "Sodicane",
+      "name_zh": "鹹蔗",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "The Sodicane plant is a hardy member of the Poaceae family of grasses, well-suited to amateur farmers in warm climates.\n\nWhile the crystallized mineral deposits on its stalks are quite palatable, they can only be eaten by gnawing on the unfortunately fibrous stalk.",
+      "use_zh": "鹹蔗是一種頑強的禾本科植物，非常適合溫暖氣候下的業餘農民種植。\n\n雖然植株莖上附著的結晶礦物相當可口，但必須透過啃咬那不幸且充滿纖維的莖部才能食用。"
+    },
+    "SaltySticksPlantSeed": {
+      "name_en": "Sodicane Seed",
+      "name_zh": "鹹蔗種子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "The Sodicane plant is a hardy member of the Poaceae family of grasses, well-suited to amateur farmers in warm climates.\n\nWhile the crystallized mineral deposits on its stalks are quite palatable, they can only be eaten by gnawing on the unfortunately fibrous stalk.",
+      "use_zh": "鹹蔗是一種頑強的禾本科植物，非常適合溫暖氣候下的業餘農民種植。\n\n雖然植株莖上附著的結晶礦物相當可口，但必須透過啃咬那不幸且充滿纖維的莖部才能食用。"
+    },
+    "Sand": {
+      "name_en": "Sand",
+      "name_zh": "沙子",
+      "type": "solid",
+      "categories": [
+        "industrial",
+        "oxygen"
+      ],
+      "use_en": "Filtration medium for Water Sieves and Deodorizers and feedstock for Glass Forges. Secure renewable sand before committing to large polluted-water loops.",
+      "use_zh": "水篩與除臭器的過濾介質，也是玻璃熔爐原料；建立大型汙水循環前應先確保可再生沙源。"
+    },
+    "SandStone": {
+      "name_en": "Sandstone",
+      "name_zh": "砂岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Early general-purpose construction mineral and Hatch feed. Use it freely for ladders and tiles, while reserving specialty minerals for thermal jobs.",
+      "use_zh": "早期通用建材，也是哈奇飼料；適合梯子與磚，特殊礦物則留給熱能用途。"
+    },
+    "SeaFairy": {
+      "name_en": "Kelpole",
+      "name_zh": "藻蝌蚪",
+      "type": "critter",
+      "categories": [],
+      "use_en": "\"Kelpole\" is the colloquial name given to Osculateus venerandum, a small free-moving organism spawned from microscopic eggs that attach themselves to Tower Kelp.\n\nThese unusual critters possess only a few hundred neurons and rely primarily on leaf mimicry to camouflage them from predators during their brief lives.\n\nFormerly considered flora, Kelpoles were eventually reclassified as fauna due to their frequent inclusion on marine biologists' lists of top ten most adorable creatures. The term \"flona\" was rejected out of hand.",
+      "use_zh": "「藻蝌蚪」是維內蘭杜姆吻蟲 (Osculateus venerandum) 的俗稱，這是一種自由活動的小型生物，由附著在塔藻上的微小卵孵化而來。\n\n這些奇特的小動物僅擁有數百個神經元，在其短暫的一生中，主要依賴模仿葉片進行偽裝，以躲避捕食者。\n\n藻蝌蚪曾被視為植物，但因其屢次登上海洋生物學家的「十大最可愛生物」榜單，最終被重新歸類為動物。「植動體 (flona)」一詞在提出後便遭直接駁回。"
+    },
+    "SeaHorse": {
+      "name_en": "Seaquine",
+      "name_zh": "海馬",
+      "type": "critter",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Adult Seaquines flood their brood pouches with Ovolene to nourish their eggs and support osmoregulation.\n\nAs this is an energy-intensive process, it is abandoned in later life stages so that geriatric Seaquine can focus their efforts on laying one final egg before they perish.",
+      "use_zh": "成年海馬會向育兒囊中注入卵漿，以滋養受精卵並輔助滲透壓調節。\n\n由於此過程極耗能量，海馬在生命晚期會停止分泌，以便將剩餘精力集中於產下臨終前的最後一枚卵。"
+    },
+    "SeaLettuce": {
+      "name_en": "Waterweed",
+      "name_zh": "水草",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "An underwater crop fertilized with bleach stone that yields lettuce for high-quality food. Bleach-stone supply and liquid conditions are the main constraints.",
+      "use_zh": "水下作物，以漂白石施肥並產出生菜供高品質料理；漂白石供應與液體環境是主要限制。"
+    },
+    "SeaLettuceSeed": {
+      "name_en": "Waterweed Seed",
+      "name_zh": "水草種子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "An underwater crop fertilized with bleach stone that yields lettuce for high-quality food. Bleach-stone supply and liquid conditions are the main constraints.",
+      "use_zh": "水下作物，以漂白石施肥並產出生菜供高品質料理；漂白石供應與液體環境是主要限制。"
+    },
+    "SeaTree": {
+      "name_en": "Tower Kelp",
+      "name_zh": "塔藻",
+      "type": "plant",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "This species of the Laminariales order is composed of vertical stems supported by structural vines. What appear to be leaves are actually Kelpoles, aquatic critters that consume aeronutrients present in the Tower Kelp's hollow stalk.\n\nTower Kelp stalks that fail to attract these natural pressure regulators will collapse before reaching maturation.",
+      "use_zh": "此種海帶目物種，由豎直的主莖與起支撐作用的構造藤蔓所組成。那些看似葉片的部位，實際上是藻蝌蚪——一種以塔藻中空莖稈內的氣態養分為食的水生生物。\n\n若塔藻的莖稈未能吸引這些天然的壓力調節者，便會在成熟前坍塌。"
+    },
+    "SeaTurtle": {
+      "name_en": "Orehull",
+      "name_zh": "礦甲龜",
+      "type": "critter",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Orehulls are oversized anamniotes prized for the iron ore deposits that adorn their carapace.\n\nSpecialized glands between the carapace scutes continuously release microscopic amounts of the heavy metals present in the critter's environment, an immune system reaction that causes no discomfort to the Orehull.",
+      "use_zh": "礦甲龜是一種體型巨大的無羊膜動物，因其甲殼上附著的鐵礦沉積物而備受珍視。\n\n位於甲殼鱗片之間的特化腺體，會持續釋放環境中殘留的微量重金屬；這是一種免疫系統反應，對礦甲龜本身並不會造成任何不適。"
+    },
+    "Seal": {
+      "name_en": "Spigot Seal",
+      "name_zh": "栓角海豹",
+      "type": "critter",
+      "categories": [
+        "food",
+        "power",
+        "industrial"
+      ],
+      "use_en": "Spigot Seals are named for the hollow, cone-shaped glabellar protrusion that allows them to siphon nourishment directly from plants into the digestive sac located at the cone's base.\n\nIn order to draw nutritious fluids through this \"straw,\" the Spigot Seal compresses its nasal cavity and pumps its tongue up into its soft palate repeatedly, creating a vacuum.\n\nMealtimes are concluded by lapping at the air to reopen the airways and prevent accidental asphyxiation.\n\nMany handlers enjoy teaching this critter to clap its flippers, only to discover that there is no reliable method of limiting how often or how loudly the behavior is repeated.",
+      "use_zh": "栓角海豹因其中空的錐形眉間突起物而得名，這種結構能讓牠們直接從植物中吸取營養，流入位於錐形底部的消化囊中。\n\n為了透過這根「吸管」吸取營養液，栓角海豹會壓緊鼻腔，並將舌頭反覆抽入其軟顎，形成真空。\n\n進食結束時，透過快速舔食空氣重新開啟氣道，從而防止發生意外窒息。\n\n許多飼養員喜歡教這種小動物拍打腳蹼，卻發現沒有可靠辦法限制這種行為的重複頻率和聲音大小。"
+    },
+    "SedimentaryRock": {
+      "name_en": "Sedimentary Rock",
+      "name_zh": "沉積岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Construction mineral that encourages Hatches toward the Stone Hatch morph. It is strategically useful for establishing renewable coal ranches.",
+      "use_zh": "可作建材，並促使哈奇轉化為石殼哈奇；建立可再生煤炭牧場時很有戰略價值。"
+    },
+    "Shale": {
+      "name_en": "Shale",
+      "name_zh": "頁岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A bulk raw mineral for construction in Prehistoric regions. Prefer it for ordinary structures while conserving metal and specialty thermal materials.",
+      "use_zh": "史前地區的大量建築原礦；一般結構優先使用頁岩，可節省金屬與特殊熱材。"
+    },
+    "SiltStone": {
+      "name_en": "Siltstone",
+      "name_zh": "粉砂岩",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "General raw mineral for construction and thermal mass. It has no major advanced chain, making it a practical expendable building material.",
+      "use_zh": "一般建築與熱容量用原礦，沒有重要進階生產鏈，適合作可消耗建材。"
+    },
+    "SlimeMold": {
+      "name_en": "Slime",
+      "name_zh": "軟泥",
+      "type": "solid",
+      "categories": [
+        "oxygen",
+        "industrial",
+        "food"
+      ],
+      "use_en": "Distill into algae and polluted water, or let it off-gas polluted oxygen. It can contain Slimelung; store submerged and process behind hygiene controls.",
+      "use_zh": "可蒸餾成藻類與汙水，也會逸散汙氧。可能含黏液肺病菌，宜浸液儲存並在衛生管制下加工。"
+    },
+    "Snail": {
+      "name_en": "Slogo",
+      "name_zh": "緩螺",
+      "type": "critter",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Slogos' unusually thick skin prevents them from succumbing to the fatal osmosis that other members of the Gastropoda class experience after exposure to Salt.",
+      "use_zh": "緩螺異常厚實的皮膚，使其免於遭受致命的滲透壓作用，而這通常是其他腹足綱生物在接觸鹽後會面臨的命運。"
+    },
+    "Snow": {
+      "name_en": "Snow",
+      "name_zh": "雪",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "Melts into water and provides portable cooling. Its low mass per tile makes it a modest water source; prevent accidental thawing over sensitive machinery.",
+      "use_zh": "融化成水並可搬運冷量；單格質量較低，供水量有限，應避免在敏感機械上方意外融化。"
+    },
+    "SolidCarbonDioxide": {
+      "name_en": "Solid Carbon Dioxide",
+      "name_zh": "固態二氧化碳",
+      "type": "solid",
+      "categories": [
+        "gas",
+        "food",
+        "oxygen"
+      ],
+      "use_en": "Warms into carbon dioxide for Slicksters, Oxyferns, Alveo Veras or sterile storage. Sublimation can rapidly raise local gas pressure.",
+      "use_zh": "升溫後成為二氧化碳，可供浮油生物、氧氣蕨、多孔蘆薈或無菌儲存；昇華可能快速提高局部氣壓。"
+    },
+    "SolidChlorine": {
+      "name_en": "Solid Chlorine",
+      "name_zh": "固態氯",
+      "type": "solid",
+      "categories": [
+        "gas",
+        "industrial"
+      ],
+      "use_en": "A cryogenic chlorine phase that becomes liquid and then gas as it warms. Use only in controlled thermal storage because phase changes can displace mass and damage pipes.",
+      "use_zh": "氯的低溫固相，升溫後依序成液體與氣體；只宜在受控熱儲存中使用，以免相變位移物質或損壞管線。"
+    },
+    "SolidCrudeOil": {
+      "name_en": "Solid Crude Oil",
+      "name_zh": "固態原油",
+      "type": "solid",
+      "categories": [
+        "power",
+        "liquid",
+        "industrial"
+      ],
+      "use_en": "Melt into crude oil before refining or boiling toward petroleum. It is mainly a cold-region oil reserve and must be thawed without overheating the target system.",
+      "use_zh": "融化成原油後可精煉或加熱成石油；主要是寒區油儲備，解凍時需避免讓目標系統過熱。"
+    },
+    "SolidMercury": {
+      "name_en": "Mercury",
+      "name_zh": "汞",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "A refined metal with an exceptionally low melting point and specialized cold-biome uses. Never select it for hot wires or machinery where it can liquefy.",
+      "use_zh": "熔點極低的精煉金屬，適合特定寒區用途；切勿用於高溫電線或機械，以免液化。"
+    },
+    "SourGas": {
+      "name_en": "Sour Gas",
+      "name_zh": "酸氣",
+      "type": "gas",
+      "categories": [
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "Hot sour gas can be cooled into methane and sulfur for a high-output power chain, but the required temperatures and pressure control are advanced hazards.",
+      "use_zh": "高溫酸氣可冷卻成天然氣與硫，形成高輸出的發電鏈；但所需溫度與壓力控制具有進階風險。"
+    },
+    "SpaceTree": {
+      "name_en": "Bonbon Tree",
+      "name_zh": "糖心樹",
+      "type": "plant",
+      "categories": [
+        "food",
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "The Bonbon Tree is a towering plant developed to thrive in below-freezing temperatures. It features multiple independently functioning branches that synthesize bright light to funnel nutrients into a hollow central core.\n\nOnce the tree is fully grown, the core secretes digestive enzymes that break down surplus nutrients and store them as thick, sweet fluid. This can be refined into Sucrose for the production of higher-tier foods, or used as-is to sustain Spigot Seal ranches.\n\nBonbon Trees are generally considered an eyesore, and would likely be eradicated if not for their delicious output.",
+      "use_zh": "糖心樹是一種高聳的植物，可以在零下溫度中茁壯成長。它具有多個獨立運作的分枝，透過合成光線將營養物質彙集到中空的中心核中。\n\n這種植物完全成熟後，核心部位就會分泌消化酵素，能將多餘的營養物質分解並以黏稠、甜蜜的液體形態儲存。這種液體可以提煉成蔗糖，用於生產更高階的食物，或直接用於維持栓角海豹養殖。\n\n糖心樹通常被認為是有礙觀瞻，如果沒有美味的產出物，很有可能會被根除。"
+    },
+    "SpiceVine": {
+      "name_en": "Pincha Pepperplant",
+      "name_zh": "火椒藤",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes polluted water and phosphorite in a warm environment to grow Pincha Peppernuts for advanced recipes. Heat is helpful here but irrigation must remain stable.",
+      "use_zh": "在溫暖環境中消耗汙水與磷礦，產出火椒果供進階料理；高溫在此有利，但灌溉必須穩定。"
+    },
+    "SpiceVineSeed": {
+      "name_en": "Pincha Peppernut",
+      "name_zh": "火椒果",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes polluted water and phosphorite in a warm environment to grow Pincha Peppernuts for advanced recipes. Heat is helpful here but irrigation must remain stable.",
+      "use_zh": "在溫暖環境中消耗汙水與磷礦，產出火椒果供進階料理；高溫在此有利，但灌溉必須穩定。"
+    },
+    "SpiceVineSeedSparse": {
+      "name_en": "Pincha Peppernut (sparse spawn)",
+      "name_zh": "火椒果（稀疏生成）",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes polluted water and phosphorite in a warm environment to grow Pincha Peppernuts for advanced recipes. Heat is helpful here but irrigation must remain stable.",
+      "use_zh": "在溫暖環境中消耗汙水與磷礦，產出火椒果供進階料理；高溫在此有利，但灌溉必須穩定。"
+    },
+    "Squid": {
+      "name_en": "Glo Squid",
+      "name_zh": "彩斑魷",
+      "type": "critter",
+      "categories": [
+        "food",
+        "decoration",
+        "hazard"
+      ],
+      "use_en": "Glo Squids are immediately recognizable by the bioluminescent photophores that strobe vertically along their soft bodies.\n\nThese tropical critters are distant relatives of the Euprymna scolopes, though rather than navigating via jet propulsion, Glo Squids have evolved a pair of elongated tentacles that enable them to swim upright.",
+      "use_zh": "彩斑魷柔軟的軀體上，垂直分佈著閃爍的生物發光器，因此極易辨識。\n\n這些熱帶小動物是夏威夷短尾魷魚 (Euprymna scolopes) 的遠親，不過與後者不同，牠們並非依靠噴射推進，而是演化出了一對細長的觸手，使其能夠直立游動。"
+    },
+    "Squirrel": {
+      "name_en": "Pip",
+      "name_zh": "樹鼠",
+      "type": "critter",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Plants seeds in natural tiles for wild farms and converts arbor branches into dirt. Pip planting rules are spatially strict, so prepare tiles and planting order carefully.",
+      "use_zh": "可在天然磚種下種子建立野生農場，也能把喬木枝轉成泥土。樹鼠種植有嚴格空間規則，需仔細安排磚位與種植順序。"
+    },
+    "Staterpillar": {
+      "name_en": "Plug Slug",
+      "name_zh": "電氣蛞蝓",
+      "type": "critter",
+      "categories": [
+        "power",
+        "industrial"
+      ],
+      "use_en": "Consumes refined or raw metal and generates power while sleeping; morphs can provide other gases. Metal cost is high, and exposed conductors must be integrated safely.",
+      "use_zh": "食用精煉或原礦金屬，睡眠時發電；變種可提供其他氣體。金屬成本高，外露導體需安全整合。"
+    },
+    "Stego": {
+      "name_en": "Lumb",
+      "name_zh": "豐足劍龍",
+      "type": "critter",
+      "categories": [
+        "food",
+        "oxygen",
+        "power",
+        "industrial",
+        "hazard"
+      ],
+      "use_en": "While other creatures with the Lumb's low forebrain neuron count rapidly become extinct, these docile creatures are uniquely positioned for survival.\n\nTheir large size and spiny protrusions make them unappealing to most predators. Anecdotal evidence also suggests that smaller species will sometimes adopt orphaned Lumbs.\n\nSome experts theorize that this may be motivated by a desire to benefit from the Lumb's genetic muscular condition (akin to restless leg syndrome), which causes them to regularly pound the earth in such a way as to cause nearby plants to drop desirable foods.",
+      "use_zh": "儘管其他前腦神經元數量稀少的生物會迅速滅絕，但豐足劍龍這種溫馴的生物卻具有獨特的生存優勢。\n\n牠們龐大的體型和帶刺的突起，使其對大多數掠食者而言毫無吸引力。軼事證據也表明，較小的物種有時會收養孤兒豐足劍龍。\n\n一些專家推測，這可能是為了從豐足劍龍的遺傳性肌肉病症（類似不寧腿症候群）中獲益，這種病症導致牠們規律地敲擊地面，從而使附近的植物掉落可口的食物。"
+    },
+    "Sucrose": {
+      "name_en": "Sucrose",
+      "name_zh": "蔗糖",
+      "type": "solid",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Food ingredient and fuel for Sugar Engines; produced through Sweetle and Grubfruit ecology. Balance rocket fuel demand against crop and ranch needs.",
+      "use_zh": "食物原料，也是蔗糖引擎燃料，由甜素甲蟲與蟲果生態鏈取得；需平衡火箭燃料、農作與牧場需求。"
+    },
+    "Sulfur": {
+      "name_en": "Sulfur",
+      "name_zh": "硫",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Fertilizes Grubfruit plants and feeds Sweetles/Grubgrubs, enabling sucrose and food production. Sulfur geysers can make this chain renewable.",
+      "use_zh": "可施肥蟲果並餵甜素甲蟲／蟲果蟲，支援蔗糖與食物生產；硫泉可使此鏈再生。"
+    },
+    "SwampForagePlant": {
+      "name_en": "Swamp Chard",
+      "name_zh": "沼澤甜菜",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A one-time buried forage food for early survival in swamp regions. Harvested specimens do not form a scalable crop.",
+      "use_zh": "沼澤地區的一次性埋藏覓食糧，適合早期求生；採集後不能形成可擴充農作。"
+    },
+    "SwampForagePlantPlanted": {
+      "name_en": "Swamp Chard Plant",
+      "name_zh": "沼澤甜菜植株",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "A one-time buried forage food for early survival in swamp regions. Harvested specimens do not form a scalable crop.",
+      "use_zh": "沼澤地區的一次性埋藏覓食糧，適合早期求生；採集後不能形成可擴充農作。"
+    },
+    "SwampHarvestPlant": {
+      "name_en": "Bog Bucket",
+      "name_zh": "沼澤豬籠草",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes polluted water to produce Bog Jellies in a warm swamp climate. It is a practical early crop where clean water and cooling are scarce.",
+      "use_zh": "在溫暖沼澤氣候中消耗汙水並產出沼澤果凍；缺乏淨水與冷卻時是實用的早期作物。"
+    },
+    "SwampHarvestPlantSeed": {
+      "name_en": "Bog Bucket Seed",
+      "name_zh": "沼澤豬籠草種子",
+      "type": "plant",
+      "categories": [
+        "food"
+      ],
+      "use_en": "Consumes polluted water to produce Bog Jellies in a warm swamp climate. It is a practical early crop where clean water and cooling are scarce.",
+      "use_zh": "在溫暖沼澤氣候中消耗汙水並產出沼澤果凍；缺乏淨水與冷卻時是實用的早期作物。"
+    },
+    "SwampLily": {
+      "name_en": "Balm Lily",
+      "name_zh": "香水百合",
+      "type": "plant",
+      "categories": [
+        "industrial",
+        "decoration"
+      ],
+      "use_en": "Grows without fertilizer in chlorine and produces Balm Lily Flowers for medical packs. Its chlorine atmosphere is the main setup requirement.",
+      "use_zh": "在氯氣中生長且不需肥料，產出香水百合花供醫療包；主要建置要求是氯氣環境。"
+    },
+    "SwampLilySeed": {
+      "name_en": "Balm Lily Seed",
+      "name_zh": "香水百合種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "radiation",
+        "decoration"
+      ],
+      "use_en": "The Balm Lily naturally contains high vitamin concentrations and produces acids similar in molecular makeup to acetylsalicylic acid (commonly known as aspirin).\n\nAs a result, the plant is ideal both for boosting immune systems and treating a variety of common maladies such as pain and fever.",
+      "use_zh": "香水百合天然含有高濃度的維他命，與生產在分子結構上與水楊酸相近的酸性物質（俗稱阿斯匹靈）。\n\n因此，這株植物是增強免疫系統與治療常見疾病（像是疼痛與發燒）的首選。"
+    },
+    "ToePlant": {
+      "name_en": "Tranquil Toes",
+      "name_zh": "安寧芷",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant with no production chain. Use it for decor and room bonuses rather than food, oxygen or power planning.",
+      "use_zh": "沒有生產鏈的裝飾植物，適合提升裝飾與房間效果，不應納入食物、製氧或發電規劃。"
+    },
+    "ToePlantSeed": {
+      "name_en": "Tranquil Toes Seed",
+      "name_zh": "安寧芷種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant with no production chain. Use it for decor and room bonuses rather than food, oxygen or power planning.",
+      "use_zh": "沒有生產鏈的裝飾植物，適合提升裝飾與房間效果，不應納入食物、製氧或發電規劃。"
+    },
+    "ToxicMud": {
+      "name_en": "Polluted Mud",
+      "name_zh": "汙泥漿",
+      "type": "solid",
+      "categories": [
+        "liquid",
+        "food",
+        "industrial"
+      ],
+      "use_en": "Press into polluted water and polluted dirt, both useful but germ- and off-gassing-prone. Enclose the processing and route outputs deliberately.",
+      "use_zh": "可壓榨成汙水與汙土，兩者皆有用途但容易帶菌及逸氣；加工區應封閉並明確分流產物。"
+    },
+    "ToxicSand": {
+      "name_en": "Polluted Dirt",
+      "name_zh": "汙土",
+      "type": "solid",
+      "categories": [
+        "food",
+        "industrial",
+        "oxygen"
+      ],
+      "use_en": "Compost into dirt or feed Pokeshell-family critters; otherwise it off-gasses polluted oxygen. Store submerged or at sufficient gas pressure.",
+      "use_zh": "可堆肥成泥土，或餵拋殼蟹系生物；否則會逸散汙氧。宜浸液或存於足夠氣壓下。"
+    },
+    "TubeWorm": {
+      "name_en": "Tublia",
+      "name_zh": "暖管蟲",
+      "type": "plant",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Little is known about the internal workings of Tublias, as their potent \"rotten egg\" stench makes them an unpopular specimen for closer study.\n\nWhile this odor dissipates during processing, it can linger on skin and clothing for an unpleasantly long time.",
+      "use_zh": "關於暖管蟲的內部運作機制所知甚少，因為其強烈的「臭雞蛋」氣味，使它們成為不受歡迎的近距離研究對象。\n\n雖然這種氣味在處理過程中會消散，但它卻會令人不快地殘留在皮膚與衣物上，久久不散。"
+    },
+    "Unobtanium": {
+      "name_en": "Neutronium",
+      "name_zh": "零號元素",
+      "type": "solid",
+      "categories": [],
+      "use_en": "An effectively indestructible world boundary beneath geysers and map edges. It has no normal player production use and should be treated as terrain, not a harvest target.",
+      "use_zh": "幾乎不可破壞，構成間歇泉底部與地圖邊界；正常遊戲沒有生產用途，應視為地形而非採集目標。"
+    },
+    "UraniumOre": {
+      "name_en": "Uranium Ore",
+      "name_zh": "鈾礦",
+      "type": "solid",
+      "categories": [
+        "power",
+        "radiation",
+        "industrial"
+      ],
+      "use_en": "Enrich for Research Reactor fuel and radbolt production; Beetas can improve the refinement chain. Radiation, nuclear waste and reactor heat require shielding and automation.",
+      "use_zh": "可濃縮成研究反應爐燃料並產生輻射粒子；輻射蜂可改善精煉鏈。輻射、核廢料與反應爐熱需屏蔽及自動化。"
+    },
+    "UrchinPlant": {
+      "name_en": "Pinpoket",
+      "name_zh": "針膽團",
+      "type": "plant",
+      "categories": [
+        "food",
+        "radiation"
+      ],
+      "use_en": "The individual Pinpoki that grow inside Pinpoket clusters are prized by marine cuisine gourmands for their delicate buttery flesh, with an aftertaste that some describe as \"transcendant.\"\n\nThe flavor is so legendary that even just gazing upon a displayed Pinpoki is enough to inspire a high level of emotional satisfaction.",
+      "use_zh": "生長在針膽團內部的針膽個體，因其細緻如奶油般的肉質，以及被部分食客形容為「超越凡俗」的餘韻，而備受海洋美食家們的推崇。\n\n其風味堪稱傳奇，甚至僅僅是凝視著一顆展示中的針膽，便足以為人帶來高度的情緒滿足感。"
+    },
+    "VineMother": {
+      "name_en": "Ovagro",
+      "name_zh": "蔓殖藤",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Ovagros are resilient plants with highly efficient nutrient storage and redistribution systems. A healthy node produces many times the amount of energy that it requires. This is used to fuel the growth of exploratory vines that expand onto the surrounding territory.\n\nVines are entirely reliant on the node for nutrients. Each vine features hooked thorns that protect unripe fruit and act as crampons enabling the vine to use any empty surface as a trellis. They also make vine removal a tedious task.",
+      "use_zh": "蔓殖藤是具有高效養分儲存和重新分配系統的彈性植物。一個健康的母藤產生的能量是其所需能量的許多倍。這些能量被用來驅動探索性藤蔓的生長，使其向周圍區域擴張。\n\n藤蔓完全依賴母藤獲取養分。每根藤蔓都具有鉤狀的刺，可保護未成熟的果實，並作為攀岩釘，使藤蔓能夠利用任何空白表面作為支架。它們也使得移除藤蔓成為一項繁瑣的任務。"
+    },
+    "VineMotherSeed": {
+      "name_en": "Ovagro Seed",
+      "name_zh": "蔓殖藤種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "power"
+      ],
+      "use_en": "Ovagros are resilient plants with highly efficient nutrient storage and redistribution systems. A healthy node produces many times the amount of energy that it requires. This is used to fuel the growth of exploratory vines that expand onto the surrounding territory.\n\nVines are entirely reliant on the node for nutrients. Each vine features hooked thorns that protect unripe fruit and act as crampons enabling the vine to use any empty surface as a trellis. They also make vine removal a tedious task.",
+      "use_zh": "蔓殖藤是具有高效養分儲存和重新分配系統的彈性植物。一個健康的母藤產生的能量是其所需能量的許多倍。這些能量被用來驅動探索性藤蔓的生長，使其向周圍區域擴張。\n\n藤蔓完全依賴母藤獲取養分。每根藤蔓都具有鉤狀的刺，可保護未成熟的果實，並作為攀岩釘，使藤蔓能夠利用任何空白表面作為支架。它們也使得移除藤蔓成為一項繁瑣的任務。"
+    },
+    "Water": {
+      "name_en": "Water",
+      "name_zh": "水",
+      "type": "liquid",
+      "categories": [
+        "oxygen",
+        "food",
+        "liquid",
+        "power"
+      ],
+      "use_en": "Electrolyze into oxygen and hydrogen, irrigate crops, research and cool machinery. It is central to many loops, so distinguish renewable supply from one-time deposits.",
+      "use_zh": "可電解成氧氣與氫氣，也供灌溉、研究及冷卻。水牽涉多條核心循環，應區分可再生供應與一次性礦床。"
+    },
+    "WaterCups": {
+      "name_en": "Husha Cups",
+      "name_zh": "靜杯花",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "Husha Cups belong to the Liliaceae family. While they are a welcome addition to any colony space, their noise-dampening properties make them particularly soothing in industrial areas.\n\nEach cup-shaped bloom is essentially an individual anechoic chamber made up of a thick spathe that captures ambient soundwaves, and a short woolly spadix that absorbs them.\n\nSome farmers believe that whispering compliments into Husha Cups makes them grow faster.",
+      "use_zh": "靜杯花屬於百合科。雖然它們是任何殖民地空間都受歡迎的點綴，但其降噪特性使它們在工業區域顯得尤為療癒。\n\n每一朵杯狀花實質上都是一座獨立的消音室，由負責捕獲環境聲波的厚實佛焰苞，以及負責吸收聲波的短絨狀肉穗花序所組成。\n\n一些農民相信，對著靜杯花輕聲說些讚美話能讓它們長得更快。"
+    },
+    "WineCups": {
+      "name_en": "Mellow Mallow",
+      "name_zh": "錦醇菇",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant that improves morale through decor but has no harvestable production output.",
+      "use_zh": "可藉裝飾改善士氣，但沒有可收穫的生產產物。"
+    },
+    "WineCupsSeed": {
+      "name_en": "Mellow Mallow Seed",
+      "name_zh": "錦醇菇種子",
+      "type": "plant",
+      "categories": [
+        "decoration"
+      ],
+      "use_en": "A decorative plant that improves morale through decor but has no harvestable production output.",
+      "use_zh": "可藉裝飾改善士氣，但沒有可收穫的生產產物。"
+    },
+    "Wolframite": {
+      "name_en": "Wolframite",
+      "name_zh": "鎢錳鐵礦",
+      "type": "solid",
+      "categories": [
+        "lateGame",
+        "industrial"
+      ],
+      "use_en": "Refine into tungsten for high-temperature builds and Thermium production. It is scarce, so avoid ordinary construction uses.",
+      "use_zh": "可精煉成鎢，用於高溫建築與導熱質生產；資源稀少，不宜用於一般建築。"
+    },
+    "WoodDeer": {
+      "name_en": "Flox",
+      "name_zh": "狐鹿克斯",
+      "type": "critter",
+      "categories": [
+        "food",
+        "decoration"
+      ],
+      "use_en": "Evenly distributed throughout the Flox's dense overcoat are countless vibrissae-like hairs that transmit detailed sensory information about its environment, allowing it to detect changes as subtle as the shift in another creature's mood.\n\nFloxes avoid overstimulation by whipping their tails to release the pent-up energy. Because these tactile hairs are so sensitive, they cannot be safely shorn.\n\nFlox antlers, however, are nerveless and cumbersome. Handlers who unburden them of this cranial load are often rewarded with the critter's long, slow blinks of contentment.",
+      "use_zh": "狐鹿克斯的濃密外層毛均勻分佈著無數觸鬚般的毛髮，能夠傳遞關於環境的感官資訊，\n\n狐鹿克斯透過甩尾巴來釋放積壓的能量以避免過度刺激。由於這些觸覺毛髮非常敏感，所以不能安全地剪掉。\n\n然而，狐鹿克斯角沒有神經連線並且很笨重。幫忙卸下頭角負擔的飼養員常常能獲得這種小動物因滿足而長久而緩慢的眨眼作為獎勵。"
+    },
+    "WormPlant": {
+      "name_en": "Spindly Grubfruit Plant",
+      "name_zh": "蕪弱蟲蜜草",
+      "type": "plant",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Spindly Grubfruit Plants have leggy stems that limit the distribution of nutrients and enzymes to the fruit-bearing branch. This results in a reliable but relatively tasteless harvest.\n\nIntroducing the Divergent critter species to these plants enable them to develop into Grubfruit Plants with stronger vascular systems and improved fruit.",
+      "use_zh": "蕪弱蟲蜜草細長的莖限制了營養物質和酶向結果枝條的分佈。這導致了可靠但相對無味的果實。\n\n將變異蟲引入這些植物附近，可以使其發育成蟲蜜草，具有更強的維管系統與更高品質的果實。"
+    },
+    "WormPlantSeed": {
+      "name_en": "Spindly Grubfruit Seed",
+      "name_zh": "細長蟲果種子",
+      "type": "plant",
+      "categories": [
+        "food",
+        "industrial"
+      ],
+      "use_en": "Spindly Grubfruit Plants have leggy stems that limit the distribution of nutrients and enzymes to the fruit-bearing branch. This results in a reliable but relatively tasteless harvest.\n\nIntroducing the Divergent critter species to these plants enable them to develop into Grubfruit Plants with stronger vascular systems and improved fruit.",
+      "use_zh": "蕪弱蟲蜜草細長的莖限制了營養物質和酶向結果枝條的分佈。這導致了可靠但相對無味的果實。\n\n將變異蟲引入這些植物附近，可以使其發育成蟲蜜草，具有更強的維管系統與更高品質的果實。"
+    },
+    "ZincOre": {
+      "name_en": "Zinc Ore",
+      "name_zh": "鋅礦",
+      "type": "solid",
+      "categories": [
+        "industrial"
+      ],
+      "use_en": "Aquatic metal ore for zinc production and related specialized machinery. Preserve it until the exact refined-metal demand of the colony is known.",
+      "use_zh": "水族包的含鋅礦石，可生產鋅及相關特殊機械；在殖民地精煉金屬需求確定前宜保留。"
+    }
+  }
+}

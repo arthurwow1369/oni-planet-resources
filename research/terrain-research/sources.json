@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "accessed_at": "2026-08-02",
+  "cleaning_policy": [
+    "HTML tags, site navigation, cookie text, advertisements, and unrelated menus were removed.",
+    "Only source metadata, mechanically relevant facts, strategy claims, and caveats were retained.",
+    "Local installed game YAML is primary evidence for generated terrain contents.",
+    "Klei release notes are primary evidence for version-sensitive changes.",
+    "Wiki sources are secondary references and are cross-checked against game assets where possible.",
+    "Forum and Steam discussion is advisory only; player calculations and designs are not treated as guaranteed mechanics."
+  ],
+  "sources": [
+    {
+      "id": "local-u59-assets",
+      "title": "Locally installed Oxygen Not Included StreamingAssets",
+      "kind": "primary-game-data",
+      "url": null,
+      "published_at": null,
+      "version_scope": "Installed Steam build 24423041; research baseline U59-740622",
+      "reliability": "primary",
+      "freshness": "current-installed-build",
+      "clean_text": "Worldgen subworld, biome, feature, and mob lookup YAML definitions provide zoneType, possible terrain elements, flora, fauna, features, and temperature-range identifiers. The extracted result is a union over all installed base-game and DLC variants; presence in the union does not guarantee occurrence in every map."
+    },
+    {
+      "id": "klei-aquatic-public-test-731233",
+      "title": "Oxygen Not Included Update 731233 — Aquatic public testing",
+      "kind": "official-release-notes",
+      "url": "https://forums.kleientertainment.com/game-updates/oni-alpha/731233-r2738/",
+      "published_at": "2026-05-21",
+      "version_scope": "U59 public testing; superseded by stable release and hotfixes",
+      "reliability": "primary",
+      "freshness": "historical-beta",
+      "clean_text": "Introduced Beach, Reef, Kelp Forest, and Abyss; swimming; aquatic ranching; Tidal Turbines; Marine Drills; Flue Coral oxygen production; and the named aquatic plants, critters, resources, foods, buildings, geysers, and vents. Beta behavior must be checked against stable notes."
+    },
+    {
+      "id": "klei-aquatic-hotfix-735589",
+      "title": "Oxygen Not Included Update 735589",
+      "kind": "official-release-notes",
+      "url": "https://forums.kleientertainment.com/game-updates/oni-alpha/735589-r2744/",
+      "published_at": "2026-06-04",
+      "version_scope": "U59 pre-release hotfix",
+      "reliability": "primary",
+      "freshness": "recent-version-sensitive",
+      "clean_text": "Moved Tidal Spring generation out of Beach so it appears only in Reef; increased Flue Coral light requirement for oxygen production; enabled Pokeshells to open mature Clampums; adjusted Orehull output and Tower Kelp input; added Farm Station support for Clampum, Starnacle, Pinpoket, and Gum Palm."
+    },
+    {
+      "id": "klei-aquatic-release-736649",
+      "title": "Oxygen Not Included Update 736649 — Aquatic Planet Pack",
+      "kind": "official-release-notes",
+      "url": "https://forums.kleientertainment.com/game-updates/oni-alpha/736649-r2750/",
+      "published_at": "2026-06-11",
+      "version_scope": "U59 stable Aquatic release",
+      "reliability": "primary",
+      "freshness": "current-major-release",
+      "clean_text": "Released Marinea and four aquatic biomes. Beach includes Sodicane, Gum Palm, Mussel Sprout, Husha Cups, and Slogo. Reef includes Beakon, Blowter, Clampum, Starnacle, Seaquine, Flue Coral, Petta Pouf, and Tidal Spring. Kelp Forest includes Orehull, Tower Kelp, and Kelpole. Abyss includes Glo Squid, Tublia, Pinpoket, Bulbloom, Gildgo, Polluted Brine Vent, and Thermal Gas Fissure. Also released aquatic ranching, Tidal Turbine, Wall Planter, Wide Hydroponic Farm, Breathing Station, and Marine Drill."
+    },
+    {
+      "id": "klei-hotfix-737790",
+      "title": "Oxygen Not Included Update 737790",
+      "kind": "official-release-notes",
+      "url": "https://forums.kleientertainment.com/game-updates/oni-alpha/737790-r2757/",
+      "published_at": "2026-06-17",
+      "version_scope": "U59 stable hotfix",
+      "reliability": "primary",
+      "freshness": "current-version-sensitive",
+      "clean_text": "Flue Coral and Seakomb can survive in Polluted Brine. Aquatic critters use pool size for crowding information. Fixed multiple aquatic pathing, ranching, farming, light-through-tile, and bubble issues."
+    },
+    {
+      "id": "wiki-u59-740622",
+      "title": "Versions/U59-740622",
+      "kind": "version-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Versions/U59-740622",
+      "published_at": "2026-07-07",
+      "version_scope": "Arthur's installed U59 baseline; superseded publicly but retained for executable-value reproducibility",
+      "reliability": "secondary-with-official-link",
+      "freshness": "installed-not-latest",
+      "clean_text": "U59-740622 released July 7, 2026. It changed Minnow bonuses and Seaquine excretion timing and fixed fish pool-boundary detection, Jawbo and Orehull grooming loops, Blowter bubble placement, Beakon audio performance, Kelpole harvesting visuals, and several other U59 issues."
+    },
+    {
+      "id": "wiki-u59-744825",
+      "title": "Versions/U59-744825",
+      "kind": "version-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Versions/U59-744825",
+      "published_at": "2026-07-28",
+      "version_scope": "Latest public U59 build located during the 2026-08-02 review",
+      "reliability": "secondary-with-official-link",
+      "freshness": "latest-public-checked",
+      "clean_text": "U59-744825 is newer than Arthur's installed U59-740622. The indexed patch information was reviewed for version-sensitive food, oxygen, power, radiation, aquatic worldgen and role/size changes; no superseding mechanic value was identified for the exact executable facts retained in this research. Re-decompile and diff the executable after the local Steam installation updates before implementing values that changed after 740622."
+    },
+    {
+      "id": "wiki-biome-overview",
+      "title": "Biome — Oxygen Not Included Wiki",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Biome",
+      "published_at": null,
+      "version_scope": "Base game, Spaced Out!, Frosty, and Prehistoric; page summary predates Aquatic count update",
+      "reliability": "secondary",
+      "freshness": "mixed",
+      "clean_text": "Biomes have no persistent simulation property beyond their generated contents. The page summarizes Sandstone, Forest, Barren, Tundra, Jungle, Magma, Marsh, Ocean, Oily, Rust, Space, Swampy, Wasteland, Radioactive, Metallic, Moo, Ice Cave, Nectar, Garden, Feather, and Wetlands resource and hazard roles. Terrain content and current DLC additions are cross-checked with local YAML."
+    },
+    {
+      "id": "wiki-ice-cave",
+      "title": "Ice Cave Biome",
+      "kind": "mechanics-strategy-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Ice_Cave_Biome",
+      "published_at": null,
+      "version_scope": "Frosty Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Ice Cave is the Ceres starting biome. Most water is Ice or Snow. Floxes provide Wood and eat Pikeapple. Alveo Vera consumes Carbon Dioxide and Ice and produces harvestable Oxylite. Heat must be controlled because liquefiable terrain can melt and collapse. Warm Coats, heaters, or warmed enclosed work areas mitigate cold penalties."
+    },
+    {
+      "id": "wiki-nectar",
+      "title": "Nectar Biome",
+      "kind": "mechanics-strategy-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Nectar_Biome",
+      "published_at": null,
+      "version_scope": "Frosty Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Bonbon Trees produce Wood and Nectar. Nectar can become Plastic, Sucrose, and Steam. Spigot Seals consume Nectar at the tree and produce Ethanol; their Tallow can support food or Crude Oil production. Solid Mercury is useful only in applications that avoid its very low melting point."
+    },
+    {
+      "id": "wiki-prehistoric-pack",
+      "title": "The Prehistoric Planet Pack",
+      "kind": "content-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/The_Prehistoric_Planet_Pack",
+      "published_at": null,
+      "version_scope": "Prehistoric Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-content-list",
+      "clean_text": "Lists Garden, Feather, and Wetlands biomes; Peat and the Peat Burner; Sweatcorn, Ovagro, Snactus, Dew Dripper, Megafrond, Seakomb, and Lura Plant; and Mimika, Lumb, Rhex, Dartle, Jawbo, and Gnit."
+    },
+    {
+      "id": "wiki-garden",
+      "title": "Garden Biome",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Garden_Biome",
+      "published_at": null,
+      "version_scope": "Prehistoric Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Garden is temperate and farm-oriented. Lumbs assist harvesting; Mimikas pollinate and boost plant growth. Peat supports power. Snactus supplies early calories; mature Ovagro can be water-efficient because water cost does not increase with the number of fruiting vines."
+    },
+    {
+      "id": "wiki-feather",
+      "title": "Feather Biome",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Feather_Biome",
+      "published_at": null,
+      "version_scope": "Prehistoric Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Feather is cold. Rhexes prey on Dartles and can be sheared for fiber; tough Rhex meat requires processing. Megafrond grows in chlorine; Dew Dripper produces Dewdrip for Brackene; Wheezewort provides cooling and Spaced Out radiation. Protective equipment is recommended."
+    },
+    {
+      "id": "wiki-wetlands",
+      "title": "Wetlands Biome",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Wetlands_Biome",
+      "published_at": null,
+      "version_scope": "Prehistoric Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Wetlands is warm and Polluted-Water-rich. Lura Plants consume flying critters and produce Amber, which can be converted to Resin for Plastic. Seakomb can be processed to Phyto Oil. Jawbos prey on Pacu and excrete Rust."
+    },
+    {
+      "id": "wiki-aquatic-pack",
+      "title": "The Aquatic Planet Pack",
+      "kind": "content-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/The_Aquatic_Planet_Pack",
+      "published_at": "2026-06-11",
+      "version_scope": "Aquatic Planet Pack",
+      "reliability": "secondary",
+      "freshness": "current-content-list",
+      "clean_text": "Lists Marinea, four aquatic biomes, swimming, aquatic ranching, all named plants and critters, Tidal Turbine, Marine Drill, Wall Planter, Wide Hydroponic Farm, foods, and new materials."
+    },
+    {
+      "id": "wiki-marinea",
+      "title": "Marinea Asteroid",
+      "kind": "worldgen-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Marinea_Asteroid",
+      "published_at": null,
+      "version_scope": "Aquatic Planet Pack U59",
+      "reliability": "secondary-cross-checked",
+      "freshness": "current",
+      "clean_text": "Marinea is water-rich and food-friendly but has limited dry construction space. It includes Beach, Reef, Kelp Forest, Abyss, and several established biomes. It guarantees a Salt Water Geyser and attempts Polluted Brine Vent generation; exact geyser counts and world traits remain seed-dependent."
+    },
+    {
+      "id": "wiki-radiation",
+      "title": "Radiation",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Radiation",
+      "published_at": null,
+      "version_scope": "Spaced Out! radiation mechanics",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Radiation exists only with Spaced Out mechanics. Practical ambient sources include Shine Bugs, Wheezeworts, space exposure, Uranium natural tiles, Beetiny/Beeta/Hives, lamps, satellites, and reactors. Natural radioactive tiles emit while debris and piped or railed material generally do not. Radiation sickness and worker protection must be designed for."
+    },
+    {
+      "id": "wiki-wheezewort",
+      "title": "Wheezewort",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Wheezewort",
+      "published_at": null,
+      "version_scope": "Base cooling; Spaced Out radiation",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Wheezewort provides gas cooling and emits radiation in Spaced Out. Domestic plants consume Phosphorite; wild plants avoid fertilizer but cool less gas. Radiation output does not require an atmosphere, while cooling does. Seeds are finite unless obtained through specific printing/story routes."
+    },
+    {
+      "id": "wiki-shine-bug",
+      "title": "Shine Bug",
+      "kind": "mechanics-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Shine_Bug",
+      "published_at": null,
+      "version_scope": "Base critter; Spaced Out radiation",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Shine Bugs provide light and, in Spaced Out, a low-intensity renewable radiation source. Ranching can scale the population but crowding, food, pathing, and accidental escape must be controlled."
+    },
+    {
+      "id": "wiki-space",
+      "title": "Space Biome",
+      "kind": "mechanics-strategy-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Space_Biome",
+      "published_at": null,
+      "version_scope": "All versions; radiation only in Spaced Out",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Space destroys exposed liquids and gases. Atmo Suits and controlled airlocks are the normal access method; drywall/backwalls prevent atmosphere loss in enclosed cells. Solar Panels provide renewable power. Space exposure supplies ambient radiation in Spaced Out, but radiation level varies by planetoid."
+    },
+    {
+      "id": "wiki-radioactive",
+      "title": "Radioactive Biome",
+      "kind": "mechanics-strategy-reference",
+      "url": "https://oxygennotincluded.wiki.gg/wiki/Radioactive_Biome",
+      "published_at": null,
+      "version_scope": "Spaced Out!",
+      "reliability": "secondary",
+      "freshness": "current-mechanics",
+      "clean_text": "Radioactive terrain contains Uranium and aggressive, highly radioactive Beetas. Preserve Hives because Beetas refine Uranium Ore efficiently and are not normal care-package replacements. Minimize contact, control access, and use radiation protection."
+    },
+    {
+      "id": "forum-ceres-start",
+      "title": "Ceres start",
+      "kind": "community-discussion",
+      "url": "https://forums.kleientertainment.com/forums/topic/158405-ceres-start/",
+      "published_at": "2024-07-19",
+      "version_scope": "Frosty beta-era discussion; verify against current game",
+      "reliability": "advisory",
+      "freshness": "older-but-practical",
+      "clean_text": "Player experience recommends early Warm Coats, transitioning finite forage to Pikeapple, and deliberate Carbon Dioxide supply for Alveo Vera oxygen. This is a player report, not a guaranteed optimal ratio."
+    },
+    {
+      "id": "forum-flue-vs-blowter",
+      "title": "Blowter vs Flue Coral oxygen discussion",
+      "kind": "community-discussion",
+      "url": "https://steamcommunity.com/app/457140/discussions/0/562534024812182981/",
+      "published_at": "2026-05",
+      "version_scope": "Aquatic beta/early U59; official patches changed Flue Coral light requirements",
+      "reliability": "advisory",
+      "freshness": "recent-but-version-sensitive",
+      "clean_text": "Players compare Flue Coral and Blowter oxygen systems. Flue Coral has high direct output but requires light and a Lime/Phosphorite/Salt-Water resource chain; Blowters combine oxygen with food but depend on feed and ranch capacity. Pearl availability can delay the coral infrastructure. Do not treat early beta rates as stable without in-game verification."
+    },
+    {
+      "id": "forum-starnacle-planting",
+      "title": "Wild planting Flue Coral, Starnacle and Clampum",
+      "kind": "community-discussion",
+      "url": "https://forums.kleientertainment.com/forums/topic/171813-wild-planting-flue-coral-starnacle-and-clampum/",
+      "published_at": "2026-05-30",
+      "version_scope": "Aquatic beta; wall-growing behavior retained at release",
+      "reliability": "advisory-cross-checked",
+      "freshness": "recent",
+      "clean_text": "Starnacle and Pinpoket use natural backwall or Wall Planter mechanics instead of ordinary floor farm tiles. Do not plan them as standard Pip-planted floor crops; preserve natural backwalls and budget Wall Planter materials."
+    },
+    {
+      "id": "forum-rhex-ranch",
+      "title": "Early Rhex ranch design and later balancing discussion",
+      "kind": "community-discussion",
+      "url": "https://forums.kleientertainment.com/forums/topic/165937-early-rhex-ranch-design/",
+      "published_at": "2025-05-25",
+      "version_scope": "Prehistoric beta-era design; balance may differ in U59",
+      "reliability": "advisory",
+      "freshness": "older-version-sensitive",
+      "clean_text": "Rhex/Dartle ranches can combine food, fiber, and water-related outputs, but hunting pathing, overcrowding, prey delivery, chlorine, and Dew Dripper support make the loop more complex than a standard ranch. Verify current rates in game."
+    }
+  ]
+}

@@ -1,0 +1,367 @@
+{
+  "geysers": [
+    {
+      "id": "big_volcano",
+      "element": "Magma",
+      "shape": "molten",
+      "temperatureC": 1726.85,
+      "rateKgPerCycle": {
+        "min": 800.0,
+        "max": 1600.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "chlorine_gas",
+      "element": "ChlorineGas",
+      "shape": "gas",
+      "temperatureC": 60.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "chlorine_gas_cool",
+      "element": "ChlorineGas",
+      "shape": "gas",
+      "temperatureC": 5.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": false,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "filthy_water",
+      "element": "DirtyWater",
+      "shape": "liquid",
+      "temperatureC": 30.0,
+      "rateKgPerCycle": {
+        "min": 2000.0,
+        "max": 4000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "hot_co2",
+      "element": "CarbonDioxide",
+      "shape": "gas",
+      "temperatureC": 500.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "hot_hydrogen",
+      "element": "Hydrogen",
+      "shape": "gas",
+      "temperatureC": 500.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "hot_po2",
+      "element": "ContaminatedOxygen",
+      "shape": "gas",
+      "temperatureC": 500.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "hot_steam",
+      "element": "Steam",
+      "shape": "gas",
+      "temperatureC": 500.0,
+      "rateKgPerCycle": {
+        "min": 500.0,
+        "max": 1000.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "hot_water",
+      "element": "Water",
+      "shape": "liquid",
+      "temperatureC": 95.0,
+      "rateKgPerCycle": {
+        "min": 2000.0,
+        "max": 4000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "liquid_co2",
+      "element": "LiquidCarbonDioxide",
+      "shape": "liquid",
+      "temperatureC": -55.15,
+      "rateKgPerCycle": {
+        "min": 100.0,
+        "max": 200.0
+      },
+      "maxPressureKg": 50.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "liquid_sulfur",
+      "element": "LiquidSulfur",
+      "shape": "liquid",
+      "temperatureC": 165.2,
+      "rateKgPerCycle": {
+        "min": 1000.0,
+        "max": 2000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": [
+        "expansion1"
+      ]
+    },
+    {
+      "id": "methane",
+      "element": "Methane",
+      "shape": "gas",
+      "temperatureC": 150.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "molten_aluminum",
+      "element": "MoltenAluminum",
+      "shape": "molten",
+      "temperatureC": 1726.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": [
+        "expansion1"
+      ]
+    },
+    {
+      "id": "molten_cobalt",
+      "element": "MoltenCobalt",
+      "shape": "molten",
+      "temperatureC": 2226.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": [
+        "expansion1"
+      ]
+    },
+    {
+      "id": "molten_copper",
+      "element": "MoltenCopper",
+      "shape": "molten",
+      "temperatureC": 2226.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "molten_gold",
+      "element": "MoltenGold",
+      "shape": "molten",
+      "temperatureC": 2626.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "molten_iron",
+      "element": "MoltenIron",
+      "shape": "molten",
+      "temperatureC": 2526.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "molten_niobium",
+      "element": "MoltenNiobium",
+      "shape": "molten",
+      "temperatureC": 3226.85,
+      "rateKgPerCycle": {
+        "min": 800.0,
+        "max": 1600.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": false,
+      "requiredDlcTags": [
+        "expansion1"
+      ]
+    },
+    {
+      "id": "molten_tungsten",
+      "element": "MoltenTungsten",
+      "shape": "molten",
+      "temperatureC": 3726.85,
+      "rateKgPerCycle": {
+        "min": 200.0,
+        "max": 400.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": false,
+      "requiredDlcTags": [
+        "expansion1"
+      ]
+    },
+    {
+      "id": "murky_brine",
+      "element": "MurkyBrine",
+      "shape": "liquid",
+      "temperatureC": 95.0,
+      "rateKgPerCycle": {
+        "min": 2000.0,
+        "max": 4000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": false,
+      "requiredDlcTags": [
+        "dlc5"
+      ]
+    },
+    {
+      "id": "oil_drip",
+      "element": "CrudeOil",
+      "shape": "liquid",
+      "temperatureC": 326.85,
+      "rateKgPerCycle": {
+        "min": 1.0,
+        "max": 250.0
+      },
+      "maxPressureKg": 50.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "salt_water",
+      "element": "SaltWater",
+      "shape": "liquid",
+      "temperatureC": 95.0,
+      "rateKgPerCycle": {
+        "min": 2000.0,
+        "max": 4000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "slimy_po2",
+      "element": "ContaminatedOxygen",
+      "shape": "gas",
+      "temperatureC": 60.0,
+      "rateKgPerCycle": {
+        "min": 70.0,
+        "max": 140.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "slush_salt_water",
+      "element": "Brine",
+      "shape": "liquid",
+      "temperatureC": -10.0,
+      "rateKgPerCycle": {
+        "min": 1000.0,
+        "max": 2000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "slush_water",
+      "element": "DirtyWater",
+      "shape": "liquid",
+      "temperatureC": -10.0,
+      "rateKgPerCycle": {
+        "min": 1000.0,
+        "max": 2000.0
+      },
+      "maxPressureKg": 500.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "small_volcano",
+      "element": "Magma",
+      "shape": "molten",
+      "temperatureC": 1726.85,
+      "rateKgPerCycle": {
+        "min": 400.0,
+        "max": 800.0
+      },
+      "maxPressureKg": 150.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    },
+    {
+      "id": "steam",
+      "element": "Steam",
+      "shape": "gas",
+      "temperatureC": 110.0,
+      "rateKgPerCycle": {
+        "min": 1000.0,
+        "max": 2000.0
+      },
+      "maxPressureKg": 5.0,
+      "isGenericGeyser": true,
+      "requiredDlcTags": []
+    }
+  ]
+}

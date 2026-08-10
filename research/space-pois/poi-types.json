@@ -1,0 +1,1253 @@
+{
+  "pois": [
+    {
+      "id": "HarvestableSpacePOI_CarbonAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 30000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Carbon",
+          "phase": "solid",
+          "ratio": 78.57,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "RefinedCarbon",
+          "phase": "solid",
+          "ratio": 21.43,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_ChlorineCloud",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "BleachStone",
+          "phase": "solid",
+          "ratio": 75.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Chlorine",
+          "phase": "liquid",
+          "ratio": 25.0,
+          "temperatureC": -73.15
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC2CeresField",
+      "dlcTag": "dlc2",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Cinnabar",
+          "phase": "solid",
+          "ratio": 47.37,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 26.32,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "Mercury",
+          "phase": "liquid",
+          "ratio": 26.32,
+          "temperatureC": 46.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC2CeresOreField",
+      "dlcTag": "dlc2",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 41.18,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "Cinnabar",
+          "phase": "solid",
+          "ratio": 29.41,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Mercury",
+          "phase": "liquid",
+          "ratio": 29.41,
+          "temperatureC": 46.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField1",
+      "dlcTag": "dlc4",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 35000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 30000.0
+      },
+      "outputs": [
+        {
+          "id": "Granite",
+          "phase": "solid",
+          "ratio": 39.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "MaficRock",
+          "phase": "solid",
+          "ratio": 23.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Gold",
+          "phase": "solid",
+          "ratio": 21.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Iridium",
+          "phase": "solid",
+          "ratio": 17.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField2",
+      "dlcTag": "dlc4",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 33400.0,
+        "max": 66800.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 30000.0
+      },
+      "outputs": [
+        {
+          "id": "LiquidSulfur",
+          "phase": "liquid",
+          "ratio": 47.0,
+          "temperatureC": 176.85
+        },
+        {
+          "id": "Petroleum",
+          "phase": "liquid",
+          "ratio": 35.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Isoresin",
+          "phase": "solid",
+          "ratio": 18.0,
+          "temperatureC": -31.0
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4ImpactorDebrisField3",
+      "dlcTag": "dlc4",
+      "cargo": [
+        "liquid"
+      ],
+      "capacityRangeKg": {
+        "min": 110000.0,
+        "max": 137500.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 30000.0
+      },
+      "outputs": [
+        {
+          "id": "Magma",
+          "phase": "liquid",
+          "ratio": 51.0,
+          "temperatureC": 1726.85
+        },
+        {
+          "id": "MoltenIridium",
+          "phase": "liquid",
+          "ratio": 37.0,
+          "temperatureC": 3226.85
+        },
+        {
+          "id": "LiquidHydrogen",
+          "phase": "liquid",
+          "ratio": 6.0,
+          "temperatureC": -255.15
+        },
+        {
+          "id": "LiquidOxygen",
+          "phase": "liquid",
+          "ratio": 6.0,
+          "temperatureC": -198.79
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+      "dlcTag": "dlc4",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "NickelOre",
+          "phase": "solid",
+          "ratio": 47.37,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Peat",
+          "phase": "solid",
+          "ratio": 26.32,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Amber",
+          "phase": "solid",
+          "ratio": 10.53,
+          "temperatureC": 27.0
+        },
+        {
+          "id": "Shale",
+          "phase": "solid",
+          "ratio": 10.53,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Iridium",
+          "phase": "solid",
+          "ratio": 5.26,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+      "dlcTag": "dlc4",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Peat",
+          "phase": "solid",
+          "ratio": 41.67,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "NickelOre",
+          "phase": "solid",
+          "ratio": 25.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Amber",
+          "phase": "solid",
+          "ratio": 16.67,
+          "temperatureC": 27.0
+        },
+        {
+          "id": "Shale",
+          "phase": "solid",
+          "ratio": 16.67,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC5AquaticMixingField",
+      "dlcTag": "dlc5",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "ZincOre",
+          "phase": "solid",
+          "ratio": 36.0,
+          "temperatureC": 28.0
+        },
+        {
+          "id": "Corallium",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 30.0
+        },
+        {
+          "id": "SiltStone",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Basalt",
+          "phase": "solid",
+          "ratio": 12.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Coquina",
+          "phase": "solid",
+          "ratio": 12.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC5AquaticOreField",
+      "dlcTag": "dlc5",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "ZincOre",
+          "phase": "solid",
+          "ratio": 36.0,
+          "temperatureC": 28.0
+        },
+        {
+          "id": "Corallium",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 30.0
+        },
+        {
+          "id": "SiltStone",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Basalt",
+          "phase": "solid",
+          "ratio": 12.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Coquina",
+          "phase": "solid",
+          "ratio": 12.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_ForestyOreField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "IgneousRock",
+          "phase": "solid",
+          "ratio": 70.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "CarbonDioxide",
+          "phase": "gas",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "AluminumOre",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_FrozenOreField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "DirtyIce",
+          "phase": "solid",
+          "ratio": 27.44,
+          "temperatureC": -43.15
+        },
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 27.44,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "AluminumOre",
+          "phase": "solid",
+          "ratio": 23.56,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Snow",
+          "phase": "solid",
+          "ratio": 21.55,
+          "temperatureC": -31.0
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GasGiantCloud",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 20000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Hydrogen",
+          "phase": "gas",
+          "ratio": 70.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "LiquidMethane",
+          "phase": "liquid",
+          "ratio": 10.0,
+          "temperatureC": -173.15
+        },
+        {
+          "id": "Methane",
+          "phase": "gas",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "SolidMethane",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": -223.15
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GildedAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 30000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "SedimentaryRock",
+          "phase": "solid",
+          "ratio": 45.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Gold",
+          "phase": "solid",
+          "ratio": 25.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Fullerene",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": -31.0
+        },
+        {
+          "id": "RefinedCarbon",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Regolith",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GlimmeringAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 30000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Wolframite",
+          "phase": "solid",
+          "ratio": 60.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "MoltenTungsten",
+          "phase": "liquid",
+          "ratio": 20.0,
+          "temperatureC": 3726.85
+        },
+        {
+          "id": "Carbon",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "CarbonDioxide",
+          "phase": "gas",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_HeliumCloud",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "liquid"
+      ],
+      "capacityRangeKg": {
+        "min": 30000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Water",
+          "phase": "liquid",
+          "ratio": 80.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Hydrogen",
+          "phase": "gas",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_IceAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 60.0,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "SolidCarbonDioxide",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": -81.0
+        },
+        {
+          "id": "Oxygen",
+          "phase": "gas",
+          "ratio": 15.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "SolidMethane",
+          "phase": "solid",
+          "ratio": 5.0,
+          "temperatureC": -223.15
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_InterstellarIceField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "SolidCarbonDioxide",
+          "phase": "solid",
+          "ratio": 70.0,
+          "temperatureC": -81.0
+        },
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 25.0,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "SolidOxygen",
+          "phase": "solid",
+          "ratio": 5.0,
+          "temperatureC": -243.15
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_InterstellarOcean",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Brine",
+          "phase": "liquid",
+          "ratio": 25.0,
+          "temperatureC": 9.0
+        },
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 25.0,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "Salt",
+          "phase": "solid",
+          "ratio": 25.0,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "SaltWater",
+          "phase": "liquid",
+          "ratio": 25.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_MetallicAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Obsidian",
+          "phase": "solid",
+          "ratio": 56.82,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Cuprite",
+          "phase": "solid",
+          "ratio": 15.91,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "MoltenLead",
+          "phase": "liquid",
+          "ratio": 15.91,
+          "temperatureC": 1726.85
+        },
+        {
+          "id": "MoltenIron",
+          "phase": "liquid",
+          "ratio": 11.36,
+          "temperatureC": 2226.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OilyAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "SolidCarbonDioxide",
+          "phase": "solid",
+          "ratio": 77.5,
+          "temperatureC": -81.0
+        },
+        {
+          "id": "CrudeOil",
+          "phase": "liquid",
+          "ratio": 11.25,
+          "temperatureC": 76.85
+        },
+        {
+          "id": "SolidMethane",
+          "phase": "solid",
+          "ratio": 11.25,
+          "temperatureC": -223.15
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OrganicMassField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Algae",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "Dirt",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "SlimeMold",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "ContaminatedOxygen",
+          "phase": "gas",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OxidizedAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Rust",
+          "phase": "solid",
+          "ratio": 80.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "SolidCarbonDioxide",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": -81.0
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OxygenRichAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 15000.0,
+        "max": 25000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Ice",
+          "phase": "solid",
+          "ratio": 40.0,
+          "temperatureC": -41.0
+        },
+        {
+          "id": "Water",
+          "phase": "liquid",
+          "ratio": 40.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "ContaminatedOxygen",
+          "phase": "gas",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RadioactiveAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 5000.0,
+        "max": 10000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "Rust",
+          "phase": "solid",
+          "ratio": 36.36,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Sulfur",
+          "phase": "solid",
+          "ratio": 27.27,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "BleachStone",
+          "phase": "solid",
+          "ratio": 18.18,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "UraniumOre",
+          "phase": "solid",
+          "ratio": 18.18,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RadioactiveGasCloud",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "gas",
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 5000.0,
+        "max": 10000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "CarbonDioxide",
+          "phase": "gas",
+          "ratio": 63.64,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Chlorine",
+          "phase": "liquid",
+          "ratio": 18.18,
+          "temperatureC": -73.15
+        },
+        {
+          "id": "UraniumOre",
+          "phase": "solid",
+          "ratio": 18.18,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RockyAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 81000.0,
+        "max": 94000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "IgneousRock",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "SedimentaryRock",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Granite",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Katairite",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SaltyAsteroidField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "SaltWater",
+          "phase": "liquid",
+          "ratio": 50.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Brine",
+          "phase": "liquid",
+          "ratio": 40.0,
+          "temperatureC": 9.0
+        },
+        {
+          "id": "SolidCarbonDioxide",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": -81.0
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SandyOreField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "SandStone",
+          "phase": "solid",
+          "ratio": 40.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Sand",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Algae",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 16.85
+        },
+        {
+          "id": "Cuprite",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SatelliteField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "liquid",
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 30000.0,
+        "max": 45000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "IronOre",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Sand",
+          "phase": "solid",
+          "ratio": 30.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "MoltenCopper",
+          "phase": "liquid",
+          "ratio": 26.7,
+          "temperatureC": 1526.85
+        },
+        {
+          "id": "Glass",
+          "phase": "solid",
+          "ratio": 13.3,
+          "temperatureC": 26.85
+        }
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SwampyOreField",
+      "dlcTag": "expansion1",
+      "cargo": [
+        "solid"
+      ],
+      "capacityRangeKg": {
+        "min": 54000.0,
+        "max": 81000.0
+      },
+      "rechargeRangeKgPerCycle": {
+        "min": 30000.0,
+        "max": 60000.0
+      },
+      "outputs": [
+        {
+          "id": "ToxicSand",
+          "phase": "solid",
+          "ratio": 70.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Mud",
+          "phase": "solid",
+          "ratio": 20.0,
+          "temperatureC": 26.85
+        },
+        {
+          "id": "Cobaltite",
+          "phase": "solid",
+          "ratio": 10.0,
+          "temperatureC": 26.85
+        }
+      ]
+    }
+  ]
+}

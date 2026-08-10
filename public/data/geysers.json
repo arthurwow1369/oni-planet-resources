@@ -1,0 +1,527 @@
+[
+  {
+    "id": "big_volcano",
+    "element": "Magma",
+    "shape": "molten",
+    "temperatureC": 1726.85,
+    "rateKgPerCycle": {
+      "min": 800.0,
+      "max": 1600.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Volcano",
+    "name_zh": "大火山口",
+    "desc_en": "A massive volcano that periodically erupts with molten Magma.",
+    "desc_zh": "一座巨大火山，會定期噴發出熔融的岩漿。",
+    "elementName_en": "Magma",
+    "elementName_zh": "岩漿"
+  },
+  {
+    "id": "chlorine_gas",
+    "element": "ChlorineGas",
+    "shape": "gas",
+    "temperatureC": 60.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Chlorine Gas Vent",
+    "name_zh": "氯氣噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with warm Chlorine Gas.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出溫暖的氯氣。",
+    "elementName_en": "Chlorine Gas",
+    "elementName_zh": "氯"
+  },
+  {
+    "id": "chlorine_gas_cool",
+    "element": "ChlorineGas",
+    "shape": "gas",
+    "temperatureC": 5.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": false,
+    "requiredDlcTags": [],
+    "name_en": "Cool Chlorine Gas Vent",
+    "name_zh": "低溫氯氣噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with cool Chlorine Gas.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出低溫的氯氣。",
+    "elementName_en": "Chlorine Gas",
+    "elementName_zh": "氯"
+  },
+  {
+    "id": "filthy_water",
+    "element": "DirtyWater",
+    "shape": "liquid",
+    "temperatureC": 30.0,
+    "rateKgPerCycle": {
+      "min": 2000.0,
+      "max": 4000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Polluted Water Vent",
+    "name_zh": "汙水噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with boiling Polluted Water.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出汙水。",
+    "elementName_en": "Polluted Water",
+    "elementName_zh": "汙水"
+  },
+  {
+    "id": "hot_co2",
+    "element": "CarbonDioxide",
+    "shape": "gas",
+    "temperatureC": 500.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Carbon Dioxide Vent",
+    "name_zh": "二氧化碳噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with hot Carbon Dioxide.",
+    "desc_zh": "一個間歇泉，處於高度加壓狀態且會定期噴發出高溫的二氧化碳。",
+    "elementName_en": "Carbon Dioxide",
+    "elementName_zh": "二氧化碳"
+  },
+  {
+    "id": "hot_hydrogen",
+    "element": "Hydrogen",
+    "shape": "gas",
+    "temperatureC": 500.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Hydrogen Vent",
+    "name_zh": "氫氣噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with hot gaseous Hydrogen.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出高溫的氫氣。",
+    "elementName_en": "Hydrogen Gas",
+    "elementName_zh": "氫"
+  },
+  {
+    "id": "hot_po2",
+    "element": "ContaminatedOxygen",
+    "shape": "gas",
+    "temperatureC": 500.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Hot Polluted Oxygen Vent",
+    "name_zh": "高溫汙氧噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with hot Polluted Oxygen.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出高溫的汙氧。",
+    "elementName_en": "Polluted Oxygen",
+    "elementName_zh": "汙氧"
+  },
+  {
+    "id": "hot_steam",
+    "element": "Steam",
+    "shape": "gas",
+    "temperatureC": 500.0,
+    "rateKgPerCycle": {
+      "min": 500.0,
+      "max": 1000.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Steam Vent",
+    "name_zh": "蒸氣噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with scalding Steam.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出滾燙的蒸氣。",
+    "elementName_en": "Steam",
+    "elementName_zh": "蒸氣"
+  },
+  {
+    "id": "hot_water",
+    "element": "Water",
+    "shape": "liquid",
+    "temperatureC": 95.0,
+    "rateKgPerCycle": {
+      "min": 2000.0,
+      "max": 4000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Water Geyser",
+    "name_zh": "溫泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with hot Water.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出熱水。",
+    "elementName_en": "Water",
+    "elementName_zh": "水"
+  },
+  {
+    "id": "liquid_co2",
+    "element": "LiquidCarbonDioxide",
+    "shape": "liquid",
+    "temperatureC": -55.15,
+    "rateKgPerCycle": {
+      "min": 100.0,
+      "max": 200.0
+    },
+    "maxPressureKg": 50.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Carbon Dioxide Geyser",
+    "name_zh": "二氧化碳噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with boiling Liquid Carbon Dioxide.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出沸騰的二氧化碳。",
+    "elementName_en": "Liquid Carbon Dioxide",
+    "elementName_zh": "二氧化碳"
+  },
+  {
+    "id": "liquid_sulfur",
+    "element": "LiquidSulfur",
+    "shape": "liquid",
+    "temperatureC": 165.2,
+    "rateKgPerCycle": {
+      "min": 1000.0,
+      "max": 2000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [
+      "expansion1"
+    ],
+    "name_en": "Liquid Sulfur Geyser",
+    "name_zh": "液態硫噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with boiling Liquid Sulfur.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出滾燙的液態硫。",
+    "elementName_en": "Liquid Sulfur",
+    "elementName_zh": "硫"
+  },
+  {
+    "id": "methane",
+    "element": "Methane",
+    "shape": "gas",
+    "temperatureC": 150.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Natural Gas Geyser",
+    "name_zh": "天然氣噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with hot Natural Gas.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出高溫的天然氣。",
+    "elementName_en": "Natural Gas",
+    "elementName_zh": "天然氣"
+  },
+  {
+    "id": "molten_aluminum",
+    "element": "MoltenAluminum",
+    "shape": "molten",
+    "temperatureC": 1726.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [
+      "expansion1"
+    ],
+    "name_en": "Aluminum Volcano",
+    "name_zh": "鋁火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Aluminum.",
+    "desc_zh": "一座大火山，會定期噴發出熔融鋁。",
+    "elementName_en": "Molten Aluminum",
+    "elementName_zh": "鋁"
+  },
+  {
+    "id": "molten_cobalt",
+    "element": "MoltenCobalt",
+    "shape": "molten",
+    "temperatureC": 2226.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [
+      "expansion1"
+    ],
+    "name_en": "Cobalt Volcano",
+    "name_zh": "鈷火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Cobalt.",
+    "desc_zh": "一座大火山，會定期噴發出熔融鈷。",
+    "elementName_en": "Molten Cobalt",
+    "elementName_zh": "鈷"
+  },
+  {
+    "id": "molten_copper",
+    "element": "MoltenCopper",
+    "shape": "molten",
+    "temperatureC": 2226.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Copper Volcano",
+    "name_zh": "銅火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Copper.",
+    "desc_zh": "一座大火山，會定期噴發出熔融銅。\"",
+    "elementName_en": "Molten Copper",
+    "elementName_zh": "銅"
+  },
+  {
+    "id": "molten_gold",
+    "element": "MoltenGold",
+    "shape": "molten",
+    "temperatureC": 2626.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Gold Volcano",
+    "name_zh": "金火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Gold.",
+    "desc_zh": "一座大火山，會定期噴發出熔融金。",
+    "elementName_en": "Molten Gold",
+    "elementName_zh": "金"
+  },
+  {
+    "id": "molten_iron",
+    "element": "MoltenIron",
+    "shape": "molten",
+    "temperatureC": 2526.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Iron Volcano",
+    "name_zh": "鐵火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Iron.",
+    "desc_zh": "一座大火山，會定期噴發出熔融鐵。",
+    "elementName_en": "Molten Iron",
+    "elementName_zh": "鐵"
+  },
+  {
+    "id": "molten_niobium",
+    "element": "MoltenNiobium",
+    "shape": "molten",
+    "temperatureC": 3226.85,
+    "rateKgPerCycle": {
+      "min": 800.0,
+      "max": 1600.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": false,
+    "requiredDlcTags": [
+      "expansion1"
+    ],
+    "name_en": "Niobium Volcano",
+    "name_zh": "鈮火山",
+    "desc_en": "A large volcano that periodically erupts with Niobium.",
+    "desc_zh": "一座大火山，會定期噴發出鈮。",
+    "elementName_en": "Molten Niobium",
+    "elementName_zh": "鈮"
+  },
+  {
+    "id": "molten_tungsten",
+    "element": "MoltenTungsten",
+    "shape": "molten",
+    "temperatureC": 3726.85,
+    "rateKgPerCycle": {
+      "min": 200.0,
+      "max": 400.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": false,
+    "requiredDlcTags": [
+      "expansion1"
+    ],
+    "name_en": "Tungsten Volcano",
+    "name_zh": "鎢火山",
+    "desc_en": "A large volcano that periodically erupts with Molten Tungsten.",
+    "desc_zh": "一座大火山，會定期噴發出熔融鎢。",
+    "elementName_en": "Molten Tungsten",
+    "elementName_zh": "鎢"
+  },
+  {
+    "id": "murky_brine",
+    "element": "MurkyBrine",
+    "shape": "liquid",
+    "temperatureC": 95.0,
+    "rateKgPerCycle": {
+      "min": 2000.0,
+      "max": 4000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": false,
+    "requiredDlcTags": [
+      "dlc5"
+    ],
+    "name_en": "Polluted Brine Vent",
+    "name_zh": "汙染濃鹽水噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with boiling Polluted Brine.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出滾燙的汙染濃鹽水。",
+    "elementName_en": "Polluted Brine",
+    "elementName_zh": "汙染濃鹽水"
+  },
+  {
+    "id": "oil_drip",
+    "element": "CrudeOil",
+    "shape": "liquid",
+    "temperatureC": 326.85,
+    "rateKgPerCycle": {
+      "min": 1.0,
+      "max": 250.0
+    },
+    "maxPressureKg": 50.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Leaky Oil Fissure",
+    "name_zh": "原油裂縫",
+    "desc_en": "A fissure that periodically erupts with boiling Crude Oil.",
+    "desc_zh": "一處裂隙，會定期噴發出滾燙的原油。",
+    "elementName_en": "Crude Oil",
+    "elementName_zh": "原油"
+  },
+  {
+    "id": "salt_water",
+    "element": "SaltWater",
+    "shape": "liquid",
+    "temperatureC": 95.0,
+    "rateKgPerCycle": {
+      "min": 2000.0,
+      "max": 4000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Salt Water Geyser",
+    "name_zh": "鹽水噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with Salt Water.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出鹽水。",
+    "elementName_en": "Salt Water",
+    "elementName_zh": "鹽水"
+  },
+  {
+    "id": "slimy_po2",
+    "element": "ContaminatedOxygen",
+    "shape": "gas",
+    "temperatureC": 60.0,
+    "rateKgPerCycle": {
+      "min": 70.0,
+      "max": 140.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Infectious Polluted Oxygen Vent",
+    "name_zh": "帶菌汙氧噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with warm Polluted Oxygen.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出溫暖的汙氧。",
+    "elementName_en": "Polluted Oxygen",
+    "elementName_zh": "汙氧"
+  },
+  {
+    "id": "slush_salt_water",
+    "element": "Brine",
+    "shape": "liquid",
+    "temperatureC": -10.0,
+    "rateKgPerCycle": {
+      "min": 1000.0,
+      "max": 2000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Cool Salt Slush Geyser",
+    "name_zh": "低溫鹽水噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with freezing Brine.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出極冰的濃鹽水。",
+    "elementName_en": "Brine",
+    "elementName_zh": "濃鹽水"
+  },
+  {
+    "id": "slush_water",
+    "element": "DirtyWater",
+    "shape": "liquid",
+    "temperatureC": -10.0,
+    "rateKgPerCycle": {
+      "min": 1000.0,
+      "max": 2000.0
+    },
+    "maxPressureKg": 500.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Cool Slush Geyser",
+    "name_zh": "低溫汙水噴泉",
+    "desc_en": "A highly pressurized geyser that periodically erupts with freezing Polluted Water.",
+    "desc_zh": "一個噴泉，處於高度加壓狀態且會定期噴發出極冰的汙水。",
+    "elementName_en": "Polluted Water",
+    "elementName_zh": "汙水"
+  },
+  {
+    "id": "small_volcano",
+    "element": "Magma",
+    "shape": "molten",
+    "temperatureC": 1726.85,
+    "rateKgPerCycle": {
+      "min": 400.0,
+      "max": 800.0
+    },
+    "maxPressureKg": 150.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Minor Volcano",
+    "name_zh": "小火山口",
+    "desc_en": "A miniature volcano that periodically erupts with molten Magma.",
+    "desc_zh": "一座微型火山，會定期噴發出熔融的岩漿。",
+    "elementName_en": "Magma",
+    "elementName_zh": "岩漿"
+  },
+  {
+    "id": "steam",
+    "element": "Steam",
+    "shape": "gas",
+    "temperatureC": 110.0,
+    "rateKgPerCycle": {
+      "min": 1000.0,
+      "max": 2000.0
+    },
+    "maxPressureKg": 5.0,
+    "isGenericGeyser": true,
+    "requiredDlcTags": [],
+    "name_en": "Cool Steam Vent",
+    "name_zh": "低溫蒸氣噴口",
+    "desc_en": "A highly pressurized vent that periodically erupts with Steam.",
+    "desc_zh": "一個噴口，處於高度加壓狀態且會定期噴發出蒸氣。",
+    "elementName_en": "Steam",
+    "elementName_zh": "蒸氣"
+  }
+]

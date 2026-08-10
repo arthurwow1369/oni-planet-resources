@@ -1,0 +1,496 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "as_of": "2026-08-02",
+    "game_version": "U59-740622",
+    "installed_steam_build_id": "24423041",
+    "latest_public_checked": "U59-744825",
+    "terrain_taxonomy": "26 zoneType groups used by the existing website and installed worldgen assets"
+  },
+  "interpretation_rules": [
+    "Native means the extracted zone union contains the required starting element, plant, critter, or feature in at least one variant; it does not guarantee that every map seed contains it.",
+    "Imported means the method requires material, seed, critter, infrastructure, or atmosphere not shown in that zone union.",
+    "Finite means worldgen stock can be exhausted unless another renewable loop, geyser, meteor, care package, ranch, or rocket source is established.",
+    "Radiation production applies only when Spaced Out radiation mechanics are enabled. In base-game-only play, radiation and radbolts are not applicable.",
+    "Recommendations intentionally avoid exact per-cycle ratios unless the current U59 value was verified; beta-era community numbers are not promoted as stable facts."
+  ],
+  "zones": [
+    {
+      "zone_type": "Abyss",
+      "summary": "Deep Aquatic biome with Galena, Basalt, Diamond, polluted brine, Glo Squid, Tublia, Pinpoket, Bulbloom, and Abyss vents/fissures depending on the generated world.",
+      "food": [
+        {"method": "Ranch or harvest Glo Squid for the Calamari food chain", "dependency": "native", "stage": "mid", "confidence": "medium"},
+        {"method": "Import a proven crop or compact food reserve before permanent settlement", "dependency": "imported", "stage": "early", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use finite Carbon/Coal only as a bridge", "dependency": "native-finite", "stage": "early", "confidence": "high"},
+        {"method": "Where a Thermal Gas Fissure exists, measure its output cycle before a Steam Turbine system; turbine input Steam must reach at least 125°C, the turbine body must stay below 100°C, and dormant periods need heat buffering", "dependency": "seed-dependent-native-feature", "stage": "late", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Pipe or carry oxygen from an established system and use Breathing Stations for underwater work", "dependency": "imported", "stage": "all", "confidence": "high"},
+        {"method": "No dependable native one-building clean-oxygen route; polluted-brine treatment chains exceed the direct-path policy and are only advanced context", "dependency": "no-direct-native-route", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import passive Wheezewort or Shine Bugs as ambient radiation sources, then use one Radbolt Generator to collect the field; a powered Radiation Lamp plus a Radbolt Generator is a two-active-building advanced chain and is not ranked as direct", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Deep flooding and long breath paths", "Thermal Gas Fissure heat", "Polluted Brine handling", "Marine Drill access and power", "No dependable native food or oxygen loop in every variant"],
+      "source_ids": ["local-u59-assets", "klei-aquatic-release-736649", "klei-hotfix-737790", "wiki-aquatic-pack", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Barren",
+      "summary": "Sparse terrain whose installed variants can include regolith, metals, Coal, ice, and Shove Voles; exact composition differs strongly by asteroid and DLC variant.",
+      "food": [
+        {"method": "Contain and ranch Shove Voles for meat where they spawn", "dependency": "native-variant", "stage": "mid", "confidence": "high"},
+        {"method": "Import durable food or a crop because flora is absent", "dependency": "imported", "stage": "early", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use finite Coal deposits as bootstrap power", "dependency": "native-variant-finite", "stage": "early", "confidence": "high"},
+        {"method": "Use Solar Panels if the barren region is at or connected to exposed surface", "dependency": "location-dependent", "stage": "mid", "confidence": "medium"}
+      ],
+      "oxygen": [
+        {"method": "Melt native-variant ice where present and electrolyze the water, or pipe/import oxygen", "dependency": "native-variant-ice-or-imported", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use nearby space exposure when accessible; otherwise import Wheezewort/Shine Bugs", "dependency": "location-dependent-spaced-out", "stage": "mid", "confidence": "medium"}
+      ],
+      "attention": ["No native plants", "Shove Voles burrow through many materials and can escape", "Regolith fall and meteor exposure", "One installed HardDust biome reference has no matching lookup key and is flagged unresolved"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-space", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Beach",
+      "summary": "Aquatic starting terrain with Zinc Ore, algae, Oxylite, Sand, Salt, Sulfur, Gum Palm, Mussel Sprout, Sodicane, Husha Cups, Slogo, and Pokeshell variants.",
+      "food": [
+        {"method": "Use finite Mussel Sprouts while establishing Sodicane farming and aquatic/critter food", "dependency": "native", "stage": "early", "confidence": "high"},
+        {"method": "Treat wild forage as a bridge, not a permanent calorie budget", "dependency": "native-finite", "stage": "early", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Start with Manual Generators; no Beach-native direct fuel route is guaranteed", "dependency": "native-manual-only", "stage": "early", "confidence": "high"},
+        {"method": "Do not plan on a native Tidal Turbine in Beach; official 735589 moved Tidal Springs to Reef", "dependency": "requires-reef", "stage": "mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use starting Oxylite and Algae Diffusers, then move to water electrolysis or a Reef Flue Coral/Blowter system", "dependency": "native-bridge-then-mixed", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezewort or Shine Bugs; protect aquatic farms from unwanted heating/crowding rather than assuming a native source", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Tidal Spring advice for Beach is obsolete after 735589", "Flooding, Soggy Feet, breath and swim-skill limits", "Slogo/Pokeshell handling", "Limited dry building space", "Gum Palm and aquatic farming infrastructure costs"],
+      "source_ids": ["local-u59-assets", "klei-aquatic-hotfix-735589", "klei-aquatic-release-736649", "wiki-marinea", "wiki-radiation"]
+    },
+    {
+      "zone_type": "BoggyMarsh",
+      "summary": "Classic Marsh terrain with Slime, Polluted Water/Oxygen, algae, Gold Amalgam, Dusk Caps, Thimble Reeds, Pacu, Pufts, and Slimelung risk.",
+      "food": [
+        {"method": "Grow Dusk Caps from Slime and ranch Pacu for food plus eggshell material", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use Manual Generators unless a directly usable local fuel or geyser is proven by the exact world; polluted-water-to-hydrogen chains exceed the direct-path policy", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Breathe native Polluted Oxygen as an emergency source or clean it with one Deodorizer; use one Oxygen Diffuser where local Algae exists", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Shine Bugs or Wheezeworts; the marsh itself has no dependable native source", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Slimelung in Slime and polluted oxygen", "Polluted Water offgassing", "Puft and Pacu crowding", "Keep Thimble Reed water use within budget", "Deodorizer filtration-medium consumption"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "CarrotQuarry",
+      "summary": "Frosty Carrot Quarry terrain with Plume Squash, Bammoths, ice, iron ore, and some ethanol-bearing variants.",
+      "food": [
+        {"method": "Farm Plume Squash and ranch Bammoths for renewable food and fiber outputs", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use finite Ethanol pockets carefully; establish imported renewable fuel or a connected Ceres wood/ethanol loop", "dependency": "native-variant-plus-imported", "stage": "early-mid", "confidence": "medium"}
+      ],
+      "oxygen": [
+        {"method": "Import Alveo Vera seeds from Ice Caves or melt ice for an electrolyzer", "dependency": "connected-frosty-biome", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezewort or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Cold penalties", "Melting ice changes terrain and can flood work areas", "Bammoth ranch space and temperature", "Do not count finite ethanol as sustainable"],
+      "source_ids": ["local-u59-assets", "wiki-ice-cave", "forum-ceres-start", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Forest",
+      "summary": "Dry starting terrain with Aluminum Ore, Arbor Trees, Pips, Oxyferns, Mealwood, Shine Bugs, and little or no algae/Coal in typical Forest starts.",
+      "food": [
+        {"method": "Use Hexalent forage briefly, then Mealwood; use Pips and Arbor Trees to improve long-term Dirt/wood sustainability", "dependency": "native", "stage": "early", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Burn native Arbor Tree Lumber directly in a Wood Burner; the Lumber-to-Ethanol-to-generator chain is advanced context and excluded from direct ranking", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use Oxyferns only as a supplement; explore early for water and transition to an electrolyzer or imported algae", "dependency": "native-bridge-then-mixed", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Ranch native Shine Bugs and collect their ambient radiation with a Radbolt Generator", "dependency": "native-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Oxyferns usually do not sustain a growing colony alone", "Water scarcity", "No typical native Coal/algae", "Ethanol chains produce heat and byproducts", "Pip planting requires controlled natural tiles"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-shine-bug", "wiki-radiation"]
+    },
+    {
+      "zone_type": "FrozenWastes",
+      "summary": "Tundra/Frozen terrain containing ice, polluted ice, Sleet Wheat, Wheezewort, Wolframite, and sometimes Shove Voles.",
+      "food": [
+        {"method": "Preserve wild Sleet Wheat initially, then farm it with temperature-controlled water plus Dirt from a connected or imported source", "dependency": "native-plant-plus-imported-or-connected-dirt", "stage": "mid", "confidence": "high"},
+        {"method": "Ranch Shove Voles where present", "dependency": "native-variant", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use imported fuel or exploit connected geothermal/vent power", "dependency": "imported-or-connected", "stage": "mid", "confidence": "medium"}
+      ],
+      "oxygen": [
+        {"method": "Use existing native Oxygen pockets only as a bridge, then melt ice for water electrolysis with careful heat management", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use native Wheezeworts; wild planting avoids Phosphorite consumption while retaining radiation", "dependency": "native-spaced-out", "stage": "early-mid", "confidence": "high"}
+      ],
+      "attention": ["Frostbite and cold work penalties", "Meltwater flooding and terrain collapse", "Wheezewort seeds are finite", "Domestic Wheezeworts consume Phosphorite", "Sleet Wheat heat sensitivity"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-wheezewort", "wiki-radiation"]
+    },
+    {
+      "zone_type": "IceCaves",
+      "summary": "Ceres starting terrain with ice/snow, Pikeapple, Flox, Alveo Vera, Sherberry, and Idylla.",
+      "food": [
+        {"method": "Transition finite Sherberries to Pikeapple farming; ranch Floxes only after feed supply is stable", "dependency": "native", "stage": "early", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Burn Flox Lumber directly in a Wood Burner or bootstrap with Manual Generators; the ethanol chain exceeds the direct-path policy", "dependency": "native-plus-one-building", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Farm Alveo Vera using Carbon Dioxide and Ice to produce Oxylite; later melt ice and electrolyze water", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import a Wheezewort/Shine Bug source; Ice Cave flora itself does not provide dependable ambient radiation", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Cold Athletics penalties", "Warm Coats and insulated living areas", "Alveo Vera needs a managed CO2 supply", "Oxylite behavior can alter the local gas balance", "Heating liquefiable Snow/Ice can collapse large areas"],
+      "source_ids": ["local-u59-assets", "wiki-ice-cave", "forum-ceres-start", "wiki-radiation"]
+    },
+    {
+      "zone_type": "KelpForest",
+      "summary": "Aquatic Kelp Forest with Polluted Water/Oxygen, Polluted Mud, Tower Kelp, Kelpoles, Orehulls, Thimble Reed, and Buddy Bud.",
+      "food": [
+        {"method": "Harvest Kelpoles for ingredient-only Nori and use exact Orehull edible drops where defined; Nori has 0 raw kcal and is not a standalone food foundation", "dependency": "native-ingredient-plus-fauna", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use Manual Generators first; no Kelp-Forest-native direct generator fuel is guaranteed, and polluted-water cleanup plus electrolysis plus generation exceeds the direct-path policy", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use native Polluted Oxygen directly or clean it with one Deodorizer; polluted-water treatment chains are advanced context, not a direct recommendation", "dependency": "native-direct-gas", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezewort or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Flooded pathing and swimmer breath", "Polluted Water/Oxygen contamination", "Aquatic ranch pool-size requirements", "Orehull grooming/pathing fixes require current U59", "Thimble Reed can consume large water quantities"],
+      "source_ids": ["local-u59-assets", "klei-aquatic-release-736649", "klei-hotfix-737790", "wiki-u59-740622", "wiki-marinea", "wiki-radiation"]
+    },
+    {
+      "zone_type": "MagmaCore",
+      "summary": "Lifeless extreme-heat terrain with Magma, Obsidian, Igneous Rock, and Neutronium; Abyssalite may surround regions but is not present in the extracted zone-element union.",
+      "food": [
+        {"method": "Do not farm here; import food and isolate any nearby ranch or farm thermally", "dependency": "imported", "stage": "all", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Extract geothermal heat into a controlled Steam Turbine chamber; input Steam must reach at least 125°C, the turbine body must stay below 100°C, and the system needs controlled heat transfer and cooling", "dependency": "native", "stage": "late", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use sealed Atmo Suit access and pipe oxygen from elsewhere", "dependency": "imported", "stage": "mid-late", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import a radiation source; Magma is not a radiation generator", "dependency": "imported-spaced-out", "stage": "late", "confidence": "high"}
+      ],
+      "attention": ["Scalding and instant heat transfer", "Magma leaks", "Vacuum breaks", "Material melting points", "Steam Turbines are not a free-power device without a heat source and controlled cooling"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Metallic",
+      "summary": "Sparse metallic terrain with high-value ore variants and no dependable native flora or fauna.",
+      "food": [
+        {"method": "Import compact long-life food or build a sealed imported farm", "dependency": "imported", "stage": "all", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use imported fuel, connected solar power, or local geothermal only when the asteroid layout supports it", "dependency": "location-dependent", "stage": "mid-late", "confidence": "medium"}
+      ],
+      "oxygen": [
+        {"method": "Consume finite Oxylite only as a landing reserve, then pipe oxygen or import water", "dependency": "native-finite-then-imported", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use exposed space where available or import Wheezeworts/Shine Bugs", "dependency": "location-dependent-spaced-out", "stage": "mid", "confidence": "medium"}
+      ],
+      "attention": ["No native biological loop", "High logistics dependence", "Finite Oxylite", "Surface vacuum and radiation", "Do not confuse valuable ore with renewable supply"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-space", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Moo",
+      "summary": "Extremely cold chlorine/methane terrain with Gas Grass and Gassy Moos.",
+      "food": [
+        {"method": "Do not rely on Gassy Moos as a self-replacing staple; import normal food production", "dependency": "imported", "stage": "all", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Ranch Gassy Moos on Gas Grass for Natural Gas, with a backup because reproduction/supply is constrained", "dependency": "native", "stage": "late", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use Atmo Suits and imported oxygen; the biome has no native breathable-gas loop", "dependency": "imported", "stage": "all", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use nearby space radiation if exposed; otherwise import a source", "dependency": "location-dependent-spaced-out", "stage": "mid-late", "confidence": "medium"}
+      ],
+      "attention": ["Frostbite-level cold", "Chlorine atmosphere", "No native oxygen", "Gas Grass temperature/pressure", "Gassy Moo population and feed sustainability"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-space", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Ocean",
+      "summary": "Tide Pool/Ocean terrain with Salt Water or Brine, Salt, Fossil, Sedimentary Rock, Waterweed, Pokeshells, Pacu, and some Pincha Pepperplant variants.",
+      "food": [
+        {"method": "Farm Waterweed for lettuce and ranch Pacu; use Pokeshell products primarily as industrial support", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use a Manual Generator; desalination to electrolysis to hydrogen generation is a multi-building advanced chain and is not ranked as direct power", "dependency": "native-manual-only", "stage": "early", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "No dependable native one-building clean-oxygen route; desalination plus electrolysis is a two-active-building advanced chain and is not ranked as direct", "dependency": "no-direct-native-route", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezewort or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Large liquid masses and flooding", "Desalinator power and labor", "Waterweed liquid-temperature requirements", "Pokeshell aggression near eggs", "Preserve sedimentary rock if Stone Hatch morphs are desired"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "OilField",
+      "summary": "Hot Oily terrain with Crude Oil, Lead, Fossil, Diamond features, Slicksters, and dangerous Sporechids.",
+      "food": [
+        {"method": "Ranch Slicksters for meat while converting colony CO2 to oil", "dependency": "native", "stage": "mid", "confidence": "high"},
+        {"method": "Import a heat-tolerant or insulated crop system", "dependency": "imported", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use a Manual Generator unless the exact world has a directly usable Natural Gas source; refining or boiling Crude Oil before a Petroleum Generator is an advanced chain and is not ranked as direct", "dependency": "no-guaranteed-direct-native-fuel", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Pipe oxygen through an Atmo Suit network; use imported or geyser water for electrolysis", "dependency": "imported", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import a controlled radiation source", "dependency": "imported-spaced-out", "stage": "mid-late", "confidence": "high"}
+      ],
+      "attention": ["Scalding temperatures", "Zombie Spores from Sporechids", "Petroleum/Natural Gas heat and CO2", "Lead overheat limits", "Oil reservoirs and wells require water and pressure management"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "PrehistoricGarden",
+      "summary": "Temperate Garden terrain with Peat, Nickel Ore, Shale, Snactus, Sweatcorn, Ovagro, Lumbs, and Mimikas.",
+      "food": [
+        {"method": "Use Snactus forage first, then Sweatcorn and fully developed Ovagro; use Lumb/Mimika effects to improve farms", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Burn native Peat in a Peat Burner while developing a renewable secondary source", "dependency": "native-finite-unless-looped", "stage": "early", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use finite Oxylite/algae as bootstrap, then electrolyze local or connected water", "dependency": "native-bridge", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Peat is not automatically renewable", "Mimika pollination layout", "Lumb harvesting/ranching behavior", "Ovagro footprint and full-growth planning", "Avoid consuming all starting Oxylite before replacement oxygen is online"],
+      "source_ids": ["local-u59-assets", "wiki-prehistoric-pack", "wiki-garden", "wiki-radiation"]
+    },
+    {
+      "zone_type": "PrehistoricRaptor",
+      "summary": "Cold Feather terrain with Chlorine, Brine Ice, Rhex, Dartle, Megafrond, Dew Dripper, and Wheezewort.",
+      "food": [
+        {"method": "Build a Dartle-supported Rhex ranch; process tough Rhex meat before serving", "dependency": "native-complex", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Import Peat, ethanol, or electrical supply; treat ranch outputs as food/fiber/resource loops rather than primary power until measured", "dependency": "imported", "stage": "mid", "confidence": "medium"}
+      ],
+      "oxygen": [
+        {"method": "Pipe oxygen into protected work zones or melt/process ice from connected cold terrain", "dependency": "mixed", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use native Wheezeworts and collect with a Radbolt Generator", "dependency": "native-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Rhex predation and prey delivery", "Overcrowding and hunting pathing", "Cold and chlorine exposure", "Megafrond chlorine conditions", "Beta ranch ratios are version-sensitive"],
+      "source_ids": ["local-u59-assets", "wiki-prehistoric-pack", "wiki-feather", "forum-rhex-ranch", "wiki-wheezewort"]
+    },
+    {
+      "zone_type": "PrehistoricWetlands",
+      "summary": "Warm polluted-water Wetlands with Seakomb, Lura Plant, Gnit, Pacu, Jawbo, Gold Amalgam, and organic industrial inputs.",
+      "food": [
+        {"method": "Ranch Pacu/Jawbo for seafood; protect supporting populations from uncontrolled predation", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use Manual Generators unless the exact terrain union proves local Peat or another directly burnable fuel; polluted-water-to-hydrogen chains exceed the direct-path policy", "dependency": "variant-or-imported", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use exposed Polluted Water offgassing as emergency Polluted Oxygen or clean that gas with one Deodorizer; water cleaning plus electrolysis exceeds the direct-path policy", "dependency": "native-direct-offgassing", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Jawbo predation", "Lura Plant consumes flying critters", "Polluted Water and heat", "Seakomb processing chain", "Do not assume Amber/Resin or Phyto Oil is immediate food or power without processing"],
+      "source_ids": ["local-u59-assets", "wiki-prehistoric-pack", "wiki-wetlands", "klei-hotfix-737790", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Radioactive",
+      "summary": "Cold Spaced Out terrain with Uranium Ore, Beeta Hives, Wheezeworts, Saturn Critter Traps, Tranquil Toes, and radiation hazards.",
+      "food": [
+        {"method": "Harvest native Saturn Critter Traps for Plant Meat only after providing a critter; treat the 30-cycle domestic growth and 4x wild slowdown as a specialty route, with Hydrogen as a separate by-product", "dependency": "native-plant-plus-critter", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use a Manual Generator for direct local startup; Beeta enrichment to Research Reactor to Steam Turbine is advanced multi-building background and is not ranked as direct", "dependency": "native-manual-only", "stage": "early", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Melt ice and electrolyze water, or pipe oxygen through protected access", "dependency": "native-plus-infrastructure", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Wheezeworts and Beeta Hives create ambient radiation; one Radbolt Generator is required to collect that field and produce radbolts. Reactor-based collection is advanced background needing shielding, cooling, access control, and automation", "dependency": "native-spaced-out", "stage": "mid-late", "confidence": "high"}
+      ],
+      "attention": ["Beetas are aggressive even around suited workers", "Preserve Hives; they are strategically valuable and not normal replacements", "Natural uranium tiles radiate but debris does not equivalently radiate", "Lead Suit and exposure planning", "Reactor cooling and meltdown risk"],
+      "source_ids": ["local-u59-assets", "wiki-radioactive", "wiki-radiation", "wiki-wheezewort"]
+    },
+    {
+      "zone_type": "Reef",
+      "summary": "Aquatic Reef with Salt Water, Coquina, Corallium, Zinc Ore, Flue Coral, Starnacle, Clampum, Waterweed, Beakon, Blowter, Seaquine, Sanishell, Tropical Pacu, and Tidal Springs.",
+      "food": [
+        {"method": "Ranch aquatic critters for seafood and use Seaquine Ovolene for Caviar after infrastructure is stable", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Install Tidal Turbines over attached native Tidal Springs for 300 W while active; output is cyclic rather than continuous, so retain backup generation", "dependency": "native-feature", "stage": "mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Choose Flue Coral for direct farmed oxygen or Blowters for a combined oxygen-and-food ranch; measure current U59 inputs and output in game", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Flue Coral light requirement was increased in 735589", "Salt Water, Lime/Phosphorite, Pearl and Wall Planter dependencies", "Starnacle uses backwall/Wall Planter mechanics", "Aquatic crowding is based on pool size", "Do not use beta oxygen ratios without current in-game verification", "Preserve natural backwalls until farm plans are final"],
+      "source_ids": ["local-u59-assets", "klei-aquatic-hotfix-735589", "klei-aquatic-release-736649", "klei-hotfix-737790", "forum-flue-vs-blowter", "forum-starnacle-planting"]
+    },
+    {
+      "zone_type": "Rust",
+      "summary": "Cool Rust terrain with Rust, Salt Water, Iron Ore, Nosh Sprouts, Dasha Saltvines, Dreckos, Squeaky Pufts, and sometimes Wheezeworts/Ethanol features.",
+      "food": [
+        {"method": "Grow Nosh Sprouts only after securing variant-native or imported Ethanol and temperature control; ranch Dreckos for meat as a second path", "dependency": "native-variant-or-imported-ethanol", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use finite Ethanol pockets as a bridge; import lumber/ethanol or another sustainable fuel", "dependency": "native-variant-finite", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Run Rust Deoxidizers using native Rust plus Salt, then plan a replacement before finite stocks run out", "dependency": "native-finite", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Use native-variant Wheezeworts where generated; otherwise import them", "dependency": "native-variant-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Rust and Salt oxygen is finite without renewal", "Rust Deoxidizer produces Chlorine byproduct", "Nosh Sprouts need Ethanol and cold conditions", "Squeaky Puft and Drecko ranch gases", "Do not count feature Ethanol lakes as renewable"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-wheezewort", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Sandstone",
+      "summary": "Temperate starting terrain rich in Water, Dirt, Algae, Coal, Copper Ore, Mealwood, Bristle Blossom, Hatches, and Shine Bugs.",
+      "food": [
+        {"method": "Use Muckroot briefly, then Mealwood or Bristle Blossom; ranch Hatches for barbecue and renewable Coal while feed lasts", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Burn native Coal and use Hatch ranching to extend supply; transition to hydrogen or another renewable source before feed minerals become limiting", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use Algae Diffusers early, then electrolyze Water for sustained output", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Ranch native Shine Bugs around a Radbolt Generator", "dependency": "native-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Algae, Coal, Dirt and Water are finite unless renewed", "Bristle Blossom water and light demand", "Hatch feed depletion", "Shine Bug crowding/escape", "Heat accumulation from power and oxygen infrastructure"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-shine-bug", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Space",
+      "summary": "Most surface variants are vacuum-exposed terrain with regolith/mafic rock, meteors, solar access, Shove Voles, and ambient space radiation in Spaced Out; the installed Space zone union also contains border, Terra-surface, and module-interior definitions that are not all equivalent to open vacuum.",
+      "food": [
+        {"method": "Ranch Shove Voles in escape-proof enclosures, or build sealed temperature-controlled farms behind backwalls", "dependency": "native-variant-or-imported", "stage": "mid-late", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use Solar Panels with meteor protection and energy storage", "dependency": "native-location", "stage": "mid-late", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use Atmo Suits and sealed backwalled rooms; pipe oxygen in and prevent space exposure from deleting it", "dependency": "imported", "stage": "mid-late", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Collect ambient space radiation directly with Radbolt Generators placed according to the planetoid's exposure level", "dependency": "native-spaced-out", "stage": "mid-late", "confidence": "high"}
+      ],
+      "attention": ["Exposed gas and liquid deletion", "Meteors and falling regolith", "Solar intermittency", "Radiation exposure varies by planetoid", "Atmo Suit oxygen and airlock failure", "Drywall/backwall coverage"],
+      "source_ids": ["local-u59-assets", "wiki-space", "wiki-radiation"]
+    },
+    {
+      "zone_type": "SugarWoods",
+      "summary": "Very cold Nectar terrain with Bonbon Trees, Spigot Seals, Shine Bugs, Ice/Snow, Phosphorite, and low-melting Mercury.",
+      "food": [
+        {"method": "Use Spigot Seal Tallow in supported food chains, but import a simpler staple crop for colony calories", "dependency": "native-plus-imported", "stage": "mid", "confidence": "medium"}
+      ],
+      "energy": [
+        {"method": "Feed Spigot Seals from Bonbon Trees and burn their direct Ethanol output in a Petroleum Generator; burn direct Bonbon Lumber in a Wood Burner as the separate one-building alternative", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Melt Ice/Snow and electrolyze Water, or import Alveo Vera from Ice Caves", "dependency": "native-plus-connected", "stage": "mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Ranch native Shine Bugs", "dependency": "native-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Extreme cold and liquefiable terrain", "Bonbon Trees require strong light for full production", "Spigot Seal ranch scale and tree access", "Mercury melts at very low temperature", "Ethanol loop output is not free energy"],
+      "source_ids": ["local-u59-assets", "wiki-nectar", "wiki-shine-bug", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Swamp",
+      "summary": "Spaced Out Swampy terrain with Mud, Polluted Water/Oxygen, Bog Buckets, Swamp Chard, Pacu, Plug Slugs, and useful metal/mineral variants.",
+      "food": [
+        {"method": "Use Swamp Chard forage briefly, then Bog Bucket farming and Pacu ranching", "dependency": "native", "stage": "early-mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Use wild Plug Slugs as early supplemental power at about 400 W when fully fed; 1,600 W is the domesticated full-fed rating, starvation lowers output further, and their metal feed is not free", "dependency": "native", "stage": "early", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use native Polluted Oxygen directly in an emergency or clean it with one Deodorizer; show Mud/Sludge-Press and cleaned-water electrolysis only as excluded advanced chains", "dependency": "native-direct-gas", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Polluted oxygen and water", "Plug Slug feed cost and nighttime behavior", "Mud processing labor/power", "Bog Bucket water temperature", "Pacu pool management"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "ToxicJungle",
+      "summary": "Caustic/Jungle terrain with Hydrogen, Chlorine, Phosphorite, Pincha Pepperplants, Balm Lilies, Dreckos, and Morbs.",
+      "food": [
+        {"method": "Ranch Dreckos for meat and use Pincha Peppernuts as a high-tier food ingredient; import a staple-calorie crop", "dependency": "mixed", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Capture finite native Hydrogen for a Hydrogen Generator, then transition to a renewable source", "dependency": "native-finite", "stage": "early-mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use Algae where the variant contains it or pipe oxygen through Atmo Suit access; do not open hydrogen/chlorine pockets into the base", "dependency": "native-variant-or-imported", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Unbreathable Hydrogen/Chlorine layers", "Gas mixing when breached", "Drecko ranch atmosphere requirements", "Morbs and polluted oxygen", "High temperatures in some variants"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    },
+    {
+      "zone_type": "Wasteland",
+      "summary": "Spaced Out Sulfur/Wasteland terrain with Grubfruit, Sweetles, and mineral-rich but water-poor variants.",
+      "food": [
+        {"method": "Farm Grubfruit and ranch Sweetles; evolve ranching toward Grubgrubs only if the current feed/output chain is sustainable", "dependency": "native", "stage": "mid", "confidence": "high"}
+      ],
+      "energy": [
+        {"method": "Import fuel or connect solar/geothermal power; native Sulfur supports biology but is not itself a direct generator fuel", "dependency": "imported-or-location-dependent", "stage": "mid", "confidence": "high"}
+      ],
+      "oxygen": [
+        {"method": "Use finite Oxylite pockets where generated, then import oxygen or water", "dependency": "native-variant-finite-then-imported", "stage": "early-mid", "confidence": "high"}
+      ],
+      "radiation": [
+        {"method": "Import Wheezeworts or Shine Bugs", "dependency": "imported-spaced-out", "stage": "mid", "confidence": "high"}
+      ],
+      "attention": ["Water scarcity", "Sulfur and crop temperature requirements", "Sweetle/Grubgrub morph management", "Finite Oxylite", "Do not mistake Sulfur abundance for direct electrical power"],
+      "source_ids": ["local-u59-assets", "wiki-biome-overview", "wiki-radiation"]
+    }
+  ]
+}

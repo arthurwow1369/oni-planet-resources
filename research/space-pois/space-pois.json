@@ -1,0 +1,909 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "as_of": "2026-08-06",
+    "installed_game_version": "U59-740622",
+    "scope_en": "Every space POI the installed worldgen data can generate, with the outputs, capacity and cargo requirements declared by the game assembly.",
+    "scope_zh": "列出已安裝世界生成資料可能生成的所有太空興趣點，並附上遊戲組件宣告的產出、容量與貨艙需求。",
+    "coordinatePolicy_en": "Exact starmap coordinates are rolled per world seed and are not listed. Only the ring range each cluster allows is shown, which is the same for every player of that cluster.",
+    "coordinatePolicy_zh": "確切星圖座標由世界種子決定，本站不列出；只顯示各星團允許的環距範圍，該範圍對所有玩同一星團的玩家都相同。"
+  },
+  "mechanics": {
+    "summary_en": "Harvesting a space POI requires a rocket with a Drillcone, Diamond for the drill, and a cargo bay matching each output phase.",
+    "summary_zh": "採集太空興趣點需要配備鑽頭前錐的火箭、供鑽頭消耗的鑽石，以及對應各產出相態的貨艙。",
+    "recharge_en": "Each site rolls its own capacity and refill rate from the ranges below when the world is generated, so two players of the same cluster see different totals.",
+    "recharge_zh": "每個地點在世界生成時會在下列範圍內各自決定容量與回充率，因此同一星團的兩位玩家看到的數值並不相同。",
+    "source_ids": [
+      "game-assembly"
+    ]
+  },
+  "pois": [
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation1",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation2",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation3",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation4",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation5",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation6",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation7",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_GravitasSpaceStation8",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "ArtifactSpacePOI_RussellsTeapot",
+      "strategic_en": [
+        "An artifact destination: send a rocket with a Cargo Bay and a Duplicant or robot to recover Artifacts and Data Banks."
+      ],
+      "strategic_zh": [
+        "文物目的地：派遣配備貨艙與人員（或機器人）的火箭前往回收文物與資料庫。"
+      ],
+      "attention_en": [
+        "Artifacts are one-time recoveries per site; the destination does not recharge like a harvestable field."
+      ],
+      "attention_zh": [
+        "文物為一次性回收，此目的地不像可採集礦場會回充。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_CarbonAsteroidField",
+      "strategic_en": [
+        "A renewable Refined Carbon supply that skips the Kiln, useful for Steel production once Iron and Lime are handled elsewhere."
+      ],
+      "strategic_zh": [
+        "可再生的精煉碳來源，免去窯爐工序；在鐵與石灰另有來源時有助於鋼的生產。"
+      ],
+      "attention_en": [
+        "Pure solid field: one solid cargo bay is enough."
+      ],
+      "attention_zh": [
+        "純固體礦場：一個固體貨艙即可。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_ChlorineCloud",
+      "strategic_en": [
+        "Renewable Bleach Stone for Chlorine sterilization loops and Oxygen Diffuser deodorizing without consuming a planet-side deposit."
+      ],
+      "strategic_zh": [
+        "可再生的漂白石，供氯氣消毒與除臭循環使用，不必消耗星球上的礦床。"
+      ],
+      "attention_en": [
+        "Chlorine arrives as a liquid at its default temperature, so a liquid cargo bay is required alongside the solid bay."
+      ],
+      "attention_zh": [
+        "氯以預設溫度的液態形式取得，因此除固體貨艙外還需液體貨艙。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC2CeresField",
+      "strategic_en": [
+        "The planetary-mixing counterpart of the Ceres ore field; the only renewable Cinnabar and Mercury route when the Frosty Planet Pack is mixed into another cluster."
+      ],
+      "strategic_zh": [
+        "穀神星礦場的行星混搭版本；在寒霜行星包混入其他星團時，是硃砂與汞唯一的可再生路線。"
+      ],
+      "attention_en": [
+        "Only generated when Frosty Planet Pack planetary mixing is enabled at cluster setup."
+      ],
+      "attention_zh": [
+        "只有在建立星團時啟用寒霜行星包行星混搭才會生成。"
+      ],
+      "strategicResourceIds": [
+        "Cinnabar",
+        "Mercury"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-mixing",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC2CeresOreField",
+      "strategic_en": [
+        "Renewable Cinnabar and Mercury for Thermium-free cooling loops and Mercury-based temperature transfer."
+      ],
+      "strategic_zh": [
+        "可再生的硃砂與汞，適用於不依賴超導體的冷卻迴路與汞質導熱應用。"
+      ],
+      "attention_en": [
+        "Mercury is liquid at its default temperature and needs a liquid cargo bay."
+      ],
+      "attention_zh": [
+        "汞在預設溫度下為液態，需要液體貨艙。"
+      ],
+      "strategicResourceIds": [
+        "Cinnabar",
+        "Mercury"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4PrehistoricMixingField",
+      "strategic_en": [
+        "The planetary-mixing counterpart of the Prehistoric ore field, and the only renewable Iridium route outside a Prehistoric cluster."
+      ],
+      "strategic_zh": [
+        "史前礦場的行星混搭版本，也是史前星團以外唯一的可再生銥路線。"
+      ],
+      "attention_en": [
+        "Only generated when Prehistoric Planet Pack planetary mixing is enabled at cluster setup."
+      ],
+      "attention_zh": [
+        "只有在建立星團時啟用史前行星包行星混搭才會生成。"
+      ],
+      "strategicResourceIds": [
+        "Iridium",
+        "Amber"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-mixing",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC4PrehistoricOreField",
+      "strategic_en": [
+        "Renewable Peat for early power and Amber for Prehistoric research, plus Nickel Ore for Nickel refining."
+      ],
+      "strategic_zh": [
+        "可再生的泥炭供前期發電、琥珀供史前研究，另有鎳礦可精煉為鎳。"
+      ],
+      "attention_en": [
+        "Peat burns as fuel but also decomposes; plan storage temperature before stockpiling large amounts."
+      ],
+      "attention_zh": [
+        "泥炭可作燃料但也會分解；大量囤積前先規劃儲存溫度。"
+      ],
+      "strategicResourceIds": [
+        "Amber"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC5AquaticMixingField",
+      "strategic_en": [
+        "The planetary-mixing counterpart of the Aquatic ore field, and the only renewable Corallium route outside an Aquatic cluster."
+      ],
+      "strategic_zh": [
+        "水生礦場的行星混搭版本，也是水生星團以外唯一的可再生珊瑚石路線。"
+      ],
+      "attention_en": [
+        "Only generated when Aquatic Planet Pack planetary mixing is enabled at cluster setup."
+      ],
+      "attention_zh": [
+        "只有在建立星團時啟用水生行星包行星混搭才會生成。"
+      ],
+      "strategicResourceIds": [
+        "Corallium"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-mixing",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_DLC5AquaticOreField",
+      "strategic_en": [
+        "Renewable Corallium for Aquatic buildings and Zinc Ore for Zinc refining, without draining the asteroid's own reefs."
+      ],
+      "strategic_zh": [
+        "可再生的珊瑚石與鋅礦，供水生建築與鋅精煉使用，不必消耗星球本身的珊瑚礁。"
+      ],
+      "attention_en": [
+        "Coquina and Siltstone arrive as bulk filler; budget cargo capacity for the low-value majority."
+      ],
+      "attention_zh": [
+        "貝殼岩與粉砂岩屬於大宗填充物；規劃貨艙容量時要把低價值的大部分計算在內。"
+      ],
+      "strategicResourceIds": [
+        "Corallium"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_ForestyOreField",
+      "strategic_en": [
+        "Renewable Aluminum Ore for Aluminum refining and heat-conductive building materials."
+      ],
+      "strategic_zh": [
+        "可再生的鋁礦，供鋁精煉與高導熱建材使用。"
+      ],
+      "attention_en": [
+        "Carbon Dioxide is emitted as a gas and needs a gas cargo bay if you want to keep it."
+      ],
+      "attention_zh": [
+        "二氧化碳以氣態產出；若要保留，需要氣體貨艙。"
+      ],
+      "strategicResourceIds": [
+        "AluminumOre"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_FrozenOreField",
+      "strategic_en": [
+        "Bulk renewable Ice and Snow for cooling, plus Aluminum Ore in the same haul."
+      ],
+      "strategic_zh": [
+        "大量可再生的冰與雪供冷卻使用，同一趟還能取得鋁礦。"
+      ],
+      "attention_en": [
+        "Everything arrives well below freezing; unload into an insulated room or the cargo will chill the base."
+      ],
+      "attention_zh": [
+        "所有產物都遠低於冰點；請卸載到隔熱房間，否則會冷卻基地。"
+      ],
+      "strategicResourceIds": [
+        "AluminumOre"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GasGiantCloud",
+      "strategic_en": [
+        "Renewable Hydrogen for Hydrogen power and liquid-hydrogen rocket fuel, at the highest ratio of any POI."
+      ],
+      "strategic_zh": [
+        "可再生的氫，比例是所有興趣點中最高的，適用於氫氣發電與液氫火箭燃料。"
+      ],
+      "attention_en": [
+        "Methane arrives in three phases at once; solid, liquid and gas cargo bays are all needed for a full haul."
+      ],
+      "attention_zh": [
+        "甲烷會同時以三種相態產出；要完整帶回需固體、液體與氣體貨艙齊備。"
+      ],
+      "strategicResourceIds": [
+        "Hydrogen"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GildedAsteroidField",
+      "strategic_en": [
+        "The renewable Fullerene route, which feeds Super Coolant through the Molecular Forge and Emulsifier."
+      ],
+      "strategic_zh": [
+        "可再生的富勒烯路線，經分子熔爐與乳化機可製成超級冷卻液。"
+      ],
+      "attention_en": [
+        "Fullerene arrives at -31 °C while the rest of the haul is near room temperature; separate it before storage."
+      ],
+      "attention_zh": [
+        "富勒烯以攝氏 -31 度產出，其餘產物接近常溫；儲存前請分開處理。"
+      ],
+      "strategicResourceIds": [
+        "Fullerene",
+        "Gold"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_GlimmeringAsteroidField",
+      "strategic_en": [
+        "Renewable Wolframite and Tungsten for high-temperature builds and Thermium production."
+      ],
+      "strategic_zh": [
+        "可再生的黑鎢礦與鎢，適用於高溫建築與超導體生產。"
+      ],
+      "attention_en": [
+        "Molten Tungsten arrives as a liquid above 3000 °C; without a liquid cargo bay and a heat plan it will destroy the receiving room."
+      ],
+      "attention_zh": [
+        "熔融鎢以超過攝氏 3000 度的液態產出；若沒有液體貨艙與散熱規劃，會摧毀接收區。"
+      ],
+      "strategicResourceIds": [
+        "Wolframite",
+        "MoltenTungsten"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_HeliumCloud",
+      "strategic_en": [
+        "Despite the name it yields Water and Hydrogen, making it a renewable water source that needs no Water Sieve."
+      ],
+      "strategic_zh": [
+        "雖然名為氦雲，實際產出為水與氫，是不需淨水器的可再生水源。"
+      ],
+      "attention_en": [
+        "Both outputs are non-solid; bring liquid and gas cargo bays rather than the usual solid bay."
+      ],
+      "attention_zh": [
+        "兩種產物都非固體；請攜帶液體與氣體貨艙，而非一般的固體貨艙。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_IceAsteroidField",
+      "strategic_en": [
+        "Bulk renewable Ice with Solid Oxygen and Solid Carbon Dioxide alongside it."
+      ],
+      "strategic_zh": [
+        "大量可再生的冰，並附帶固態氧與固態二氧化碳。"
+      ],
+      "attention_en": [
+        "Oxygen arrives as a gas while the rest is solid; a gas cargo bay is needed to keep it."
+      ],
+      "attention_zh": [
+        "氧以氣態產出，其餘為固態；要保留氧需要氣體貨艙。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_InterstellarIceField",
+      "strategic_en": [
+        "Renewable Solid Carbon Dioxide and Solid Oxygen, useful as a cold sink and an emergency oxygen reserve."
+      ],
+      "strategic_zh": [
+        "可再生的固態二氧化碳與固態氧，可作為冷源與緊急氧氣儲備。"
+      ],
+      "attention_en": [
+        "Solid Oxygen is only 5% of the haul; do not plan life support around this POI alone."
+      ],
+      "attention_zh": [
+        "固態氧只佔產出的 5%；不要只靠此興趣點規劃生命維持。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_InterstellarOcean",
+      "strategic_en": [
+        "An even split of Brine, Salt Water, Salt and Ice — a renewable desalination feedstock and Salt source."
+      ],
+      "strategic_zh": [
+        "鹽滷、鹽水、鹽與冰各佔四分之一，是可再生的脫鹽原料與鹽來源。"
+      ],
+      "attention_en": [
+        "Half the haul is liquid; a liquid cargo bay is mandatory."
+      ],
+      "attention_zh": [
+        "產物有一半是液體；必須攜帶液體貨艙。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_MetallicAsteroidField",
+      "strategic_en": [
+        "Renewable Iron, Lead and Copper in one destination, covering most refined-metal demand."
+      ],
+      "strategic_zh": [
+        "在同一目的地取得可再生的鐵、鉛與銅，可涵蓋大部分精煉金屬需求。"
+      ],
+      "attention_en": [
+        "Molten Iron and Molten Lead arrive as very hot liquids; a liquid cargo bay and a cooling plan are required."
+      ],
+      "attention_zh": [
+        "熔融鐵與熔融鉛以高溫液態產出；需要液體貨艙與散熱規劃。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OilyAsteroidField",
+      "strategic_en": [
+        "A renewable Crude Oil source that needs no Oil Well or Petroleum Boiler pressure management."
+      ],
+      "strategic_zh": [
+        "可再生的原油來源，不需油井或石油鍋爐的壓力管理。"
+      ],
+      "attention_en": [
+        "Crude Oil is only 11% of the haul; the bulk is Solid Carbon Dioxide that must be disposed of or stored cold."
+      ],
+      "attention_zh": [
+        "原油只佔產出的 11%；大部分為固態二氧化碳，需另行處置或低溫儲存。"
+      ],
+      "strategicResourceIds": [
+        "CrudeOil"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OrganicMassField",
+      "strategic_en": [
+        "Renewable Algae, Slime Mold and Dirt for oxygen and farming, and the most widely placed POI in the game."
+      ],
+      "strategic_zh": [
+        "可再生的藻類、黏菌與泥土，供製氧與農業使用，也是遊戲中配置最廣的興趣點。"
+      ],
+      "attention_en": [
+        "Contaminated Oxygen and Slime Mold carry Slimelung risk; unload through a disinfected airlock."
+      ],
+      "attention_zh": [
+        "污染氧與黏菌帶有黏菌肺風險；請透過消毒氣閘卸載。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OxidizedAsteroidField",
+      "strategic_en": [
+        "Bulk renewable Rust for the Rust Deoxidizer, an oxygen route that needs no Algae or water."
+      ],
+      "strategic_zh": [
+        "大量可再生的鏽，供鏽味除氧機使用；這條製氧路線不需藻類或水。"
+      ],
+      "attention_en": [
+        "The Rust Deoxidizer also consumes Salt; this POI supplies only the Rust half."
+      ],
+      "attention_zh": [
+        "鏽味除氧機同時消耗鹽；此興趣點只提供鏽的部分。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_OxygenRichAsteroidField",
+      "strategic_en": [
+        "Renewable Water and Ice with Contaminated Oxygen alongside, a compact life-support resupply."
+      ],
+      "strategic_zh": [
+        "可再生的水與冰，並附帶污染氧，是精簡的生命維持補給點。"
+      ],
+      "attention_en": [
+        "All three phases appear; without a gas bay the Contaminated Oxygen share is lost."
+      ],
+      "attention_zh": [
+        "三種相態都會出現；沒有氣體貨艙就會失去污染氧的部分。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RadioactiveAsteroidField",
+      "strategic_en": [
+        "Renewable Uranium Ore for Research Reactors and radbolt production, plus Sulfur for Sour Gas chains."
+      ],
+      "strategic_zh": [
+        "可再生的鈾礦供研究反應爐與輻射粒子生產，另有硫可用於酸性氣體產線。"
+      ],
+      "attention_en": [
+        "Capacity is only 5–10 t, the smallest of any POI, and the haul is radioactive; plan shielding and frequent trips."
+      ],
+      "attention_zh": [
+        "容量僅 5–10 公噸，是所有興趣點中最小的，且產物具放射性；請規劃屏蔽與頻繁往返。"
+      ],
+      "strategicResourceIds": [
+        "UraniumOre"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RadioactiveGasCloud",
+      "strategic_en": [
+        "The gas-phase Uranium Ore route, useful when a solid-only drill loadout is already committed elsewhere."
+      ],
+      "strategic_zh": [
+        "氣態版本的鈾礦路線；當固體貨艙配置已用於他處時特別有用。"
+      ],
+      "attention_en": [
+        "Capacity is only 5–10 t and nearly two thirds of the haul is Carbon Dioxide."
+      ],
+      "attention_zh": [
+        "容量僅 5–10 公噸，且將近三分之二的產物是二氧化碳。"
+      ],
+      "strategicResourceIds": [
+        "UraniumOre"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_RockyAsteroidField",
+      "strategic_en": [
+        "The largest capacity of any POI at 81–94 t, and the renewable Abyssalite source for insulated builds."
+      ],
+      "strategic_zh": [
+        "容量 81–94 公噸，是所有興趣點中最大的，也是隔熱建築所需的可再生深淵石來源。"
+      ],
+      "attention_en": [
+        "Pure bulk solids; value comes from volume rather than any single output."
+      ],
+      "attention_zh": [
+        "全為大宗固體；價值來自總量而非單一產物。"
+      ],
+      "strategicResourceIds": [
+        "Katairite"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SaltyAsteroidField",
+      "strategic_en": [
+        "Bulk renewable Salt Water and Brine for desalination and Salt production."
+      ],
+      "strategic_zh": [
+        "大量可再生的鹽水與鹽滷，供脫鹽與製鹽使用。"
+      ],
+      "attention_en": [
+        "90% of the haul is liquid; solid cargo capacity is nearly wasted here."
+      ],
+      "attention_zh": [
+        "產物有 90% 是液體；此處固體貨艙容量幾乎派不上用場。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SandyOreField",
+      "strategic_en": [
+        "Renewable Sand for Water Sieves and Glass, with Algae and Cuprite alongside."
+      ],
+      "strategic_zh": [
+        "可再生的沙供淨水器與玻璃使用，另附藻類與赤銅礦。"
+      ],
+      "attention_en": [
+        "Sandstone is the largest share and has little use beyond construction."
+      ],
+      "attention_zh": [
+        "砂岩佔比最高，除建材外用途有限。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SatelliteField",
+      "strategic_en": [
+        "Renewable Iron Ore, Copper and ready-made Glass, skipping the Glass Forge for Solar Panel builds."
+      ],
+      "strategic_zh": [
+        "可再生的鐵礦、銅與現成玻璃，建造太陽能板時可省去玻璃熔爐工序。"
+      ],
+      "attention_en": [
+        "Molten Copper arrives as a hot liquid and needs a liquid cargo bay."
+      ],
+      "attention_zh": [
+        "熔融銅以高溫液態產出，需要液體貨艙。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "HarvestableSpacePOI_SwampyOreField",
+      "strategic_en": [
+        "The renewable Cobaltite route for Cobalt refining and Shove Vole ranching feedstock."
+      ],
+      "strategic_zh": [
+        "可再生的鈷礦石路線，供鈷精煉與鏟地鼠牧場飼料使用。"
+      ],
+      "attention_en": [
+        "70% of the haul is Toxic Sand, which offgasses Contaminated Oxygen when it warms; store it cold or vent it deliberately."
+      ],
+      "attention_zh": [
+        "產物有 70% 是毒沙，升溫時會逸出污染氧；請低溫儲存或有計畫地排放。"
+      ],
+      "strategicResourceIds": [
+        "Cobaltite"
+      ],
+      "source_ids": [
+        "game-assembly",
+        "game-clusters",
+        "game-elements"
+      ]
+    },
+    {
+      "id": "TemporalTear",
+      "name_en": "Temporal Tear",
+      "name_zh": "時空裂縫",
+      "desc_en": "A tear in space-time and the end-game destination of a Spaced Out cluster.",
+      "desc_zh": "時空中的裂縫，是《眼冒金星！》星團的終局目的地。",
+      "strategic_en": [
+        "The end-game objective: opening it requires the Temporal Tear Opener and completes the Spaced Out story."
+      ],
+      "strategic_zh": [
+        "終局目標：開啟需要時空裂縫開啟器，並完成《眼冒金星！》的劇情。"
+      ],
+      "attention_en": [
+        "Not harvestable and it yields no materials; it is a destination rather than a resource site."
+      ],
+      "attention_zh": [
+        "無法採集且不產出任何材料；這是目的地而非資源點。"
+      ],
+      "strategicResourceIds": [],
+      "source_ids": [
+        "game-clusters",
+        "game-strings"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "game-assembly",
+      "title": "Assembly-CSharp.dll · HarvestablePOIConfig / HarvestModule",
+      "url": "local-game-data:Managed/Assembly-CSharp.dll",
+      "kind": "installed-game-data",
+      "accessed_at": "2026-08-06"
+    },
+    {
+      "id": "game-clusters",
+      "title": "StreamingAssets worldgen cluster files",
+      "url": "local-game-data:worldgen/clusters",
+      "kind": "installed-game-data",
+      "accessed_at": "2026-08-06"
+    },
+    {
+      "id": "game-mixing",
+      "title": "StreamingAssets worldgen mixing files",
+      "url": "local-game-data:worldgen/mixing.yaml",
+      "kind": "installed-game-data",
+      "accessed_at": "2026-08-06"
+    },
+    {
+      "id": "game-elements",
+      "title": "StreamingAssets element definitions",
+      "url": "local-game-data:elements",
+      "kind": "installed-game-data",
+      "accessed_at": "2026-08-06"
+    },
+    {
+      "id": "game-strings",
+      "title": "StreamingAssets string tables",
+      "url": "local-game-data:strings",
+      "kind": "installed-game-data",
+      "accessed_at": "2026-08-06"
+    }
+  ]
+}
