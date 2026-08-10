@@ -53,6 +53,70 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -145,6 +209,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -205,6 +351,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -275,6 +425,42 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": true,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -367,6 +553,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -464,6 +732,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -566,6 +916,97 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 5,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -673,6 +1114,80 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "hot_hydrogen",
+          "count": 1
+        },
+        {
+          "geyserId": "methane",
+          "count": 2
+        },
+        {
+          "geyserId": "molten_copper",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_iron",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_gold"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -769,6 +1284,65 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -860,6 +1434,61 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -932,6 +1561,42 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": true,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -993,6 +1658,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -1050,6 +1719,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -1140,6 +1813,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -1236,6 +1991,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -1342,6 +2179,51 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "slush_salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -1457,6 +2339,51 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "slush_salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -1595,6 +2522,47 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -1711,6 +2679,47 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -1829,6 +2838,32 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "hot_steam",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "hot_water",
+            "methane",
+            "molten_copper",
+            "oil_drip",
+            "salt_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -1898,6 +2933,42 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 4,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -1992,6 +3063,39 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "slush_salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "liquid_co2",
+            "methane",
+            "oil_drip",
+            "slimy_po2",
+            "slush_water"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -2100,6 +3204,41 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_co2",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 2
+        },
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -2194,6 +3333,34 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        },
+        {
+          "geyserId": "small_volcano",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "hot_hydrogen",
+            "hot_steam",
+            "methane",
+            "slimy_po2",
+            "slush_water",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -2295,6 +3462,71 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "big_volcano",
+          "count": 1
+        },
+        {
+          "geyserId": "chlorine_gas_cool",
+          "count": 1
+        },
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "iridium-demolior"
     ],
@@ -2416,6 +3648,71 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "big_volcano",
+          "count": 1
+        },
+        {
+          "geyserId": "chlorine_gas_cool",
+          "count": 1
+        },
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "iridium-demolior",
       "uranium-nuclear"
@@ -2551,6 +3848,55 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas_cool",
+          "count": 1
+        },
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "iridium-demolior"
     ],
@@ -2668,6 +4014,55 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas_cool",
+          "count": 1
+        },
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "iridium-demolior",
       "uranium-nuclear"
@@ -2780,6 +4175,60 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 4,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas_cool"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -2877,6 +4326,40 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas_cool",
+          "count": 1
+        },
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "iridium-demolior",
       "uranium-nuclear"
@@ -3031,6 +4514,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "murky_brine"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -3153,6 +4686,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "murky_brine"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -3264,6 +4847,51 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 4,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        },
+        {
+          "geyserIds": [
+            "murky_brine"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -3375,6 +5003,36 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "murky_brine",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -3510,6 +5168,70 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -3631,6 +5353,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -3711,6 +5515,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -3774,6 +5582,19 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 1
+        }
+      ],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -3861,6 +5682,35 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -3955,6 +5805,35 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -4048,6 +5927,35 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -4150,6 +6058,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "small_volcano",
+          "count": 3
+        },
+        {
+          "geyserId": "steam",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_hydrogen"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -4237,6 +6195,38 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "salt_water",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -4328,6 +6318,38 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "salt_water",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -4418,6 +6440,38 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "salt_water",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -4528,6 +6582,74 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_steam",
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -4661,6 +6783,53 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "molten_aluminum",
+          "count": 2
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "molten_copper",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -4771,6 +6940,42 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -4898,6 +7103,44 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "molten_aluminum",
+          "count": 2
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "molten_copper",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -5028,6 +7271,45 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "molten_cobalt",
+          "count": 2
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "molten_copper",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -5143,6 +7425,39 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "molten_tungsten",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "molten_tungsten"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "slimy_po2"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "sap-isosap"
     ],
@@ -5253,6 +7568,69 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_cobalt",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "molten_cobalt",
+            "molten_gold"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -5352,6 +7730,69 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_cobalt",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "molten_cobalt",
+            "molten_gold"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -5448,6 +7889,69 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_cobalt",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_gold",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "molten_cobalt",
+            "molten_gold"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -5522,6 +8026,15 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "chlorine_gas",
+          "count": 1
+        }
+      ],
+      "pools": []
+    },
     "specialResourceIds": [
       "moo-brackene"
     ],
@@ -5642,6 +8155,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -5767,6 +8362,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -5881,6 +8558,31 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -5965,6 +8667,42 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -6065,6 +8803,31 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -6165,6 +8928,54 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "small_volcano",
+          "count": 3
+        },
+        {
+          "geyserId": "steam",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_hydrogen"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -6274,6 +9085,74 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_steam",
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -6397,6 +9276,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_co2",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -6526,6 +9455,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_co2",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -6654,6 +9633,56 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 2,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_co2",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -6804,6 +9833,81 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -6947,6 +10051,74 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_steam",
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -7093,6 +10265,74 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "liquid_co2"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_steam",
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -7201,6 +10441,21 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "hot_steam",
+            "steam"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -7277,6 +10532,21 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "hot_steam",
+            "steam"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -7390,6 +10660,97 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 5,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -7523,6 +10884,39 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "liquid_sulfur",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -7634,6 +11028,80 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "filthy_water",
+          "count": 1
+        },
+        {
+          "geyserId": "hot_hydrogen",
+          "count": 1
+        },
+        {
+          "geyserId": "methane",
+          "count": 2
+        },
+        {
+          "geyserId": "molten_copper",
+          "count": 1
+        },
+        {
+          "geyserId": "molten_iron",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_gold"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -7693,6 +11161,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -7818,6 +11290,122 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_hydrogen"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "liquid_co2",
+            "liquid_sulfur",
+            "small_volcano"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_steam",
+            "hot_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "methane",
+            "slimy_po2"
+          ],
+          "draws": 4,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -7949,6 +11537,91 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "hot_water",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "filthy_water",
+            "salt_water",
+            "slush_salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 2,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -8025,6 +11698,15 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "molten_niobium",
+          "count": 1
+        }
+      ],
+      "pools": []
+    },
     "specialResourceIds": [
       "niobium-thermium"
     ],
@@ -8168,6 +11850,65 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -8286,6 +12027,48 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "slush_water",
+          "count": 1
+        },
+        {
+          "geyserId": "small_volcano",
+          "count": 3
+        },
+        {
+          "geyserId": "steam",
+          "count": 1
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "steam"
+          ],
+          "draws": 3,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "recommended",
@@ -8388,6 +12171,61 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -8501,6 +12339,49 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "oil_drip",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -8600,6 +12481,49 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "oil_drip",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -8698,6 +12622,49 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "liquid_co2",
+            "methane",
+            "oil_drip",
+            "slimy_po2",
+            "small_volcano"
+          ],
+          "draws": 3,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -8757,6 +12724,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -8815,6 +12786,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": true,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -8874,6 +12849,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -8935,6 +12914,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -9001,6 +12984,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -9076,6 +13063,34 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 1
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "conditional",
@@ -9150,6 +13165,20 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "molten_iron"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -9256,6 +13285,65 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [
+        {
+          "geyserId": "methane",
+          "count": 1
+        },
+        {
+          "geyserId": "salt_water",
+          "count": 2
+        },
+        {
+          "geyserId": "steam",
+          "count": 2
+        }
+      ],
+      "pools": [
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": true,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -9346,6 +13434,10 @@
     "clusterRoles": [],
     "referencedByCluster": false,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": []
+    },
     "specialResourceIds": [],
     "settlement": {
       "classification": "outpost",
@@ -9451,6 +13543,88 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "chlorine_gas",
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "steam"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "methane"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "salt_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        },
+        {
+          "geyserIds": [
+            "big_volcano",
+            "chlorine_gas",
+            "filthy_water",
+            "hot_co2",
+            "hot_hydrogen",
+            "hot_po2",
+            "hot_steam",
+            "hot_water",
+            "liquid_co2",
+            "liquid_sulfur",
+            "methane",
+            "molten_aluminum",
+            "molten_cobalt",
+            "molten_copper",
+            "molten_gold",
+            "molten_iron",
+            "oil_drip",
+            "salt_water",
+            "slimy_po2",
+            "slush_salt_water",
+            "slush_water",
+            "small_volcano",
+            "steam"
+          ],
+          "draws": 12,
+          "allowDuplicates": true,
+          "guaranteed": false,
+          "isRandomSpawner": true
+        }
+      ]
+    },
     "specialResourceIds": [
       "uranium-nuclear"
     ],
@@ -9553,6 +13727,23 @@
     ],
     "referencedByCluster": true,
     "internal": false,
+    "geysers": {
+      "fixed": [],
+      "pools": [
+        {
+          "geyserIds": [
+            "filthy_water",
+            "hot_water",
+            "salt_water",
+            "slush_water"
+          ],
+          "draws": 1,
+          "allowDuplicates": false,
+          "guaranteed": false,
+          "isRandomSpawner": false
+        }
+      ]
+    },
     "specialResourceIds": [
       "graphite-super-coolant"
     ],

@@ -37,6 +37,18 @@ SPECIAL_RESOURCE_RESEARCH_PATH = (
     Path(__file__).resolve().parents[1]
     / "research/special-resources/special-resources.json"
 )
+SPACE_POI_RESEARCH_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/space-pois/space-pois.json"
+)
+SPACE_POI_TYPES_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/space-pois/poi-types.json"
+)
+GEYSER_TYPES_PATH = (
+    Path(__file__).resolve().parents[1]
+    / "research/geysers/geyser-types.json"
+)
 RESOURCE_CATALOG: dict[str, dict[str, Any]] = {}
 ENTITY_REPRESENTATIVES: dict[str, dict[str, Any]] = {}
 PREFAB_CATEGORIES: dict[str, str] = {}
@@ -813,6 +825,358 @@ def settlement_analysis(
     }
 
 
+# worldTemplateRules listRules that always place their whole list.
+GEYSER_RULE_ALL = {"GuaranteeAll", "TryAll"}
+# ...and the ones that draw a subset, so which geyser appears is a roll.
+GEYSER_RULE_GUARANTEED_DRAW = {"GuaranteeOne", "GuaranteeSome", "GuaranteeSomeTryMore", "GuaranteeRange"}
+GEYSER_ENTITY_PREFIX = "GeyserGeneric"
+GENERIC_GEYSER_TEMPLATE = "geysers/generic"
+
+
+def template_path(reference: str) -> Path | None:
+    """Resolve a `ns::path` or bare template reference to its yaml file."""
+    namespace, _, relative = reference.partition("::")
+    if not relative:
+        namespace, relative = "", namespace
+    root = ASSETS / "dlc" / namespace / "templates" if namespace else ASSETS / "templates"
+    candidate = root / f"{relative}.yaml"
+    return candidate if candidate.exists() else None
+
+
+def template_geyser_ids(reference: str, cache: dict[str, list[str]]) -> list[str]:
+    """Geyser type ids a worldgen template places, read from its entity list.
+
+    A named template embeds `GeyserGeneric_<type>`; the bare `GeyserGeneric` is
+    the random spawner and is reported as the empty id so callers can expand it
+    into the whole random pool.
+    """
+    if reference in cache:
+        return cache[reference]
+    path = template_path(reference)
+    ids: list[str] = []
+    if path:
+        for entity in load_yaml(path).get("otherEntities", []) or []:
+            if not isinstance(entity, dict):
+                continue
+            entity_id = str(entity.get("id", ""))
+            if entity_id == GEYSER_ENTITY_PREFIX:
+                ids.append("")
+            elif entity_id.startswith(f"{GEYSER_ENTITY_PREFIX}_"):
+                ids.append(entity_id[len(GEYSER_ENTITY_PREFIX) + 1:])
+    cache[reference] = ids
+    return ids
+
+
+def build_world_geysers(
+    data: dict[str, Any],
+    geyser_types: dict[str, dict[str, Any]],
+    cache: dict[str, list[str]],
+) -> dict[str, Any]:
+    """Split a world's geyser rules into always-present and drawn-from-a-pool.
+
+    `listRule` is what separates the two: GuaranteeAll/TryAll place every listed
+    template, everything else draws `times` picks from the list.
+    """
+    random_pool = sorted(gid for gid, row in geyser_types.items() if row["isGenericGeyser"])
+    fixed: dict[str, int] = defaultdict(int)
+    pools: list[dict[str, Any]] = []
+
+    for rule in data.get("worldTemplateRules", []) or []:
+        if not isinstance(rule, dict):
+            continue
+        names = [str(name) for name in (rule.get("names", []) or [])]
+        if not names:
+            continue
+        list_rule = str(rule.get("listRule", ""))
+        times = int(rule.get("times", 1) or 1)
+        allow_duplicates = bool(rule.get("allowDuplicates", False))
+
+        resolved: list[str] = []
+        generic_slots = 0
+        for name in names:
+            for geyser_id in template_geyser_ids(name, cache):
+                if geyser_id == "":
+                    generic_slots += 1
+                elif geyser_id in geyser_types:
+                    resolved.append(geyser_id)
+
+        if generic_slots:
+            pools.append({
+                "geyserIds": random_pool,
+                "draws": times,
+                "allowDuplicates": allow_duplicates,
+                "guaranteed": list_rule in GEYSER_RULE_ALL or list_rule in GEYSER_RULE_GUARANTEED_DRAW,
+                "isRandomSpawner": True,
+            })
+        if not resolved:
+            continue
+
+        if list_rule in GEYSER_RULE_ALL:
+            for geyser_id in resolved:
+                fixed[geyser_id] += times
+        elif len(resolved) == 1 and list_rule in GEYSER_RULE_GUARANTEED_DRAW and not allow_duplicates:
+            fixed[resolved[0]] += times
+        else:
+            pools.append({
+                "geyserIds": sorted(set(resolved)),
+                "draws": times,
+                "allowDuplicates": allow_duplicates,
+                "guaranteed": list_rule in GEYSER_RULE_GUARANTEED_DRAW,
+                "isRandomSpawner": False,
+            })
+
+    return {
+        "fixed": [{"geyserId": gid, "count": count} for gid, count in sorted(fixed.items())],
+        "pools": pools,
+    }
+
+
+def build_geyser_catalog(strings: dict[str, tuple[str, str]], types_path: Path) -> list[dict[str, Any]]:
+    """Publish the geyser type table with bilingual names and emitted element."""
+    catalog: list[dict[str, Any]] = []
+    for row in json.loads(types_path.read_text(encoding="utf-8"))["geysers"]:
+        name_en, name_zh = translated(
+            strings,
+            f"STRINGS.CREATURES.SPECIES.GEYSER.{row['id'].upper()}.NAME",
+            re.sub(r"_", " ", row["id"]).title(),
+        )
+        element_en, element_zh = element_name(strings, row["element"])
+        desc_en, desc_zh = translated(strings, f"STRINGS.CREATURES.SPECIES.GEYSER.{row['id'].upper()}.DESC", "")
+        if not desc_en or not desc_zh:
+            raise SystemExit(f"geyser {row['id']} has no bilingual description")
+        catalog.append({
+            **row,
+            "name_en": name_en,
+            "name_zh": name_zh,
+            "desc_en": desc_en,
+            "desc_zh": desc_zh,
+            "elementName_en": element_en,
+            "elementName_zh": element_zh,
+        })
+    return catalog
+
+
+SPACE_POI_FAMILIES: tuple[tuple[str, str, str], ...] = (
+    ("HarvestableSpacePOI_", "harvestable", "HARVESTABLE_POI"),
+    ("ArtifactSpacePOI_", "artifact", "ARTIFACT_POI"),
+)
+DLC_PRECEDENCE = {"base": 0, "expansion1": 1, "dlc1": 1, "dlc2": 2, "dlc3": 3, "dlc4": 4, "dlc5": 5}
+
+
+def space_poi_identity(prefab_id: str) -> tuple[str, str | None]:
+    """Return the POI kind and its STRINGS prefix, if the game localizes one."""
+    for prefix, kind, family in SPACE_POI_FAMILIES:
+        if prefab_id.startswith(prefix):
+            return kind, f"STRINGS.UI.SPACEDESTINATIONS.{family}.{prefab_id[len(prefix):].upper()}"
+    return "special", None
+
+
+MIXING_CLUSTER_NAMES = {
+    "dlc2": ("Frosty Planet Pack planetary mixing", "寒霜行星包行星混搭"),
+    "dlc4": ("Prehistoric Planet Pack planetary mixing", "史前行星包行星混搭"),
+    "dlc5": ("Aquatic Planet Pack planetary mixing", "水生行星包行星混搭"),
+}
+
+
+def space_poi_placement(
+    group: dict[str, Any],
+    cluster_id: str,
+    cluster_en: str,
+    cluster_zh: str,
+) -> tuple[list[str], dict[str, Any]] | None:
+    """Normalize one `poiPlacements` / `spacePois` group into a placement record."""
+    pois = [str(x) for x in (group.get("pois", []) or [])]
+    if not pois:
+        return None
+    rings = group.get("allowedRings", {}) or {}
+    num_to_spawn = int(group.get("numToSpawn", len(pois)))
+    can_duplicate = bool(group.get("canSpawnDuplicates", False))
+    return pois, {
+        "clusterId": cluster_id,
+        "clusterName_en": cluster_en,
+        "clusterName_zh": cluster_zh,
+        "allowedRings": {"min": int(rings.get("min", 0)), "max": int(rings.get("max", 0))},
+        "numToSpawn": num_to_spawn,
+        "canSpawnDuplicates": can_duplicate,
+        # Every listed POI spawns only when the group is explicitly guaranteed,
+        # or it draws at least as many picks as it lists without duplicates.
+        "guaranteedInGroup": bool(group.get("guarantee", False)) or (not can_duplicate and num_to_spawn >= len(pois)),
+    }
+
+
+def build_space_pois(
+    strings: dict[str, tuple[str, str]],
+    research_path: Path,
+    types_path: Path,
+) -> dict[str, Any]:
+    """Catalog every space POI the installed worldgen data can generate.
+
+    Cluster membership, ring ranges and spawn counts come from the installed
+    cluster files and per-DLC mixing files. Element compositions come from
+    poi-types.json, which is extracted from the game assembly by
+    research/space-pois/build_poi_types.py. Exact starmap coordinates are rolled
+    per world seed and are deliberately not represented here.
+    """
+    research = json.loads(research_path.read_text(encoding="utf-8"))
+    curated = {entry["id"]: entry for entry in research["pois"]}
+    poi_types = {entry["id"]: entry for entry in json.loads(types_path.read_text(encoding="utf-8"))["pois"]}
+
+    placements: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    cluster_namespaces: dict[str, set[str]] = defaultdict(set)
+
+    for path in sorted(ASSETS.glob("**/worldgen/clusters/**/*.yaml")):
+        data = load_yaml(path)
+        if not data.get("poiPlacements") or data.get("skip"):
+            continue
+        ns = namespace_for(path)
+        rel = path.relative_to(next(p for p in path.parents if p.name == "worldgen") / "clusters").with_suffix("").as_posix()
+        cluster_id = f"{ns}::clusters/{rel}" if ns != "base" else f"clusters/{rel}"
+        cluster_en, cluster_zh = translated(strings, str(data.get("name", "")), path.stem)
+        for group in data.get("poiPlacements", []) or []:
+            if not isinstance(group, dict):
+                continue
+            parsed = space_poi_placement(group, cluster_id, cluster_en, cluster_zh)
+            if not parsed:
+                continue
+            pois, placement = parsed
+            for prefab_id in dict.fromkeys(pois):
+                placements[prefab_id].append(placement)
+                cluster_namespaces[prefab_id].add(ns)
+
+    # Planetary mixing adds its own POIs on top of whichever cluster is played.
+    for path in sorted(ASSETS.glob("**/worldgen/mixing.yaml")):
+        data = load_yaml(path)
+        if not data.get("spacePois"):
+            continue
+        ns = namespace_for(path)
+        cluster_en, cluster_zh = MIXING_CLUSTER_NAMES.get(ns, ("Planetary mixing", "行星混搭"))
+        for group in data.get("spacePois", []) or []:
+            if not isinstance(group, dict):
+                continue
+            parsed = space_poi_placement(group, f"{ns}::mixing", cluster_en, cluster_zh)
+            if not parsed:
+                continue
+            pois, placement = parsed
+            for prefab_id in dict.fromkeys(pois):
+                placements[prefab_id].append(placement)
+                cluster_namespaces[prefab_id].add(ns)
+
+    unknown = sorted(set(placements) - set(curated))
+    if unknown:
+        raise SystemExit("space POIs require research entries: " + ", ".join(unknown))
+    unplaced = sorted(set(curated) - set(placements))
+    if unplaced:
+        raise SystemExit("research lists space POIs no worldgen file generates: " + ", ".join(unplaced))
+
+    pois: list[dict[str, Any]] = []
+    for prefab_id, poi_placements in placements.items():
+        entry = curated[prefab_id]
+        mechanics = poi_types.get(prefab_id, {})
+        kind, string_prefix = space_poi_identity(prefab_id)
+        fallback = re.sub(r"(?<!^)(?=[A-Z])", " ", prefab_id.split("_")[-1])
+        if string_prefix:
+            name_en, name_zh = translated(strings, f"{string_prefix}.NAME", fallback)
+            desc_en, desc_zh = translated(strings, f"{string_prefix}.DESC", "")
+        else:
+            name_en, name_zh = entry["name_en"], entry["name_zh"]
+            desc_en, desc_zh = entry["desc_en"], entry["desc_zh"]
+        if kind == "harvestable" and not mechanics:
+            raise SystemExit(f"{prefab_id}: no assembly-extracted mechanics; rerun build_poi_types.py")
+        outputs = []
+        for output in mechanics.get("outputs", []):
+            simhash = output["id"]
+            output_en, output_zh = element_name(strings, simhash)
+            catalog = RESOURCE_CATALOG.get(simhash, {})
+            # Space-only outputs (refined or molten elements) never appear in
+            # worldgen, so they are absent from the resource catalog. Fall back
+            # to the game's own element description rather than inventing one.
+            element_desc_en, element_desc_zh = translated(strings, f"STRINGS.ELEMENTS.{simhash.upper()}.DESC", "")
+            use_en = catalog.get("use_en") or element_desc_en
+            use_zh = catalog.get("use_zh") or element_desc_zh
+            if not use_en or not use_zh:
+                raise SystemExit(f"{prefab_id}: no bilingual use text for output {simhash}")
+            outputs.append({
+                "id": simhash,
+                "name_en": output_en,
+                "name_zh": output_zh,
+                "phase": output["phase"],
+                "ratio": output["ratio"],
+                "temperatureC": output["temperatureC"],
+                # A POI's output phase comes from the game assembly. Do not
+                # replace it with a generic element classification: the same
+                # element can be harvested molten or liquid at this destination.
+                "type": output["phase"],
+                "categories": catalog.get("categories", CATEGORY_MAP.get(simhash, [])),
+                "primaryCategory": ELEMENT_CATEGORIES.get(simhash, "Other"),
+                "use_en": use_en,
+                "use_zh": use_zh,
+            })
+        record: dict[str, Any] = {
+            "id": prefab_id,
+            "prefabId": prefab_id,
+            "kind": kind,
+            "name_en": name_en,
+            "name_zh": name_zh,
+            "desc_en": desc_en,
+            "desc_zh": desc_zh,
+            # An assembly-declared DLC requirement is authoritative; otherwise
+            # fall back to the least restrictive cluster that generates it.
+            "dlcTag": mechanics.get("dlcTag") or min(
+                cluster_namespaces[prefab_id], key=lambda tag: DLC_PRECEDENCE.get(tag, 99)
+            ),
+            "cargo": mechanics.get("cargo", []),
+            "outputs": outputs,
+            "placements": sorted(
+                poi_placements,
+                key=lambda p: (p["clusterId"], p["allowedRings"]["min"], p["allowedRings"]["max"]),
+            ),
+            "strategic_en": entry.get("strategic_en", []),
+            "strategic_zh": entry.get("strategic_zh", []),
+            "attention_en": entry.get("attention_en", []),
+            "attention_zh": entry.get("attention_zh", []),
+            "strategicResourceIds": entry.get("strategicResourceIds", []),
+            "source_ids": entry.get("source_ids", []),
+        }
+        if mechanics.get("capacityRangeKg"):
+            record["capacityRangeKg"] = mechanics["capacityRangeKg"]
+        if mechanics.get("rechargeRangeKgPerCycle"):
+            record["rechargeRangeKgPerCycle"] = mechanics["rechargeRangeKgPerCycle"]
+        if kind == "artifact":
+            # The installed game strings and curated research describe these
+            # one-time stations as recoverable Artifacts and Data Banks. Their
+            # exact item identity/count is not fixed by worldgen, so model them
+            # as collectibles rather than fabricated material compositions.
+            record["collectibles"] = [
+                {
+                    "id": "Artifact",
+                    "name_en": "Artifact",
+                    "name_zh": "文物",
+                    "detail_en": "One-time artifact recovery; the exact artifact depends on the site.",
+                    "detail_zh": "一次性文物回收；實際文物取決於地點。",
+                },
+                {
+                    "id": "DataBank",
+                    "name_en": "Data Bank",
+                    "name_zh": "資料庫",
+                    "detail_en": "Recoverable research data from the station.",
+                    "detail_zh": "可從該太空站回收的研究資料。",
+                },
+            ]
+        missing_strategic = [x for x in record["strategicResourceIds"] if x not in {o["id"] for o in outputs}]
+        if missing_strategic:
+            raise SystemExit(f"{prefab_id}: strategic resources are not outputs: " + ", ".join(missing_strategic))
+        pois.append(record)
+
+    pois.sort(key=lambda x: (x["kind"], x["name_en"]))
+    return {
+        "schema_version": 1,
+        "baseline": research["baseline"],
+        "mechanics": research["mechanics"],
+        "pois": pois,
+        "sources": research["sources"],
+    }
+
+
 def main() -> None:
     global ASSETS, PO_PATH, RESOURCE_CATALOG, ENTITY_REPRESENTATIVES, PREFAB_CATEGORIES, ELEMENT_CATEGORIES, GAME_CATEGORIES
     UNCATALOGUED_CANDIDATES.clear()
@@ -849,6 +1213,9 @@ def main() -> None:
     biome_index = build_index("biomes")
     feature_index = build_index("features")
     mob_lookups = build_mob_lookups()
+    geyser_catalog = build_geyser_catalog(strings, GEYSER_TYPES_PATH)
+    geyser_types = {row["id"]: row for row in geyser_catalog}
+    template_cache: dict[str, list[str]] = {}
 
     # Cluster-level additions and guaranteed templates, keyed by world reference.
     cluster_extra: dict[str, set[str]] = defaultdict(set)
@@ -935,6 +1302,7 @@ def main() -> None:
             cluster_roles.get(world_ref, set()),
             key={"start": 0, "warp": 1, "general": 2}.__getitem__,
         )
+        world_geysers = build_world_geysers(data, geyser_types, template_cache)
         worldsize = data.get("worldsize", {}) or {}
         width = int(worldsize.get("X", 0))
         height = int(worldsize.get("Y", 0))
@@ -950,11 +1318,13 @@ def main() -> None:
             "seasons": [str(value) for value in data.get("seasons", []) or []],
             "clusterRoles": roles, "referencedByCluster": bool(roles),
             "internal": bool(data.get("skip")),
+            "geysers": world_geysers,
         })
 
     worlds.sort(key=lambda x: (x["dlcTag"], x["name_en"]))
     terrain_list = sorted(terrains.values(), key=lambda x: (x["dlcTag"], x["name_en"], x["variant_en"]))
     resource_list = sorted(global_resources.values(), key=lambda x: x["name_en"])
+    space_pois = build_space_pois(strings, SPACE_POI_RESEARCH_PATH, SPACE_POI_TYPES_PATH)
     special_resources = attach_special_resource_routes(worlds, terrain_list, SPECIAL_RESOURCE_RESEARCH_PATH)
     special_routes = {route["id"]: route for route in special_resources["routes"]}
     for world in worlds:
@@ -987,6 +1357,8 @@ def main() -> None:
         ("resources.json", resource_list),
         ("game-categories.json", GAME_CATEGORIES),
         ("special-resources.json", special_resources),
+        ("space-pois.json", space_pois),
+        ("geysers.json", geyser_catalog),
     ):
         (OUT / name).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
 

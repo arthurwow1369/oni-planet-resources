@@ -63,6 +63,7 @@ The extractor reads world, subworld, and biome YAML and writes:
 - `public/data/subworlds.json`
 - `public/data/resources.json`
 - `public/data/stats.json`
+- `public/data/space-pois.json`
 
 Both input paths can also be supplied as explicit CLI arguments:
 
@@ -73,6 +74,21 @@ python3 scripts/extract_data.py \
 ```
 
 `DOLPHINWING_PO_PATH` is an input path, not an alternative license for the translations. The extractor requires an accessible `strings.po` from the user's own installation.
+
+### Refreshing the space-POI composition table
+
+The starmap POI table is compiled into `Assembly-CSharp.dll` instead of shipping as worldgen YAML, so its outputs, ratios, capacity and refill ranges are extracted separately into `research/space-pois/poi-types.json`. That file is checked in, so a normal re-extraction does not need this step — rerun it only after a game update changes the POI table:
+
+```bash
+dotnet tool install --global ilspycmd
+python3 research/space-pois/build_poi_types.py \
+  --assembly "/path/to/Managed/Assembly-CSharp.dll" \
+  --assets "/path/to/StreamingAssets"
+```
+
+Output ratios are normalized from the raw element weights the way `HarvestModule.HarvestFromPOI` does, and output temperatures are each element's `defaultTemperature`, which is what `StarmapHexCellInventory.ExtractAndSpawn` spawns the harvested mass at. Prose guidance for each POI lives alongside it in `research/space-pois/space-pois.json`.
+
+Exact starmap coordinates are deliberately absent from this dataset: the game rolls each site's axial position, capacity and refill rate per world seed, so only the ring range a cluster allows is published, which is identical for every player of that cluster.
 
 ## Data and research provenance
 

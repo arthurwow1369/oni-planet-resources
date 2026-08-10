@@ -1,4 +1,4 @@
-import type { AggregatedResource, GameCategory, Locale, Resource, Subworld } from './types'
+import type { AggregatedResource, GameCategory, GameCategoryId, Locale, Resource, Subworld } from './types'
 
 export type ResourceTone = 'plant' | 'fauna' | 'material'
 
@@ -33,6 +33,11 @@ export function aggregateTerrainResources(terrains: Subworld[], locale: Locale):
 
   return [...resources.values()].sort((a, b) => displayName(a).localeCompare(displayName(b)))
 }
+
+export const categoryIcon = (id: GameCategoryId): string => ({
+  Seed: '🌱', Egg: '🥚', Liquid: '💧', Breathable: '💨', Unbreathable: '☁️',
+  Metal: '⛏️', RefinedMetal: '⚙️', Edible: '🍽️', Organics: '🧬', Geyser: '🌋',
+} as Record<string, string>)[id] ?? '◇'
 
 export function sortGameCategories(categories: GameCategory[], locale: Locale): GameCategory[] {
   return [...categories].sort((a, b) => {

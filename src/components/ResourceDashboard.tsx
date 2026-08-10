@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { localName, secondaryName, ui } from '../i18n'
 import { configurationCoverageForResource, totalConfigurationCoverage } from '../plannerModel'
-import { aggregateTerrainResources, effectiveGameCategory, resourceMatchesQuery, resourceTone, sortGameCategories } from '../resourcePresentation'
+import { aggregateTerrainResources, categoryIcon, effectiveGameCategory, resourceMatchesQuery, resourceTone, sortGameCategories } from '../resourcePresentation'
 import type { AggregatedResource, GameCategory, GameCategoryId, Locale, SpecialResourceRoute, SpecialResourceSource, Subworld, TerrainResearchData } from '../types'
 import { TerrainResearchPanel } from './TerrainResearchPanel'
 import { AnchoredPopover } from './AnchoredPopover'
@@ -20,11 +20,6 @@ const typeLabel: Record<string, { zh: string; en: string }> = {
   solid: { zh: '固體', en: 'Solid' }, liquid: { zh: '液體', en: 'Liquid' }, gas: { zh: '氣體', en: 'Gas' },
   plant: { zh: '植物', en: 'Plant' }, critter: { zh: '生物', en: 'Critter' },
 }
-
-const categoryIcon = (id: GameCategoryId) => ({
-  Seed: '🌱', Egg: '🥚', Liquid: '💧', Breathable: '💨', Unbreathable: '☁️',
-  Metal: '⛏️', RefinedMetal: '⚙️', Edible: '🍽️', Organics: '🧬',
-}[id] ?? '◇')
 
 export function ResourceDashboard({ terrains, research, categories = [], locale, specialResources = [], specialResourceSources = [], specialResourceBaseline }: Props) {
   const t = ui[locale]

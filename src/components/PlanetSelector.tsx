@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react'
 import { dlcLabel } from '../dlc'
 import { localName, secondaryName, ui } from '../i18n'
 import { filterWorldGroups, groupWorlds, inferWorldVariantRole, worldVariantDlcTag, worldWidthBand } from '../plannerModel'
-import type { Locale, World } from '../types'
+import type { BrowseMode, Locale, World } from '../types'
+import { BrowseModeToggle } from './BrowseModeToggle'
 
 interface Props {
   worlds: World[]
@@ -11,6 +12,8 @@ interface Props {
   onSelect: (id: string) => void
   initialSelectedDlcTags?: string[]
   specialResourceNames?: Record<string, string>
+  mode?: BrowseMode
+  onModeChange?: (mode: BrowseMode) => void
 }
 
 const roleOrder = { start: 0, warp: 1, general: 2, unreferenced: 3 } as const
@@ -24,7 +27,7 @@ function duplicateVariantQualifier(id: string, locale: Locale): string {
   return labels.standard
 }
 
-export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSelectedDlcTags, specialResourceNames = {} }: Props) {
+export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSelectedDlcTags, specialResourceNames = {}, mode, onModeChange }: Props) {
   const t = ui[locale]
   const [query, setQuery] = useState('')
   const [showAdvanced, setShowAdvanced] = useState(false)
@@ -48,6 +51,7 @@ export function PlanetSelector({ worlds, selectedId, locale, onSelect, initialSe
 
   return (
     <section className="panel planet-panel">
+      {mode && onModeChange && <BrowseModeToggle mode={mode} locale={locale} onChange={onModeChange} />}
       <div className="section-heading">
         <div>
           <span className="eyebrow">PLANET</span>

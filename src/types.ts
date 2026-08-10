@@ -114,6 +114,38 @@ export interface SettlementAnalysis {
   }
 }
 
+export type GeyserShape = 'gas' | 'liquid' | 'molten'
+
+export interface Geyser {
+  id: string
+  name_en: string
+  name_zh: string
+  element: string
+  elementName_en: string
+  elementName_zh: string
+  desc_en: string
+  desc_zh: string
+  shape: GeyserShape
+  temperatureC: number
+  rateKgPerCycle: { min: number; max: number }
+  maxPressureKg: number
+  isGenericGeyser: boolean
+  requiredDlcTags: string[]
+}
+
+export interface WorldGeyserPool {
+  geyserIds: string[]
+  draws: number
+  allowDuplicates: boolean
+  guaranteed: boolean
+  isRandomSpawner: boolean
+}
+
+export interface WorldGeysers {
+  fixed: Array<{ geyserId: string; count: number }>
+  pools: WorldGeyserPool[]
+}
+
 export interface World {
   id: string
   name_en: string
@@ -133,6 +165,7 @@ export interface World {
   internal: boolean
   specialResourceIds: string[]
   settlement?: SettlementAnalysis
+  geysers?: WorldGeysers
 }
 
 export interface SpecialResourceRoute {
@@ -180,6 +213,101 @@ export interface SpecialResourceData {
   }
   routes: SpecialResourceRoute[]
   sources: SpecialResourceSource[]
+}
+
+export type BrowseMode = 'planets' | 'pois' | 'resources'
+
+export type SpacePoiKind = 'harvestable' | 'artifact' | 'special'
+
+export type SpacePoiCargo = 'solid' | 'liquid' | 'gas'
+
+export interface SpacePoiRange {
+  min: number
+  max: number
+}
+
+export interface SpacePoiOutput {
+  id: string
+  name_en: string
+  name_zh: string
+  phase: SpacePoiCargo
+  ratio: number
+  temperatureC: number
+  type: Resource['type']
+  categories: Category[]
+  primaryCategory: GameCategoryId
+  use_en: string
+  use_zh: string
+}
+
+export interface SpacePoiCollectible {
+  id: string
+  name_en: string
+  name_zh: string
+  detail_en: string
+  detail_zh: string
+}
+
+export interface SpacePoiPlacement {
+  clusterId: string
+  clusterName_en: string
+  clusterName_zh: string
+  allowedRings: SpacePoiRange
+  numToSpawn: number
+  canSpawnDuplicates: boolean
+  guaranteedInGroup: boolean
+}
+
+export interface SpacePoi {
+  id: string
+  prefabId: string
+  kind: SpacePoiKind
+  name_en: string
+  name_zh: string
+  desc_en: string
+  desc_zh: string
+  dlcTag: string
+  capacityRangeKg?: SpacePoiRange
+  rechargeRangeKgPerCycle?: SpacePoiRange
+  cargo: SpacePoiCargo[]
+  outputs: SpacePoiOutput[]
+  collectibles?: SpacePoiCollectible[]
+  placements: SpacePoiPlacement[]
+  strategic_en: string[]
+  strategic_zh: string[]
+  attention_en: string[]
+  attention_zh: string[]
+  strategicResourceIds: string[]
+  source_ids: string[]
+}
+
+export interface SpacePoiSource {
+  id: string
+  title: string
+  url: string
+  kind: string
+  accessed_at: string
+}
+
+export interface SpacePoiData {
+  schema_version: 1
+  baseline: {
+    as_of: string
+    installed_game_version: string
+    scope_en: string
+    scope_zh: string
+    coordinatePolicy_en: string
+    coordinatePolicy_zh: string
+  }
+  mechanics: {
+    summary_en: string
+    summary_zh: string
+    recharge_en: string
+    recharge_zh: string
+    source_ids: string[]
+  }
+  pois: SpacePoi[]
+  sources: SpacePoiSource[]
 }
 
 export interface Stats {

@@ -423,3 +423,192 @@ describe('generated data completeness', () => {
     expect(radioactive?.recommendations.radiation[0].method).toMatch(/Radbolt Generator/i)
   })
 })
+
+type SpacePoiData = {
+  schema_version: number
+  baseline: { coordinatePolicy_en: string; coordinatePolicy_zh: string }
+  pois: Array<{
+    id: string
+    kind: 'harvestable' | 'artifact' | 'special'
+    name_en: string
+    name_zh: string
+    desc_en: string
+    desc_zh: string
+    dlcTag: string
+    cargo: string[]
+    capacityRangeKg?: { min: number; max: number }
+    outputs: Array<{ id: string; name_en: string; name_zh: string; phase: string; ratio: number; temperatureC: number; type: string; primaryCategory: string; use_en: string; use_zh: string }>
+    collectibles?: Array<{ id: string }>
+    placements: Array<{ clusterId: string; allowedRings: { min: number; max: number } }>
+    strategicResourceIds: string[]
+    strategic_en: string[]
+    strategic_zh: string[]
+  }>
+  sources: Array<{ id: string }>
+}
+
+describe('space POI catalog', () => {
+  const spacePois = readJson<SpacePoiData>('public/data/space-pois.json')
+
+  it('catalogs every placed POI with a localized name and a cluster placement', () => {
+    expect(spacePois.pois.length).toBeGreaterThan(30)
+    for (const poi of spacePois.pois) {
+      expect(poi.name_en.trim().length).toBeGreaterThan(0)
+      expect(poi.name_zh.trim().length).toBeGreaterThan(0)
+      expect(poi.placements.length).toBeGreaterThan(0)
+      expect(poi.strategic_en.length).toBeGreaterThan(0)
+      expect(poi.strategic_zh.length).toBeGreaterThan(0)
+    }
+  })
+
+  it('normalizes every harvestable composition to whole shares of the harvested mass', () => {
+    const harvestable = spacePois.pois.filter((poi) => poi.kind === 'harvestable')
+    expect(harvestable.length).toBeGreaterThan(25)
+    for (const poi of harvestable) {
+      const total = poi.outputs.reduce((sum, output) => sum + output.ratio, 0)
+      expect(Math.abs(total - 100)).toBeLessThan(0.05)
+      expect(poi.capacityRangeKg!.min).toBeLessThanOrEqual(poi.capacityRangeKg!.max)
+      // The cargo bays a POI needs are exactly the phases it yields.
+      expect(poi.cargo).toEqual([...new Set(poi.outputs.map((output) => output.phase))].sort())
+    }
+  })
+
+  it('publishes the documented collectible rewards for every artifact POI', () => {
+    const artifacts = spacePois.pois.filter((poi) => poi.kind === 'artifact')
+    expect(artifacts.length).toBeGreaterThan(0)
+    for (const poi of artifacts) {
+      const collectibleIds = new Set(poi.collectibles?.map((item) => item.id))
+      expect(collectibleIds, poi.id).toEqual(new Set(['Artifact', 'DataBank']))
+    }
+  })
+
+  it('never publishes a per-seed starmap coordinate', () => {
+    expect(spacePois.baseline.coordinatePolicy_en).toMatch(/rolled per world seed/i)
+    const serialized = JSON.stringify(spacePois)
+    expect(serialized).not.toMatch(/"[qr]":\s*-?\d/)
+    expect(serialized).not.toMatch(/"(colonyName|sourceSave|cycle|revealStatus)"/i)
+    for (const poi of spacePois.pois) {
+      for (const placement of poi.placements) {
+        expect(placement.allowedRings.min).toBeLessThanOrEqual(placement.allowedRings.max)
+      }
+    }
+  })
+
+  it('keeps each POI description its own, not an element description borrowed from an output', () => {
+    for (const poi of spacePois.pois) {
+      expect(poi.desc_zh.trim().length, poi.id).toBeGreaterThan(0)
+      const outputUses = new Set(poi.outputs.flatMap((output) => [output.use_en.trim(), output.use_zh.trim()]))
+      expect(outputUses.has(poi.desc_en.trim()), poi.id).toBe(false)
+      expect(outputUses.has(poi.desc_zh.trim()), poi.id).toBe(false)
+    }
+    const gilded = spacePois.pois.find((poi) => poi.id === 'HarvestableSpacePOI_GildedAsteroidField')
+    expect(gilded?.desc_en).toMatch(/asteroid field/i)
+  })
+
+  it('describes every output like a planet resource, so both views can share one card format', () => {
+    const categoryIds = new Set(readJson<Array<{ id: string }>>('public/data/game-categories.json').map((category) => category.id))
+    const outputs = spacePois.pois.flatMap((poi) => poi.outputs)
+    expect(outputs.length).toBeGreaterThan(0)
+    for (const output of outputs) {
+      expect(output.use_en.trim().length).toBeGreaterThan(0)
+      expect(output.use_zh.trim().length).toBeGreaterThan(0)
+      expect(categoryIds.has(output.primaryCategory)).toBe(true)
+      expect(['solid', 'liquid', 'gas']).toContain(output.type)
+      // The game assembly declares the collected phase. A generic resource
+      // catalog must never override this POI-specific fact.
+      expect(output.type).toBe(output.phase)
+    }
+  })
+
+  it('only marks strategic resources the POI actually yields, and cites its sources', () => {
+    const sourceIds = new Set(spacePois.sources.map((source) => source.id))
+    expect(sourceIds.size).toBeGreaterThan(0)
+    for (const poi of spacePois.pois) {
+      const outputIds = new Set(poi.outputs.map((output) => output.id))
+      for (const id of poi.strategicResourceIds) expect(outputIds.has(id)).toBe(true)
+    }
+  })
+})
+
+type GeyserRow = {
+  id: string
+  name_en: string
+  name_zh: string
+  element: string
+  elementName_en: string
+  elementName_zh: string
+  shape: 'gas' | 'liquid' | 'molten'
+  temperatureC: number
+  rateKgPerCycle: { min: number; max: number }
+  isGenericGeyser: boolean
+}
+
+type WorldGeyserRow = {
+  id: string
+  geysers?: {
+    fixed: Array<{ geyserId: string; count: number }>
+    pools: Array<{ geyserIds: string[]; draws: number; allowDuplicates: boolean; guaranteed: boolean; isRandomSpawner: boolean }>
+  }
+}
+
+describe('geyser catalog', () => {
+  const geysers = readJson<GeyserRow[]>('public/data/geysers.json')
+  const geyserWorlds = readJson<WorldGeyserRow[]>('public/data/worlds.json')
+  const byId = new Map(geysers.map((geyser) => [geyser.id, geyser]))
+
+  it('publishes every geyser type with bilingual names and a positive rate', () => {
+    expect(geysers.length).toBeGreaterThanOrEqual(25)
+    for (const geyser of geysers) {
+      expect(geyser.name_en.trim().length, geyser.id).toBeGreaterThan(0)
+      expect(geyser.name_zh.trim().length, geyser.id).toBeGreaterThan(0)
+      expect(geyser.elementName_zh.trim().length, geyser.id).toBeGreaterThan(0)
+      expect(geyser.rateKgPerCycle.min, geyser.id).toBeGreaterThan(0)
+      expect(geyser.rateKgPerCycle.min, geyser.id).toBeLessThanOrEqual(geyser.rateKgPerCycle.max)
+      expect(['gas', 'liquid', 'molten']).toContain(geyser.shape)
+    }
+  })
+
+  it('keeps the four curated-only types out of the random pool', () => {
+    // geysers/generic is the Random Geyser Spawner and can only roll flagged types.
+    const curatedOnly = geysers.filter((geyser) => !geyser.isGenericGeyser).map((geyser) => geyser.id).sort()
+    expect(curatedOnly).toEqual(['chlorine_gas_cool', 'molten_niobium', 'molten_tungsten', 'murky_brine'])
+  })
+
+  it('resolves every world geyser reference to a published type', () => {
+    for (const world of geyserWorlds) {
+      for (const entry of world.geysers?.fixed ?? []) {
+        expect(byId.has(entry.geyserId), `${world.id}/${entry.geyserId}`).toBe(true)
+        expect(entry.count, world.id).toBeGreaterThan(0)
+      }
+      for (const pool of world.geysers?.pools ?? []) {
+        expect(pool.geyserIds.length, world.id).toBeGreaterThan(0)
+        expect(pool.draws, world.id).toBeGreaterThan(0)
+        for (const id of pool.geyserIds) expect(byId.has(id), `${world.id}/${id}`).toBe(true)
+      }
+    }
+  })
+
+  it('separates guaranteed placements from pooled draws instead of calling everything fixed', () => {
+    const aquatic = geyserWorlds.find((world) => world.id === 'dlc5::worlds/AquaticSpacedOutAsteroid')
+    // The curated block is `TryOne times:3 allowDuplicates:true` over 8 names,
+    // so none of those 8 may be reported as always present.
+    const pool = aquatic?.geysers?.pools.find((entry) => entry.geyserIds.length === 8)
+    expect(pool).toMatchObject({ draws: 3, allowDuplicates: true, guaranteed: false, isRandomSpawner: false })
+    const fixedIds = new Set(aquatic?.geysers?.fixed.map((entry) => entry.geyserId))
+    for (const id of pool?.geyserIds ?? []) expect(fixedIds.has(id), id).toBe(false)
+  })
+
+  it('models the generic spawner as a 12-draw pool over the whole random set', () => {
+    const sandstone = geyserWorlds.find((world) => world.id === 'worlds/SandstoneDefault')
+    const generic = sandstone?.geysers?.pools.find((pool) => pool.isRandomSpawner)
+    expect(generic).toMatchObject({ draws: 12, allowDuplicates: true })
+    expect(generic?.geyserIds.length).toBe(geysers.filter((geyser) => geyser.isGenericGeyser).length)
+  })
+
+  it('keeps tungsten and niobium volcanoes as fixed placements on their own moonlets', () => {
+    const marshy = geyserWorlds.find((world) => world.id === 'expansion1::worlds/MarshyMoonlet')
+    expect(marshy?.geysers?.fixed.map((entry) => entry.geyserId)).toContain('molten_tungsten')
+    const niobium = geyserWorlds.find((world) => world.id === 'expansion1::worlds/NiobiumMoonlet')
+    expect(niobium?.geysers?.fixed.map((entry) => entry.geyserId)).toContain('molten_niobium')
+  })
+})
